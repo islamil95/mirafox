@@ -1,0 +1,33 @@
+// Стили для дерева статей - 1-ый уровнь FAQ
+.kb .tree.tree-1 {
+	@include responsive("max-width", 100%, 100%, 100%, 100%, 1100px);
+
+	.question-wrapper {
+	    margin-bottom: 40px;
+	    text-align: center;
+
+	    // Текст вопроса
+		.question {
+		    width: 100%;
+		    overflow: hidden;
+		    text-align: center;
+		    font-size: 16px;
+
+			@media only screen and (min-width: 768px) {
+				white-space: nowrap;
+			}
+		}
+
+		// Иконка
+		.article-icon {
+			display: inline-block;
+	    	background-repeat: no-repeat;
+	    	background-position: center;
+			background-size: contain;
+	    	width: 125px;
+	    	height: 125px;			
+		}
+
+	}
+
+}

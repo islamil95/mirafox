@@ -1,0 +1,279 @@
+.education {
+	border-bottom: 2px solid #f6f6f6;
+	background-color: #fff;
+	&__title {
+		text-align: center;
+		font-weight: 600;
+		font-size: 26px;
+		line-height: 30px;
+		color: #000;
+	}
+	&__header {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 206px;
+		padding: 0 10px;
+		background: url(/images/education/bg.jpg) 50% 0;
+		background-size: cover;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(44, 44, 44, .7);
+		}
+		&-title {
+			position: relative;
+			z-index: 3;
+			color: #ffa800;
+		}
+		&-title_big {
+			margin: -11px 0 10px;
+			font-size: 36px;
+			line-height: 48px;
+			color: #fff;
+		}
+	}
+	&__content {
+		max-width: 940px;
+		margin: 0 auto;
+		padding: 40px 0 30px;
+		text-align: center;
+		@media (max-width: 1023px) {
+			max-width: 100%;
+		}
+		@media (max-width: 767px) {
+			padding-bottom: 20px;
+		}
+	}
+	&__list {
+		display: inline-block;
+		vertical-align: top;
+		margin: 28px auto 0;
+		padding: 0 10px;
+		list-style: none;
+		&-item {
+			position: relative;
+			padding-left: 25px;
+			text-align: left;
+			font-size: 16px;
+			line-height: 26px;
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 5px;
+				display: block;
+				width: 19px;
+				height: 14px;
+				overflow: hidden;
+				background: url(/images/check-mark-green.png) no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+	&__download {
+		width: 150px;
+		text-align: center;
+		&-button {
+			display: block;
+			max-width: 100%;
+			margin-bottom: 11px;
+		}
+		&-label {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 10px;
+			cursor: pointer;
+			user-select: none;
+			white-space: nowrap;
+		}
+		&-counter {
+			margin-top: 9px;
+			text-align: center;
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+	&__lessons {
+		margin: 45px 0 30px;
+		padding: 0 0 26px;
+		text-align: left;
+		list-style: none;
+		@media (max-width: 767px) {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		&-item {
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			height: 165px;
+			overflow: hidden;
+			margin-top: 26px;
+			padding: 25px 0 0;
+			border-top: 1px solid #A5A5A5;
+			box-sizing: border-box;
+			&:first-child {
+				margin-top: 0 !important;
+			}
+			&_done {
+				.education__lessons-label {
+					display: inline !important;
+				}
+			}
+			@media (max-width: 1023px) {
+				padding-right: 10px;
+				height: 143px;
+			}
+			@media (max-width: 767px) {
+				display: block;
+				height: auto;
+				margin-top: 20px;
+				padding-top: 15px;
+			}
+		}
+		&-content-wrapper {
+			position: relative;
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			padding-left: 280px;
+			@media (max-width: 1023px) {
+				padding-left: 228px;
+				align-items: flex-start;
+				&:after {
+					content: '';
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					float: right;
+					width: 150px;
+					height: 20px;
+					background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%);
+				}
+			}
+			@media (max-width: 767px) {
+				height: 117px;
+				overflow: hidden;
+			}
+			@media (max-width: 567px) {
+				display: block;
+				padding-left: 10px;
+				height: auto;
+			}
+		}
+		&-content {
+			position: relative;
+		}
+		&-img {
+			position: absolute;
+			left: 0;
+			top: 5px;
+			width: 250px;
+			height: 130px;
+			@media (max-width: 1023px) {
+				left: 10px;
+				width: auto;
+				height: 108px;
+			}
+			@media (max-width: 767px) {
+				width: 207px;
+			}
+			@media (max-width: 567px) {
+				position: relative;
+				left: auto;
+				top: auto;
+				display: block;
+				width: 100%;
+				height: auto;
+				margin-bottom: 12px;
+			}
+		}
+		&-title {
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 23px;
+		}
+		&-label {
+			display: none;
+			margin-left: 20px;
+			font-size: 14px;
+			line-height: 14px;
+			color: #009900;
+			text-transform: uppercase;
+			white-space: nowrap;
+			overflow: hidden;
+			@media (max-width: 767px) {
+				float: right;
+				margin-left: 10px;
+				margin-top: 6px;
+			}
+		}
+		&-time {
+			margin-top: 8px;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 12px;
+			color: #009900;
+		}
+		&-text {
+			margin-top: 10px;
+			word-wrap: break-word;
+			-ms-word-break: break-all;
+			word-break: break-word;
+			@media (max-width: 567px) {
+				height: 64px;
+				overflow: hidden;
+			}
+		}
+		&-download {
+			flex-shrink: 0;
+			align-self: center;
+			margin-left: 30px;
+			@media (max-width: 1023px) {
+				margin-left: 10px;
+			}
+			@media (max-width: 767px) {
+				display: flex;
+				flex-wrap: nowrap;
+				width: auto;
+				margin-left: 0;
+				margin-top: 16px;
+				padding: 3px 10px 0;
+			}
+			@media (max-width: 399px) {
+				flex-wrap: wrap;
+			}
+		}
+		@media (max-width: 767px) {
+			.education__download-button {
+				width: 100%;
+				max-width: 207px;
+				min-width: 125px;
+				margin: -3px 10px 0 0;
+			}
+			.education__download-label {
+				margin-left: 0;
+			}
+			.education__download-counter {
+				margin-top: 6px;
+				white-space: nowrap;
+			}
+		}
+		@media (max-width: 399px) {
+			.education__download-button {
+				width: 125px;
+			}
+		}
+	}
+}

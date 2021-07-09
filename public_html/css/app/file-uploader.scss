@@ -1,0 +1,367 @@
+// Компонент загрузки файлов
+.file-uploader {
+
+	// Кнопка "Прикрепить файл"
+	.upload-button {
+		cursor: pointer;
+
+		// Кнопка для неактивного компонента
+		&.inactive {
+			cursor: inherit;
+
+			a {
+				color: $black;
+			}
+		}
+	}
+
+	// Подсказки
+	.hint {
+		color: $gray-600;
+		font-style: italic;
+		font-size: 12px;
+	}
+
+	.miniatures {
+		display: flex; flex-wrap: wrap;
+
+		@media(max-width: 767px) {
+			margin: -5px 0 10px 0;
+		}
+
+		&:empty {
+			display: none;
+		}
+
+		> div {
+			position: relative;
+			width: calc((100% - 20px * 3) / 4);
+			margin: 10px 20px 10px 0;
+			border: 1px solid #e4e4e4; border-radius: 3px;
+
+			@media(max-width: 767px) {
+				margin: 5px 10px 5px 0;
+				width: calc((100% - 10px * 3) / 4);
+			}
+
+			&:nth-child(4n+4) {
+				margin-right: 0;
+			}
+
+			&:hover {
+				.remove {
+					display: flex;
+				}
+			}
+
+			.ispinner-lite {
+				position: absolute;
+				top: calc(50% - 13px); left: calc(50% - 13px);
+			}
+
+			.remove {
+				position: absolute; top: 0; right: 0; z-index: 1;
+				display: none; align-items: center; justify-content: center;
+				width: 20px; height: 20px;
+				font-size: 20px; color: #fff;
+				background: rgba(0, 0, 0, 0.5);
+				border-bottom-left-radius: 3px;
+				cursor: pointer;
+				user-select: none;
+
+				@media(max-width: 767px) {
+					display: flex;
+				}
+
+				&:hover {
+					background: rgba(0, 0, 0, 0.9);
+				}
+			}
+
+			.image {
+				position: relative;
+				padding-top: calc(153 / 230 * 100%);
+				width: 100%;
+				background-color: rgba(250, 250, 250, 0.8); background-position: center center; background-size: cover;
+			
+				.fu-progress-bar {
+					position: absolute;
+					left: 0; right: 0; bottom: 0;
+					height: 10px; width: 100%;
+					background: #EEEEEE;
+					box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+
+					> div {
+						height: 100%;
+						background: #1ABC9C;
+					}
+				}
+			}
+		}
+	}
+
+	.file-names-list {
+		@media(max-width: 768px) {
+			margin: 0 0 15px 0;
+		}
+	}
+
+	// Кнопка удаления файла
+	.file {
+		position: relative;
+
+		i {
+			flex: 0 0 19px;
+		}
+
+		.file-name {
+			flex-basis: 92%;
+		}
+
+		&.deleted {
+			background-color: #FCFCFC;
+
+			.remove-button {
+				transform: rotate(45deg);
+			}
+		}
+
+		// Ошибка загрузки файла
+		&.error {
+			background-color: $pink;
+			color: $black !important;
+		}
+
+		// Процесс загрузки файла
+		// (оранжевая полоска снизу, плавно исчезающая после завершения загрузки)
+		&.loading .uploading-progress {
+			opacity: 1;
+		}
+
+		.uploading-progress {
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			bottom: 0;
+			background-color: $warning;
+			opacity: 0;
+			transition: opacity .2s ease;
+
+			&.green-stlye {
+				background-color: #1ABC9C;
+			}
+		}
+
+		.remove-button {
+			cursor: pointer;
+			color: $gray-500;
+			font-size: 30px;
+			margin-right: 3px;
+			display: none;
+
+			// Кнопка удаления для неактивного компонента
+			&.inactive {
+				display: none;
+			}
+		}
+
+		.file-error {
+			display: none;
+			font-size: 12px;
+			line-height: 14px;
+			color: $red;
+			margin-left: 34px;
+			padding-bottom: 5px;
+
+			&.error {
+				display: block;
+			}
+		}
+
+		// Показать кнопку только при наведении на файл
+		&:hover .remove-button:not(.inactive) {
+			display: inline-block;
+		}
+	}
+
+	//Синия версия дизайна
+	&-blue {
+		order: 0;
+		display: flex;
+		flex-wrap: wrap;
+
+		&-files {
+			&_item {
+				position: relative;
+				margin-right: 15px;
+				width: 50px;
+				height: 50px;
+				margin-bottom: 10px;
+				order: 1;
+
+				&.error {
+					box-sizing: content-box;
+					border: 1px solid #FF2525;
+					border-radius: 5px;
+					width: 48px;
+					height: 48px;
+					background: #FFE9E9;
+				}
+
+				&.loading {
+					position: relative;
+					border: 1px solid #ddd;
+					border-radius: 5px;
+					@extend .processing;
+
+					& > * {
+						display: none;
+					}
+				}
+
+				svg {
+					max-width: 100%;
+					max-height: 100%;
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 5px;
+				}
+
+				&-remove {
+					position: absolute;
+					width: 18px;
+					height: 18px;
+					background-color: #FF2525;
+					border-radius: 50%;
+					top: -9px;
+					right: -9px;
+					z-index: 1;
+					justify-content: center;
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+
+					&:before, &:after {
+						content: " ";
+						height: 2px;
+						width: 10px;
+						background-color: #fff;
+						transform: rotate(45deg);
+						display: block;
+						position: absolute;
+
+					}
+
+					&:after {
+						transform: rotate(-45deg);
+					}
+				}
+			}
+
+			&_error {
+				order: 101;
+				flex-basis: 100%;
+				width: 50%;
+			}
+		}
+
+		&_button {
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+			order: 100;
+			margin-bottom: 10px;
+
+			img {
+				margin-right: 12px;
+			}
+
+			&-text {
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 22px;
+				color: #3A3A3A;
+
+				span {
+					font-size: 10px;
+					line-height: 14px;
+					color: #929292;
+					font-style: normal;
+					font-weight: 400;
+				}
+			}
+		}
+
+	}
+
+	&.is-dragover {
+		.overlay {
+			display: flex;
+		}
+	}
+
+	&.animate {
+		.overlay {
+			.animated-icon {
+				img {
+					width: 150px;
+				}
+			}
+		}
+	}
+
+	.overlay {
+		position: fixed;
+		z-index: 100;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(255, 255, 255, 0.97);
+
+		.animated-icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 150px;
+			height: 150px;
+			margin-bottom: 10px;
+
+			img {
+				width: 80px;
+				transition: width 0.2s linear;
+			}
+		}
+
+		&-title {
+			padding: 10px 0;
+			font-size: 28px;
+			font-weight: 600;
+		}
+
+		&-desc {
+			font-size: 14px;
+		}
+	}
+
+	.animate-files-enter-active {
+		transition: all .2s ease;
+	}
+	.animate-files-leave-active {
+		transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+	}
+	.animate-files-enter, .animate-files-leave-to {
+		transform: translateX(10px);
+		opacity: 0;
+	}
+}
+

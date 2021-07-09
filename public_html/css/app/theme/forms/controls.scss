@@ -1,0 +1,26 @@
+// Базовые настройки для всех полей ввода
+input, textarea {
+	&.form-control {
+		font-size: $input-font-size!important;
+		padding: $input-padding!important;
+		color: $input-color;
+		border-radius: $input-radius;
+		border: $input-border-width solid $input-border-color;
+
+		// Поле в фокусе подсветить другой рамкой
+		&:focus {
+			outline: none;
+			border-color: $input-focused-border-color;
+		}
+
+		// Размеры полей
+		&.form-control-sm {
+			font-size: $input-font-size-sm!important;
+			padding: $input-padding-sm!important;
+		}
+		&.form-control-lg {
+			font-size: $input-font-size-lg!important;
+			padding: $input-padding-lg!important;
+		}
+	}
+}

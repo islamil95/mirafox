@@ -1,0 +1,49 @@
+/* setting-foreign-card-modal */
+.setting-foreign-card-modal,
+.setting-foreign-card-modal * {
+	box-sizing: border-box;
+}
+.setting-foreign-card-modal .modal-dialog {
+	max-width: 600px;
+}
+.setting-foreign-card-modal .settings-row {
+	display: flex;
+}
+.setting-foreign-card-modal .settings-row > * {
+	flex: 1 100%;
+	margin: 0 10px;
+	position: relative;
+}
+.setting-foreign-card-modal .settings-row > *:first-child {
+	margin-left: 0;
+}
+.setting-foreign-card-modal .settings-row > *:last-child {
+	margin-right: 0;
+}
+.setting-foreign-card-modal .settings-row > * .error {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+
+	width: 34px;
+	text-align: center;
+	background: #fff;
+	border-radius: 1px;
+}
+.setting-foreign-card-modal .settings-row > * .error:before {
+	color: red !important;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	font-size: 16px;
+	left: 50%;
+	top: 50%;
+}
+.setting-foreign-card-modal input[type="number"]::-webkit-outer-spin-button,
+.setting-foreign-card-modal input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.setting-foreign-card-modal input[type="number"] {
+	-moz-appearance: textfield;
+}

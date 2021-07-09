@@ -1,0 +1,1018 @@
+.connect-front-page {
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  background: #fff;
+}
+
+@media only screen and (min-width: 1231px) {
+  .connect-front-page .lg-centerwrap {
+    max-width: 1110px !important;
+    min-width: 1110px !important;
+  }
+}
+
+@media (max-width: 1230px) {
+  .connect-front-page .lg-centerwrap {
+    max-width: 988px;
+  }
+}
+
+.connect-front-page .all_page {
+  padding-top: 74px;
+}
+
+@media only screen and (max-width: 767px) {
+  .connect-front-page .all_page {
+    padding-top: 50px;
+  }
+}
+
+.connect-front-page__baner-connect-kwork {
+  margin-bottom: 59px;
+}
+
+.connect-front-page__services-connect-kwork {
+  margin-bottom: 60px;
+}
+
+.connect-front-page__sub-title {
+  font-size: 12px;
+  line-height: 17px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.connect-front-page__h2 {
+  font-family: "Gotham Pro";
+  font-size: 35px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+
+.header-connect-kwork {
+  position: fixed;
+  z-index: 4;
+  padding-right: inherit;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 17px 0 0;
+  height: 74px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-connect-kwork {
+    padding: 0px 0 0;
+    height: 52px;
+  }
+}
+
+.header-connect-kwork__logo {
+  display: inline-block;
+  position: relative;
+  width: 186px;
+  height: 34px;
+  background-image: url(/images/connect-kwork/logo.jpg);
+  background-size: 186px 34px;
+  background-repeat: no-repeat;
+  top: 4px;
+}
+
+.header-connect-kwork__center-part {
+  position: relative;
+  top: -1px;
+  margin-left: auto;
+  margin-right: 110px;
+}
+
+@media only screen and (max-width: 800px) {
+  .header-connect-kwork__center-part {
+    margin-right: 20px;
+  }
+}
+
+.header-connect-kwork__center-part a {
+  margin-right: 28px;
+}
+
+.header-connect-kwork__center-part a:last-child {
+  margin-right: 0;
+}
+
+.header-connect-kwork__link {
+  font-weight: 500;
+  color: #333;
+}
+
+@media only screen and (max-width: 800px) {
+  .header-connect-kwork__right-part {
+    margin-left: auto;
+  }
+}
+
+.header-connect-kwork__right-part a {
+  margin-right: 12px;
+}
+
+.header-connect-kwork__right-part a:last-child {
+  margin-right: 0;
+}
+
+.header-connect-kwork .foxmenubutton span {
+  background: #252525;
+}
+
+.header-connect-kwork .general-search {
+  line-height: 22px;
+  border: 1px solid #252525;
+}
+
+.header-connect-kwork .menu-category span {
+  background: #252525;
+}
+
+.header-connect-kwork .menu-category .ico-signIn {
+  background: url(/images/connect-kwork/ico-signin.png) 0 0 no-repeat;
+}
+
+.header-connect-kwork .header_search {
+  padding-top: 11px;
+  flex: 1;
+}
+
+.header-connect-kwork .header_search input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.button {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 4px 14px;
+  border-radius: 6px;
+  border: 1px solid #c7c7c7;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.button_lg {
+  font-size: 13px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.button_blue {
+  background: #2b9dfe;
+  border-color: #2b9dfe;
+  color: #fff;
+}
+
+.button_green {
+  background: #8bcf47;
+  border-color: #8bcf47;
+  color: #fff;
+}
+
+.baner-connect-kwork {
+  position: relative;
+  height: 405px;
+  padding-top: 71px;
+  box-sizing: border-box;
+}
+
+.baner-connect-kwork:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 100px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: #1b1f5b;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #1b1f5b), color-stop(100%, #2a48ac));
+  background: linear-gradient(to right, #1b1f5b 0%, #2a48ac 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1b1f5b", endColorstr="#2a48ac", GradientType=1 );
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+@media (max-width: 1340px) {
+  .baner-connect-kwork:before {
+    left: 0;
+    border-radius: 0;
+  }
+}
+
+.baner-connect-kwork:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+  width: 628px;
+  height: 100%;
+  background: url(/images/connect-kwork/baner-bg.png) 0px 0px no-repeat;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+@media (max-width: 1340px) {
+  .baner-connect-kwork:after {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.baner-connect-kwork__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.baner-connect-kwork__bg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-image: url(/images/connect-kwork/baner-bg-girl@2x.png);
+  background-size: 755px 755px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  margin-left: -69px;
+}
+
+@media (max-width: 1140px) {
+  .baner-connect-kwork__bg {
+    background-position: 100% 50%;
+    left: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .baner-connect-kwork__bg {
+    opacity: 0.5;
+    background-position: 50% 50%;
+  }
+}
+
+.baner-connect-kwork__text-1 {
+  font-size: 12px;
+  line-height: 24px;
+  color: #bddaf3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 2px;
+}
+
+.baner-connect-kwork__text-2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #d0d0d0;
+  letter-spacing: 0px;
+  margin: 0 0 31px;
+}
+
+@media (max-width: 400px) {
+  .baner-connect-kwork__text-2 br {
+    display: none;
+  }
+}
+
+.baner-connect-kwork__main-title {
+  font-family: "Gotham Pro";
+  font-size: 40px;
+  line-height: 43px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  margin: 0 0 27px;
+}
+
+@media (max-width: 400px) {
+  .baner-connect-kwork__main-title {
+    font-size: 31px;
+    line-height: 35px;
+  }
+}
+
+.baner-connect-kwork__social {
+  position: absolute;
+  left: 21px;
+  top: 116px;
+  width: 58px;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  list-style: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media (max-width: 1340px) {
+  .baner-connect-kwork__social {
+    display: none;
+  }
+}
+
+.baner-connect-kwork__social li {
+  display: block;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.baner-connect-kwork__social li:last-child {
+  border-bottom: none;
+}
+
+.baner-connect-kwork__social li a {
+  display: block;
+  padding-top: 19px;
+  height: 57px;
+  box-sizing: border-box;
+  color: #e0e0e0;
+  font-size: 21px;
+  box-shadow: 0px -1px 16px 0px rgba(193, 193, 193, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.baner-connect-kwork__social li a:hover {
+  box-shadow: 0px -1px 16px 0px rgba(193, 193, 193, 0.4);
+}
+
+.is_index .services-connect-kwork__centerwrap {
+  padding: 0 10px;
+}
+
+.services-connect-kwork__row {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -10px;
+}
+
+.services-connect-kwork__col {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px) {
+  .services-connect-kwork__col {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+}
+
+@media (max-width: 530px) {
+  .services-connect-kwork__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 370px) {
+  .services-connect-kwork__col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.services-connect-kwork__item {
+  display: block;
+  height: 132px;
+  border-radius: 6px;
+  padding-top: 19px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: inset 0px 0px 0px 1px #eeeeee, 0px -1px 16px 0px rgba(193, 193, 193, 0);
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.services-connect-kwork__item:hover {
+  box-shadow: inset 0px 0px 0px 1px rgba(238, 238, 238, 0), 0px -1px 16px 0px rgba(193, 193, 193, 0.4);
+}
+
+.services-connect-kwork__wrap-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  margin-bottom: 3px;
+}
+
+.services-connect-kwork__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  line-height: 16px;
+  color: #333;
+  text-align: center;
+  height: 32px;
+  padding: 0 5px;
+}
+
+.services-connect-kwork__bottom-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #333;
+  padding-top: 17px;
+  text-align: center;
+}
+
+.services-connect-kwork__bottom-text a {
+  color: #2b9dfe;
+  font-weight: 500;
+}
+
+.advantages-connect-kwork {
+  padding: 0 100px;
+  margin-bottom: 58px;
+}
+
+@media (max-width: 1230px) {
+  .advantages-connect-kwork {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .advantages-connect-kwork {
+    padding: 0;
+  }
+}
+
+.advantages-connect-kwork__inner {
+  padding: 50px 0;
+  background: #f9f9f9;
+  border-radius: 20px;
+}
+
+.advantages-connect-kwork__h2 {
+  margin-bottom: 29px;
+}
+
+.is_index .advantages-connect-kwork__centerwrap {
+  padding: 0 10px;
+}
+
+.advantages-connect-kwork__row {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -10px;
+}
+
+.advantages-connect-kwork__col {
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media (max-width: 1230px) {
+  .advantages-connect-kwork__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .advantages-connect-kwork__col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.advantages-connect-kwork__col:first-child {
+  flex: 0 0 24%;
+  max-width: 24%;
+  padding: 0 42px 0 0;
+}
+
+@media (max-width: 1230px) {
+  .advantages-connect-kwork__col:first-child {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .advantages-connect-kwork__col:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.advantages-connect-kwork__col:nth-child(2) {
+  padding: 0 12px;
+}
+
+@media (max-width: 1230px) {
+  .advantages-connect-kwork__col:nth-child(2) {
+    padding: 0 20px;
+  }
+}
+
+.advantages-connect-kwork__col:nth-child(3) {
+  padding: 0 40px;
+}
+
+@media (max-width: 1230px) {
+  .advantages-connect-kwork__col:nth-child(3) {
+    padding: 0 20px;
+  }
+}
+
+.advantages-connect-kwork__col:last-child {
+  flex: 0 0 26%;
+  max-width: 26%;
+}
+
+.advantages-connect-kwork__col:last-child .advantages-connect-kwork__text {
+  padding: 0 50px;
+}
+
+@media (max-width: 1230px) {
+  .advantages-connect-kwork__col:last-child .advantages-connect-kwork__text {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1230px) {
+  .advantages-connect-kwork__col:last-child {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .advantages-connect-kwork__col:last-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.advantages-connect-kwork__wrap-img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 140px;
+  margin-bottom: 7px;
+}
+
+.advantages-connect-kwork__title {
+  font-family: "Gotham Pro";
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 9px;
+}
+
+.advantages-connect-kwork__text {
+  color: #666;
+}
+
+.clients-connect-kwork {
+  padding-bottom: 36px;
+  margin-bottom: 72px;
+}
+
+.clients-connect-kwork__h2 {
+  margin-bottom: 28px;
+}
+
+.clients-connect-kwork__wrap-slick {
+  margin: 0 -4px;
+}
+
+.clients-connect-kwork__slick {
+  height: 100px;
+  overflow: hidden;
+}
+
+.clients-connect-kwork__slick.slick-slider {
+  height: auto;
+  overflow: visible;
+}
+
+.clients-connect-kwork__slick .slick-slide {
+  padding: 0 4px;
+}
+
+.clients-connect-kwork__slick__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+.clients-connect-kwork__slick .slick-dots {
+  bottom: -39px;
+}
+
+.clients-connect-kwork__slick .slick-dots li {
+  width: 9px;
+  height: 9px;
+  overflow: hidden;
+  background: #ededed;
+  border-radius: 100%;
+}
+
+.clients-connect-kwork__slick .slick-dots li.slick-active {
+  background: #999;
+}
+
+.how-it-works-connect-kwork {
+  margin-bottom: 130px;
+}
+
+@media (max-width: 980px) {
+  .how-it-works-connect-kwork {
+    margin-bottom: 90px;
+  }
+}
+
+.how-it-works-connect-kwork__row {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  background: url(/images/connect-kwork/how-it-works-bg.jpg) 113px -1px no-repeat;
+}
+
+@media (max-width: 1230px) {
+  .how-it-works-connect-kwork__row {
+    background-position: 82px -1px;
+    background-size: 810px auto;
+  }
+}
+
+@media (max-width: 1040px) {
+  .how-it-works-connect-kwork__row {
+    background: none;
+  }
+}
+
+.how-it-works-connect-kwork__col {
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .how-it-works-connect-kwork__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .how-it-works-connect-kwork__col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.how-it-works-connect-kwork__col:first-child {
+  flex: 0 0 24%;
+  max-width: 24%;
+  padding: 0 36px 0 7px;
+}
+
+@media (max-width: 980px) {
+  .how-it-works-connect-kwork__col:first-child {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .how-it-works-connect-kwork__col:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.how-it-works-connect-kwork__col:nth-child(2) {
+  padding-right: 13px;
+}
+
+@media (max-width: 980px) {
+  .how-it-works-connect-kwork__col:nth-child(2) {
+    padding: 0;
+  }
+}
+
+.how-it-works-connect-kwork__col:nth-child(3) {
+  padding-left: 13px;
+}
+
+@media (max-width: 980px) {
+  .how-it-works-connect-kwork__col:nth-child(3) {
+    padding: 0;
+  }
+}
+
+.how-it-works-connect-kwork__col:last-child {
+  flex: 0 0 26%;
+  max-width: 26%;
+  padding-left: 11px;
+}
+
+@media (max-width: 980px) {
+  .how-it-works-connect-kwork__col:last-child {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .how-it-works-connect-kwork__col:last-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.how-it-works-connect-kwork__number {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  color: #2b9dfe;
+  font-weight: 700;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #fff;
+  padding-top: 17px;
+  box-sizing: border-box;
+  box-shadow: 0px -1px 16px 0px rgba(193, 193, 193, 0.4);
+  margin-bottom: 41px;
+}
+
+.how-it-works-connect-kwork__title {
+  font-family: "Gotham Pro";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 14px;
+}
+
+.how-it-works-connect-kwork__text {
+  color: #333;
+}
+
+.statistics-connect-kwork {
+  padding: 0 100px;
+}
+
+@media (max-width: 1330px) {
+  .statistics-connect-kwork {
+    padding: 0;
+  }
+}
+
+.statistics-connect-kwork__inner {
+  padding: 26px 0 29px;
+  background: #f9f9f9;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+@media (max-width: 1330px) {
+  .statistics-connect-kwork__inner {
+    border-radius: 0;
+  }
+}
+
+.statistics-connect-kwork__row {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.statistics-connect-kwork__col {
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1240px) {
+  .statistics-connect-kwork__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .statistics-connect-kwork__col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.statistics-connect-kwork__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1240px) {
+  .statistics-connect-kwork__item {
+    justify-content: start;
+  }
+}
+
+.statistics-connect-kwork__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 1px solid #dbdbdb;
+}
+
+.statistics-connect-kwork__text {
+  color: #666;
+  margin-left: 14px;
+}
+
+.statistics-connect-kwork__num {
+  font-family: "Gotham Pro";
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.footer-connect-kwork {
+  padding: 60px 0 0;
+  background: #252525;
+}
+
+.footer-connect-kwork__centerwrap {
+  padding: 0 10px;
+}
+
+.footer-connect-kwork__row {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -10px;
+}
+
+.footer-connect-kwork__col {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 690px) {
+  .footer-connect-kwork__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-connect-kwork__col_left-part {
+  flex: 0 0 17%;
+  max-width: 17%;
+}
+
+@media (max-width: 940px) {
+  .footer-connect-kwork__col_left-part {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+
+.footer-connect-kwork__col_type-1 {
+  flex: 0 0 17%;
+  max-width: 17%;
+}
+
+@media (max-width: 940px) {
+  .footer-connect-kwork__col_type-1 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 690px) {
+  .footer-connect-kwork__col_type-1 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.footer-connect-kwork__col_type-2 {
+  flex: 0 0 16%;
+  max-width: 16%;
+  padding: 0;
+}
+
+@media (max-width: 940px) {
+  .footer-connect-kwork__col_type-2 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 690px) {
+  .footer-connect-kwork__col_type-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.footer-connect-kwork__logo {
+  display: inline-block;
+  position: relative;
+  width: 129px;
+  height: 40px;
+  background: url(/images/connect-kwork/logo-white.jpg) 0px 0px no-repeat;
+  background-size: 129px 40px;
+  margin: 2px 0 25px;
+}
+
+@media (max-width: 940px) {
+  .footer-connect-kwork__logo {
+    margin: 0 18px 0 0;
+  }
+}
+
+.footer-connect-kwork__social {
+  list-style: none;
+}
+
+.footer-connect-kwork__social li {
+  display: inline-block;
+}
+
+.footer-connect-kwork__social li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #4e4e4e;
+  border-radius: 6px;
+  margin-right: 7px;
+  color: #657e9e;
+}
+
+.footer-connect-kwork__title {
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-connect-kwork nav a {
+  display: block;
+  color: #d0d0d0;
+  margin-bottom: 11px;
+}
+
+.footer-connect-kwork__copyright {
+  border-top: 2px solid #424242;
+  font-size: 13px;
+  color: #d0d0d0;
+  padding: 21px 0;
+  text-align: center;
+  margin-top: 28px;
+}
+

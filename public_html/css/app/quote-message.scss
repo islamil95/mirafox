@@ -1,0 +1,65 @@
+.message-quote {
+	position: relative;
+	border-left: 3px solid #457edb;
+	padding: 0 40px 0 10px;
+	margin: 0 -20px 10px 0;
+
+	&--write {
+		cursor: pointer;
+
+		@media (max-width: 767px) {
+			margin-top: 10px;
+		}
+	}
+
+	&--conversation {
+		cursor: pointer;
+
+		@media (min-width: 767px) {
+			margin-top: 15px;
+			margin-left: 0;
+		}
+	}
+
+	&__text {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		font-size: 13px;
+
+		.message-quote--write & {
+			max-height: 66px;
+			white-space: pre-wrap;
+			word-wrap: break-word;
+		}
+	}
+
+	&__login {
+		color: #457edb;
+		font-weight: 600;
+		font-size: 13px;
+	}
+
+	&__remove {
+		position: absolute;
+		right: 20px;
+		top: 5px;
+		background: url(/images/exit.png) center no-repeat;
+		background-size: 14px;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+
+		.message-quote--write & {
+			display: none;
+		}
+	}
+
+	&__tooltip {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+}

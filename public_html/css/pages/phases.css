@@ -1,0 +1,71 @@
+.phases {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.phases td {
+	padding: 5px 10px;
+	text-align: left;
+	border: 1px solid #e8e8e8;
+	font-size: 13px;
+}
+
+
+.phases .phases__number {
+	text-align: center;
+}
+
+.phases .phases__progress {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.phases .phases__checkbox label {
+	padding-left: 0;
+	width: 20px;
+}
+
+.phases .phases__progress .progress-bar,
+.phases .phases__progress ul.loadbar li{
+	width: 5px;
+}
+
+.phases__label, .phases__percent {
+	display: inline;
+}
+
+@media screen and (max-width: 767px){
+	.phases__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.phases__label {
+		order: 1;
+	}
+
+	.phases__row .current-percent-value, .phases__row .js-progress-value  {
+		order: 2;
+		margin-left: 5px;
+	}
+
+	.phases__percent {
+		order: 3;
+	}
+
+	.phases__progress {
+		order: 4;
+		flex-basis: 100%;
+		max-width: 100%;
+		margin-left: 0!important;
+	}
+	.phases td:last-child {
+		width: 17%;
+		min-width: 120px;
+	}
+}
+
+.stage-progress-modal .phases__progress .loadbar {
+	padding: 0;
+	margin: 0;
+}

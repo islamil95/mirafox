@@ -1,0 +1,72 @@
+// Строка поиска
+.kb .custom-search {
+	
+	// Поле для ввода
+	input.form-control {
+		border-radius: 100px;
+		border: 1px solid $gray-800;
+		padding-left: 56px!important;
+		line-height: 36px;
+		color: $gray-800;
+		text-align: center;
+		@include responsive("padding-right", 35px!important, 35px!important, 56px!important, 56px!important, 56px!important);
+		@include responsive("padding-left", 15px!important, 15px!important, 56px!important, 56px!important, 56px!important);
+
+		&:focus, &.has-text {
+			color: $black;
+			text-align: left;
+		}
+
+	}
+
+	// Кнопка поиска
+	.search-button {
+	    position: absolute;
+	    top: 7px;
+	    left: 25px;
+	    width: 22px;
+	    color: $gray-500;
+	}
+
+	// Кнопка сброса поиска
+	.clear-button {
+		top: 10px;		
+		line-height: 18px;
+		font-size: 30px;
+		font-weight: normal;
+		@include responsive("right", 12px, 12px, 24px, 24px, 24px);
+	}
+
+	// Выпадающий список подсказок
+	.dropdown {	
+		top: 40px;
+	}
+
+	// Большой размер
+	&.big {
+
+		// Поле для ввода
+		input.form-control {
+			line-height: 46px;
+			@include responsive("padding-left", 24px!important, 24px!important, 56px!important, 56px!important, 56px!important);
+		}
+
+		// Кнопка поиска
+		.search-button {
+		    top: 12px;
+		}
+
+		// Кнопка сброса поиска
+		.clear-button {
+			top: 15px;
+			@include responsive("right", 24px, 24px, 24px, 24px, 24px);
+		}
+
+		// Выпадающий список подсказок
+		.dropdown {	
+			top: 50px;
+		}
+
+	}
+
+}

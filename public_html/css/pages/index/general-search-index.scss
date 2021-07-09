@@ -1,0 +1,63 @@
+// Стили для компонента общего поиска на главной
+.custom-search.general-search-index {
+    // Оранжевая лупа слева от строки поиска (элемент дизайна без функционала)
+    &:after {
+        content: '';
+        position: absolute;
+        top: 14px;
+        left: 20px;
+        width: 24px;
+        height: 24px;
+        background: url('/images/sprite-icon.png?v=11') -35px -1931px no-repeat;
+    }
+
+	// Строка поиска
+	$input-height: 50px;
+    input.form-control {
+        font-size: 18px!important;
+        height: $input-height;
+        line-height: normal;
+        padding: 0 190px 0 60px!important;
+        border: none;
+        color: #000;
+        border-radius: 3px;
+    }
+
+    // Кнопка поиска
+    .search-button {
+        top: 0;
+        right: 0;
+        button.button {
+            min-height: $input-height;
+            min-width: 150px;
+            padding: 0;
+            font-family: Open Sans,Helvetica,sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+            border: none;
+            color: #fff;
+            outline: none !important;
+            background: linear-gradient(#87b948, #5ca042);
+            &:hover {
+                background: linear-gradient(#5ca042, #87b948);
+            }
+        }
+    }
+
+    // Выпадающий список
+    // Отступ сверху между строкой поиска и выпадающим списком
+    $dropdown-top-spacer: 2px;
+	.dropdown {
+		top: $input-height + $dropdown-top-spacer;
+        // Список должен заканчиваться до кнопки "Найти услуги" 150px шириной
+        max-width: calc(100% - 150px);
+	}
+}
+
+@media (min-width: 768px) {
+    .d-md-block {
+        display: block !important;
+    }
+}

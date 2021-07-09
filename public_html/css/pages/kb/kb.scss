@@ -1,0 +1,139 @@
+// Стили для базы знаний на странице FAQ
+
+// file-uploader
+@import "~appCss/file-uploader";
+
+// Кастомизация компонента breadcrumbs
+@import "~moduleCss/kb/breadcrumbs";
+
+// Стили для дерева статей общие
+@import "~moduleCss/kb/kb-tree-view";
+// Стили для дерева статей - корневые FAQ
+@import "~moduleCss/kb/kb-tree-view-1";
+// Стили для дерева статей - прочие FAQ, Обращения в ТП, Арбитраж
+@import "~moduleCss/kb/kb-tree-view-2";
+// Стили для статьи
+@import "~moduleCss/kb/article";
+// Стили для блока обращения в ТП
+@import "~moduleCss/kb/support";
+// Форма связи
+@import "~moduleCss/kb/contact-form";
+// Строка поиска
+@import "~moduleCss/kb/search";
+// Переключатель ролей
+@import "~moduleCss/kb/kb-role-select";
+// Результаты поиска
+@import "~moduleCss/kb/kb-search-results";
+
+// Общие стили для страницы - FAQ и Обращения в ТП
+.kb {
+
+    // Кнопка вызова переключателя ролей
+    .role-select-button {
+        color: $primary;
+        text-decoration: underline;
+        font-size: 12px;
+        font-style: italic;
+        cursor: pointer;
+    }
+
+    // Фон для шапки
+    .bg-faq {
+        background-image: url(/images/faq.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        .bg-faq-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(44,44,44,0.65);
+        }
+
+    }
+
+    // Шапка страницы
+    .kb-header {
+        max-width: 600px;
+    }
+
+    // Заголовок страницы
+    .title {
+        font-size: 34px;
+        font-weight: $font-weight-bold;
+        line-height: 48px;
+        color: $white;
+    }
+
+    // Подзаголовок
+    .subtitle {
+        font-size: 18px;
+    }
+
+    // Блок с ролями, если роль не выбрана
+    .role-select-wrapper {
+        max-width: 380px;
+    }
+
+    // Заголовок блока с ролями, если роль не выбрана
+    .role-select-title {
+        font-size: 18px;
+        font-weight: $font-weight-bold;            
+    }
+
+    // Заголовок для списка статей
+    .articles-title {
+    	font-size: 28px;
+    	font-weight: $font-weight-bold;
+    	text-align: center;
+		line-height: 38px;
+    	padding-left: 15px;
+    	padding-right: 15px;
+
+        // Заголовок для списка статей, если отображаются не корневые
+        &.small {
+            font-size: 20px;
+        }
+
+    }
+
+    // Кнопка Назад (навигация по дереву на уровень)
+    .back-button {
+        cursor: pointer;
+        font-size: 16px;
+        color: $orange;
+        @include responsive("max-width", 100%, 100%, 100%, 690px, 690px);
+    }
+
+}
+
+body, .all_page {
+	background-color: $white;
+}
+
+.footer {
+	border-top: 2px solid $light;
+}
+
+// Общие стили для страницы - Обращения в ТП
+.kb.support {
+
+    // Заголовок для списка статей
+    .articles-title {
+        font-size: 20px;
+		line-height: 38px;
+    }
+
+}
+
+// Фон для шапки в арбитражах
+.kb.arbitrage {
+
+    .bg-faq {
+        background-image: url(/images/arbitrage.jpg);
+    }
+
+}

@@ -1,0 +1,50 @@
+.clients-topfreelancer {
+    padding-bottom: 36px;
+	margin-bottom: 72px;
+	
+	&__h2 {
+		margin-bottom: 28px;
+	}
+	
+	&__wrap-slick {
+		margin: 0 -4px;
+	}
+	
+	&__slick {
+		height: 100px;
+		overflow: hidden;
+		&.slick-slider {
+			height: auto;
+			overflow: visible;
+		}
+		.slick-slide {
+			padding: 0 4px;
+		}
+		
+		&__item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100px;
+			border-radius: 6px;
+			box-sizing: border-box;
+			background: #fff;
+			border: 1px solid #eee;
+			text-align: center;
+		}
+		
+		.slick-dots {
+			bottom: -39px;
+			li {
+				width: 9px;
+				height: 9px;
+				overflow: hidden;
+				background: #ededed;
+				border-radius: 100%;
+				&.slick-active {
+					background: #999;
+				}
+			}
+		}
+	}
+}

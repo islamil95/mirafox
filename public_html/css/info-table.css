@@ -1,0 +1,36 @@
+@media only screen and (min-width: 767px) {
+	.info-langs {
+		display: none;
+	}
+
+	.info-table--ru tr td {
+		display: table-cell !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.info-table--ru tr td:last-child {
+		display: none;
+	}
+}
+
+.info-table--en td span{
+	width: 4%;
+}
+
+.info-langs {
+	text-align: right;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.info-lang {
+	color: #000;
+	margin-left: 10px;
+}
+
+.info-lang--active {
+	color: #00b22d;
+	font-weight: 700;
+	cursor: default;
+}

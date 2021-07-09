@@ -1,0 +1,44 @@
+// Хлебные крошки
+.breadcrumbs {
+    padding: 5px 10px 5px 20px;
+    background-color: $white;
+
+    // Кнопка Домой
+    .home-button {
+        color: $orange;
+        cursor: pointer;
+    }
+
+    // Хлебная крошка
+    .breadcrumb {
+	    font-size: 12px;
+
+	    // Активная (кликабельная) хлебная крошка
+	    .active {
+	        cursor: pointer;
+	        &:hover {
+	            color: $orange
+	        }
+	    }
+
+	    // Разделитель
+		.delimiter {
+		    margin-left: 3px;
+		    margin-right: 5px;    
+		    display: inline-block;    
+		    background: url(/images/sprite-icon.png?v=7) 0px -4858px no-repeat;
+		    width: 10px;
+		    height: 10px;
+		    position: relative;
+		    top: 1px;
+
+		    // Первый разделитель
+		    &.first {
+		    	margin-left: -1px;
+		    }
+
+		}				    
+
+	}
+
+}

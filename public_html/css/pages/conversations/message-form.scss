@@ -1,0 +1,35 @@
+.mf-form {
+	&.kwork-offer, &.individual-offer {
+		.box-submit {
+			display: none !important;
+		}
+	}
+
+	&:not(.kwork-offer):not(.individual-offer) {
+		background: #F4F4F4 !important;
+		border: 1px solid #E8E8E8;
+
+		#conversation-send-message-button {
+			display: none;
+		}
+
+		.personal-offer-button {
+			float: none !important;
+			margin: 0 auto;
+		}
+	}
+
+	.description-field {
+		background: #fff;
+	}
+}
+
+#block_message {
+	&.kwork-offer, &.individual-offer {
+		.personal-offer-button {
+			.js-tooltip-block {
+				display: none !important;
+			}
+		}
+	}
+}

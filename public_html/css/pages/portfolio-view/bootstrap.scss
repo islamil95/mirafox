@@ -1,0 +1,8 @@
+// Форма загрузки портфолио
+@import "~appCss/portfolio-upload";
+
+@media (max-width: 1024px) {
+	.scrollup {
+		display: none !important;
+	}
+}

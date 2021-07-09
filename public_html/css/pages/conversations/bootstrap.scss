@@ -1,0 +1,59 @@
+// Общие стили
+@import "~appCss/bootstrap";
+
+// Загрузчик файлов
+@import "~appCss/file-uploader";
+
+// Froala-viewer
+@import "~appCss/froala-viewer";
+
+// Кружок-уведомление о новых сообщениях
+@import "~appCss/new-messages-circle";
+
+// Статус сообщения
+@import "~appCss/message-status-bar.scss";
+
+// Список сообщений
+@import "~moduleCss/conversations/messages-list";
+
+// Модальные окна
+@import "~moduleCss/conversations/modals";
+
+// Список файлов в боковой панели
+@import "~moduleCss/conversations/sidebar-files";
+
+// Стили для отображения статей базы знаний в переписке
+@import "~moduleCss/conversations/article";
+
+// Стили для таблицы услуг
+@import "~appCss/order-info";
+@import "~appCss/stages/offer-stages-table-info";
+
+//Блок индивидуального предложения
+@import "~appCss/offer-individual";
+@import "~appCss/stages/offer-stages";
+@import "~appCss/stages/offer-stages-modal";
+@import "~appCss/stages/tooltip-stages";
+
+// Форма отправки сообщения (стили только для переписки)
+@import "./message-form.scss";
+
+// Форма предложения
+@import "~moduleCss/projects/offer-edit.scss";
+
+// Список прикрепленных файлов
+@import "~appCss/file-list.scss";
+
+// Стили цитируемого сообщения
+@import "~appCss/quote-message";
+// Форма отправки сообщения
+@import "~appCss/message-send-form.scss";
+
+// Мобильная форма отправки сообщения
+@import "~appCss/mobile-message-form.scss";
+
+// Прсмотрщик изображений
+@import "~appCss/image-viewer.scss";
+
+// Чат
+@import "~moduleCss/chat/chat.scss";

@@ -1,0 +1,72 @@
+.button {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 24px;
+	padding: 4px 25px;
+	border-radius: 6px;
+	border: 1px solid;
+	border-color: #c7c7c7;
+	color: #666;
+	letter-spacing: 0.36px;
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+
+	&:hover {
+		background: #333;
+		border-color: #333;
+		color: #fff;
+	}
+
+	&:active {
+		opacity: 0.7;
+	}
+
+	&--blue {
+		background: #2B9DFE;
+		border-color: #2B9DFE;
+		color: #fff;
+
+		&:hover {
+			background: #1C80D6;
+			border-color: #1C80D6;
+		}
+	}
+
+	&--blue-border {
+		background: transparent;
+		border-color: #2B9DFE;
+		color: #2B9DFE;
+
+		&:hover {
+			background: #1C80D6;
+			border-color: #1C80D6;
+		}
+	}
+
+	&--green {
+		background: #60D035;
+		border-color: #60D035;
+		color: #fff;
+
+		&:hover {
+			background: #4CAF26;
+			border-color: #4CAF26;
+		}
+	}
+
+	&--with-arrow {
+		position: relative;
+		font-size: 17px;
+		line-height: 22px;
+		font-weight: 600;
+		padding: 10px 40px 10px 20px;
+
+		& > .fa {
+			position: absolute;
+			right: 15px;
+			font-size: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}

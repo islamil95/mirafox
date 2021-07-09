@@ -1,0 +1,28 @@
+# Страница трека
+track:
+    path: /track
+    methods: GET
+    defaults: { _controller: 'Controllers\Track\TrackController' }
+
+# Показывать скрытые треки
+track_show_hidden:
+    path: /track_show_hidden
+    methods: GET
+    defaults: { _controller: 'Controllers\Track\ShowHiddenTracksController' }
+
+# Работа с отзывами
+track_reviews:
+    resource: 'routes/track/review.yml'
+    prefix: /track
+
+# Получение html для обновления верхней части заказа, после пушей
+track_order_getupdates:
+    path: /track/order/getupdates
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\GetOrderUpdatesController' }
+
+# Получить причины отмены
+track_get_available_cancel_reasons:
+    path: /track/get_available_cancel_reasons
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\GetAvailableCancelReasonsHtmlController' }

@@ -1,0 +1,974 @@
+#landpage section {
+	height: 100%;
+}
+
+#landpage #whereami {
+	text-align: center;
+	position: relative;
+	min-height: 300px;
+	height: auto;
+	box-sizing: border-box;
+	padding: 48px 0;
+}
+
+#landpage #whereami .background {
+	z-index: -1;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0px;
+}
+
+#landpage #whereami .overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(44, 44, 44, 0.65);
+}
+
+#landpage #whereami .content {
+	max-width: 830px;
+	margin: 20px auto 0;
+	padding: 0 20px;
+}
+
+#landpage #whereami .content h1 {
+	color: #ffa800;
+	font-size: 42px;
+	line-height: 46px;
+	text-shadow: #000 0 1px 1px;
+	margin: 0px
+}
+
+#landpage #whereami .content h2 {
+	color: white;
+	margin: 14px 0px 20px;
+	font-size: 20px;
+	text-shadow: #000 0 1px 1px;
+}
+
+#landpage #howitworks {
+	background-color: #fff;
+	padding: 48px 0;
+}
+
+#landpage #howitworks h2 {
+	font-weight: 400;
+	text-align: center;
+	font-size: 22px;
+}
+
+#landpage #howitworks h2 strong {
+	font-weight: 600;
+	font-size: 30px;
+}
+
+#landpage #howitworks h3,
+#landpage #kworks h3,
+#landpage #compare h3,
+#landpage #portfolio h3,
+#landpage #cases h3 {
+	font-size: 30px;
+	line-height: 32px;
+	font-weight: 600;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+#landpage #howitworks h3 {
+	font-weight: 400;
+}
+
+#landpage #kworks {
+	padding: 30px 0 20px 0;
+}
+
+#landpage #compare {
+	padding: 30px 0 0 0;
+}
+
+#landpage #compare table {
+	text-align: left;
+	font-weight: 600;
+	width: 800px;
+	margin: 0 auto;
+}
+
+#landpage #compare table td {
+	padding: 13px 10px;
+	width: 37.5%;
+}
+
+#landpage #compare table td:first-child {
+	width: 25%;
+	font-weight: bold;
+}
+
+#landpage #compare table thead th {
+	color: black;
+	padding: 10px 5px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+
+#landpage #compare table thead th {
+	border-top: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+}
+
+#landpage #compare table thead th {
+	background-color: #e0e0e0;
+	text-align: center;
+}
+
+#landpage #compare table thead th:first-child {
+	border-left: 1px solid #bbb;
+}
+
+#landpage #compare table thead tr th {
+	border-bottom: 1px solid #e8e8e8;
+}
+
+#landpage #compare table tbody tr td {
+	background-color: #fafafa;
+	border-bottom: 1px solid #e8e8e8;
+	border-right: 1px solid #bbb;
+}
+
+#landpage #compare table tbody tr td:first-child {
+	border-left: 1px solid #bbb;
+}
+
+#landpage #compare table tbody tr:last-child td {
+	border-bottom: 1px solid #bbb;
+}
+
+#landpage #compare table img {
+	height: 18px;
+	vertical-align: middle;
+	margin-right: 10px;
+	float: left;
+	margin-top: 4px;
+}
+
+#landpage #compare table p {
+	display: block;
+	margin-left: 29px;
+}
+
+#landpage #cases {
+	padding-top: 20px;
+}
+
+#landpage .dark-gray-wrap {
+	margin-top: 25px;
+}
+
+#landpage #portfolio {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	max-width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#landpage #portfolio .kwork-slider .sliderImage {
+	min-height: inherit;
+	max-height: 367px;
+}
+
+.land-statistics .sys-stats {
+	max-width: 800px;
+}
+.land-statistics .sys-stats tr {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.land-statistics .sys-stats td {
+	width: auto;
+}
+
+@media (max-width: 991px) {
+	.is_land .how-it-works-content .icons .step {
+		width: 33.3333333%;
+	}
+}
+@media (max-width: 767px) {
+	#landpage #howitworks .icons .step{
+		display: block;
+		margin: auto;
+		width: 100%;
+		max-width: 250px;
+		margin-bottom: 40px;
+	}
+	#landpage #whereami .content{
+		margin-top: 0px;
+	}
+	#landpage #whereami .content h1{
+		font-size: 38px;
+		line-height: normal;
+	}
+	#landpage #howitworks h3,
+	#landpage #kworks h3,
+	#landpage #compare h3,
+	#landpage #portfolio h3,
+	#landpage #cases h3 {
+		font-size: 25px;
+		line-height: normal;
+	}
+	#landpage #kworks h3 {
+		margin-bottom: 20px;
+	}
+
+	.is_land .how-it-works-content .icons .step {
+		width: 100%;
+	}
+	#landpage #portfolio .slick-arrow {
+		display: none !important;
+	}
+	#landpage #whereami .content h2 {
+		line-height: normal !important;
+	}
+	#landpage #howitworks .icons .step {
+		margin-bottom: 0 !important;
+	}
+
+	#landpage #howitworks .icons .step {
+		max-width: 100% !important;
+	}
+	#landpage #howitworks .icons .step img {
+		display: block;
+		margin: 0 auto;
+	}
+	#landpage #howitworks .icons:not(.slick-initialized) {
+		height: 216px;
+		overflow: hidden;
+	}
+	#landpage #howitworks .icons:not(.slick-initialized) .step:nth-child(2) {
+		margin-top: 40px;
+	}
+
+	.land-footer .pb40 {
+		padding-bottom: 25px;
+	}
+	.land-footer .land-info-block {
+		position: relative;
+		height: 115px;
+		overflow: hidden;
+	}
+	.land-footer .land-info-block:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		height: 70px;
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 80, 80, 0)), to(#505050));
+		background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 100%);
+		background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 100%);
+		background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 100%);
+	}
+	.land-footer .link_local {
+		color: #fff;
+		border-bottom-color: #fff;
+	}
+	.land-footer .link_local:hover {
+		color: #fff;
+		border-bottom-color: transparent;
+	}
+	.land-footer.land-footer_fulltext .land-info-block {
+		height: auto;
+	}
+	.land-footer.land-footer_fulltext .land-info-block:before,
+	.land-footer.land-footer_fulltext .link_local {
+		display: none;
+	}
+
+	.footer.is_land {
+		display: block !important;
+		margin-top: 0;
+	}
+	.footer.is_land .footertop {
+		padding-top: 22px !important;
+		padding-bottom: 22px !important;
+	}
+	.footer.is_land .linksBlock {
+		display: block !important;
+		width: auto !important;
+		padding-top: 17px;
+	}
+	.footer.is_land .centerwrap .bottomLinks .linksBlock > * {
+		display: inherit;
+	}
+	.footer.is_land .linksBlock:first-child {
+		padding-top: 0;
+	}
+	.footer.is_land .linksBlockTitle {
+		position: relative;
+		display: block !important;
+		margin-bottom: 0 !important;
+		font-weight: 600;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+	}
+	.footer.is_land .linksBlockTitle:after {
+		font: normal normal normal 14px/1 FontAwesome;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		content: "\f107";
+		position: absolute;
+		right: 0;
+		top: 0;
+		float: right;
+		font-size: 24px;
+		-webkit-transition: -webkit-transform .2s;
+		transition: -webkit-transform .2s;
+		-o-transition: transform .2s;
+		transition: transform .2s;
+		transition: transform .2s, -webkit-transform .2s;
+	}
+	.footer.is_land .socialIcons {
+		margin-top: 8px !important;
+		padding-top: 25px;
+		border-top: 1px solid #bbb;
+		text-align: left;
+	}
+	.footer.is_land .centerwrap .bottomLinks .linksBlock a {
+		display: none;
+		margin: 0;
+		padding: 5px 30px 5px 0;
+		color: #555;
+	}
+	.footer.is_land .centerwrap .bottomLinks .linksBlock a.icon {
+		display: inline-block;
+		padding: 3px 0;
+		margin-right: 10px;
+	}
+	.footer.is_land .copyright {
+		display: none !important;
+	}
+	.footer.is_land .linksBlock.active .linksBlockTitle {
+		margin-bottom: 6px !important;
+	}
+	.footer.is_land .linksBlock.active .linksBlockTitle:after {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	.footer.is_land .centerwrap .bottomLinks .linksBlock.active a {
+		display: block;
+	}
+	.footer.is_land .centerwrap .bottomLinks .linksBlock.active a:last-child {
+		margin-bottom: -1px;
+	}
+
+	.land-compare {
+		margin: 0 0 30px;
+		padding: 0 0 30px;
+		list-style: none;
+	}
+	.land-compare__item-wrapper {
+		margin: 0;
+		padding: 0;
+	}
+	.land-compare__title {
+		padding: 10px 5px;
+		text-align: center;
+		font-weight: 700;
+		border: 1px solid #bbb;
+		border-bottom: 0;
+		background-color: #e0e0e0;
+	}
+	.land-compare__content {
+		padding: 13px 20px;
+		border-left: 1px solid #bbb;
+		border-right: 1px solid #bbb;
+		background-color: #fafafa;
+	}
+	.land-compare__dl {
+		float: left;
+		width: 60px;
+	}
+	.land-compare__dt {
+		position: relative;
+		margin-left: 60px;
+		padding-left: 28px;
+		font-weight: 600;
+	}
+	.land-compare__icon {
+		position: absolute;
+		left: 0;
+		top: 0;
+		float: left;
+		height: 18px;
+		font-size: 18px;
+	}
+	.land-compare__icon.icon-thumbs-down {
+		top: 4px;
+		color: #d84f31;
+	}
+	.land-compare__icon.icon-thumbs-up {
+		color: #70a660;
+	}
+	.land-compare__small-text {
+		display: block;
+		margin-top: -5px;
+		font-weight: 400;
+		font-size:10px;
+	}
+	.land-compare__item:last-child {
+		border-bottom-width: 1px;
+	}
+	.land-compare__item:last-child {
+		border-bottom: 1px solid #bbb;
+	}
+	.land-compare__item:first-child .land-compare__title {
+		-webkit-border-radius: 4px 4px 0 0;
+		border-radius: 4px 4px 0 0;
+	}
+	.land-compare .slick-dots {
+		bottom: 0;
+	}
+	.land-compare .slick-dots li {
+		position: relative;
+		display: inline-block;
+		margin: 0 5px 0 2px;
+		padding: 0;
+		cursor: pointer;
+		width: 10px;
+		height: 10px;
+		border: 1px #222 solid;
+		text-indent: -3000px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		-webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+		-moz-box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+		box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+	}
+	.land-compare .slick-dots li.slick-active {
+		background: #222;
+	}
+	.land-statistics {
+		margin-top: 0 !important;
+	}
+	.land-statistics .stat-count {
+		margin-top: 20px !important;
+	}
+	.land-statistics .sys-stats td div {
+		margin-top: 0;
+	}
+	.land-footer .footer_logo {
+		display: none;
+	}
+}
+@media (max-width: 666px) {
+	.land-statistics .sys-stats td {
+		width: 50%;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+@media (max-width: 565px) {
+	.land-statistics .sys-stats tr {
+		display: block;
+	}
+	.land-statistics .sys-stats td {
+		width: 100%;
+	}
+}
+
+.land-bg_advertising-pr {
+	background-image:url('/images/cats-1688x625/advertising-pr.jpg');
+}
+.is_webp .land-bg_advertising-pr {
+	background-image:url('/images/cats-1688x625/advertising-pr.webp') !important;
+}
+.land-bg_analytics {
+	background-image:url('/images/cats-1688x625/analytics.jpg');
+}
+.is_webp .land-bg_analytics {
+	background-image:url('/images/cats-1688x625/analytics.webp') !important;
+}
+.land-bg_animation-3d {
+	background-image:url('/images/cats-1688x625/animation-3d.jpg');
+}
+.is_webp .land-bg_animation-3d {
+	background-image:url('/images/cats-1688x625/animation-3d.webp') !important;
+}
+.land-bg_animation {
+	background-image:url('/images/cats-1688x625/animation.jpg');
+}
+.is_webp .land-bg_animation {
+	background-image:url('/images/cats-1688x625/animation.webp') !important;
+}
+.land-bg_audio {
+	background-image:url('/images/cats-1688x625/audio.jpg');
+}
+.is_webp .land-bg_audio {
+	background-image:url('/images/cats-1688x625/audio.webp') !important;
+}
+.land-bg_audit {
+	background-image:url('/images/cats-1688x625/audit.jpg');
+}
+.is_webp .land-bg_audit {
+	background-image:url('/images/cats-1688x625/audit.webp') !important;
+}
+.land-bg_banner-icon {
+	background-image:url('/images/cats-1688x625/banner-icon.jpg');
+}
+.is_webp .land-bg_banner-icon {
+	background-image:url('/images/cats-1688x625/banner-icon.webp') !important;
+}
+.land-bg_bizarre {
+	background-image:url('/images/cats-1688x625/bizarre.jpg');
+}
+.is_webp .land-bg_bizarre {
+	background-image:url('/images/cats-1688x625/bizarre.webp') !important;
+}
+.land-bg_branding {
+	background-image:url('/images/cats-1688x625/branding.jpg');
+}
+.is_webp .land-bg_branding {
+	background-image:url('/images/cats-1688x625/branding.webp') !important;
+}
+.land-bg_bulletin-boards {
+	background-image:url('/images/cats-1688x625/bulletin-boards.jpg');
+}
+.is_webp .land-bg_bulletin-boards {
+	background-image:url('/images/cats-1688x625/bulletin-boards.webp') !important;
+}
+.land-bg_business-cards {
+	background-image:url('/images/cats-1688x625/business-cards.jpg');
+}
+.is_webp .land-bg_business-cards {
+	background-image:url('/images/cats-1688x625/business-cards.webp') !important;
+}
+.land-bg_business-copywriting {
+	background-image:url('/images/cats-1688x625/business-copywriting.jpg');
+}
+.is_webp .land-bg_business-copywriting {
+	background-image:url('/images/cats-1688x625/business-copywriting.webp') !important;
+}
+.land-bg_configuration {
+	background-image:url('/images/cats-1688x625/configuration.jpg');
+}
+.is_webp .land-bg_configuration {
+	background-image:url('/images/cats-1688x625/configuration.webp') !important;
+}
+.land-bg_congratulations {
+	background-image:url('/images/cats-1688x625/congratulations.jpg');
+}
+.is_webp .land-bg_congratulations {
+	background-image:url('/images/cats-1688x625/congratulations.webp') !important;
+}
+.land-bg_content-management {
+	background-image:url('/images/cats-1688x625/content-management.jpg');
+}
+.is_webp .land-bg_content-management {
+	background-image:url('/images/cats-1688x625/content-management.webp') !important;
+}
+.land-bg_context {
+	background-image:url('/images/cats-1688x625/context.jpg');
+}
+.is_webp .land-bg_context {
+	background-image:url('/images/cats-1688x625/context.webp') !important;
+}
+.land-bg_cooking {
+	background-image:url('/images/cats-1688x625/cooking.jpg');
+}
+.is_webp .land-bg_cooking {
+	background-image:url('/images/cats-1688x625/cooking.webp') !important;
+}
+.land-bg_creative-writing {
+	background-image:url('/images/cats-1688x625/creative-writing.jpg');
+}
+.is_webp .land-bg_creative-writing {
+	background-image:url('/images/cats-1688x625/creative-writing.webp') !important;
+}
+.land-bg_different {
+	background-image:url('/images/cats-1688x625/different.jpg');
+}
+.is_webp .land-bg_different {
+	background-image:url('/images/cats-1688x625/different.webp') !important;
+}
+.land-bg_domain-hosting {
+	background-image:url('/images/cats-1688x625/domain-hosting.jpg');
+}
+.is_webp .land-bg_domain-hosting {
+	background-image:url('/images/cats-1688x625/domain-hosting.webp') !important;
+}
+.land-bg_doski-obyavlenij {
+	background-image:url('/images/cats-1688x625/doski-obyavlenij.jpg');
+}
+.is_webp .land-bg_doski-obyavlenij {
+	background-image:url('/images/cats-1688x625/doski-obyavlenij.webp') !important;
+}
+.land-bg_editing-audio {
+	background-image:url('/images/cats-1688x625/editing-audio.jpg');
+}
+.is_webp .land-bg_editing-audio {
+	background-image:url('/images/cats-1688x625/editing-audio.webp') !important;
+}
+.land-bg_editing-media {
+	background-image:url('/images/cats-1688x625/editing-media.jpg');
+}
+.is_webp .land-bg_editing-media {
+	background-image:url('/images/cats-1688x625/editing-media.webp') !important;
+}
+.land-bg_editing-proofreading {
+	background-image:url('/images/cats-1688x625/editing-proofreading.jpg');
+}
+.is_webp .land-bg_editing-proofreading {
+	background-image:url('/images/cats-1688x625/editing-proofreading.webp') !important;
+}
+.land-bg_email-marketing {
+	background-image:url('/images/cats-1688x625/email-marketing.jpg');
+}
+.is_webp .land-bg_email-marketing {
+	background-image:url('/images/cats-1688x625/email-marketing.webp') !important;
+}
+.land-bg_engineering {
+	background-image:url('/images/cats-1688x625/engineering.jpg');
+}
+.is_webp .land-bg_engineering {
+	background-image:url('/images/cats-1688x625/engineering.webp') !important;
+}
+.land-bg_entertainment {
+	background-image:url('/images/cats-1688x625/entertainment.jpg');
+}
+.is_webp .land-bg_entertainment {
+	background-image:url('/images/cats-1688x625/entertainment.webp') !important;
+}
+.land-bg_financial-consulting {
+	background-image:url('/images/cats-1688x625/financial-consulting.jpg');
+}
+.is_webp .land-bg_financial-consulting {
+	background-image:url('/images/cats-1688x625/financial-consulting.webp') !important;
+}
+.land-bg_fitness {
+	background-image:url('/images/cats-1688x625/fitness.jpg');
+}
+.is_webp .land-bg_fitness {
+	background-image:url('/images/cats-1688x625/fitness.webp') !important;
+}
+.land-bg_flyer {
+	background-image:url('/images/cats-1688x625/flyer.jpg');
+}
+.is_webp .land-bg_flyer {
+	background-image:url('/images/cats-1688x625/flyer.webp') !important;
+}
+.land-bg_frontend {
+	background-image:url('/images/cats-1688x625/frontend.jpg');
+}
+.is_webp .land-bg_frontend {
+	background-image:url('/images/cats-1688x625/frontend.webp') !important;
+}
+.land-bg_game-dev {
+	background-image:url('/images/cats-1688x625/game-dev.jpg');
+}
+.is_webp .land-bg_game-dev {
+	background-image:url('/images/cats-1688x625/game-dev.webp') !important;
+}
+.land-bg_graphic-design {
+	background-image:url('/images/cats-1688x625/graphic-design.jpg');
+}
+.is_webp .land-bg_graphic-design {
+	background-image:url('/images/cats-1688x625/graphic-design.webp') !important;
+}
+.land-bg_illustrations {
+	background-image:url('/images/cats-1688x625/illustrations.jpg');
+}
+.is_webp .land-bg_illustrations {
+	background-image:url('/images/cats-1688x625/illustrations.webp') !important;
+}
+.land-bg_image-processing {
+	background-image:url('/images/cats-1688x625/image-processing.jpg');
+}
+.is_webp .land-bg_image-processing {
+	background-image:url('/images/cats-1688x625/image-processing.webp') !important;
+}
+.land-bg_informacionnye-bazy {
+	background-image:url('/images/cats-1688x625/informacionnye-bazy.jpg');
+}
+.is_webp .land-bg_informacionnye-bazy {
+	background-image:url('/images/cats-1688x625/informacionnye-bazy.webp') !important;
+}
+.land-bg_information-bases {
+	background-image:url('/images/cats-1688x625/information-bases.jpg');
+}
+.is_webp .land-bg_information-bases {
+	background-image:url('/images/cats-1688x625/information-bases.webp') !important;
+}
+.land-bg_insurance {
+	background-image:url('/images/cats-1688x625/insurance.jpg');
+}
+.is_webp .land-bg_insurance {
+	background-image:url('/images/cats-1688x625/insurance.webp') !important;
+}
+.land-bg_interior-design {
+	background-image:url('/images/cats-1688x625/interior-design.jpg');
+}
+.is_webp .land-bg_interior-design {
+	background-image:url('/images/cats-1688x625/interior-design.webp') !important;
+}
+.land-bg_intro {
+	background-image:url('/images/cats-1688x625/intro.jpg');
+}
+.is_webp .land-bg_intro {
+	background-image:url('/images/cats-1688x625/intro.webp') !important;
+}
+.land-bg_keywords {
+	background-image:url('/images/cats-1688x625/keywords.jpg');
+}
+.is_webp .land-bg_keywords {
+	background-image:url('/images/cats-1688x625/keywords.webp') !important;
+}
+.land-bg_lawyer-consulting {
+	background-image:url('/images/cats-1688x625/lawyer-consulting.jpg');
+}
+.is_webp .land-bg_lawyer-consulting {
+	background-image:url('/images/cats-1688x625/lawyer-consulting.webp') !important;
+}
+.land-bg_links {
+	background-image:url('/images/cats-1688x625/links.jpg');
+}
+.is_webp .land-bg_links {
+	background-image:url('/images/cats-1688x625/links.webp') !important;
+}
+.land-bg_logo {
+	background-image:url('/images/cats-1688x625/logo.jpg');
+}
+.is_webp .land-bg_logo {
+	background-image:url('/images/cats-1688x625/logo.webp') !important;
+}
+.land-bg_marketing {
+	background-image:url('/images/cats-1688x625/marketing.jpg');
+}
+.is_webp .land-bg_marketing {
+	background-image:url('/images/cats-1688x625/marketing.webp') !important;
+}
+.land-bg_mobile-apps {
+	background-image:url('/images/cats-1688x625/mobile-apps.jpg');
+}
+.is_webp .land-bg_mobile-apps {
+	background-image:url('/images/cats-1688x625/mobile-apps.webp') !important;
+}
+.land-bg_music {
+	background-image:url('/images/cats-1688x625/music.jpg');
+}
+.is_webp .land-bg_music {
+	background-image:url('/images/cats-1688x625/music.webp') !important;
+}
+.land-bg_online-games {
+	background-image:url('/images/cats-1688x625/online-games.jpg');
+}
+.is_webp .land-bg_online-games {
+	background-image:url('/images/cats-1688x625/online-games.webp') !important;
+}
+.land-bg_optimization {
+	background-image:url('/images/cats-1688x625/optimization.jpg');
+}
+.is_webp .land-bg_optimization {
+	background-image:url('/images/cats-1688x625/optimization.webp') !important;
+}
+.land-bg_personal-assistant {
+	background-image:url('/images/cats-1688x625/personal-assistant.jpg');
+}
+.is_webp .land-bg_personal-assistant {
+	background-image:url('/images/cats-1688x625/personal-assistant.webp') !important;
+}
+.land-bg_photo {
+	background-image:url('/images/cats-1688x625/photo.jpg');
+}
+.is_webp .land-bg_photo {
+	background-image:url('/images/cats-1688x625/photo.webp') !important;
+}
+.land-bg_photomontage {
+	background-image:url('/images/cats-1688x625/photomontage.jpg');
+}
+.is_webp .land-bg_photomontage {
+	background-image:url('/images/cats-1688x625/photomontage.webp') !important;
+}
+.land-bg_pr {
+	background-image:url('/images/cats-1688x625/pr.jpg');
+}
+.is_webp .land-bg_pr {
+	background-image:url('/images/cats-1688x625/pr.webp') !important;
+}
+.land-bg_presentations {
+	background-image:url('/images/cats-1688x625/presentations.jpg');
+}
+.is_webp .land-bg_presentations {
+	background-image:url('/images/cats-1688x625/presentations.webp') !important;
+}
+.land-bg_project-management {
+	background-image:url('/images/cats-1688x625/project-management.jpg');
+}
+.is_webp .land-bg_project-management {
+	background-image:url('/images/cats-1688x625/project-management.webp') !important;
+}
+.land-bg_scenario {
+	background-image:url('/images/cats-1688x625/scenario.jpg');
+}
+.is_webp .land-bg_scenario {
+	background-image:url('/images/cats-1688x625/scenario.webp') !important;
+}
+.land-bg_screencasts {
+	background-image:url('/images/cats-1688x625/screencasts.jpg');
+}
+.is_webp .land-bg_screencasts {
+	background-image:url('/images/cats-1688x625/screencasts.webp') !important;
+}
+.land-bg_script-programming {
+	background-image:url('/images/cats-1688x625/script-programming.jpg');
+}
+.is_webp .land-bg_script-programming {
+	background-image:url('/images/cats-1688x625/script-programming.webp') !important;
+}
+.land-bg_sites-for-sale {
+	background-image:url('/images/cats-1688x625/sites-for-sale.jpg');
+}
+.is_webp .land-bg_sites-for-sale {
+	background-image:url('/images/cats-1688x625/sites-for-sale.webp') !important;
+}
+.land-bg_slide-show {
+	background-image:url('/images/cats-1688x625/slide-show.jpg');
+}
+.is_webp .land-bg_slide-show {
+	background-image:url('/images/cats-1688x625/slide-show.webp') !important;
+}
+.land-bg_smm-design {
+	background-image:url('/images/cats-1688x625/smm-design.jpg');
+}
+.is_webp .land-bg_smm-design {
+	background-image:url('/images/cats-1688x625/smm-design.webp') !important;
+}
+.land-bg_smm-manage {
+	background-image:url('/images/cats-1688x625/smm-manage.jpg');
+}
+.is_webp .land-bg_smm-manage {
+	background-image:url('/images/cats-1688x625/smm-manage.webp') !important;
+}
+.land-bg_smm {
+	background-image:url('/images/cats-1688x625/smm.jpg');
+}
+.is_webp .land-bg_smm {
+	background-image:url('/images/cats-1688x625/smm.webp') !important;
+}
+.land-bg_software {
+	background-image:url('/images/cats-1688x625/software.jpg');
+}
+.is_webp .land-bg_software {
+	background-image:url('/images/cats-1688x625/software.webp') !important;
+}
+.land-bg_style {
+	background-image:url('/images/cats-1688x625/style.jpg');
+}
+.is_webp .land-bg_style {
+	background-image:url('/images/cats-1688x625/style.webp') !important;
+}
+.land-bg_teachers {
+	background-image:url('/images/cats-1688x625/teachers.jpg');
+}
+.is_webp .land-bg_teachers {
+	background-image:url('/images/cats-1688x625/teachers.webp') !important;
+}
+.land-bg_traffic {
+	background-image:url('/images/cats-1688x625/traffic.jpg');
+}
+.is_webp .land-bg_traffic {
+	background-image:url('/images/cats-1688x625/traffic.webp') !important;
+}
+.land-bg_training-consulting {
+	background-image:url('/images/cats-1688x625/training-consulting.jpg');
+}
+.is_webp .land-bg_training-consulting {
+	background-image:url('/images/cats-1688x625/training-consulting.webp') !important;
+}
+.land-bg_translations {
+	background-image:url('/images/cats-1688x625/translations.jpg');
+}
+.is_webp .land-bg_translations {
+	background-image:url('/images/cats-1688x625/translations.webp') !important;
+}
+.land-bg_travel {
+	background-image:url('/images/cats-1688x625/travel.jpg');
+}
+.is_webp .land-bg_travel {
+	background-image:url('/images/cats-1688x625/travel.webp') !important;
+}
+.land-bg_typing {
+	background-image:url('/images/cats-1688x625/typing.jpg');
+}
+.is_webp .land-bg_typing {
+	background-image:url('/images/cats-1688x625/typing.webp') !important;
+}
+.land-bg_user-testing {
+	background-image:url('/images/cats-1688x625/user-testing.jpg');
+}
+.is_webp .land-bg_user-testing {
+	background-image:url('/images/cats-1688x625/user-testing.webp') !important;
+}
+.land-bg_vector-tracing {
+	background-image:url('/images/cats-1688x625/vector-tracing.jpg');
+}
+.is_webp .land-bg_vector-tracing {
+	background-image:url('/images/cats-1688x625/vector-tracing.webp') !important;
+}
+.land-bg_web-design {
+	background-image:url('/images/cats-1688x625/web-design.jpg');
+}
+.is_webp .land-bg_web-design {
+	background-image:url('/images/cats-1688x625/web-design.webp') !important;
+}
+.land-bg_website-development {
+	background-image:url('/images/cats-1688x625/website-development.jpg');
+}
+.is_webp .land-bg_website-development {
+	background-image:url('/images/cats-1688x625/website-development.webp') !important;
+}
+.land-bg_website-promotion {
+	background-image:url('/images/cats-1688x625/website-promotion.jpg');
+}
+.is_webp .land-bg_website-promotion {
+	background-image:url('/images/cats-1688x625/website-promotion.webp') !important;
+}
+.land-bg_website-repair {
+	background-image:url('/images/cats-1688x625/website-repair.jpg');
+}
+.is_webp .land-bg_website-repair {
+	background-image:url('/images/cats-1688x625/website-repair.webp') !important;
+}
+.land-bg_writing {
+	background-image:url('/images/cats-1688x625/writing.jpg');
+}
+.is_webp .land-bg_writing {
+	background-image:url('/images/cats-1688x625/writing.webp') !important;
+}
+.land-bg_your-message-on {
+	background-image:url('/images/cats-1688x625/your-message-on.jpg');
+}
+.is_webp .land-bg_your-message-on {
+	background-image:url('/images/cats-1688x625/your-message-on.webp') !important;
+}

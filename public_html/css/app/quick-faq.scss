@@ -1,0 +1,352 @@
+// Виджет Быстрый FAQ
+
+// TODO
+// Стили виджета пока не используют новую тему, т.к. виджет должен быть встроен
+// на множество страниц, каждую из которых сейчас нет времени протестировать
+// и решить все конфликты со старой темой
+
+// froala-viewer
+@import "~appCss/froala-viewer";
+
+$gray-100: #f6f6f6;
+$gray-300: #eaeaea;
+$gray-400: #ddd;
+$gray-700: #777;
+$gray-800: #585858;
+$orange: #ffa800;
+$black: #000;
+$white: #fff;
+$font-weight-bold: 600;
+
+// Часть необходимых стилей из общей темы
+#quick-faq {
+	*, *::before, *::after {
+	    box-sizing: border-box;
+	}
+
+	p {
+		margin-bottom: 15px;
+	}
+
+	ul:not(.chosen-results) {
+		padding-left: 40px;
+		margin-bottom: 15px;
+	}	
+}
+
+// Виджет Быстрый FAQ
+.quick-faq {
+
+	@media (max-width: 767px) {
+		display: none;
+	}
+
+	// Кнопка с вопросом/крестиком для открытия/закрытия виджета
+	.start-button {
+	    position: fixed;
+	    right: 40px;
+	    bottom: 40px;
+	    width: 60px;
+	    height: 60px;
+	    background-color: #87b948;
+	    border-radius: 50%;
+	    box-shadow: 0px 6px 26px -5px rgba(97,61,2,0.30);
+	    cursor: pointer;
+	    z-index: 3;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;	    
+
+	    i {
+	        font-size: 32px;
+	        color: $white;
+
+	        &.fa-question {
+	        	padding: 14px 20px;
+	        }
+
+	        &.fa-times {
+				position: absolute;
+				top: 14px;
+				left: 18px;
+	        }
+
+	        &.fa.animate {
+				transform: rotate(90deg);
+				transition: transform .2s linear;
+	        }
+
+	        &.fa {
+				transition: transform .2s linear;	        	
+	        }
+
+	    }
+	}	
+
+	// Виджет (окошко, которое всплывает при нажатии на кнопку с вопросом)
+	.widget {
+	    position: fixed;
+	    right: 40px;
+	    bottom: 110px;
+	    width: 380px;
+	    z-index: 3;
+	    box-shadow: 0px 0px 26px -5px rgba(97,61,2,0.30);
+
+	    // Шапка виджета - кнопка Назад, переключатель ролей, строка поиска
+		.widget-header {
+		    position: relative;
+		    background-color: $gray-100;
+		    padding: 20px;
+		    border-bottom: 1px solid $gray-400;
+		    height: 104px;
+
+			// Выбранная роль
+			.selected-role {
+			    font-size: 18px;
+			    line-height: 22px;
+			    text-align: center;
+			}
+
+			// Роль, доступная для выбора
+			.selectable-role {
+			    font-size: 10px;
+			    line-height: 23px;
+			    text-align: center;
+			    line-height: 22px;
+
+			    span {
+			    	cursor: pointer;
+
+				    &:hover {
+				        text-decoration: underline;
+				    }
+			    }
+			}
+
+			// Кнопка назад
+			.back-wrapper {
+			    position: absolute;
+			    width: 20px;
+			    height: 20px;
+			    cursor: pointer;
+
+				.back {
+				    position: absolute;
+				    border-color: $black;
+				    border-style: solid;
+				    border-width: 0 2px 2px 0;
+				    padding: 4px;
+				    transform: rotate(135deg);
+					left: 6px;
+					top: 4px;
+				}
+
+				&:hover .back {
+					border-color: $orange;
+				}
+
+			}
+
+			// Строка поиска
+			.search {
+				position: relative;
+			    margin-top: 10px;
+			    margin-left: 0!important;			    
+			    width: 100%!important;
+				
+				// Поле для ввода строки    
+			    input {
+			        font-size: 13px;
+			        border: 1px solid $gray-800;
+			        border-radius: 23px;
+			        height: 30px;
+			        width: 100%;
+			        text-align: center;
+			        padding: 0 30px;
+
+			        &:focus, &.has-text {
+			            text-align: left;
+			            padding-right: 10px;
+			        }
+			    }
+
+			    // Placeholder в строке поиска без фокуса/набранного текста (текст и иконка)
+			    .placeholder {
+			    	pointer-events: none;
+			        position: absolute;
+			        display: flex;
+			        justify-content: center;
+			        align-items: center;
+			        width: 100%;
+			        top: 0;
+			        left: 0;
+			        height: 30px;
+			        color: $gray-700;
+			        font-size: 13px;
+			        
+			        // Иконка
+			        i {
+			            color: $orange;
+			            margin-right: 7px;
+			        }
+			    }
+
+			    // Placeholder в строке поиска с фокусом/набранным текстом (только иконка)
+			    input:focus + .placeholder, input.has-text + .placeholder {
+			    	// Сдвинуть иконку в левый угол
+			    	justify-content: start;
+
+			    	// Скрыть текст подсказки
+			        span {
+			            display: none;
+			        }
+
+			        // Показать оранжевый кружок вокруг иконки
+			        i {
+				        margin-left: 6px;
+				        background-color: $orange;
+				        border-radius: 50%;
+				        height: 20px;
+				        width: 20px;
+				        padding-top: 3px;
+				        padding-left: 4px;
+				        color: $white;
+			        }	
+			    }
+
+			}
+
+		}
+
+		// Тело виджета - популярные статьи, все статьи, результаты поиска, хлебные крошки
+		.widget-body {
+			background-color: $white;
+			height: 345px;
+			&:hover {
+		    	overflow-y: auto;
+			}
+		    overflow-x: hidden;			
+
+			// Заголовок секции - популярные статьи, все статьи, результаты поиска
+			.section-title {
+			    font-weight: $font-weight-bold;
+			    font-size: 16px;
+			    padding: 10px 20px; 
+			}	
+
+			// Содержимое статьи
+			.fr-view.answer {
+				font-size: 13px;
+
+				ul {
+					padding-left: 30px!important;
+				}
+			}
+
+			// Список статей
+			.articles {
+
+				// Статья - заголовок и иконка, обозначающая возможность перехода к дочерним статьям
+				.article-header {
+					cursor: pointer;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 8px 20px;
+
+					&:hover {
+						background-color: $gray-100;
+					}
+
+					// Заголовок
+					.article-title {
+						display: inline-block;
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
+
+						i {
+							margin-right: 5px;
+						}
+					}
+
+					// Иконка, обозначающая возможность перехода к дочерним статьям
+					.goto-childs-icon {
+					    display: inline-block;						
+					    border-color: $gray-300;
+					    border-style: solid;
+					    border-width: 0 2px 2px 0;
+					    padding: 4px;
+					    transform: rotate(315deg);
+					}
+
+				}
+
+			}
+
+			// Выбранная статья
+			.article {
+			    padding: 20px 20px 5px 20px;
+			    
+			    // Заголовок (вопрос)
+			    .question {
+			        font-size: 18px;
+			        margin-bottom: 20px;
+			    }
+
+			}
+			// Хлебные крошки
+			.breadcrumbs {
+			    padding: 5px 10px 5px 20px;
+			    box-shadow: 0px 2px 18px -5px rgba(97,61,2,0.30);
+			    border-bottom: 1px solid $gray-400;
+			    position: sticky;
+			    top: 0;
+			    background-color: $white;
+			    z-index: 3;
+
+			    // Кнопка Домой
+			    i {
+			        color: $orange;
+			        cursor: pointer;
+			    }
+
+			    // Хлебная крошка
+			    .breadcrumb {
+				    font-size: 12px;
+
+				    // Активная (кликабельная) хлебная крошка
+				    .active {
+				        cursor: pointer;
+				        &:hover {
+				            color: $orange
+				        }
+				    }
+
+				    // Разделитель
+					.delimiter {
+					    margin-left: 3px;
+					    margin-right: 5px;    
+					    display: inline-block;    
+					    background: url(/images/sprite-icon.png?v=7) 0px -4858px no-repeat;
+					    width: 10px;
+					    height: 10px;
+					    position: relative;
+					    top: 1px;
+
+					    // Первый разделитель
+					    &.first {
+					    	margin-left: -1px;
+					    }
+
+					}				    
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

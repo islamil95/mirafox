@@ -1,0 +1,179 @@
+.paddinguser20{padding:20px}
+.pfloatleft{float:left;width:60%;font-size:14px;font:400 16px/24px 'Helvetica Neue',Helvetica,Arial,sans-serif}
+.otherinfo{color:#666;font-size:14px;font:400 16px/24px 'Helvetica Neue',Helvetica,Arial,sans-serif;width:35%;float:right}
+.foxuserreviews{width:650px;float:left}
+.foxuserreviews>a{border:1px #e5e5e5 solid;display:inline-block;width:600px;padding:20px;margin:0 0 20px 30px;border-radius:5px;background-color:#f7f7f7}
+.review-image img{border-radius:50%;float:left;margin-right:20px;padding-bottom:25px}
+.reviewinfo{color:#383838;font-size:14px;font:400 18px/24px 'Helvetica Neue',Helvetica,Arial,sans-serif}
+.reviewinfo .usercolorit{color:#13A0BA;font-size:14px;font:400 14px/24px 'Helvetica Neue',Helvetica,Arial,sans-serif}
+.request_kwork_block{
+	padding-top: 50px;
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+}
+.request_kwork_image{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 80px;
+}
+.request_kwork_text{
+	line-height: 18px !important;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.user-review-list .reviews_order_block {
+	max-width: 890px;
+	margin: auto;
+}
+
+.review-portfolio {
+	position: relative;
+	float: right;
+	height: 115px;
+	/* z-index: 3; */
+	margin-bottom: 12px;
+}
+
+.review-portfolio_video {
+	cursor: pointer;
+}
+
+.review-portfolio:before,
+.review-portfolio:after {
+	content: '';
+	display: none;
+	position: absolute;
+	left: -10px;
+	top:50%;
+	margin-top: -10px;
+	border: 10px solid transparent;
+	border-left-color: #2c2c2c;
+}
+
+.review-portfolio_half:before,
+.review-portfolio_half:after{
+	top: 5px;
+}
+
+.review-portfolio:after{
+	border-left-color: #2c2c2c;
+	left: -11px;
+}
+
+.review-portfolio_hover:before,
+.review-portfolio_hover:after {
+	display: block;
+}
+
+.portfolio-tooltip {
+	position: absolute;
+	z-index: 3;
+	left: -672px;
+	width: 672px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	height: auto!important;
+	max-width: calc(100vw - 250px);
+}
+
+.portfolio-tooltip__img-block {
+	max-height: 100%;
+	overflow: hidden;
+	min-height: 70px;
+	position: relative;
+}
+.js-popup__inner-content img,
+.portfolio-tooltip__image {
+	max-width: 100%;
+}
+
+.review-portfolio_video .portfolio-tooltip__image {
+	margin-top: -22px;
+}
+
+.review-portfolio_video .portfolio-tooltip {
+	left: -662px;
+	width: 662px;
+}
+
+.portfolio-tooltip__container {
+	box-sizing: border-box;
+	color: #fff;
+	background-color: #2c2c2c;
+	border: 1px solid #2c2c2c;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	min-height: 74px;
+	padding: 5px;
+}
+
+.portfolio-tooltip__review-block {
+	padding: 5px;
+}
+
+.portfolio-tooltip__preloader {
+	top: 10px;
+}
+
+.portfolio-tooltip__title {
+	line-height: 30px;
+	font-weight: 600;
+	padding: 0 5px;
+}
+
+.portfolio-tooltip__video {
+	width: 100%;
+	height: 400px;
+}
+
+.portfolio-tooltip__image {
+	border-radius: 2px;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.review-portfolio_video .portfolio-tooltip__img-block_loaded:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('/images/play2.png') center no-repeat;
+}
+.review-portfolio__ico-play-css {
+	position: absolute !important;
+	right: 15px;
+	top: 15px;
+}
+.online-status i {
+	margin-right: 3px;
+}
+
+
+.orders-between-user-block{
+	max-height: 120px;
+	overflow-y: auto;
+}
+
+@media only screen and (max-width:1024px) {
+	.portfolio-tooltip__video {
+		width: 100%;
+		height: 350px;
+	}	
+}
+@media (max-width: 767px) {	
+	.portfolio-tooltip__video {
+		width: 100%;
+		height: auto;
+	}
+	.user-portfolio__panel {
+		display: block !important;
+	}
+}

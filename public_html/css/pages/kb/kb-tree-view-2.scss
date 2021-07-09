@@ -1,0 +1,48 @@
+// Стили для дерева статей
+.support-tree {
+	@include responsive("max-width", 100%, 100%, 100%, 690px, 690px);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.07);
+	border-radius: 3px;
+	border: 1px solid $gray-200;
+
+
+	// Статья - заголовок и иконка, обозначающая возможность перехода к дочерним статьям
+	.article-header {
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 30px;
+		font-size: 18px;
+		border-bottom: 1px solid $gray-200;
+
+		@media only screen and (max-width: 767px) {
+			font-size: 14px;
+			padding: 10px;
+		}
+
+		&:hover {
+			background-color: $gray-100;
+		}
+
+		// Заголовок
+		.article-title {
+
+			i {
+				margin-right: 5px;
+			}
+		}
+
+		// Иконка, обозначающая возможность перехода к дочерним статьям
+		.goto-childs-icon {
+		    display: inline-block;						
+		    border-color: $warning;
+		    border-style: solid;
+		    border-width: 0 2px 2px 0;
+		    padding: 4px;
+		    transform: rotate(315deg);
+		}
+
+	}
+
+}

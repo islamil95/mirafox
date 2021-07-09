@@ -1,0 +1,102 @@
+<?php
+
+namespace Mobile;
+
+class Constants {
+
+	//error codes
+	const CODE_INCORRECT_PARAMS = 100; // Недостаточно параметров для метода API
+	const CODE_INCORRECT_PARAMS_VALUES = 101; // Некорректные значения параметров
+	const CODE_USER_DELETED = 103; // Пользователь заблокирован
+	const CODE_USER_NEW = 104; // Пользователь не подтвердил регистрацию
+	const CODE_INCORRECT_CREDENTIALS = 105; // Неверные учетные данные
+	const CODE_EMPTY_EMAIL = 106; // Необходимо ввести email
+	const CODE_INCORRECT_EMAIL = 107; // Некорректный email
+	const CODE_EXISTED_EMAIL = 108; // email уже используется
+	const CODE_EMPTY_LOGIN = 109; // Небходимо ввести логин
+	const CODE_INCORRECT_LOGIN = 110; // Логин может содержать только латинские буквы, цифры и знаки - и _
+	const CODE_SHORT_LOGIN = 111; // Логин должен быть не короче 4-х символов
+	const CODE_LONG_LOGIN = 112; // Логин не может быть длиннее 20 символов
+	const CODE_EXISTED_LOGIN = 113; // Логин уже используется
+	const CODE_EMPTY_PASSWORD = 114; // Нужно ввести пароль
+	const CODE_SHORT_PASSWORD = 115; // Короткий пароль
+	const CODE_PASSWORD_EQUALS_LOGIN = 116; // Пароль совпадает с логином
+	const CODE_SIMPLE_PASSWORD = 117; // Слишком простой пароль
+	const CODE_INCORRECT_CAPTCHA = 118; // Ошибка captcha
+	const CODE_INCORRECT_PROMO = 119; // Ошибка промо-кода
+	const CODE_KWORK_NOT_FOUND = 120; // Кворк не найден
+	const CODE_KWORK_VIEW_RESTRICT = 121; // Кворк не найден
+	const CODE_CANT_CREATE_REVIEW = 122; // Невозможно создать отзыв
+	const CODE_ORDER_NOT_FOUND = 123; // Заказ не найден
+	const CODE_NEED_MORE_MONEY = 124; // Недостаточно средств на счете
+	const CODE_USER_NOT_FOUND = 125; // Пользователь не найден
+	const CODE_FILE_NOT_UPLOADED = 126; // Не представлен файл для загрузки
+	const CODE_FILE_SIZE_EXEED = 128; // Превышен допустимый размер файла
+	const CODE_MESSAGE_NOT_FOUND = 129; // Сообщение не найдено
+	const CODE_PRIVATE_MESSAGE_RESTRICTED = 130; // Переписка запрещена
+	const CODE_RECIPIENTS_LIMIT = 131; // Ограничение на количество собеседников
+	const CODE_BAN_WORD = 132; // В сообщении содержится запрещенное слово
+	const CODE_REVIEW_NOT_FOUND = 133; // Отзыв не найден
+	const CODE_REVIEW_EDIT_EXPIRE = 134; // Время на редактирование отзыва истекло
+	const CODE_CANT_EDIT_REVIEW = 135; // Невозможно отредактировать отзыв
+	const CODE_CANT_DELETE_REVIEW = 136; // Невозможно удалить отзыв
+	const CODE_CANT_CREATE_ANSWER = 137; // Невозможно создать ответ на отзыв
+	const CODE_CANT_EDIT_ANSWER = 138; // Невозможно отредактировать ответ
+	const CODE_KWORK_NOT_PACKAGE = 139; // В заказе не пакетный кворк
+	const CODE_NO_NEXT_LEVEL_TO_UPGRADE = 140; // Предельный уровень пакета кворка достигнут
+	const CODE_INCORRECT_REASON = 141; // Недопустимая причина отмены заказа
+	const CODE_EXTRAS_NOT_FOUND = 142; // Опции не найдены
+	const CODE_ALREADY_ORDERED = 143; // Заказ по предложению уже сделан
+	const CODE_FUNCTION_DISABLED = 144; // Функция системы отключена
+	const CODE_CANT_CREATE_OFFER = 145; // Невозможно создать предложение
+	const CODE_SMALL_PORTFOLIO_IMAGE = 146; // Размер изображения должен быть не меньше 600х400 пикселей
+	const CODE_BIG_PORTFOLIO_IMAGE = 147; // Размер изображения должен быть не меньше 600х400 пикселей
+	const CODE_PORTFOLIO_TYPE_RESTRICTED = 148; // Данный тип портфолио не разрешен в этой категории
+	const CODE_EMAIL_DOMAIN_DENIED = 149; // Логин должен быть не короче 4-х символов
+	const CODE_NO_PAYER_ORDERS = 150; // Нет заказов как у покупателя
+	const CODE_NO_WORKER_ORDERS = 151; // Нет заказов как у продавца
+	const CODE_SETTINGS_WITH_ERRORS = 152; // Ошибка редактирования настроек пользователя
+	const CODE_USER_NOT_ALLOW_CUSTOM_REQUEST = 153; // Пользователь не принимает запросов на индивидуальный кворк
+	const CODE_INCORRECT_CUSTOM_REQUEST_BUDGET = 154; // Сумма бюджета запроса на индивидуальный кворк слишком мала
+	const CODE_EMAIL_OWNED_BY_DELETED_USER = 155; // Email уже занят удаленным пользователем
+	const CODE_CANT_GET_MESSAGE_TEXT = 156; // Не удалось получить текст сообщения по id
+	const CODE_INCORRECT_SOCIAL_TYPE = 157; // Неверный тип социальной сети
+	const CODE_SOCIAL_PROVIDER_ERROR = 158; // Ошибка авторизации через социальную сеть
+	const CODE_SOCIAL_NEED_EMAIL = 159; // В данных социальной сети не представлен email
+	const CODE_SOCIAL_NEED_VERIFY = 160; // Необходимо подтверждение привязки социального аккаунта к аккаунту системы через email
+	const CODE_NEED_PORTFOLIO_IMAGE = 161; // Необходимо предоставить изображение портфолио
+	const CODE_NEED_PORTFOLIO_VIDEO = 162; // Необходимо предоставить ссылку на видео
+	const CODE_UNSUPPORTED_IMAGE_FORMAT = 163; // Неподдерживаемый формат изображения
+	const CODE_INCORRECT_IMAGE = 164; // Некорректное изображение
+	const CODE_NO_CROP_IMAGE_DATA = 165; // Не предоставлены данные для обрезки изображения
+	const CODE_INCORRECT_YOUTUBE_LINK = 166; // Указанная ссылка не является ссылкой на youtube
+	const CODE_STOP_WORDS = 167; // Указаны запрещенные слова
+	const CODE_SPELL_MISTAKES = 168; // Ошибки правописания
+	const CODE_BIG_PORTFOLIO_DESCRIPTION = 169; // Слишком большое описание портфолио
+	const CODE_SMALL_PORTFOLIO_DESCRIPTION = 170; // Слишком короткое описание портфолио
+	const CODE_NEED_COUNTRY_ID = 171; // Необходимо указать страну при регистрации
+	const CODE_INVALID_FILENAME = 172; // Название файла должно быть на английском
+	const CODE_EMPTY_COUNTRY_ID = 173; // Пустой идентификатор страны
+	const CODE_CITIES_LIST_EXISTS_ONLY_FOR_RUSSIA = 174; // Список городов есть только для России
+	const CODE_GET_CITIES_LIST_ERROR = 175; // Ошибка получения списка городов
+	const CODE_GET_COUNTRY_LIST_ERROR = 176; // Ошибка получения списка стран
+	const CODE_USER_HAS_UNREAD_MESSAGES = 177; // У пользователя есть непрочитанные сообщения
+	const CODE_DIALOG_ALREADY_ARCHIVED = 178; // Диалог уже был добавлен в архив
+	const CODE_DIALOG_NOT_ARCHIVED = 179; // Диалог не находится в архиве
+	const CODE_DIALOG_NOT_FOUND = 180; // Диалог не найден
+	const CODE_DIALOG_NOT_BLOCKED = 181; // Диалог не был заблокирован ранее
+	const CODE_DIALOG_ALREADY_BLOCKED = 182; // Диалог уже заблокирован
+	const CODE_CANT_SEND_COMPLAIN_MESSAGE = 183; // Не удалось отправить жалобу на сообщение
+	const CODE_CONTACTS_EXCHANGE = 185; // Передача контактных данных запрещена
+	const CODE_EMPTY_MESSAGE = 186; // Сообщение должно содержать текст или прикрепленный файл
+	const CODE_DUPLICATE_IMAGE = 187; // Дублированное изображение
+	const CODE_INBOX_SPAM = 188; // Рассылка спам-сообщений
+	const CODE_MESSAGE_CANT_EDIT_READ = 189; // Сообщение уже прочитанно, нельзя редактировать
+	const CODE_MESSAGE_CANT_REMOVE_READ = 190; // Сообщение уже прочитанно, нельзя удалить
+	const CODE_FILE_NOT_REMOVABLE = 191; // Файл уже доставлен, нельзя удалить
+	const CODE_NOT_AUTHORIZED = 401; // Необходима авторизация
+	const CODE_INCORRECT_METHOD = 403;  // Метод API не найден
+	const CODE_NOT_FOUND = 404; // Метод API не найден
+	const CODE_INTERNAL_ERROR = 500; // Внутренняя ошибка сервера
+
+}

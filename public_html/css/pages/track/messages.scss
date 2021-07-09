@@ -1,0 +1,121 @@
+.track-page {
+	> .contentArea {
+		position: relative;
+	}
+
+	.btn-flex {
+		@media(max-width: 767px) {
+			display: flex !important; align-items: center; justify-content: center;
+			padding: 0 15px !important;
+			height: 50px !important;
+			line-height: 17px !important;
+		}
+	}
+
+	.review-form__form {
+		.variants {
+			@media(max-width: 359px) {
+				width: 250px !important;
+
+				.loadbar {
+					margin-top: 10px !important; margin-bottom: 10px !important;
+				}
+			}
+		}
+
+		.review-tooltip {
+			@media(max-width: 359px) {
+				height: auto !important;
+				margin-bottom: 5px !important;
+			}
+		}
+	}
+}
+
+.track-item {
+	&:not(.tr-editable) {
+		.wrap-edit-item {
+			display: none !important;
+		}
+
+		.step-block-order__text.hidden {
+			display: block !important;
+		}
+
+		.step-block-order__wrap-edit-form {
+			display: none !important;
+		}
+	}
+
+	&:not(.tr-removable) {
+		.wrap-remove-item:not(.moder-remove) {
+			display: none !important;
+		}
+	}
+	
+	&:not(.tr-quotable) {
+		.wrap-quote-item {
+			display: none !important;
+		}
+	}
+
+	.tr-track {
+		&.own {
+			> .unread {
+				background-color: #FAFAFA;
+			}
+		}
+
+		.cm-message-status {
+			min-height: 22px;
+		}
+		
+		.step-block-order_item {
+			padding-top: 30px; padding-bottom: 15px;
+
+			&.has-operations:hover,
+			&.hover {
+				background: #f0f0f0;
+			}
+		}
+
+		.tr-message-status-bar {
+			display: flex; align-items: flex-end; justify-content: flex-end;
+			height: 22px;
+		}
+
+		&.unread, .unread {
+			.tr-message-status {
+				&.sended {
+					display: inline-block;
+				}
+
+				&.readed {
+					display: none;
+				}
+			}
+		}
+
+		.file-list {
+			padding: 1px 0 0 0;
+
+			> div {
+				margin: 0;
+			}
+		}
+
+		.tr-message-status {
+			display: inline-block;
+			width: 17px; height: 15px;
+
+			&.sended {
+				display: none;
+				background: url('/images/greengalka-disabled.png');
+			}
+
+			&.readed {
+				background: url('/images/greengalka.png');
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.analytics__line-chart .c3-line {
+    stroke-width: 3px;
+}
+.analytics__line-chart .c3-region.background-block {
+    fill: #DCDCDC;
+}
+.analytics__line-chart .c3-grid line {
+    stroke: #EDEDED;
+}
+.analytics__line-chart .tick line {
+    display: none;
+}
+.analytics__line-chart .tick {
+    font-size: 12px;
+    fill: #AAA;
+}
+.analytics__line-chart .domain {
+    stroke: #AAA;
+    stroke-width: 2;
+}
+.analytics__line-chart .c3-axis-y .tick {
+    display: none;
+}
+.analytics__line-chart .c3-region {
+    fill: #B3B3B3;
+}
+.analytics__donut .c3-chart-arc {
+    opacity: 0.85 !important;
+}
+.analytics__donut .c3-chart-arc.c3-focused {
+    opacity: 1 !important;
+}

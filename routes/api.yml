@@ -1,0 +1,34 @@
+# API пользователей
+api_user:
+    prefix: /user
+    resource: 'routes/api/user.yml'
+
+# API банов
+api_ban:
+    prefix: /ban
+    resource: 'routes/api/ban.yml'
+
+# API заказа
+api_order:
+    prefix: /order
+    resource: 'routes/api/order.yml'
+
+# API кворков
+api_kwork:
+    prefix: /kwork
+    resource: 'routes/api/kwork.yml'
+
+# API запросов
+api_offer:
+    prefix: /offer
+    resource: 'routes/api/offer.yml'
+
+# API трека
+api_track:
+    prefix: /track
+    resource: 'routes/api/track.yml'
+
+# API отзывов
+api_rating:
+    prefix: /rating
+    resource: 'routes/api/rating.yml'

@@ -1,0 +1,120 @@
+@media (max-width: 767px) {
+	.js-kworks-filter-button {
+		color: #000;
+		text-transform: uppercase;
+		border: solid 1px #ddd;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		background: #fff;
+		font-size: 16px;
+		padding: 0 10px;
+		display: flex;
+		justify-content: center;
+		height: 35px;
+		align-items: center;
+		width: 100%;
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.bread-crump,
+	.kworks-filter.popup-filter {
+		display: none;
+	}
+	.hidden {
+		display: none !important;
+	}
+
+	.top-filters-holder-wrap, .tagcloud.standart_cat_header {
+		margin-top: 20px;
+		text-align: center;
+	}
+	.tagcloud.standart_cat_header .bread-crump+h1 {
+		line-height: 38px;
+	}
+	.tagcloud h2, .tagcloud h1 {
+		font-size: 35px;
+		line-height: 38px;
+		font-weight: 400;
+	}
+
+	.mb20 {
+		margin-bottom: 20px !important;
+	}
+	.dib {
+		display: inline-block;
+	}
+	.multiline-faded:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 1.2em;
+		width: 4em;
+		background: -moz-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%);
+		background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%);
+		background: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%);
+	}
+
+	.cusongsblock {
+		position: relative;
+		margin-bottom: 10px;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		box-sizing: border-box;
+	}
+	.cusongsblock__content {
+		display: inline-block;
+		width: 116px;
+		vertical-align: top;
+		padding-left: 10px;
+		box-sizing: border-box;
+		padding-top: 10px;
+		position: absolute;
+	}
+	.cusongsblock__content a {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.cusongsblock__content img {
+		width: 100%;
+		height: auto;
+		border: none;
+	}
+	.cusongsblock .padding-content {
+		box-sizing: border-box;
+		padding: 0 10px 33px 126px;
+		min-height: 124px;
+	}
+	.cusongsblock p a {
+		color: #000;
+		display: block;
+		max-height: 47px;
+		min-height: 47px;
+		font-size: 14px;
+		line-height: 18px;
+		padding-top: 8px;
+		padding-bottom: 10px;
+		overflow: hidden;
+	}
+	.cusongsblock p a span {
+		max-width: 100%;
+	}
+	.cusongsblock .padding-content .cusongsblock__panel {
+		display: none;
+	}
+	.cusongsblock .userdata {
+		position: absolute;
+		bottom: 0;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px 10px;
+		left: 0;
+		border-top: 1px solid #e8e8e8;
+		height: 35px;
+	}
+	.cusongsblock .userdata * {
+		display: none;
+	}
+}

@@ -1,0 +1,12 @@
+payer_orders:
+    path: /orders
+    defaults: { _controller: 'Controllers\Order\PayerOrdersController' }
+
+worker_orders:
+    path: /manage_orders
+    defaults: { _controller: 'Controllers\Order\WorkerOrdersController' }
+
+set_user_order_name:
+    path: /orders/set_user_order_name
+    methods: POST
+    defaults: { _controller: 'Controllers\Order\ChangeOrderNameController' }

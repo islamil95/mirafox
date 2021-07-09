@@ -1,0 +1,45 @@
+# Добавление отзыва
+review_create:
+    path: /{orderId}/addReview
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Review\CreateReviewController' }
+    requirements:
+        orderId: \d+
+
+# Обновление отзыва
+review_update:
+    path: /{orderId}/editReview
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Review\UpdateReviewController' }
+    requirements:
+        orderId: \d+
+
+# Удаление отзыва
+review_remove:
+    path: /{orderId}/review/remove
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Review\RemoveReviewController' }
+    requirements:
+        orderId: \d+
+
+# Добавить коментарий к отзыву
+review_create_comment:
+    path: /{orderId}/review/comment
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Review\CreateReviewCommentController' }
+    requirements:
+        orderId: \d+
+
+# Отредактировать коментарий к отзыку
+review_update_comment:
+    path: /{orderId}/review/comment/update
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Review\UpdateReviewCommentController' }
+    requirements:
+        orderId: \d+
+
+# Проверить орфограцию отзыва
+check_review_text:
+    path: /review/check_text
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Review\CheckReviewTextController' }

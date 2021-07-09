@@ -1,0 +1,11 @@
+// Совместимость со старой темой
+// Аватарка пользователя в шапке сайта
+.userimage img.rounded {
+	border-radius: 100%!important;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 100%;
+	}
+}

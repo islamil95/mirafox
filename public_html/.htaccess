@@ -1,0 +1,43 @@
+DirectoryIndex /action/index.php
+ErrorDocument 403 /not_access.php
+ErrorDocument 404 /not_found
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+
+        RewriteCond %{HTTP_HOST} (.*)
+        RewriteCond %{REQUEST_URI} /$ [NC]
+        RewriteRule ^(.*)(/)$ $1 [L,R=301]
+
+        RewriteCond %{HTTP_HOST} ^185\.12\.124\.128$
+        RewriteRule ^(.*)$ https://kwork.ru/$1 [L,R=301]
+
+        RewriteCond %{THE_REQUEST} //
+        RewriteRule .* /$0 [R=301,L]
+
+        RewriteCond %{HTTP_HOST} ^kworks.ru$ [NC]
+        RewriteRule ^robots.txt$ robots_mirror.txt
+
+	RewriteRule ^administrator$ /action/administrator/index.php$1
+	RewriteRule ^administrator/(.+)$ /action/administrator/$1
+
+	RewriteRule ^conversations/([^/.]*)?$ /action/conversations.php?u=$1&%{QUERY_STRING}
+	RewriteRule ^categories/([^/.]+)?$ /action/cat.php?cid=$1&%{QUERY_STRING}
+	RewriteRule ^user/([^/.]+)?$ /action/user.php?uname=$1&%{QUERY_STRING}
+	RewriteRule ^files/uploaded/(.+)/(.+)$ /action/file.php?s=$1
+	RewriteRule ^ref/(.+)?$ /action/index.php?ref=$1&%{QUERY_STRING}
+	RewriteRule ^land/(.+)?$ /action/land.php?name=$1&%{QUERY_STRING}
+	RewriteRule ^cases/(.+)?$ /action/cases.php?id=$1&%{QUERY_STRING}
+	RewriteRule ^([^/.]+)/([^/.]+)/([^/.]*)?$ /action/view.php?seo=$1&id=$2&title=$3&%{QUERY_STRING}
+
+	RewriteRule ^([a-z_\/-]+)$ /action/$1.php
+</IfModule>
+
+<IfModule mod_security.c>
+	# Turn off mod_security filtering.
+	SecFilterEngine Off
+
+	# The below probably isn't needed, but better safe than sorry.
+	SecFilterScanPOST Off
+</IfModule>

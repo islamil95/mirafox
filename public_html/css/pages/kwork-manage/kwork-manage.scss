@@ -1,0 +1,82 @@
+.analytics__line-chart .c3-line {
+	stroke-width: 3px;
+}
+
+.analytics__line-chart .c3-region.background-block {
+	fill: #DCDCDC;
+}
+
+.analytics__line-chart .c3-grid line {
+	stroke: #EDEDED;
+}
+
+.analytics__line-chart .tick line {
+	display: none;
+}
+
+.analytics__line-chart .tick {
+	font-size: 12px;
+	fill: #AAA;
+}
+
+.analytics__line-chart .domain {
+	stroke: #AAA;
+	stroke-width: 2;
+}
+
+.analytics__line-chart .c3-axis-y .tick {
+	display: none;
+}
+
+.analytics__line-chart .c3-region {
+	fill: #B3B3B3;
+}
+
+.analytics__donut .c3-chart-arc {
+	opacity: 0.85 !important;
+}
+
+.analytics__donut .c3-chart-arc.c3-focused {
+	opacity: 1 !important;
+}
+
+.table-manage-kworks_settings-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 767px) {
+	.b-tab.js-live-tabs {
+		height: 53px;
+	}
+
+	.b-tab_item-more {
+		position: relative;
+	}
+
+	.b-tab_item-more:hover .b-tab_item-more--sub,
+	.b-tab_item-more--sub:hover {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.b-tab_item-more--sub {
+		background: #fff;
+		border: 1px solid #ccc;
+		border-radius: 0 3px 3px;
+		position: absolute;
+		right: 0;
+		min-width: 160px;
+		z-index: 1;
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		padding: 0 10px;
+	}
+
+	.b-tab_item-more--sub .b-tab_item {
+		text-align: left;
+		cursor: pointer;
+	}
+}

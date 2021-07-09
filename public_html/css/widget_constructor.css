@@ -1,0 +1,100 @@
+.widget-constructor_container{
+    padding: 30px 45px;
+    display: flex;
+    flex-flow: row wrap;    
+}
+.widget-constructor_block{
+    margin-bottom: 10px;
+}
+.widget-constructor_block .widget-constructor-block_head{
+    font-weight: bold;
+    line-height: 30px;
+}
+.widget-constructor_block .size-type_text{
+    display: inline-block;
+    min-width: 65px;
+}
+.widget-constructor_block .widget-type_item{
+    line-height: 26px;
+    display: inline;
+}
+.widget-size_inpput{
+    max-width: 80px;
+}
+.widget-type_text-input{
+    margin: 5px 5px;
+    max-width: 238px;
+}
+.cat-widget-type_count input{
+    width: 25%;
+    float: right;
+    box-sizing: border-box;
+    padding-right: 0px;
+}
+.cat-widget-type_count{
+    margin-top: 5px;
+    padding-top: 10px;
+    max-width: 216px;
+    border-top: 1px #dfdfdf solid;
+}
+.widget-type_text-count{
+    width: 75%;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 15px;
+    font-size: 13px;
+}
+.kwork_list_widget-type_enum input{
+    width: 100%;
+    margin: 0px;        
+    box-sizing: border-box;
+}
+.widget-constructor_settings{
+    width: 250px;
+}
+.widget-constructor_example{
+    width: 618px;
+    min-height: 418px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    box-shadow: inset 0 0 1em gray;
+    overflow-y: auto;
+    overflow-x: auto;
+    flex: 1;
+    padding: 10px 0;
+}
+.widget-constructor_example iframe{
+    max-width: 9999px;
+    max-height: 9999px;
+}
+.preloader__ico_widget_constructor {
+    border-width: 4px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+}
+.widget-constructor_code{
+    margin-top: 20px;
+    width: 100%;
+}
+.widget-constructor_code-area textarea{
+    margin-top: 7px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 220px;
+    padding: 10px;
+}
+.widget-constructor_code span{
+    line-height: 21px;
+}
+.disabled-widget-type_item{
+    opacity: 0.5;
+    cursor: default;
+}
+.get-widget-code{
+    cursor: pointer;
+}

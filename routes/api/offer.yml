@@ -1,0 +1,29 @@
+# WishOrder.api_deleteOffer
+api_offer_deleteoffer:
+    path: /deleteoffer
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Offer\DeleteOfferController' }
+
+# Want.api_addView
+api_offer_addview:
+    path: /addview
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Offer\AddViewController' }
+
+# Want.api_createOffer
+api_offer_createoffer:
+    path: /createoffer
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Offer\CreateOfferController' }
+
+# Want.editOffer
+offer_editoffer:
+    path: /editoffer
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Worker\Handler\EditOfferHandlerController' }
+
+# Offer.api_hideOffer
+api_offer_hideoffer:
+    path: /hideoffer
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Offer\HideOfferController' }

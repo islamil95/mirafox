@@ -1,0 +1,95 @@
+.progress-line {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	padding-left: 10px;
+
+	&--item {
+		width: 100%;
+		display: flex;
+		position: relative;
+		border-left: 2px solid #ddd;
+		padding: 0 0 25px 20px;
+
+		&:first-child {
+			padding-top: 0;
+		}
+		&:last-child {
+			border-left: none;
+			margin-left: 2px;
+			padding-bottom: 0;
+		}
+
+		&__icon {
+			position: absolute;
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			left: -11px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #ddd;
+			border: 1px solid #bfbebe;
+		}
+		&.current,	&.checked,&.done{
+			border-color: #84b747;
+			.progress-line--item__icon {
+				background: #84b747;
+				border: none;
+			}
+		}
+
+
+		&.checked {
+			.progress-line--item__icon {
+				&:before {
+ 					position: relative;
+					width: 12px;
+					height: 6px;
+					border-left: 2px solid #fff;
+					border-bottom: 2px solid #fff;
+					border-radius: 0;
+					transform: rotateZ(-45deg);
+					top: -1px;
+					left: 0;
+					content: " ";
+				}
+			}
+
+		}
+		&.done {
+			.progress-line--item__icon {
+				&:before {
+					position: relative;
+					width: 8px;
+					height: 8px;
+					background: #fff;
+					content: " ";
+					display: inline-block;
+					border-radius: 50%
+				}
+			}
+		}
+		&.canceled {
+			border-color: var(--red);
+			.progress-line--item__icon {
+				background: var(--red);
+				border: none;
+				&:before {
+					position: relative;
+					width: 8px;
+					height: 8px;
+					background: #fff;
+					content: " ";
+					display: inline-block;
+					border-radius: 50%
+				}
+			}
+		}
+		&.line-white-gray{
+			border-color: #ddd;
+		}
+	}
+}
+

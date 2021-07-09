@@ -1,0 +1,304 @@
+.moder-stat-block {
+	position: relative;
+}
+
+.moder-stat {
+	position: absolute;
+	right: 100%;
+	top: 0;
+	width: 300px;
+	margin-right: 20px;
+}
+
+.moder-stat__head {
+	margin-bottom: 3px;
+	font-weight: bold;
+}
+
+.moder-stat__body {
+	font-size: 13px;
+}
+
+.moder-stat__body table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.moder-stat__body table th,
+.moder-stat__body table td {
+	padding: 0 5px;
+	border: 1px solid #cfcfcf;
+}
+
+.moder-stat__body table th {
+	font-weight: bold;
+}
+
+.moder-stat__body table td {
+	background: #f9f9f9;
+}
+
+.moder-stat__body table .moder-stat__group-even td {
+	background: #e4f7fd;
+}
+
+.moder-stat__body table td:last-child {
+	text-align: center;
+}
+
+.moder-stat__sum {
+	font-weight: bold;
+	color: #4b9e68;
+}
+
+.moder-stat__foot {
+	margin-top: 3px;
+	text-align: center;
+}
+
+.moder-stat__foot a:hover {
+	text-decoration: underline;
+}
+
+.is_moder {
+	padding: 0 20px 50px 340px;
+}
+.is_moder .kwork-card-moder-preview {
+	left: -288px;
+	top: 0;
+	margin: 0;
+}
+
+@media (max-width: 1399px) {
+	.is_moder {
+		padding-left: 270px;
+	}
+	.is_moder .moder-stat {
+		width: 230px;
+	}
+	.is_moder .moder-stat__body {
+		min-height: .01%;
+		overflow-x: auto;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.is_moder .moder-stat table {
+		width: 300px;
+	}
+	.is_moder .moder-stat table td:last-child, .is_moder .moder-stat table .ta-right {
+		text-align: left
+	}
+	.is_moder .kwork-card-moder-preview {
+		left: initial;
+		right: 100%;
+		top: 60px;
+	}
+	.is_moder .cusongsblock {
+		width: 230px;
+	}
+	.is_moder .cusongsblock, .is_moder .cusongsblock-user {
+		margin-right: 20px !important;
+	}
+}
+@media (max-width: 1319px) {
+	.page-more-kwork.is_moder .sidebarArea {
+		width: -webkit-calc(100% - 680px);
+		width: calc(100% - 680px);
+		min-width: 230px;
+	}
+	.is_moder .wrap-moderation-block .gray-bg-border {
+		padding: 0;
+		border: 0;
+		background-color: transparent;
+	}
+	.is_moder .wrap-moderation-block .gray-bg-border .contentArea {
+		display: none;
+	}
+	.is_moder .wrap-moderation-block .gray-bg-border .floatleft {
+		float: none !important;
+		width: auto !important;
+		padding-top: 0 !important;
+		text-align: center;
+	}
+	.is_moder .reminder-link-block {
+		float: none !important;
+		text-align: center;
+	}
+	.is_moder .wrap-moderation-block .gray-bg-border .pull-reset {
+		text-align: center;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: center;
+		-ms-flex-pack: justify;
+		justify-content: center;
+	}
+	.is_moder .wrap-moderation-block .gray-bg-border .pull-reset:before,
+	.is_moder .wrap-moderation-block .gray-bg-border .pull-reset:after {
+		display: none !important;
+	}
+	.is_moder .wrap-moderation-block .gray-bg-border .pull-reset>button {
+		width: 30% !important;
+	}
+	.is_moder .bgLightGray {
+		background-color: transparent;
+	}
+}
+@media (max-width: 1214px) {
+	.is_moder .contentArea {
+		width: -webkit-calc(100% - 250px);
+		width: calc(100% - 250px);
+	}
+	.is_moder .kwork-slider, .is_moder .kwork-slider .sliderImage {
+		height: auto;
+		min-height: 0;
+	}
+	.is_moder .order-extras-list .option-item__text {
+		display: inline;
+	}
+}
+@media (max-width: 1050px) {
+	.page-more-kwork.is_moder .centerwrap {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media (max-width: 1023px) {
+	.is_moder .contentArea {
+		float: none;
+		width: auto;
+	}
+	.page-more-kwork.is_moder .sidebarArea {
+		position: absolute;
+		left: 20px;
+		top: 310px;
+		float: none;
+		width: 230px;
+		padding-bottom: 20px;
+	}
+	.scrollup {
+		display: none;
+	}
+	.page-more-kwork.is_moder .sidebarArea .m-hidden {
+		display: block !important;
+	}
+	.is_moder .slick-slider {
+		padding-top: 313px;
+	}
+	.is_moder .kwork-card-moder-preview {
+		top: 0;
+		left: 50%;
+		right: initial;
+		position: absolute;
+		width: 230px;
+		margin: 0 0 0 -115px;
+
+	}
+	.is_moder .cusongsblock, .is_moder .cusongsblock-user {
+		margin: 0 !important;
+	}
+}
+@media (max-width: 991px) {
+	.is_moder .newfoxdetails {
+		width: auto;
+		min-width: 0;
+	}
+	.is_moder .kwork-card-moder-preview
+}
+@media (max-width: 767px) {
+	.is_moder {
+		padding-left: 20px;
+		padding-top: 20px;
+		padding-bottom: 50px !important;
+	}
+	.is_moder .kwork_slider_desktop {
+		display: block !important;
+	}
+	.is_moder .wrap-moderation-block .gray-bg-border .floatleft>div:nth-child(2) {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		display: block;
+		width: 100%;
+		margin: 0 !important;
+		text-align: center;
+		font-size: 11px;
+	}
+	.is_moder .moder-stat {
+		right: initial;
+		top: 100px;
+		left: 0;
+		right: 0;
+		width: auto;
+		margin-right: 0;
+		text-align: center;
+	}
+	.is_moder .moder-stat table {
+		width: 100%;
+		min-width: 300px;
+	}
+	.page-more-kwork.is_moder .sidebarArea {
+		position: relative;
+		left: initial;
+		top: initial;
+		width: auto;
+	}
+	.is_moder .kwork_slider_mobile {
+		display: none !important;
+	}
+	.is_moder .cusongsblock__content {
+		position: initial;
+		display: block;
+		width: initial;
+		height: initial;
+		padding: 0;
+	}
+	.is_moder .cusongsblock__content a {
+		display: block;
+	}
+	.is_moder .cusongsblock {
+		padding-bottom: 8px;
+	}
+	.is_moder .cusongsblock .padding-content {
+		display: block;
+		padding: 7px 15px 0;
+		min-height: initial;
+	}
+	.is_moder .cusongsblock .userdata {
+		position: initial;
+		bottom: initial;
+		padding: 5px 0 0;
+		left: initial;
+	}
+	.is_moder .cusongsblock .m-hidden {
+		display: block !important;
+	}
+	.is_moder .cusongsblock .m-visible {
+		display: none !important;
+	}
+	.is_moder .order-more-block-btn_top {
+		display: none;
+	}
+}
+@media (max-width: 567px) {
+	.is_moder .wrap-moderation-block .gray-bg-border .pull-reset {
+		margin-left: -5px;
+		margin-right: -5px;
+		overflow: hidden;
+		-webkit-flex-wrap: initial;
+		-ms-flex-wrap: initial;
+		flex-wrap: initial;
+	}
+	.is_moder .wrap-moderation-block .gray-bg-border .pull-reset>button {
+		font-size: 16px;
+		min-width: 110px;
+		margin: 0 5px !important;
+	}
+}

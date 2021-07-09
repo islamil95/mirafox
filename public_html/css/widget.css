@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+body{    
+    font-family:'Open Sans', Helvetica, sans-serif; 
+}
+body a{
+    text-decoration: none;
+}
+.widget_content{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.widget_item{
+    box-sizing: border-box;
+    position: relative;
+}
+.widget_title{
+	display: -webkit-box;
+    -webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+    height: 41px;
+    font-size: 16px;
+	max-width: 100%;
+    text-shadow: white 0 0 2px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 19px;
+}
+.widget_head{
+    min-height: 21px;
+    background-color: #f6f6f6;
+    padding: 10px 10px;
+}
+.widget_footer{
+    min-height: 93px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f6f6f6;
+    padding: 8px 10px 14px;
+}
+.widget_button {
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-sizing: border-box;  
+    margin: 10px auto 0 auto;    
+	display: block;
+	outline: none;
+	color: #fff;
+	
+	background: #87b948;
+    background: -moz-linear-gradient(top, #87b948 0%, #5ca042 100%, #5ca042 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87b948), color-stop(100%,#5ca042), color-stop(100%,#5ca042)) !important;
+    background: -webkit-linear-gradient(top, #87b948 0%,#5ca042 100%,#5ca042 100%) !important;
+    background: -o-linear-gradient(top, #87b948 0%,#5ca042 100%,#5ca042 100%) !important;
+    background: -ms-linear-gradient(top, #87b948 0%,#5ca042 100%,#5ca042 100%) !important;
+    background: linear-gradient(to bottom, #87b948 0%,#5ca042 100%,#5ca042 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87b948', endColorstr='#5ca042',GradientType=0 ) !important;
+}
+
+.widget_button:hover{
+	background: #5ca042;
+    background: -moz-linear-gradient(top, #5ca042 0%, #5ca042 0%, #87b948 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5ca042), color-stop(0%,#5ca042), color-stop(100%,#87b948)) !important;
+    background: -webkit-linear-gradient(top, #5ca042 0%,#5ca042 0%,#87b948 100%) !important;
+    background: -o-linear-gradient(top, #5ca042 0%,#5ca042 0%,#87b948 100%) !important;
+    background: -ms-linear-gradient(top, #5ca042 0%,#5ca042 0%,#87b948 100%) !important;
+    background: linear-gradient(to bottom, #5ca042 0%,#5ca042 0%,#87b948 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ca042', endColorstr='#87b948',GradientType=0 ) !important;
+}
+
+.widget_button span{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hide{
+    display: none;
+}

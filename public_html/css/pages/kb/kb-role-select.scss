@@ -1,0 +1,28 @@
+// Переключатель ролей
+.kb .kb-role-select {
+
+	// Радиобаттон
+	.radio-button {
+		display: inline-block;
+		height: 17px;
+		width: 17px;
+		min-height: 17px;
+		min-width: 17px;		
+		position: relative;
+		background: url("/images/radio-style.png") -3px -81px no-repeat;
+		cursor: pointer;
+
+		// Выбранный радиобаттон
+		&.selected {
+			background-position: -3px 0;
+		}
+
+	}
+
+	// Метка
+	.radio-label {
+		display: inline-block;
+		cursor: pointer;
+	}
+
+}

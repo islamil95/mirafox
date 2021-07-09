@@ -1,0 +1,129 @@
+@media (max-width: 991px) {
+	.is_land .how-it-works-content .icons .step {
+		width: 33.3333333%;
+	}
+}
+@media (max-width: 767px) {
+	/* баннер */
+	#landpage #whereami {
+		text-align: center;
+		position: relative;
+		min-height: 300px;
+		height: auto;
+		box-sizing: border-box;
+		padding: 48px 0;
+	}
+
+	#landpage #whereami .background {
+		z-index: -1;
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	#landpage #whereami .overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background: rgba(44, 44, 44, 0.65);
+	}
+
+	#landpage #whereami .content {
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	#landpage #whereami .content h1 {
+		font-size: 38px;
+		line-height: normal;
+		color: #ffa800;
+		text-shadow: #000 0 1px 1px;
+		margin: 0;
+	}
+
+	#landpage #whereami .content h2 {
+		color: white;
+		margin: 14px 0 20px;
+		text-shadow: #000 0 1px 1px;
+		line-height: normal !important;
+	}
+
+	#landpage .green-btn {
+		display: inline-block;
+		text-decoration: none;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		border-radius: 3px;
+		padding: 8px 40px 12px 40px;
+		color: white;
+		box-sizing: border-box;
+		cursor: pointer;
+		border: none;
+		background: -webkit-gradient(linear, left top, left bottom, from(#87b948), to(#5da042));
+		background: -webkit-linear-gradient(top, #87b948 0%, #5da042 100%);
+		background: -o-linear-gradient(top, #87b948 0%, #5da042 100%);
+		background: linear-gradient(to bottom, #87b948 0%, #5da042 100%);
+	}
+
+	/* утп */
+	#landpage #howitworks {
+		background-color: #fff;
+		padding: 48px 0;
+	}
+
+	#landpage #howitworks h3 {
+		margin-bottom: 60px;
+		text-align: center;
+		font-size: 25px;
+		line-height: normal;
+	}
+
+	#landpage #howitworks .icons h3 {
+		margin-top: 15px;
+		font-weight: 600 !important;
+	}
+
+	#landpage #howitworks .icons .step {
+		max-width: 100% !important;
+		width: 100%;
+		text-align: center;
+	}
+
+	#landpage #howitworks .icons .step img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	#landpage #howitworks .icons:not(.slick-initialized) {
+		height: 216px;
+		overflow: hidden;
+	}
+
+	#landpage #howitworks .icons:not(.slick-initialized) .step:nth-child(2) {
+		margin-top: 40px;
+	}
+
+	#landpage #howitworks .icons .step p {
+		font-size: 15px;
+		line-height: 22px;
+	}
+
+	/* кворки */
+	#landpage #kworks {
+		padding: 30px 0 20px 0;
+	}
+	#landpage #kworks h3 {
+		margin: 0 0 20px;
+		text-align: center;
+		font-size: 25px;
+		font-weight: 600;
+		line-height: normal;
+	}
+}

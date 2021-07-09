@@ -1,0 +1,151 @@
+# Просмотр запросов на услуги от покупателей продавцом
+projects_worker:
+    path: /projects
+    methods: GET
+    defaults: { _controller: 'Controllers\Want\Worker\WantsController' }
+
+# Подгрузка для просмотра запросов на услуги от покупателей продавцами
+projects_ajax_loading:
+    path: /projects
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Worker\AjaxLoadingController' }
+
+# Возвращает параметры для рендеринга странцы списка проектов
+projects_ajax_parameters_loading:
+    path: /projects_params
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Worker\AjaxWantsListParametersController' }
+
+# Просмотр отправленных предложений на запросы услуг от покупателем
+offers:
+    path: /offers
+    methods: GET
+    defaults: { _controller: 'Controllers\Want\Worker\OffersController' }
+
+# Предложение кворка на запрос услуги
+new_offer:
+    path: /new_offer
+    methods: GET
+    defaults: { _controller: 'Controllers\Want\Worker\NewOfferController' }
+
+# Редактирование предложения кворка на запрос услуги
+edit_offer:
+    path: /edit_offer
+    methods: GET
+    defaults: { _controller: 'Controllers\Want\Worker\EditOfferController' }
+
+# Создание нового запроса на услуги
+new_project:
+    path: /new_project
+    methods: GET
+    defaults: { _controller: 'Controllers\Want\Payer\NewWantController' }
+
+# Обработка нового запроса на услуги
+new_project_form_handler:
+    path: /new_project
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Payer\Handler\NewWantHandlerController' }
+
+# Редактирование запроса на услуги
+edit_project:
+    path: /edit_project
+    methods: GET
+    defaults: { _controller: 'Controllers\Want\Payer\EditWantController' }
+
+# Обработка редактирования запроса на услуги
+edit_project_form_handler:
+    path: /edit_project
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Payer\Handler\EditWantHandlerController' }
+
+# Просмотр списка запросов на услуги покупателем
+manage_projects:
+    path: /manage_projects
+    methods: GET
+    defaults: { _controller: 'Controllers\Want\Payer\WantsController' }
+
+
+# Обработка запроса на остановку запроса на услугу
+manage_projects_stop_handler:
+    path: /projects/manage/stop
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Payer\Handler\StopWantHandlerController'}
+
+# Обработка запроса на перезапуск запроса на услугу
+manage_projects_restart_handler:
+    path: /projects/manage/restart
+    methods: GET
+    defaults: { _controller: 'Controllers\Want\Payer\Handler\RestartWantHandlerController'}
+
+# Обработка запроса на удаление запроса на услугу
+manage_projects_delete_handler:
+    path: /projects/manage/delete
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Payer\Handler\DeleteWantHandlerController'}
+
+# Просмтотр запроса услуги
+view_offers:
+    path: /project
+    methods: GET
+    defaults: { _controller: 'Controllers\Want\Payer\OffersController' }
+
+# Просмтотр покупателем предложений на запрос услуги
+view_offers_all:
+    path: /projects/{id}
+    methods: GET
+    defaults: { _controller: 'Controllers\Want\Payer\OffersController' }
+    requirements:
+      id: \d+
+
+# Заказ предложения из запроса на услуги
+order_by_offer:
+    path: /project/order
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Payer\Handler\OrderHandlerController' }
+
+# Выделение предложения (и отмена скрытия)
+offer_highlight:
+    path: /offer_highlight/{id}
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Payer\Handler\HighlightOfferController' }
+    requirements:
+      id: \d+
+
+# Выделение предложения (и отмена скрытия)
+remove_offer_highlight:
+    path: /remove_offer_highlight/{id}
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Payer\Handler\RemoveHighlightOfferController' }
+    requirements:
+      id: \d+
+
+remove_hide_offer:
+    path: /remove_hide_offer/{id}
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Payer\Handler\RemoveHideOfferController' }
+    requirements:
+      id: \d+
+
+# Проверка на шаблонное предложене
+check_is_template:
+    path: /projects/check_is_template
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Worker\CheckCloneOfferController' }
+
+# Отписаться от рассылки по бирже
+wants_unsubscribe:
+    path: /projects/unsubscribe
+    methods: GET
+    defaults: { _controller: 'Controllers\UserNotificationPeriod\UnsubscribeNotificationController' }
+
+# Получить портфолио для оффера на бирже
+wants_portfolio:
+    path: /wants/portfolio
+    methods: POST
+    defaults: { _controller: 'Controllers\Want\Payer\PortfolioController' }
+
+# Просмотр страницы профиля
+wants_user_list:
+    path: /projects/list/{username}
+    methods: GET
+    defaults: { _controller: 'Controllers\Want\Worker\PayerWantsController' }

@@ -1,0 +1,6 @@
+# Получить отзывы
+# Rating.api_loadReviews
+api_rating_loadreviews:
+    path: /loadreviews
+    methods: GET
+    defaults: { _controller: 'Controllers\Api\Rating\LoadReviewsController' }

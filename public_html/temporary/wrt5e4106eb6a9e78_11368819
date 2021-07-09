@@ -1,0 +1,33 @@
+<?php
+/* Smarty version 3.1.32, created on 2020-02-10 07:31:55
+  from 'E:\Mirafox\test-stand\public_html\themes\utils\currency.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32',
+  'unifunc' => 'content_5e4106eb6a70f8_75397258',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '5b040d705cb10a97d2d8e1cfa84b49688d2249a4' => 
+    array (
+      0 => 'E:\\Mirafox\\test-stand\\public_html\\themes\\utils\\currency.tpl',
+      1 => 1574687144,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5e4106eb6a70f8_75397258 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'E:\\Mirafox\\test-stand\\public_html\\smarty\\libs\\plugins\\modifier.zero.php','function'=>'smarty_modifier_zero',),));
+if ($_smarty_tpl->tpl_vars['currencyId']->value == \Model\CurrencyModel::USD || $_smarty_tpl->tpl_vars['lang']->value == Translations::EN_LANG) {?><span>$</span><?php }
+if (isset($_smarty_tpl->tpl_vars['total']->value)) {
+if ($_smarty_tpl->tpl_vars['span']->value) {?><span class="funds"><?php }
+echo smarty_modifier_zero($_smarty_tpl->tpl_vars['total']->value);
+if ($_smarty_tpl->tpl_vars['span']->value) {?></span><?php }
+}
+if ($_smarty_tpl->tpl_vars['currencyId']->value == \Model\CurrencyModel::RUB || $_smarty_tpl->tpl_vars['lang']->value == Translations::DEFAULT_LANG) {?>&nbsp;<span class="rouble">Р</span><?php }
+}
+}

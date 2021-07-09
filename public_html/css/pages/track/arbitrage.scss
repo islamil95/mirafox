@@ -1,0 +1,51 @@
+// Стили для трека арбитража
+
+// Статья базы знаний (причина открытия арбитража)
+.article {
+	border: 1px solid #e8e8e8;
+	background-color: #fafafa;	
+	margin-bottom: 1rem;	
+
+	// Вопрос
+	.question {
+	    font-size: 15px;
+	    font-weight: bold;
+		padding: 15px 15px;
+
+		// Иконка с восклицательным знаком в статье
+		.attention {
+		    width: 40px;
+		    height: 40px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    background-image: linear-gradient(rgb(255, 182, 60) 0%, rgb(255, 164, 10) 98%, rgb(255, 164, 10) 100%);
+		    border-radius: 100%;
+		    margin-right: 15px;
+		}
+
+	}
+
+	// Ответ
+	.answer {
+		padding: 0 15px;
+		font-size: 15px;
+		line-height: 23px;
+		text-align: initial;
+
+		ul {
+			padding-left: 40px!important;
+			margin-bottom: 15px!important;
+		}
+
+		p {
+			margin-bottom: 15px;
+		}
+
+	}
+
+}
+
+.unread .article {
+	background-color: rgba(248, 245, 226, 1);
+}

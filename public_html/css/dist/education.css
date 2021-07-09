@@ -1,0 +1,387 @@
+.education {
+  border-bottom: 2px solid #f6f6f6;
+  background-color: #fff;
+}
+
+.education__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000;
+}
+
+.education__header {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 206px;
+  padding: 0 10px;
+  background: url(/images/education/bg.jpg) 50% 0;
+  background-size: cover;
+}
+
+.education__header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 44, 44, 0.7);
+}
+
+.education__header-title {
+  position: relative;
+  z-index: 3;
+  color: #ffa800;
+}
+
+.education__header-title_big {
+  margin: -11px 0 10px;
+  font-size: 36px;
+  line-height: 48px;
+  color: #fff;
+}
+
+.education__content {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 40px 0 30px;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .education__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .education__content {
+    padding-bottom: 20px;
+  }
+}
+
+.education__list {
+  display: inline-block;
+  vertical-align: top;
+  margin: 28px auto 0;
+  padding: 0 10px;
+  list-style: none;
+}
+
+.education__list-item {
+  position: relative;
+  padding-left: 25px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.education__list-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  display: block;
+  width: 19px;
+  height: 14px;
+  overflow: hidden;
+  background: url(/images/check-mark-green.png) no-repeat;
+  background-size: contain;
+}
+
+.education__download {
+  width: 150px;
+  text-align: center;
+}
+
+.education__download-button {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 11px;
+}
+
+.education__download-label {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+}
+
+.education__download-counter {
+  margin-top: 9px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.education__lessons {
+  margin: 45px 0 30px;
+  padding: 0 0 26px;
+  text-align: left;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .education__lessons {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.education__lessons-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 165px;
+  overflow: hidden;
+  margin-top: 26px;
+  padding: 25px 0 0;
+  border-top: 1px solid #A5A5A5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.education__lessons-item:first-child {
+  margin-top: 0 !important;
+}
+
+.education__lessons-item_done .education__lessons-label {
+  display: inline !important;
+}
+
+@media (max-width: 1023px) {
+  .education__lessons-item {
+    padding-right: 10px;
+    height: 143px;
+  }
+}
+
+@media (max-width: 767px) {
+  .education__lessons-item {
+    display: block;
+    height: auto;
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+}
+
+.education__lessons-content-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 280px;
+}
+
+@media (max-width: 1023px) {
+  .education__lessons-content-wrapper {
+    padding-left: 228px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .education__lessons-content-wrapper:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    float: right;
+    width: 150px;
+    height: 20px;
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(70%, white), to(white));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .education__lessons-content-wrapper {
+    height: 117px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 567px) {
+  .education__lessons-content-wrapper {
+    display: block;
+    padding-left: 10px;
+    height: auto;
+  }
+}
+
+.education__lessons-content {
+  position: relative;
+}
+
+.education__lessons-img {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 250px;
+  height: 130px;
+}
+
+@media (max-width: 1023px) {
+  .education__lessons-img {
+    left: 10px;
+    width: auto;
+    height: 108px;
+  }
+}
+
+@media (max-width: 767px) {
+  .education__lessons-img {
+    width: 207px;
+  }
+}
+
+@media (max-width: 567px) {
+  .education__lessons-img {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+}
+
+.education__lessons-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.education__lessons-label {
+  display: none;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #009900;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .education__lessons-label {
+    float: right;
+    margin-left: 10px;
+    margin-top: 6px;
+  }
+}
+
+.education__lessons-time {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #009900;
+}
+
+.education__lessons-text {
+  margin-top: 10px;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+@media (max-width: 567px) {
+  .education__lessons-text {
+    height: 64px;
+    overflow: hidden;
+  }
+}
+
+.education__lessons-download {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-left: 30px;
+}
+
+@media (max-width: 1023px) {
+  .education__lessons-download {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .education__lessons-download {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: auto;
+    margin-left: 0;
+    margin-top: 16px;
+    padding: 3px 10px 0;
+  }
+}
+
+@media (max-width: 399px) {
+  .education__lessons-download {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .education__lessons .education__download-button {
+    width: 100%;
+    max-width: 207px;
+    min-width: 125px;
+    margin: -3px 10px 0 0;
+  }
+
+  .education__lessons .education__download-label {
+    margin-left: 0;
+  }
+
+  .education__lessons .education__download-counter {
+    margin-top: 6px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 399px) {
+  .education__lessons .education__download-button {
+    width: 125px;
+  }
+}
+

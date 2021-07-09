@@ -1,0 +1,11 @@
+.page-parent-category {
+	box-sizing: border-box;
+
+	* {
+		box-sizing: inherit;
+	}
+
+	.cusongsblock p a {
+		box-sizing: content-box;
+	}
+}

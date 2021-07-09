@@ -1,0 +1,158 @@
+// Стили для компонента общего поиска в шапке сайта
+// 
+// TODO: большая часть скопирована из search.scss, т.к. основные стили не подключаются
+// для шапки сайта, чтобы избежать непредвиденных конфликтов. По той же причине в
+// этом файле не используются переменные темы (цвета, толщина границ и т.д.). Когда
+// все страницы будут протестированы с основными стилями, можно будет отрефакторить
+// данный файл
+
+$white: white;
+$gray-100: #f6f6f6;
+$gray-300: #eaeaea;
+$gray-500: #bbb;
+$gray-650: #A5A5A5;
+$gray-700: #777;
+$gray-850: #606060;
+$light-blue: #CCE4FE;
+$light-yellow: #FAFDBD;
+$zindex-tooltip: 1070;
+$input-border-width: 1px;
+$input-border-color: $gray-650;
+$font-weight-bold: 600;
+$font-weight-normal: 400;
+
+.general-search.custom-search {
+	margin-top: 12px;
+	font-size: 13px!important;
+	position: relative;    
+
+   	// Кнопка поиска (лупа)
+	.search-button {
+	    position: absolute;
+	    right: 7px;
+		top: 9px;
+		line-height: 0px;
+		cursor: pointer;
+	}
+
+	// Кнопка сброса поиска (крестик)
+	.clear-button {
+	    position: absolute;
+	    cursor: pointer;
+	    right: 27px;
+	    top: 6px;
+	    font-size: 14px;
+	}
+
+	// Строка поиска
+	$input-border-radius: 23px;
+	$input-height: 32px;
+    input.form-control {
+		height: $input-height;
+        line-height: normal;
+        border-radius: $input-border-radius;
+        border: none;
+        padding: 0 45px 0 10px!important;
+        font-size: 14px!important;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+	// Выпадающий список
+	// Отступ сверху между строкой поиска и выпадающим списком
+	$dropdown-top-spacer: 2px;
+	.dropdown {
+	    position: absolute;
+	    background-color: white;
+	    z-index: $zindex-tooltip;
+	    width: 100%;
+	    border: $input-border-width solid $input-border-color;
+	    top: $input-height + $dropdown-top-spacer;
+	    box-sizing: border-box;
+	    border-radius: 3px;
+	    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.12);
+	}
+
+	// Подсказки
+	.suggestions {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	// Заголовок - Недавний поиск или Поиск услуг
+	.history, .suggestions-header {
+		background-color: $gray-100;
+		color: $gray-700;
+		font-size: 11px;
+		text-transform: uppercase;
+		padding: 0 10px 0 10px;
+		line-height: 24px;
+
+		// Кнопка - Очистить недавний поиск
+		.clear-history-button {
+			cursor: pointer;
+		}
+	}
+
+	// Подсказка
+	.suggestion {
+	    cursor: pointer;
+	    padding: 3px 10px 3px 10px;
+
+	    // По умолчанию совпавшая часть подсказки выделяется тэгом <b>,
+	    // но у нас прямо противоположная логика, поэтому меняем стили
+	    font-weight: $font-weight-bold;
+	    b {
+	    	color: $gray-700;
+	    	font-weight: $font-weight-normal!important;
+	    }
+	}
+
+	.selected {
+	    background-color: $gray-300;
+	}
+}
+
+// Мобильная версия
+.general-search.mobile.custom-search {
+	margin-top: 0;
+	font-size: 15px!important;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+   	// Кнопка поиска (лупа)
+	.search-button {
+		display: none;
+	}
+
+	// Кнопка сброса поиска (крестик)
+	.clear-button {
+	    top: 4px;
+	    right: 8px;
+	}
+
+	// Строка поиска
+	$mobile-input-border-radius: 2px;
+	$mobile-input-height: 28px;
+	input.form-control {
+        height: $mobile-input-height;
+        line-height: normal;
+        border-radius: $mobile-input-border-radius;
+		font-size: 15px!important;
+		padding: 0 25px 0 7px!important;
+		text-align: center;
+
+		&:focus {
+			text-align: left;
+		}		
+	}
+
+	// Выпадающий список
+	// Отступ сверху между строкой поиска и выпадающим списком
+	$mobile-dropdown-top-spacer: 2px;
+	.dropdown {
+	    top: $mobile-input-height + $mobile-dropdown-top-spacer;
+	}
+
+}

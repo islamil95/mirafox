@@ -1,0 +1,4775 @@
+@mixin emojiSprites($property, $postfix: "") {	
+&_1f600#{$postfix} { 
+	#{$property}: 50% 0px;
+}
+&_1f603#{$postfix} { 
+	#{$property}: 50% -36px;
+}
+&_1f604#{$postfix} { 
+	#{$property}: 50% -72px;
+}
+&_1f601#{$postfix} { 
+	#{$property}: 50% -108px;
+}
+&_1f606#{$postfix} { 
+	#{$property}: 50% -144px;
+}
+&_1f605#{$postfix} { 
+	#{$property}: 50% -180px;
+}
+&_1f923#{$postfix} { 
+	#{$property}: 50% -216px;
+}
+&_1f602#{$postfix} { 
+	#{$property}: 50% -252px;
+}
+&_1f642#{$postfix} { 
+	#{$property}: 50% -288px;
+}
+&_1f643#{$postfix} { 
+	#{$property}: 50% -324px;
+}
+&_1f609#{$postfix} { 
+	#{$property}: 50% -360px;
+}
+&_1f60a#{$postfix} { 
+	#{$property}: 50% -396px;
+}
+&_1f607#{$postfix} { 
+	#{$property}: 50% -432px;
+}
+&_1f970#{$postfix} { 
+	#{$property}: 50% -468px;
+}
+&_1f60d#{$postfix} { 
+	#{$property}: 50% -504px;
+}
+&_1f929#{$postfix} { 
+	#{$property}: 50% -540px;
+}
+&_1f618#{$postfix} { 
+	#{$property}: 50% -576px;
+}
+&_1f617#{$postfix} { 
+	#{$property}: 50% -612px;
+}
+&_263a#{$postfix} { 
+	#{$property}: 50% -648px;
+}
+&_1f61a#{$postfix} { 
+	#{$property}: 50% -684px;
+}
+&_1f619#{$postfix} { 
+	#{$property}: 50% -720px;
+}
+&_1f60b#{$postfix} { 
+	#{$property}: 50% -756px;
+}
+&_1f61b#{$postfix} { 
+	#{$property}: 50% -792px;
+}
+&_1f61c#{$postfix} { 
+	#{$property}: 50% -828px;
+}
+&_1f92a#{$postfix} { 
+	#{$property}: 50% -864px;
+}
+&_1f61d#{$postfix} { 
+	#{$property}: 50% -900px;
+}
+&_1f911#{$postfix} { 
+	#{$property}: 50% -936px;
+}
+&_1f917#{$postfix} { 
+	#{$property}: 50% -972px;
+}
+&_1f92d#{$postfix} { 
+	#{$property}: 50% -1008px;
+}
+&_1f92b#{$postfix} { 
+	#{$property}: 50% -1044px;
+}
+&_1f914#{$postfix} { 
+	#{$property}: 50% -1080px;
+}
+&_1f910#{$postfix} { 
+	#{$property}: 50% -1116px;
+}
+&_1f928#{$postfix} { 
+	#{$property}: 50% -1152px;
+}
+&_1f610#{$postfix} { 
+	#{$property}: 50% -1188px;
+}
+&_1f611#{$postfix} { 
+	#{$property}: 50% -1224px;
+}
+&_1f636#{$postfix} { 
+	#{$property}: 50% -1260px;
+}
+&_1f60f#{$postfix} { 
+	#{$property}: 50% -1296px;
+}
+&_1f612#{$postfix} { 
+	#{$property}: 50% -1332px;
+}
+&_1f644#{$postfix} { 
+	#{$property}: 50% -1368px;
+}
+&_1f62c#{$postfix} { 
+	#{$property}: 50% -1404px;
+}
+&_1f925#{$postfix} { 
+	#{$property}: 50% -1440px;
+}
+&_1f60c#{$postfix} { 
+	#{$property}: 50% -1476px;
+}
+&_1f614#{$postfix} { 
+	#{$property}: 50% -1512px;
+}
+&_1f62a#{$postfix} { 
+	#{$property}: 50% -1548px;
+}
+&_1f924#{$postfix} { 
+	#{$property}: 50% -1584px;
+}
+&_1f634#{$postfix} { 
+	#{$property}: 50% -1620px;
+}
+&_1f637#{$postfix} { 
+	#{$property}: 50% -1656px;
+}
+&_1f912#{$postfix} { 
+	#{$property}: 50% -1692px;
+}
+&_1f915#{$postfix} { 
+	#{$property}: 50% -1728px;
+}
+&_1f922#{$postfix} { 
+	#{$property}: 50% -1764px;
+}
+&_1f92e#{$postfix} { 
+	#{$property}: 50% -1800px;
+}
+&_1f927#{$postfix} { 
+	#{$property}: 50% -1836px;
+}
+&_1f975#{$postfix} { 
+	#{$property}: 50% -1872px;
+}
+&_1f976#{$postfix} { 
+	#{$property}: 50% -1908px;
+}
+&_1f974#{$postfix} { 
+	#{$property}: 50% -1944px;
+}
+&_1f635#{$postfix} { 
+	#{$property}: 50% -1980px;
+}
+&_1f92f#{$postfix} { 
+	#{$property}: 50% -2016px;
+}
+&_1f920#{$postfix} { 
+	#{$property}: 50% -2052px;
+}
+&_1f973#{$postfix} { 
+	#{$property}: 50% -2088px;
+}
+&_1f60e#{$postfix} { 
+	#{$property}: 50% -2124px;
+}
+&_1f913#{$postfix} { 
+	#{$property}: 50% -2160px;
+}
+&_1f9d0#{$postfix} { 
+	#{$property}: 50% -2196px;
+}
+&_1f615#{$postfix} { 
+	#{$property}: 50% -2232px;
+}
+&_1f61f#{$postfix} { 
+	#{$property}: 50% -2268px;
+}
+&_1f641#{$postfix} { 
+	#{$property}: 50% -2304px;
+}
+&_2639#{$postfix} { 
+	#{$property}: 50% -2340px;
+}
+&_1f62e#{$postfix} { 
+	#{$property}: 50% -2376px;
+}
+&_1f62f#{$postfix} { 
+	#{$property}: 50% -2412px;
+}
+&_1f632#{$postfix} { 
+	#{$property}: 50% -2448px;
+}
+&_1f633#{$postfix} { 
+	#{$property}: 50% -2484px;
+}
+&_1f97a#{$postfix} { 
+	#{$property}: 50% -2520px;
+}
+&_1f626#{$postfix} { 
+	#{$property}: 50% -2556px;
+}
+&_1f627#{$postfix} { 
+	#{$property}: 50% -2592px;
+}
+&_1f628#{$postfix} { 
+	#{$property}: 50% -2628px;
+}
+&_1f630#{$postfix} { 
+	#{$property}: 50% -2664px;
+}
+&_1f625#{$postfix} { 
+	#{$property}: 50% -2700px;
+}
+&_1f622#{$postfix} { 
+	#{$property}: 50% -2736px;
+}
+&_1f62d#{$postfix} { 
+	#{$property}: 50% -2772px;
+}
+&_1f631#{$postfix} { 
+	#{$property}: 50% -2808px;
+}
+&_1f616#{$postfix} { 
+	#{$property}: 50% -2844px;
+}
+&_1f623#{$postfix} { 
+	#{$property}: 50% -2880px;
+}
+&_1f61e#{$postfix} { 
+	#{$property}: 50% -2916px;
+}
+&_1f613#{$postfix} { 
+	#{$property}: 50% -2952px;
+}
+&_1f629#{$postfix} { 
+	#{$property}: 50% -2988px;
+}
+&_1f62b#{$postfix} { 
+	#{$property}: 50% -3024px;
+}
+&_1f971#{$postfix} { 
+	#{$property}: 50% -3060px;
+}
+&_1f624#{$postfix} { 
+	#{$property}: 50% -3096px;
+}
+&_1f621#{$postfix} { 
+	#{$property}: 50% -3132px;
+}
+&_1f620#{$postfix} { 
+	#{$property}: 50% -3168px;
+}
+&_1f92c#{$postfix} { 
+	#{$property}: 50% -3204px;
+}
+&_1f608#{$postfix} { 
+	#{$property}: 50% -3240px;
+}
+&_1f47f#{$postfix} { 
+	#{$property}: 50% -3276px;
+}
+&_1f480#{$postfix} { 
+	#{$property}: 50% -3312px;
+}
+&_2620#{$postfix} { 
+	#{$property}: 50% -3348px;
+}
+&_1f4a9#{$postfix} { 
+	#{$property}: 50% -3384px;
+}
+&_1f921#{$postfix} { 
+	#{$property}: 50% -3420px;
+}
+&_1f479#{$postfix} { 
+	#{$property}: 50% -3456px;
+}
+&_1f47a#{$postfix} { 
+	#{$property}: 50% -3492px;
+}
+&_1f47b#{$postfix} { 
+	#{$property}: 50% -3528px;
+}
+&_1f47d#{$postfix} { 
+	#{$property}: 50% -3564px;
+}
+&_1f47e#{$postfix} { 
+	#{$property}: 50% -3600px;
+}
+&_1f916#{$postfix} { 
+	#{$property}: 50% -3636px;
+}
+&_1f63a#{$postfix} { 
+	#{$property}: 50% -3672px;
+}
+&_1f638#{$postfix} { 
+	#{$property}: 50% -3708px;
+}
+&_1f639#{$postfix} { 
+	#{$property}: 50% -3744px;
+}
+&_1f63b#{$postfix} { 
+	#{$property}: 50% -3780px;
+}
+&_1f63c#{$postfix} { 
+	#{$property}: 50% -3816px;
+}
+&_1f63d#{$postfix} { 
+	#{$property}: 50% -3852px;
+}
+&_1f640#{$postfix} { 
+	#{$property}: 50% -3888px;
+}
+&_1f63f#{$postfix} { 
+	#{$property}: 50% -3924px;
+}
+&_1f63e#{$postfix} { 
+	#{$property}: 50% -3960px;
+}
+&_1f648#{$postfix} { 
+	#{$property}: 50% -3996px;
+}
+&_1f649#{$postfix} { 
+	#{$property}: 50% -4032px;
+}
+&_1f64a#{$postfix} { 
+	#{$property}: 50% -4068px;
+}
+&_1f48b#{$postfix} { 
+	#{$property}: 50% -4104px;
+}
+&_1f48c#{$postfix} { 
+	#{$property}: 50% -4140px;
+}
+&_1f498#{$postfix} { 
+	#{$property}: 50% -4176px;
+}
+&_1f49d#{$postfix} { 
+	#{$property}: 50% -4212px;
+}
+&_1f496#{$postfix} { 
+	#{$property}: 50% -4248px;
+}
+&_1f497#{$postfix} { 
+	#{$property}: 50% -4284px;
+}
+&_1f493#{$postfix} { 
+	#{$property}: 50% -4320px;
+}
+&_1f49e#{$postfix} { 
+	#{$property}: 50% -4356px;
+}
+&_1f495#{$postfix} { 
+	#{$property}: 50% -4392px;
+}
+&_1f49f#{$postfix} { 
+	#{$property}: 50% -4428px;
+}
+&_2763#{$postfix} { 
+	#{$property}: 50% -4464px;
+}
+&_1f494#{$postfix} { 
+	#{$property}: 50% -4500px;
+}
+&_2764#{$postfix} { 
+	#{$property}: 50% -4536px;
+}
+&_1f9e1#{$postfix} { 
+	#{$property}: 50% -4572px;
+}
+&_1f49b#{$postfix} { 
+	#{$property}: 50% -4608px;
+}
+&_1f49a#{$postfix} { 
+	#{$property}: 50% -4644px;
+}
+&_1f499#{$postfix} { 
+	#{$property}: 50% -4680px;
+}
+&_1f49c#{$postfix} { 
+	#{$property}: 50% -4716px;
+}
+&_1f90e#{$postfix} { 
+	#{$property}: 50% -4752px;
+}
+&_1f5a4#{$postfix} { 
+	#{$property}: 50% -4788px;
+}
+&_1f90d#{$postfix} { 
+	#{$property}: 50% -4824px;
+}
+&_1f4af#{$postfix} { 
+	#{$property}: 50% -4860px;
+}
+&_1f4a2#{$postfix} { 
+	#{$property}: 50% -4896px;
+}
+&_1f4a5#{$postfix} { 
+	#{$property}: 50% -4932px;
+}
+&_1f4ab#{$postfix} { 
+	#{$property}: 50% -4968px;
+}
+&_1f4a6#{$postfix} { 
+	#{$property}: 50% -5004px;
+}
+&_1f4a8#{$postfix} { 
+	#{$property}: 50% -5040px;
+}
+&_1f573#{$postfix} { 
+	#{$property}: 50% -5076px;
+}
+&_1f4a3#{$postfix} { 
+	#{$property}: 50% -5112px;
+}
+&_1f4ac#{$postfix} { 
+	#{$property}: 50% -5148px;
+}
+&_1f5e8#{$postfix} { 
+	#{$property}: 50% -5184px;
+}
+&_1f5ef#{$postfix} { 
+	#{$property}: 50% -5220px;
+}
+&_1f4ad#{$postfix} { 
+	#{$property}: 50% -5256px;
+}
+&_1f4a4#{$postfix} { 
+	#{$property}: 50% -5292px;
+}
+&_1f44b#{$postfix} { 
+	#{$property}: 50% -5328px;
+}
+&_1f91a#{$postfix} { 
+	#{$property}: 50% -5364px;
+}
+&_1f590#{$postfix} { 
+	#{$property}: 50% -5400px;
+}
+&_270b#{$postfix} { 
+	#{$property}: 50% -5436px;
+}
+&_1f596#{$postfix} { 
+	#{$property}: 50% -5472px;
+}
+&_1f44c#{$postfix} { 
+	#{$property}: 50% -5508px;
+}
+&_1f90f#{$postfix} { 
+	#{$property}: 50% -5544px;
+}
+&_270c#{$postfix} { 
+	#{$property}: 50% -5580px;
+}
+&_1f91e#{$postfix} { 
+	#{$property}: 50% -5616px;
+}
+&_1f91f#{$postfix} { 
+	#{$property}: 50% -5652px;
+}
+&_1f918#{$postfix} { 
+	#{$property}: 50% -5688px;
+}
+&_1f919#{$postfix} { 
+	#{$property}: 50% -5724px;
+}
+&_1f448#{$postfix} { 
+	#{$property}: 50% -5760px;
+}
+&_1f449#{$postfix} { 
+	#{$property}: 50% -5796px;
+}
+&_1f446#{$postfix} { 
+	#{$property}: 50% -5832px;
+}
+&_1f595#{$postfix} { 
+	#{$property}: 50% -5868px;
+}
+&_1f447#{$postfix} { 
+	#{$property}: 50% -5904px;
+}
+&_261d#{$postfix} { 
+	#{$property}: 50% -5940px;
+}
+&_1f44d#{$postfix} { 
+	#{$property}: 50% -5976px;
+}
+&_1f44e#{$postfix} { 
+	#{$property}: 50% -6012px;
+}
+&_270a#{$postfix} { 
+	#{$property}: 50% -6048px;
+}
+&_1f44a#{$postfix} { 
+	#{$property}: 50% -6084px;
+}
+&_1f91b#{$postfix} { 
+	#{$property}: 50% -6120px;
+}
+&_1f91c#{$postfix} { 
+	#{$property}: 50% -6156px;
+}
+&_1f44f#{$postfix} { 
+	#{$property}: 50% -6192px;
+}
+&_1f64c#{$postfix} { 
+	#{$property}: 50% -6228px;
+}
+&_1f450#{$postfix} { 
+	#{$property}: 50% -6264px;
+}
+&_1f932#{$postfix} { 
+	#{$property}: 50% -6300px;
+}
+&_1f91d#{$postfix} { 
+	#{$property}: 50% -6336px;
+}
+&_1f64f#{$postfix} { 
+	#{$property}: 50% -6372px;
+}
+&_270d#{$postfix} { 
+	#{$property}: 50% -6408px;
+}
+&_1f485#{$postfix} { 
+	#{$property}: 50% -6444px;
+}
+&_1f933#{$postfix} { 
+	#{$property}: 50% -6480px;
+}
+&_1f4aa#{$postfix} { 
+	#{$property}: 50% -6516px;
+}
+&_1f9be#{$postfix} { 
+	#{$property}: 50% -6552px;
+}
+&_1f9bf#{$postfix} { 
+	#{$property}: 50% -6588px;
+}
+&_1f9b5#{$postfix} { 
+	#{$property}: 50% -6624px;
+}
+&_1f9b6#{$postfix} { 
+	#{$property}: 50% -6660px;
+}
+&_1f442#{$postfix} { 
+	#{$property}: 50% -6696px;
+}
+&_1f9bb#{$postfix} { 
+	#{$property}: 50% -6732px;
+}
+&_1f443#{$postfix} { 
+	#{$property}: 50% -6768px;
+}
+&_1f9e0#{$postfix} { 
+	#{$property}: 50% -6804px;
+}
+&_1f9b7#{$postfix} { 
+	#{$property}: 50% -6840px;
+}
+&_1f9b4#{$postfix} { 
+	#{$property}: 50% -6876px;
+}
+&_1f440#{$postfix} { 
+	#{$property}: 50% -6912px;
+}
+&_1f441#{$postfix} { 
+	#{$property}: 50% -6948px;
+}
+&_1f445#{$postfix} { 
+	#{$property}: 50% -6984px;
+}
+&_1f444#{$postfix} { 
+	#{$property}: 50% -7020px;
+}
+&_1f476#{$postfix} { 
+	#{$property}: 50% -7056px;
+}
+&_1f9d2#{$postfix} { 
+	#{$property}: 50% -7092px;
+}
+&_1f466#{$postfix} { 
+	#{$property}: 50% -7128px;
+}
+&_1f467#{$postfix} { 
+	#{$property}: 50% -7164px;
+}
+&_1f9d1#{$postfix} { 
+	#{$property}: 50% -7200px;
+}
+&_1f471#{$postfix} { 
+	#{$property}: 50% -7236px;
+}
+&_1f468#{$postfix} { 
+	#{$property}: 50% -7272px;
+}
+&_1f9d4#{$postfix} { 
+	#{$property}: 50% -7308px;
+}
+&_1f471-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -7344px;
+}
+&_1f468-200d-1f9b0#{$postfix} { 
+	#{$property}: 50% -7380px;
+}
+&_1f468-200d-1f9b1#{$postfix} { 
+	#{$property}: 50% -7416px;
+}
+&_1f468-200d-1f9b3#{$postfix} { 
+	#{$property}: 50% -7452px;
+}
+&_1f468-200d-1f9b2#{$postfix} { 
+	#{$property}: 50% -7488px;
+}
+&_1f469#{$postfix} { 
+	#{$property}: 50% -7524px;
+}
+&_1f471-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -7560px;
+}
+&_1f469-200d-1f9b0#{$postfix} { 
+	#{$property}: 50% -7596px;
+}
+&_1f469-200d-1f9b1#{$postfix} { 
+	#{$property}: 50% -7632px;
+}
+&_1f469-200d-1f9b3#{$postfix} { 
+	#{$property}: 50% -7668px;
+}
+&_1f469-200d-1f9b2#{$postfix} { 
+	#{$property}: 50% -7704px;
+}
+&_1f9d3#{$postfix} { 
+	#{$property}: 50% -7740px;
+}
+&_1f474#{$postfix} { 
+	#{$property}: 50% -7776px;
+}
+&_1f475#{$postfix} { 
+	#{$property}: 50% -7812px;
+}
+&_1f64d#{$postfix} { 
+	#{$property}: 50% -7848px;
+}
+&_1f64d-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -7884px;
+}
+&_1f64d-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -7920px;
+}
+&_1f64e#{$postfix} { 
+	#{$property}: 50% -7956px;
+}
+&_1f64e-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -7992px;
+}
+&_1f64e-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -8028px;
+}
+&_1f645#{$postfix} { 
+	#{$property}: 50% -8064px;
+}
+&_1f645-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -8100px;
+}
+&_1f645-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -8136px;
+}
+&_1f646#{$postfix} { 
+	#{$property}: 50% -8172px;
+}
+&_1f646-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -8208px;
+}
+&_1f646-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -8244px;
+}
+&_1f481#{$postfix} { 
+	#{$property}: 50% -8280px;
+}
+&_1f481-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -8316px;
+}
+&_1f481-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -8352px;
+}
+&_1f64b#{$postfix} { 
+	#{$property}: 50% -8388px;
+}
+&_1f64b-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -8424px;
+}
+&_1f64b-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -8460px;
+}
+&_1f9cf#{$postfix} { 
+	#{$property}: 50% -8496px;
+}
+&_1f9cf-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -8532px;
+}
+&_1f9cf-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -8568px;
+}
+&_1f647#{$postfix} { 
+	#{$property}: 50% -8604px;
+}
+&_1f647-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -8640px;
+}
+&_1f647-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -8676px;
+}
+&_1f926#{$postfix} { 
+	#{$property}: 50% -8712px;
+}
+&_1f926-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -8748px;
+}
+&_1f926-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -8784px;
+}
+&_1f937#{$postfix} { 
+	#{$property}: 50% -8820px;
+}
+&_1f937-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -8856px;
+}
+&_1f937-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -8892px;
+}
+&_1f468-200d-2695-fe0f#{$postfix} { 
+	#{$property}: 50% -8928px;
+}
+&_1f469-200d-2695-fe0f#{$postfix} { 
+	#{$property}: 50% -8964px;
+}
+&_1f468-200d-1f393#{$postfix} { 
+	#{$property}: 50% -9000px;
+}
+&_1f469-200d-1f393#{$postfix} { 
+	#{$property}: 50% -9036px;
+}
+&_1f468-200d-1f3eb#{$postfix} { 
+	#{$property}: 50% -9072px;
+}
+&_1f469-200d-1f3eb#{$postfix} { 
+	#{$property}: 50% -9108px;
+}
+&_1f468-200d-2696-fe0f#{$postfix} { 
+	#{$property}: 50% -9144px;
+}
+&_1f469-200d-2696-fe0f#{$postfix} { 
+	#{$property}: 50% -9180px;
+}
+&_1f468-200d-1f33e#{$postfix} { 
+	#{$property}: 50% -9216px;
+}
+&_1f469-200d-1f33e#{$postfix} { 
+	#{$property}: 50% -9252px;
+}
+&_1f468-200d-1f373#{$postfix} { 
+	#{$property}: 50% -9288px;
+}
+&_1f469-200d-1f373#{$postfix} { 
+	#{$property}: 50% -9324px;
+}
+&_1f468-200d-1f527#{$postfix} { 
+	#{$property}: 50% -9360px;
+}
+&_1f469-200d-1f527#{$postfix} { 
+	#{$property}: 50% -9396px;
+}
+&_1f468-200d-1f3ed#{$postfix} { 
+	#{$property}: 50% -9432px;
+}
+&_1f469-200d-1f3ed#{$postfix} { 
+	#{$property}: 50% -9468px;
+}
+&_1f468-200d-1f4bc#{$postfix} { 
+	#{$property}: 50% -9504px;
+}
+&_1f469-200d-1f4bc#{$postfix} { 
+	#{$property}: 50% -9540px;
+}
+&_1f468-200d-1f52c#{$postfix} { 
+	#{$property}: 50% -9576px;
+}
+&_1f469-200d-1f52c#{$postfix} { 
+	#{$property}: 50% -9612px;
+}
+&_1f468-200d-1f4bb#{$postfix} { 
+	#{$property}: 50% -9648px;
+}
+&_1f469-200d-1f4bb#{$postfix} { 
+	#{$property}: 50% -9684px;
+}
+&_1f468-200d-1f3a4#{$postfix} { 
+	#{$property}: 50% -9720px;
+}
+&_1f469-200d-1f3a4#{$postfix} { 
+	#{$property}: 50% -9756px;
+}
+&_1f468-200d-1f3a8#{$postfix} { 
+	#{$property}: 50% -9792px;
+}
+&_1f469-200d-1f3a8#{$postfix} { 
+	#{$property}: 50% -9828px;
+}
+&_1f468-200d-2708-fe0f#{$postfix} { 
+	#{$property}: 50% -9864px;
+}
+&_1f469-200d-2708-fe0f#{$postfix} { 
+	#{$property}: 50% -9900px;
+}
+&_1f468-200d-1f680#{$postfix} { 
+	#{$property}: 50% -9936px;
+}
+&_1f469-200d-1f680#{$postfix} { 
+	#{$property}: 50% -9972px;
+}
+&_1f468-200d-1f692#{$postfix} { 
+	#{$property}: 50% -10008px;
+}
+&_1f469-200d-1f692#{$postfix} { 
+	#{$property}: 50% -10044px;
+}
+&_1f46e#{$postfix} { 
+	#{$property}: 50% -10080px;
+}
+&_1f46e-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -10116px;
+}
+&_1f46e-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -10152px;
+}
+&_1f575#{$postfix} { 
+	#{$property}: 50% -10188px;
+}
+&_1f575-fe0f-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -10224px;
+}
+&_1f575-fe0f-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -10260px;
+}
+&_1f482#{$postfix} { 
+	#{$property}: 50% -10296px;
+}
+&_1f482-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -10332px;
+}
+&_1f482-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -10368px;
+}
+&_1f477#{$postfix} { 
+	#{$property}: 50% -10404px;
+}
+&_1f477-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -10440px;
+}
+&_1f477-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -10476px;
+}
+&_1f934#{$postfix} { 
+	#{$property}: 50% -10512px;
+}
+&_1f478#{$postfix} { 
+	#{$property}: 50% -10548px;
+}
+&_1f473#{$postfix} { 
+	#{$property}: 50% -10584px;
+}
+&_1f473-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -10620px;
+}
+&_1f473-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -10656px;
+}
+&_1f472#{$postfix} { 
+	#{$property}: 50% -10692px;
+}
+&_1f9d5#{$postfix} { 
+	#{$property}: 50% -10728px;
+}
+&_1f935#{$postfix} { 
+	#{$property}: 50% -10764px;
+}
+&_1f470#{$postfix} { 
+	#{$property}: 50% -10800px;
+}
+&_1f930#{$postfix} { 
+	#{$property}: 50% -10836px;
+}
+&_1f931#{$postfix} { 
+	#{$property}: 50% -10872px;
+}
+&_1f47c#{$postfix} { 
+	#{$property}: 50% -10908px;
+}
+&_1f385#{$postfix} { 
+	#{$property}: 50% -10944px;
+}
+&_1f936#{$postfix} { 
+	#{$property}: 50% -10980px;
+}
+&_1f9b8#{$postfix} { 
+	#{$property}: 50% -11016px;
+}
+&_1f9b8-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -11052px;
+}
+&_1f9b8-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -11088px;
+}
+&_1f9b9#{$postfix} { 
+	#{$property}: 50% -11124px;
+}
+&_1f9b9-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -11160px;
+}
+&_1f9b9-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -11196px;
+}
+&_1f9d9#{$postfix} { 
+	#{$property}: 50% -11232px;
+}
+&_1f9d9-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -11268px;
+}
+&_1f9d9-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -11304px;
+}
+&_1f9da#{$postfix} { 
+	#{$property}: 50% -11340px;
+}
+&_1f9da-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -11376px;
+}
+&_1f9da-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -11412px;
+}
+&_1f9db#{$postfix} { 
+	#{$property}: 50% -11448px;
+}
+&_1f9db-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -11484px;
+}
+&_1f9db-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -11520px;
+}
+&_1f9dc#{$postfix} { 
+	#{$property}: 50% -11556px;
+}
+&_1f9dc-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -11592px;
+}
+&_1f9dc-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -11628px;
+}
+&_1f9dd#{$postfix} { 
+	#{$property}: 50% -11664px;
+}
+&_1f9dd-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -11700px;
+}
+&_1f9dd-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -11736px;
+}
+&_1f9de#{$postfix} { 
+	#{$property}: 50% -11772px;
+}
+&_1f9de-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -11808px;
+}
+&_1f9de-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -11844px;
+}
+&_1f9df#{$postfix} { 
+	#{$property}: 50% -11880px;
+}
+&_1f9df-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -11916px;
+}
+&_1f9df-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -11952px;
+}
+&_1f486#{$postfix} { 
+	#{$property}: 50% -11988px;
+}
+&_1f486-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -12024px;
+}
+&_1f486-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -12060px;
+}
+&_1f487#{$postfix} { 
+	#{$property}: 50% -12096px;
+}
+&_1f487-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -12132px;
+}
+&_1f487-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -12168px;
+}
+&_1f6b6#{$postfix} { 
+	#{$property}: 50% -12204px;
+}
+&_1f6b6-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -12240px;
+}
+&_1f6b6-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -12276px;
+}
+&_1f9cd#{$postfix} { 
+	#{$property}: 50% -12312px;
+}
+&_1f9cd-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -12348px;
+}
+&_1f9cd-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -12384px;
+}
+&_1f9ce#{$postfix} { 
+	#{$property}: 50% -12420px;
+}
+&_1f9ce-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -12456px;
+}
+&_1f9ce-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -12492px;
+}
+&_1f468-200d-1f9af#{$postfix} { 
+	#{$property}: 50% -12528px;
+}
+&_1f469-200d-1f9af#{$postfix} { 
+	#{$property}: 50% -12564px;
+}
+&_1f468-200d-1f9bc#{$postfix} { 
+	#{$property}: 50% -12600px;
+}
+&_1f469-200d-1f9bc#{$postfix} { 
+	#{$property}: 50% -12636px;
+}
+&_1f468-200d-1f9bd#{$postfix} { 
+	#{$property}: 50% -12672px;
+}
+&_1f469-200d-1f9bd#{$postfix} { 
+	#{$property}: 50% -12708px;
+}
+&_1f3c3#{$postfix} { 
+	#{$property}: 50% -12744px;
+}
+&_1f3c3-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -12780px;
+}
+&_1f3c3-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -12816px;
+}
+&_1f483#{$postfix} { 
+	#{$property}: 50% -12852px;
+}
+&_1f57a#{$postfix} { 
+	#{$property}: 50% -12888px;
+}
+&_1f574#{$postfix} { 
+	#{$property}: 50% -12924px;
+}
+&_1f46f#{$postfix} { 
+	#{$property}: 50% -12960px;
+}
+&_1f46f-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -12996px;
+}
+&_1f46f-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -13032px;
+}
+&_1f9d6#{$postfix} { 
+	#{$property}: 50% -13068px;
+}
+&_1f9d6-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -13104px;
+}
+&_1f9d6-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -13140px;
+}
+&_1f9d7#{$postfix} { 
+	#{$property}: 50% -13176px;
+}
+&_1f9d7-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -13212px;
+}
+&_1f9d7-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -13248px;
+}
+&_1f93a#{$postfix} { 
+	#{$property}: 50% -13284px;
+}
+&_1f3c7#{$postfix} { 
+	#{$property}: 50% -13320px;
+}
+&_26f7#{$postfix} { 
+	#{$property}: 50% -13356px;
+}
+&_1f3c2#{$postfix} { 
+	#{$property}: 50% -13392px;
+}
+&_1f3cc#{$postfix} { 
+	#{$property}: 50% -13428px;
+}
+&_1f3cc-fe0f-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -13464px;
+}
+&_1f3cc-fe0f-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -13500px;
+}
+&_1f3c4#{$postfix} { 
+	#{$property}: 50% -13536px;
+}
+&_1f3c4-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -13572px;
+}
+&_1f3c4-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -13608px;
+}
+&_1f6a3#{$postfix} { 
+	#{$property}: 50% -13644px;
+}
+&_1f6a3-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -13680px;
+}
+&_1f6a3-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -13716px;
+}
+&_1f3ca#{$postfix} { 
+	#{$property}: 50% -13752px;
+}
+&_1f3ca-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -13788px;
+}
+&_1f3ca-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -13824px;
+}
+&_26f9#{$postfix} { 
+	#{$property}: 50% -13860px;
+}
+&_26f9-fe0f-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -13896px;
+}
+&_26f9-fe0f-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -13932px;
+}
+&_1f3cb#{$postfix} { 
+	#{$property}: 50% -13968px;
+}
+&_1f3cb-fe0f-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -14004px;
+}
+&_1f3cb-fe0f-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -14040px;
+}
+&_1f6b4#{$postfix} { 
+	#{$property}: 50% -14076px;
+}
+&_1f6b4-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -14112px;
+}
+&_1f6b4-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -14148px;
+}
+&_1f6b5#{$postfix} { 
+	#{$property}: 50% -14184px;
+}
+&_1f6b5-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -14220px;
+}
+&_1f6b5-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -14256px;
+}
+&_1f938#{$postfix} { 
+	#{$property}: 50% -14292px;
+}
+&_1f938-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -14328px;
+}
+&_1f938-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -14364px;
+}
+&_1f93c#{$postfix} { 
+	#{$property}: 50% -14400px;
+}
+&_1f93c-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -14436px;
+}
+&_1f93c-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -14472px;
+}
+&_1f93d#{$postfix} { 
+	#{$property}: 50% -14508px;
+}
+&_1f93d-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -14544px;
+}
+&_1f93d-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -14580px;
+}
+&_1f93e#{$postfix} { 
+	#{$property}: 50% -14616px;
+}
+&_1f93e-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -14652px;
+}
+&_1f93e-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -14688px;
+}
+&_1f939#{$postfix} { 
+	#{$property}: 50% -14724px;
+}
+&_1f939-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -14760px;
+}
+&_1f939-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -14796px;
+}
+&_1f9d8#{$postfix} { 
+	#{$property}: 50% -14832px;
+}
+&_1f9d8-200d-2642-fe0f#{$postfix} { 
+	#{$property}: 50% -14868px;
+}
+&_1f9d8-200d-2640-fe0f#{$postfix} { 
+	#{$property}: 50% -14904px;
+}
+&_1f6c0#{$postfix} { 
+	#{$property}: 50% -14940px;
+}
+&_1f6cc#{$postfix} { 
+	#{$property}: 50% -14976px;
+}
+&_1f9d1-200d-1f91d-200d-1f9d1#{$postfix} { 
+	#{$property}: 50% -15012px;
+}
+&_1f46d#{$postfix} { 
+	#{$property}: 50% -15048px;
+}
+&_1f46b#{$postfix} { 
+	#{$property}: 50% -15084px;
+}
+&_1f46c#{$postfix} { 
+	#{$property}: 50% -15120px;
+}
+&_1f48f#{$postfix} { 
+	#{$property}: 50% -15156px;
+}
+&_1f469-200d-2764-fe0f-200d-1f48b-200d-1f468#{$postfix} { 
+	#{$property}: 50% -15192px;
+}
+&_1f468-200d-2764-fe0f-200d-1f48b-200d-1f468#{$postfix} { 
+	#{$property}: 50% -15228px;
+}
+&_1f469-200d-2764-fe0f-200d-1f48b-200d-1f469#{$postfix} { 
+	#{$property}: 50% -15264px;
+}
+&_1f491#{$postfix} { 
+	#{$property}: 50% -15300px;
+}
+&_1f469-200d-2764-fe0f-200d-1f468#{$postfix} { 
+	#{$property}: 50% -15336px;
+}
+&_1f468-200d-2764-fe0f-200d-1f468#{$postfix} { 
+	#{$property}: 50% -15372px;
+}
+&_1f469-200d-2764-fe0f-200d-1f469#{$postfix} { 
+	#{$property}: 50% -15408px;
+}
+&_1f46a#{$postfix} { 
+	#{$property}: 50% -15444px;
+}
+&_1f468-200d-1f469-200d-1f466#{$postfix} { 
+	#{$property}: 50% -15480px;
+}
+&_1f468-200d-1f469-200d-1f467#{$postfix} { 
+	#{$property}: 50% -15516px;
+}
+&_1f468-200d-1f469-200d-1f467-200d-1f466#{$postfix} { 
+	#{$property}: 50% -15552px;
+}
+&_1f468-200d-1f469-200d-1f466-200d-1f466#{$postfix} { 
+	#{$property}: 50% -15588px;
+}
+&_1f468-200d-1f469-200d-1f467-200d-1f467#{$postfix} { 
+	#{$property}: 50% -15624px;
+}
+&_1f468-200d-1f468-200d-1f466#{$postfix} { 
+	#{$property}: 50% -15660px;
+}
+&_1f468-200d-1f468-200d-1f467#{$postfix} { 
+	#{$property}: 50% -15696px;
+}
+&_1f468-200d-1f468-200d-1f467-200d-1f466#{$postfix} { 
+	#{$property}: 50% -15732px;
+}
+&_1f468-200d-1f468-200d-1f466-200d-1f466#{$postfix} { 
+	#{$property}: 50% -15768px;
+}
+&_1f468-200d-1f468-200d-1f467-200d-1f467#{$postfix} { 
+	#{$property}: 50% -15804px;
+}
+&_1f469-200d-1f469-200d-1f466#{$postfix} { 
+	#{$property}: 50% -15840px;
+}
+&_1f469-200d-1f469-200d-1f467#{$postfix} { 
+	#{$property}: 50% -15876px;
+}
+&_1f469-200d-1f469-200d-1f467-200d-1f466#{$postfix} { 
+	#{$property}: 50% -15912px;
+}
+&_1f469-200d-1f469-200d-1f466-200d-1f466#{$postfix} { 
+	#{$property}: 50% -15948px;
+}
+&_1f469-200d-1f469-200d-1f467-200d-1f467#{$postfix} { 
+	#{$property}: 50% -15984px;
+}
+&_1f468-200d-1f466#{$postfix} { 
+	#{$property}: 50% -16020px;
+}
+&_1f468-200d-1f466-200d-1f466#{$postfix} { 
+	#{$property}: 50% -16056px;
+}
+&_1f468-200d-1f467#{$postfix} { 
+	#{$property}: 50% -16092px;
+}
+&_1f468-200d-1f467-200d-1f466#{$postfix} { 
+	#{$property}: 50% -16128px;
+}
+&_1f468-200d-1f467-200d-1f467#{$postfix} { 
+	#{$property}: 50% -16164px;
+}
+&_1f469-200d-1f466#{$postfix} { 
+	#{$property}: 50% -16200px;
+}
+&_1f469-200d-1f466-200d-1f466#{$postfix} { 
+	#{$property}: 50% -16236px;
+}
+&_1f469-200d-1f467#{$postfix} { 
+	#{$property}: 50% -16272px;
+}
+&_1f469-200d-1f467-200d-1f466#{$postfix} { 
+	#{$property}: 50% -16308px;
+}
+&_1f469-200d-1f467-200d-1f467#{$postfix} { 
+	#{$property}: 50% -16344px;
+}
+&_1f435#{$postfix} { 
+	#{$property}: 50% -16380px;
+}
+&_1f412#{$postfix} { 
+	#{$property}: 50% -16416px;
+}
+&_1f98d#{$postfix} { 
+	#{$property}: 50% -16452px;
+}
+&_1f9a7#{$postfix} { 
+	#{$property}: 50% -16488px;
+}
+&_1f436#{$postfix} { 
+	#{$property}: 50% -16524px;
+}
+&_1f415#{$postfix} { 
+	#{$property}: 50% -16560px;
+}
+&_1f9ae#{$postfix} { 
+	#{$property}: 50% -16596px;
+}
+&_1f415-200d-1f9ba#{$postfix} { 
+	#{$property}: 50% -16632px;
+}
+&_1f429#{$postfix} { 
+	#{$property}: 50% -16668px;
+}
+&_1f43a#{$postfix} { 
+	#{$property}: 50% -16704px;
+}
+&_1f98a#{$postfix} { 
+	#{$property}: 50% -16740px;
+}
+&_1f99d#{$postfix} { 
+	#{$property}: 50% -16776px;
+}
+&_1f431#{$postfix} { 
+	#{$property}: 50% -16812px;
+}
+&_1f408#{$postfix} { 
+	#{$property}: 50% -16848px;
+}
+&_1f981#{$postfix} { 
+	#{$property}: 50% -16884px;
+}
+&_1f42f#{$postfix} { 
+	#{$property}: 50% -16920px;
+}
+&_1f405#{$postfix} { 
+	#{$property}: 50% -16956px;
+}
+&_1f406#{$postfix} { 
+	#{$property}: 50% -16992px;
+}
+&_1f434#{$postfix} { 
+	#{$property}: 50% -17028px;
+}
+&_1f40e#{$postfix} { 
+	#{$property}: 50% -17064px;
+}
+&_1f984#{$postfix} { 
+	#{$property}: 50% -17100px;
+}
+&_1f993#{$postfix} { 
+	#{$property}: 50% -17136px;
+}
+&_1f98c#{$postfix} { 
+	#{$property}: 50% -17172px;
+}
+&_1f42e#{$postfix} { 
+	#{$property}: 50% -17208px;
+}
+&_1f402#{$postfix} { 
+	#{$property}: 50% -17244px;
+}
+&_1f403#{$postfix} { 
+	#{$property}: 50% -17280px;
+}
+&_1f404#{$postfix} { 
+	#{$property}: 50% -17316px;
+}
+&_1f437#{$postfix} { 
+	#{$property}: 50% -17352px;
+}
+&_1f416#{$postfix} { 
+	#{$property}: 50% -17388px;
+}
+&_1f417#{$postfix} { 
+	#{$property}: 50% -17424px;
+}
+&_1f43d#{$postfix} { 
+	#{$property}: 50% -17460px;
+}
+&_1f40f#{$postfix} { 
+	#{$property}: 50% -17496px;
+}
+&_1f411#{$postfix} { 
+	#{$property}: 50% -17532px;
+}
+&_1f410#{$postfix} { 
+	#{$property}: 50% -17568px;
+}
+&_1f42a#{$postfix} { 
+	#{$property}: 50% -17604px;
+}
+&_1f42b#{$postfix} { 
+	#{$property}: 50% -17640px;
+}
+&_1f999#{$postfix} { 
+	#{$property}: 50% -17676px;
+}
+&_1f992#{$postfix} { 
+	#{$property}: 50% -17712px;
+}
+&_1f418#{$postfix} { 
+	#{$property}: 50% -17748px;
+}
+&_1f98f#{$postfix} { 
+	#{$property}: 50% -17784px;
+}
+&_1f99b#{$postfix} { 
+	#{$property}: 50% -17820px;
+}
+&_1f42d#{$postfix} { 
+	#{$property}: 50% -17856px;
+}
+&_1f401#{$postfix} { 
+	#{$property}: 50% -17892px;
+}
+&_1f400#{$postfix} { 
+	#{$property}: 50% -17928px;
+}
+&_1f439#{$postfix} { 
+	#{$property}: 50% -17964px;
+}
+&_1f430#{$postfix} { 
+	#{$property}: 50% -18000px;
+}
+&_1f407#{$postfix} { 
+	#{$property}: 50% -18036px;
+}
+&_1f43f#{$postfix} { 
+	#{$property}: 50% -18072px;
+}
+&_1f994#{$postfix} { 
+	#{$property}: 50% -18108px;
+}
+&_1f987#{$postfix} { 
+	#{$property}: 50% -18144px;
+}
+&_1f43b#{$postfix} { 
+	#{$property}: 50% -18180px;
+}
+&_1f428#{$postfix} { 
+	#{$property}: 50% -18216px;
+}
+&_1f43c#{$postfix} { 
+	#{$property}: 50% -18252px;
+}
+&_1f9a5#{$postfix} { 
+	#{$property}: 50% -18288px;
+}
+&_1f9a6#{$postfix} { 
+	#{$property}: 50% -18324px;
+}
+&_1f9a8#{$postfix} { 
+	#{$property}: 50% -18360px;
+}
+&_1f998#{$postfix} { 
+	#{$property}: 50% -18396px;
+}
+&_1f9a1#{$postfix} { 
+	#{$property}: 50% -18432px;
+}
+&_1f43e#{$postfix} { 
+	#{$property}: 50% -18468px;
+}
+&_1f983#{$postfix} { 
+	#{$property}: 50% -18504px;
+}
+&_1f414#{$postfix} { 
+	#{$property}: 50% -18540px;
+}
+&_1f413#{$postfix} { 
+	#{$property}: 50% -18576px;
+}
+&_1f423#{$postfix} { 
+	#{$property}: 50% -18612px;
+}
+&_1f424#{$postfix} { 
+	#{$property}: 50% -18648px;
+}
+&_1f425#{$postfix} { 
+	#{$property}: 50% -18684px;
+}
+&_1f426#{$postfix} { 
+	#{$property}: 50% -18720px;
+}
+&_1f427#{$postfix} { 
+	#{$property}: 50% -18756px;
+}
+&_1f54a#{$postfix} { 
+	#{$property}: 50% -18792px;
+}
+&_1f985#{$postfix} { 
+	#{$property}: 50% -18828px;
+}
+&_1f986#{$postfix} { 
+	#{$property}: 50% -18864px;
+}
+&_1f9a2#{$postfix} { 
+	#{$property}: 50% -18900px;
+}
+&_1f989#{$postfix} { 
+	#{$property}: 50% -18936px;
+}
+&_1f9a9#{$postfix} { 
+	#{$property}: 50% -18972px;
+}
+&_1f99a#{$postfix} { 
+	#{$property}: 50% -19008px;
+}
+&_1f99c#{$postfix} { 
+	#{$property}: 50% -19044px;
+}
+&_1f438#{$postfix} { 
+	#{$property}: 50% -19080px;
+}
+&_1f40a#{$postfix} { 
+	#{$property}: 50% -19116px;
+}
+&_1f422#{$postfix} { 
+	#{$property}: 50% -19152px;
+}
+&_1f98e#{$postfix} { 
+	#{$property}: 50% -19188px;
+}
+&_1f40d#{$postfix} { 
+	#{$property}: 50% -19224px;
+}
+&_1f432#{$postfix} { 
+	#{$property}: 50% -19260px;
+}
+&_1f409#{$postfix} { 
+	#{$property}: 50% -19296px;
+}
+&_1f995#{$postfix} { 
+	#{$property}: 50% -19332px;
+}
+&_1f996#{$postfix} { 
+	#{$property}: 50% -19368px;
+}
+&_1f433#{$postfix} { 
+	#{$property}: 50% -19404px;
+}
+&_1f40b#{$postfix} { 
+	#{$property}: 50% -19440px;
+}
+&_1f42c#{$postfix} { 
+	#{$property}: 50% -19476px;
+}
+&_1f41f#{$postfix} { 
+	#{$property}: 50% -19512px;
+}
+&_1f420#{$postfix} { 
+	#{$property}: 50% -19548px;
+}
+&_1f421#{$postfix} { 
+	#{$property}: 50% -19584px;
+}
+&_1f988#{$postfix} { 
+	#{$property}: 50% -19620px;
+}
+&_1f419#{$postfix} { 
+	#{$property}: 50% -19656px;
+}
+&_1f41a#{$postfix} { 
+	#{$property}: 50% -19692px;
+}
+&_1f40c#{$postfix} { 
+	#{$property}: 50% -19728px;
+}
+&_1f98b#{$postfix} { 
+	#{$property}: 50% -19764px;
+}
+&_1f41b#{$postfix} { 
+	#{$property}: 50% -19800px;
+}
+&_1f41c#{$postfix} { 
+	#{$property}: 50% -19836px;
+}
+&_1f41d#{$postfix} { 
+	#{$property}: 50% -19872px;
+}
+&_1f41e#{$postfix} { 
+	#{$property}: 50% -19908px;
+}
+&_1f997#{$postfix} { 
+	#{$property}: 50% -19944px;
+}
+&_1f577#{$postfix} { 
+	#{$property}: 50% -19980px;
+}
+&_1f578#{$postfix} { 
+	#{$property}: 50% -20016px;
+}
+&_1f982#{$postfix} { 
+	#{$property}: 50% -20052px;
+}
+&_1f99f#{$postfix} { 
+	#{$property}: 50% -20088px;
+}
+&_1f9a0#{$postfix} { 
+	#{$property}: 50% -20124px;
+}
+&_1f347#{$postfix} { 
+	#{$property}: 50% -20160px;
+}
+&_1f348#{$postfix} { 
+	#{$property}: 50% -20196px;
+}
+&_1f349#{$postfix} { 
+	#{$property}: 50% -20232px;
+}
+&_1f34a#{$postfix} { 
+	#{$property}: 50% -20268px;
+}
+&_1f34b#{$postfix} { 
+	#{$property}: 50% -20304px;
+}
+&_1f34c#{$postfix} { 
+	#{$property}: 50% -20340px;
+}
+&_1f34d#{$postfix} { 
+	#{$property}: 50% -20376px;
+}
+&_1f96d#{$postfix} { 
+	#{$property}: 50% -20412px;
+}
+&_1f34e#{$postfix} { 
+	#{$property}: 50% -20448px;
+}
+&_1f34f#{$postfix} { 
+	#{$property}: 50% -20484px;
+}
+&_1f350#{$postfix} { 
+	#{$property}: 50% -20520px;
+}
+&_1f351#{$postfix} { 
+	#{$property}: 50% -20556px;
+}
+&_1f352#{$postfix} { 
+	#{$property}: 50% -20592px;
+}
+&_1f353#{$postfix} { 
+	#{$property}: 50% -20628px;
+}
+&_1f95d#{$postfix} { 
+	#{$property}: 50% -20664px;
+}
+&_1f345#{$postfix} { 
+	#{$property}: 50% -20700px;
+}
+&_1f965#{$postfix} { 
+	#{$property}: 50% -20736px;
+}
+&_1f951#{$postfix} { 
+	#{$property}: 50% -20772px;
+}
+&_1f346#{$postfix} { 
+	#{$property}: 50% -20808px;
+}
+&_1f954#{$postfix} { 
+	#{$property}: 50% -20844px;
+}
+&_1f955#{$postfix} { 
+	#{$property}: 50% -20880px;
+}
+&_1f33d#{$postfix} { 
+	#{$property}: 50% -20916px;
+}
+&_1f336#{$postfix} { 
+	#{$property}: 50% -20952px;
+}
+&_1f952#{$postfix} { 
+	#{$property}: 50% -20988px;
+}
+&_1f96c#{$postfix} { 
+	#{$property}: 50% -21024px;
+}
+&_1f966#{$postfix} { 
+	#{$property}: 50% -21060px;
+}
+&_1f9c4#{$postfix} { 
+	#{$property}: 50% -21096px;
+}
+&_1f9c5#{$postfix} { 
+	#{$property}: 50% -21132px;
+}
+&_1f344#{$postfix} { 
+	#{$property}: 50% -21168px;
+}
+&_1f95c#{$postfix} { 
+	#{$property}: 50% -21204px;
+}
+&_1f330#{$postfix} { 
+	#{$property}: 50% -21240px;
+}
+&_1f35e#{$postfix} { 
+	#{$property}: 50% -21276px;
+}
+&_1f950#{$postfix} { 
+	#{$property}: 50% -21312px;
+}
+&_1f956#{$postfix} { 
+	#{$property}: 50% -21348px;
+}
+&_1f968#{$postfix} { 
+	#{$property}: 50% -21384px;
+}
+&_1f96f#{$postfix} { 
+	#{$property}: 50% -21420px;
+}
+&_1f95e#{$postfix} { 
+	#{$property}: 50% -21456px;
+}
+&_1f9c7#{$postfix} { 
+	#{$property}: 50% -21492px;
+}
+&_1f9c0#{$postfix} { 
+	#{$property}: 50% -21528px;
+}
+&_1f356#{$postfix} { 
+	#{$property}: 50% -21564px;
+}
+&_1f357#{$postfix} { 
+	#{$property}: 50% -21600px;
+}
+&_1f969#{$postfix} { 
+	#{$property}: 50% -21636px;
+}
+&_1f953#{$postfix} { 
+	#{$property}: 50% -21672px;
+}
+&_1f354#{$postfix} { 
+	#{$property}: 50% -21708px;
+}
+&_1f35f#{$postfix} { 
+	#{$property}: 50% -21744px;
+}
+&_1f355#{$postfix} { 
+	#{$property}: 50% -21780px;
+}
+&_1f32d#{$postfix} { 
+	#{$property}: 50% -21816px;
+}
+&_1f96a#{$postfix} { 
+	#{$property}: 50% -21852px;
+}
+&_1f32e#{$postfix} { 
+	#{$property}: 50% -21888px;
+}
+&_1f32f#{$postfix} { 
+	#{$property}: 50% -21924px;
+}
+&_1f959#{$postfix} { 
+	#{$property}: 50% -21960px;
+}
+&_1f9c6#{$postfix} { 
+	#{$property}: 50% -21996px;
+}
+&_1f95a#{$postfix} { 
+	#{$property}: 50% -22032px;
+}
+&_1f373#{$postfix} { 
+	#{$property}: 50% -22068px;
+}
+&_1f958#{$postfix} { 
+	#{$property}: 50% -22104px;
+}
+&_1f372#{$postfix} { 
+	#{$property}: 50% -22140px;
+}
+&_1f963#{$postfix} { 
+	#{$property}: 50% -22176px;
+}
+&_1f957#{$postfix} { 
+	#{$property}: 50% -22212px;
+}
+&_1f37f#{$postfix} { 
+	#{$property}: 50% -22248px;
+}
+&_1f9c8#{$postfix} { 
+	#{$property}: 50% -22284px;
+}
+&_1f9c2#{$postfix} { 
+	#{$property}: 50% -22320px;
+}
+&_1f96b#{$postfix} { 
+	#{$property}: 50% -22356px;
+}
+&_1f371#{$postfix} { 
+	#{$property}: 50% -22392px;
+}
+&_1f358#{$postfix} { 
+	#{$property}: 50% -22428px;
+}
+&_1f359#{$postfix} { 
+	#{$property}: 50% -22464px;
+}
+&_1f35a#{$postfix} { 
+	#{$property}: 50% -22500px;
+}
+&_1f35b#{$postfix} { 
+	#{$property}: 50% -22536px;
+}
+&_1f35c#{$postfix} { 
+	#{$property}: 50% -22572px;
+}
+&_1f35d#{$postfix} { 
+	#{$property}: 50% -22608px;
+}
+&_1f360#{$postfix} { 
+	#{$property}: 50% -22644px;
+}
+&_1f362#{$postfix} { 
+	#{$property}: 50% -22680px;
+}
+&_1f363#{$postfix} { 
+	#{$property}: 50% -22716px;
+}
+&_1f364#{$postfix} { 
+	#{$property}: 50% -22752px;
+}
+&_1f365#{$postfix} { 
+	#{$property}: 50% -22788px;
+}
+&_1f96e#{$postfix} { 
+	#{$property}: 50% -22824px;
+}
+&_1f361#{$postfix} { 
+	#{$property}: 50% -22860px;
+}
+&_1f95f#{$postfix} { 
+	#{$property}: 50% -22896px;
+}
+&_1f960#{$postfix} { 
+	#{$property}: 50% -22932px;
+}
+&_1f961#{$postfix} { 
+	#{$property}: 50% -22968px;
+}
+&_1f980#{$postfix} { 
+	#{$property}: 50% -23004px;
+}
+&_1f99e#{$postfix} { 
+	#{$property}: 50% -23040px;
+}
+&_1f990#{$postfix} { 
+	#{$property}: 50% -23076px;
+}
+&_1f991#{$postfix} { 
+	#{$property}: 50% -23112px;
+}
+&_1f9aa#{$postfix} { 
+	#{$property}: 50% -23148px;
+}
+&_1f366#{$postfix} { 
+	#{$property}: 50% -23184px;
+}
+&_1f367#{$postfix} { 
+	#{$property}: 50% -23220px;
+}
+&_1f368#{$postfix} { 
+	#{$property}: 50% -23256px;
+}
+&_1f369#{$postfix} { 
+	#{$property}: 50% -23292px;
+}
+&_1f36a#{$postfix} { 
+	#{$property}: 50% -23328px;
+}
+&_1f382#{$postfix} { 
+	#{$property}: 50% -23364px;
+}
+&_1f370#{$postfix} { 
+	#{$property}: 50% -23400px;
+}
+&_1f9c1#{$postfix} { 
+	#{$property}: 50% -23436px;
+}
+&_1f967#{$postfix} { 
+	#{$property}: 50% -23472px;
+}
+&_1f36b#{$postfix} { 
+	#{$property}: 50% -23508px;
+}
+&_1f36c#{$postfix} { 
+	#{$property}: 50% -23544px;
+}
+&_1f36d#{$postfix} { 
+	#{$property}: 50% -23580px;
+}
+&_1f36e#{$postfix} { 
+	#{$property}: 50% -23616px;
+}
+&_1f36f#{$postfix} { 
+	#{$property}: 50% -23652px;
+}
+&_1f37c#{$postfix} { 
+	#{$property}: 50% -23688px;
+}
+&_1f95b#{$postfix} { 
+	#{$property}: 50% -23724px;
+}
+&_2615#{$postfix} { 
+	#{$property}: 50% -23760px;
+}
+&_1f375#{$postfix} { 
+	#{$property}: 50% -23796px;
+}
+&_1f376#{$postfix} { 
+	#{$property}: 50% -23832px;
+}
+&_1f37e#{$postfix} { 
+	#{$property}: 50% -23868px;
+}
+&_1f377#{$postfix} { 
+	#{$property}: 50% -23904px;
+}
+&_1f378#{$postfix} { 
+	#{$property}: 50% -23940px;
+}
+&_1f379#{$postfix} { 
+	#{$property}: 50% -23976px;
+}
+&_1f37a#{$postfix} { 
+	#{$property}: 50% -24012px;
+}
+&_1f37b#{$postfix} { 
+	#{$property}: 50% -24048px;
+}
+&_1f942#{$postfix} { 
+	#{$property}: 50% -24084px;
+}
+&_1f943#{$postfix} { 
+	#{$property}: 50% -24120px;
+}
+&_1f964#{$postfix} { 
+	#{$property}: 50% -24156px;
+}
+&_1f9c3#{$postfix} { 
+	#{$property}: 50% -24192px;
+}
+&_1f9c9#{$postfix} { 
+	#{$property}: 50% -24228px;
+}
+&_1f9ca#{$postfix} { 
+	#{$property}: 50% -24264px;
+}
+&_1f30d#{$postfix} { 
+	#{$property}: 50% -24300px;
+}
+&_1f30e#{$postfix} { 
+	#{$property}: 50% -24336px;
+}
+&_1f30f#{$postfix} { 
+	#{$property}: 50% -24372px;
+}
+&_1f310#{$postfix} { 
+	#{$property}: 50% -24408px;
+}
+&_1f5fa#{$postfix} { 
+	#{$property}: 50% -24444px;
+}
+&_1f5fe#{$postfix} { 
+	#{$property}: 50% -24480px;
+}
+&_1f9ed#{$postfix} { 
+	#{$property}: 50% -24516px;
+}
+&_1f3d4#{$postfix} { 
+	#{$property}: 50% -24552px;
+}
+&_26f0#{$postfix} { 
+	#{$property}: 50% -24588px;
+}
+&_1f30b#{$postfix} { 
+	#{$property}: 50% -24624px;
+}
+&_1f5fb#{$postfix} { 
+	#{$property}: 50% -24660px;
+}
+&_1f3d5#{$postfix} { 
+	#{$property}: 50% -24696px;
+}
+&_1f3d6#{$postfix} { 
+	#{$property}: 50% -24732px;
+}
+&_1f3dc#{$postfix} { 
+	#{$property}: 50% -24768px;
+}
+&_1f3dd#{$postfix} { 
+	#{$property}: 50% -24804px;
+}
+&_1f3de#{$postfix} { 
+	#{$property}: 50% -24840px;
+}
+&_1f3df#{$postfix} { 
+	#{$property}: 50% -24876px;
+}
+&_1f3db#{$postfix} { 
+	#{$property}: 50% -24912px;
+}
+&_1f3d7#{$postfix} { 
+	#{$property}: 50% -24948px;
+}
+&_1f9f1#{$postfix} { 
+	#{$property}: 50% -24984px;
+}
+&_1f3d8#{$postfix} { 
+	#{$property}: 50% -25020px;
+}
+&_1f3da#{$postfix} { 
+	#{$property}: 50% -25056px;
+}
+&_1f3e0#{$postfix} { 
+	#{$property}: 50% -25092px;
+}
+&_1f3e1#{$postfix} { 
+	#{$property}: 50% -25128px;
+}
+&_1f3e2#{$postfix} { 
+	#{$property}: 50% -25164px;
+}
+&_1f3e3#{$postfix} { 
+	#{$property}: 50% -25200px;
+}
+&_1f3e4#{$postfix} { 
+	#{$property}: 50% -25236px;
+}
+&_1f3e5#{$postfix} { 
+	#{$property}: 50% -25272px;
+}
+&_1f3e6#{$postfix} { 
+	#{$property}: 50% -25308px;
+}
+&_1f3e8#{$postfix} { 
+	#{$property}: 50% -25344px;
+}
+&_1f3e9#{$postfix} { 
+	#{$property}: 50% -25380px;
+}
+&_1f3ea#{$postfix} { 
+	#{$property}: 50% -25416px;
+}
+&_1f3eb#{$postfix} { 
+	#{$property}: 50% -25452px;
+}
+&_1f3ec#{$postfix} { 
+	#{$property}: 50% -25488px;
+}
+&_1f3ed#{$postfix} { 
+	#{$property}: 50% -25524px;
+}
+&_1f3ef#{$postfix} { 
+	#{$property}: 50% -25560px;
+}
+&_1f3f0#{$postfix} { 
+	#{$property}: 50% -25596px;
+}
+&_1f492#{$postfix} { 
+	#{$property}: 50% -25632px;
+}
+&_1f5fc#{$postfix} { 
+	#{$property}: 50% -25668px;
+}
+&_1f5fd#{$postfix} { 
+	#{$property}: 50% -25704px;
+}
+&_26ea#{$postfix} { 
+	#{$property}: 50% -25740px;
+}
+&_1f54c#{$postfix} { 
+	#{$property}: 50% -25776px;
+}
+&_1f6d5#{$postfix} { 
+	#{$property}: 50% -25812px;
+}
+&_1f54d#{$postfix} { 
+	#{$property}: 50% -25848px;
+}
+&_26e9#{$postfix} { 
+	#{$property}: 50% -25884px;
+}
+&_1f54b#{$postfix} { 
+	#{$property}: 50% -25920px;
+}
+&_26f2#{$postfix} { 
+	#{$property}: 50% -25956px;
+}
+&_26fa#{$postfix} { 
+	#{$property}: 50% -25992px;
+}
+&_1f301#{$postfix} { 
+	#{$property}: 50% -26028px;
+}
+&_1f303#{$postfix} { 
+	#{$property}: 50% -26064px;
+}
+&_1f3d9#{$postfix} { 
+	#{$property}: 50% -26100px;
+}
+&_1f304#{$postfix} { 
+	#{$property}: 50% -26136px;
+}
+&_1f305#{$postfix} { 
+	#{$property}: 50% -26172px;
+}
+&_1f306#{$postfix} { 
+	#{$property}: 50% -26208px;
+}
+&_1f307#{$postfix} { 
+	#{$property}: 50% -26244px;
+}
+&_1f309#{$postfix} { 
+	#{$property}: 50% -26280px;
+}
+&_2668#{$postfix} { 
+	#{$property}: 50% -26316px;
+}
+&_1f3a0#{$postfix} { 
+	#{$property}: 50% -26352px;
+}
+&_1f3a1#{$postfix} { 
+	#{$property}: 50% -26388px;
+}
+&_1f3a2#{$postfix} { 
+	#{$property}: 50% -26424px;
+}
+&_1f488#{$postfix} { 
+	#{$property}: 50% -26460px;
+}
+&_1f3aa#{$postfix} { 
+	#{$property}: 50% -26496px;
+}
+&_1f682#{$postfix} { 
+	#{$property}: 50% -26532px;
+}
+&_1f683#{$postfix} { 
+	#{$property}: 50% -26568px;
+}
+&_1f684#{$postfix} { 
+	#{$property}: 50% -26604px;
+}
+&_1f685#{$postfix} { 
+	#{$property}: 50% -26640px;
+}
+&_1f686#{$postfix} { 
+	#{$property}: 50% -26676px;
+}
+&_1f687#{$postfix} { 
+	#{$property}: 50% -26712px;
+}
+&_1f688#{$postfix} { 
+	#{$property}: 50% -26748px;
+}
+&_1f689#{$postfix} { 
+	#{$property}: 50% -26784px;
+}
+&_1f68a#{$postfix} { 
+	#{$property}: 50% -26820px;
+}
+&_1f69d#{$postfix} { 
+	#{$property}: 50% -26856px;
+}
+&_1f69e#{$postfix} { 
+	#{$property}: 50% -26892px;
+}
+&_1f68b#{$postfix} { 
+	#{$property}: 50% -26928px;
+}
+&_1f68c#{$postfix} { 
+	#{$property}: 50% -26964px;
+}
+&_1f68d#{$postfix} { 
+	#{$property}: 50% -27000px;
+}
+&_1f68e#{$postfix} { 
+	#{$property}: 50% -27036px;
+}
+&_1f690#{$postfix} { 
+	#{$property}: 50% -27072px;
+}
+&_1f691#{$postfix} { 
+	#{$property}: 50% -27108px;
+}
+&_1f692#{$postfix} { 
+	#{$property}: 50% -27144px;
+}
+&_1f693#{$postfix} { 
+	#{$property}: 50% -27180px;
+}
+&_1f694#{$postfix} { 
+	#{$property}: 50% -27216px;
+}
+&_1f695#{$postfix} { 
+	#{$property}: 50% -27252px;
+}
+&_1f696#{$postfix} { 
+	#{$property}: 50% -27288px;
+}
+&_1f697#{$postfix} { 
+	#{$property}: 50% -27324px;
+}
+&_1f698#{$postfix} { 
+	#{$property}: 50% -27360px;
+}
+&_1f699#{$postfix} { 
+	#{$property}: 50% -27396px;
+}
+&_1f69a#{$postfix} { 
+	#{$property}: 50% -27432px;
+}
+&_1f69b#{$postfix} { 
+	#{$property}: 50% -27468px;
+}
+&_1f69c#{$postfix} { 
+	#{$property}: 50% -27504px;
+}
+&_1f3ce#{$postfix} { 
+	#{$property}: 50% -27540px;
+}
+&_1f3cd#{$postfix} { 
+	#{$property}: 50% -27576px;
+}
+&_1f6f5#{$postfix} { 
+	#{$property}: 50% -27612px;
+}
+&_1f9bd#{$postfix} { 
+	#{$property}: 50% -27648px;
+}
+&_1f9bc#{$postfix} { 
+	#{$property}: 50% -27684px;
+}
+&_1f6fa#{$postfix} { 
+	#{$property}: 50% -27720px;
+}
+&_1f6b2#{$postfix} { 
+	#{$property}: 50% -27756px;
+}
+&_1f6f4#{$postfix} { 
+	#{$property}: 50% -27792px;
+}
+&_1f6f9#{$postfix} { 
+	#{$property}: 50% -27828px;
+}
+&_1f68f#{$postfix} { 
+	#{$property}: 50% -27864px;
+}
+&_1f6e3#{$postfix} { 
+	#{$property}: 50% -27900px;
+}
+&_1f6e4#{$postfix} { 
+	#{$property}: 50% -27936px;
+}
+&_1f6e2#{$postfix} { 
+	#{$property}: 50% -27972px;
+}
+&_26fd#{$postfix} { 
+	#{$property}: 50% -28008px;
+}
+&_1f6a8#{$postfix} { 
+	#{$property}: 50% -28044px;
+}
+&_1f6a5#{$postfix} { 
+	#{$property}: 50% -28080px;
+}
+&_1f6a6#{$postfix} { 
+	#{$property}: 50% -28116px;
+}
+&_1f6d1#{$postfix} { 
+	#{$property}: 50% -28152px;
+}
+&_1f6a7#{$postfix} { 
+	#{$property}: 50% -28188px;
+}
+&_2693#{$postfix} { 
+	#{$property}: 50% -28224px;
+}
+&_26f5#{$postfix} { 
+	#{$property}: 50% -28260px;
+}
+&_1f6f6#{$postfix} { 
+	#{$property}: 50% -28296px;
+}
+&_1f6a4#{$postfix} { 
+	#{$property}: 50% -28332px;
+}
+&_1f6f3#{$postfix} { 
+	#{$property}: 50% -28368px;
+}
+&_26f4#{$postfix} { 
+	#{$property}: 50% -28404px;
+}
+&_1f6e5#{$postfix} { 
+	#{$property}: 50% -28440px;
+}
+&_1f6a2#{$postfix} { 
+	#{$property}: 50% -28476px;
+}
+&_2708#{$postfix} { 
+	#{$property}: 50% -28512px;
+}
+&_1f6e9#{$postfix} { 
+	#{$property}: 50% -28548px;
+}
+&_1f6eb#{$postfix} { 
+	#{$property}: 50% -28584px;
+}
+&_1f6ec#{$postfix} { 
+	#{$property}: 50% -28620px;
+}
+&_1fa82#{$postfix} { 
+	#{$property}: 50% -28656px;
+}
+&_1f4ba#{$postfix} { 
+	#{$property}: 50% -28692px;
+}
+&_1f681#{$postfix} { 
+	#{$property}: 50% -28728px;
+}
+&_1f69f#{$postfix} { 
+	#{$property}: 50% -28764px;
+}
+&_1f6a0#{$postfix} { 
+	#{$property}: 50% -28800px;
+}
+&_1f6a1#{$postfix} { 
+	#{$property}: 50% -28836px;
+}
+&_1f6f0#{$postfix} { 
+	#{$property}: 50% -28872px;
+}
+&_1f680#{$postfix} { 
+	#{$property}: 50% -28908px;
+}
+&_1f6f8#{$postfix} { 
+	#{$property}: 50% -28944px;
+}
+&_1f6ce#{$postfix} { 
+	#{$property}: 50% -28980px;
+}
+&_1f9f3#{$postfix} { 
+	#{$property}: 50% -29016px;
+}
+&_231b#{$postfix} { 
+	#{$property}: 50% -29052px;
+}
+&_23f3#{$postfix} { 
+	#{$property}: 50% -29088px;
+}
+&_231a#{$postfix} { 
+	#{$property}: 50% -29124px;
+}
+&_23f0#{$postfix} { 
+	#{$property}: 50% -29160px;
+}
+&_23f1#{$postfix} { 
+	#{$property}: 50% -29196px;
+}
+&_23f2#{$postfix} { 
+	#{$property}: 50% -29232px;
+}
+&_1f570#{$postfix} { 
+	#{$property}: 50% -29268px;
+}
+&_1f55b#{$postfix} { 
+	#{$property}: 50% -29304px;
+}
+&_1f567#{$postfix} { 
+	#{$property}: 50% -29340px;
+}
+&_1f550#{$postfix} { 
+	#{$property}: 50% -29376px;
+}
+&_1f55c#{$postfix} { 
+	#{$property}: 50% -29412px;
+}
+&_1f551#{$postfix} { 
+	#{$property}: 50% -29448px;
+}
+&_1f55d#{$postfix} { 
+	#{$property}: 50% -29484px;
+}
+&_1f552#{$postfix} { 
+	#{$property}: 50% -29520px;
+}
+&_1f55e#{$postfix} { 
+	#{$property}: 50% -29556px;
+}
+&_1f553#{$postfix} { 
+	#{$property}: 50% -29592px;
+}
+&_1f55f#{$postfix} { 
+	#{$property}: 50% -29628px;
+}
+&_1f554#{$postfix} { 
+	#{$property}: 50% -29664px;
+}
+&_1f560#{$postfix} { 
+	#{$property}: 50% -29700px;
+}
+&_1f555#{$postfix} { 
+	#{$property}: 50% -29736px;
+}
+&_1f561#{$postfix} { 
+	#{$property}: 50% -29772px;
+}
+&_1f556#{$postfix} { 
+	#{$property}: 50% -29808px;
+}
+&_1f562#{$postfix} { 
+	#{$property}: 50% -29844px;
+}
+&_1f557#{$postfix} { 
+	#{$property}: 50% -29880px;
+}
+&_1f563#{$postfix} { 
+	#{$property}: 50% -29916px;
+}
+&_1f558#{$postfix} { 
+	#{$property}: 50% -29952px;
+}
+&_1f564#{$postfix} { 
+	#{$property}: 50% -29988px;
+}
+&_1f559#{$postfix} { 
+	#{$property}: 50% -30024px;
+}
+&_1f565#{$postfix} { 
+	#{$property}: 50% -30060px;
+}
+&_1f55a#{$postfix} { 
+	#{$property}: 50% -30096px;
+}
+&_1f566#{$postfix} { 
+	#{$property}: 50% -30132px;
+}
+&_1f311#{$postfix} { 
+	#{$property}: 50% -30168px;
+}
+&_1f312#{$postfix} { 
+	#{$property}: 50% -30204px;
+}
+&_1f313#{$postfix} { 
+	#{$property}: 50% -30240px;
+}
+&_1f314#{$postfix} { 
+	#{$property}: 50% -30276px;
+}
+&_1f315#{$postfix} { 
+	#{$property}: 50% -30312px;
+}
+&_1f316#{$postfix} { 
+	#{$property}: 50% -30348px;
+}
+&_1f317#{$postfix} { 
+	#{$property}: 50% -30384px;
+}
+&_1f318#{$postfix} { 
+	#{$property}: 50% -30420px;
+}
+&_1f319#{$postfix} { 
+	#{$property}: 50% -30456px;
+}
+&_1f31a#{$postfix} { 
+	#{$property}: 50% -30492px;
+}
+&_1f31b#{$postfix} { 
+	#{$property}: 50% -30528px;
+}
+&_1f31c#{$postfix} { 
+	#{$property}: 50% -30564px;
+}
+&_1f321#{$postfix} { 
+	#{$property}: 50% -30600px;
+}
+&_2600#{$postfix} { 
+	#{$property}: 50% -30636px;
+}
+&_1f31d#{$postfix} { 
+	#{$property}: 50% -30672px;
+}
+&_1f31e#{$postfix} { 
+	#{$property}: 50% -30708px;
+}
+&_1fa90#{$postfix} { 
+	#{$property}: 50% -30744px;
+}
+&_2b50#{$postfix} { 
+	#{$property}: 50% -30780px;
+}
+&_1f31f#{$postfix} { 
+	#{$property}: 50% -30816px;
+}
+&_1f320#{$postfix} { 
+	#{$property}: 50% -30852px;
+}
+&_1f30c#{$postfix} { 
+	#{$property}: 50% -30888px;
+}
+&_2601#{$postfix} { 
+	#{$property}: 50% -30924px;
+}
+&_26c5#{$postfix} { 
+	#{$property}: 50% -30960px;
+}
+&_26c8#{$postfix} { 
+	#{$property}: 50% -30996px;
+}
+&_1f324#{$postfix} { 
+	#{$property}: 50% -31032px;
+}
+&_1f325#{$postfix} { 
+	#{$property}: 50% -31068px;
+}
+&_1f326#{$postfix} { 
+	#{$property}: 50% -31104px;
+}
+&_1f327#{$postfix} { 
+	#{$property}: 50% -31140px;
+}
+&_1f328#{$postfix} { 
+	#{$property}: 50% -31176px;
+}
+&_1f329#{$postfix} { 
+	#{$property}: 50% -31212px;
+}
+&_1f32a#{$postfix} { 
+	#{$property}: 50% -31248px;
+}
+&_1f32b#{$postfix} { 
+	#{$property}: 50% -31284px;
+}
+&_1f32c#{$postfix} { 
+	#{$property}: 50% -31320px;
+}
+&_1f300#{$postfix} { 
+	#{$property}: 50% -31356px;
+}
+&_1f308#{$postfix} { 
+	#{$property}: 50% -31392px;
+}
+&_1f302#{$postfix} { 
+	#{$property}: 50% -31428px;
+}
+&_2602#{$postfix} { 
+	#{$property}: 50% -31464px;
+}
+&_2614#{$postfix} { 
+	#{$property}: 50% -31500px;
+}
+&_26f1#{$postfix} { 
+	#{$property}: 50% -31536px;
+}
+&_26a1#{$postfix} { 
+	#{$property}: 50% -31572px;
+}
+&_2744#{$postfix} { 
+	#{$property}: 50% -31608px;
+}
+&_2603#{$postfix} { 
+	#{$property}: 50% -31644px;
+}
+&_26c4#{$postfix} { 
+	#{$property}: 50% -31680px;
+}
+&_2604#{$postfix} { 
+	#{$property}: 50% -31716px;
+}
+&_1f525#{$postfix} { 
+	#{$property}: 50% -31752px;
+}
+&_1f4a7#{$postfix} { 
+	#{$property}: 50% -31788px;
+}
+&_1f30a#{$postfix} { 
+	#{$property}: 50% -31824px;
+}
+&_1f383#{$postfix} { 
+	#{$property}: 50% -31860px;
+}
+&_1f384#{$postfix} { 
+	#{$property}: 50% -31896px;
+}
+&_1f386#{$postfix} { 
+	#{$property}: 50% -31932px;
+}
+&_1f387#{$postfix} { 
+	#{$property}: 50% -31968px;
+}
+&_1f9e8#{$postfix} { 
+	#{$property}: 50% -32004px;
+}
+&_2728#{$postfix} { 
+	#{$property}: 50% -32040px;
+}
+&_1f388#{$postfix} { 
+	#{$property}: 50% -32076px;
+}
+&_1f389#{$postfix} { 
+	#{$property}: 50% -32112px;
+}
+&_1f38a#{$postfix} { 
+	#{$property}: 50% -32148px;
+}
+&_1f38b#{$postfix} { 
+	#{$property}: 50% -32184px;
+}
+&_1f38d#{$postfix} { 
+	#{$property}: 50% -32220px;
+}
+&_1f38e#{$postfix} { 
+	#{$property}: 50% -32256px;
+}
+&_1f38f#{$postfix} { 
+	#{$property}: 50% -32292px;
+}
+&_1f390#{$postfix} { 
+	#{$property}: 50% -32328px;
+}
+&_1f391#{$postfix} { 
+	#{$property}: 50% -32364px;
+}
+&_1f9e7#{$postfix} { 
+	#{$property}: 50% -32400px;
+}
+&_1f380#{$postfix} { 
+	#{$property}: 50% -32436px;
+}
+&_1f381#{$postfix} { 
+	#{$property}: 50% -32472px;
+}
+&_1f397#{$postfix} { 
+	#{$property}: 50% -32508px;
+}
+&_1f39f#{$postfix} { 
+	#{$property}: 50% -32544px;
+}
+&_1f3ab#{$postfix} { 
+	#{$property}: 50% -32580px;
+}
+&_1f396#{$postfix} { 
+	#{$property}: 50% -32616px;
+}
+&_1f3c6#{$postfix} { 
+	#{$property}: 50% -32652px;
+}
+&_1f3c5#{$postfix} { 
+	#{$property}: 50% -32688px;
+}
+&_1f947#{$postfix} { 
+	#{$property}: 50% -32724px;
+}
+&_1f948#{$postfix} { 
+	#{$property}: 50% -32760px;
+}
+&_1f949#{$postfix} { 
+	#{$property}: 50% -32796px;
+}
+&_26bd#{$postfix} { 
+	#{$property}: 50% -32832px;
+}
+&_26be#{$postfix} { 
+	#{$property}: 50% -32868px;
+}
+&_1f94e#{$postfix} { 
+	#{$property}: 50% -32904px;
+}
+&_1f3c0#{$postfix} { 
+	#{$property}: 50% -32940px;
+}
+&_1f3d0#{$postfix} { 
+	#{$property}: 50% -32976px;
+}
+&_1f3c8#{$postfix} { 
+	#{$property}: 50% -33012px;
+}
+&_1f3c9#{$postfix} { 
+	#{$property}: 50% -33048px;
+}
+&_1f3be#{$postfix} { 
+	#{$property}: 50% -33084px;
+}
+&_1f94f#{$postfix} { 
+	#{$property}: 50% -33120px;
+}
+&_1f3b3#{$postfix} { 
+	#{$property}: 50% -33156px;
+}
+&_1f3cf#{$postfix} { 
+	#{$property}: 50% -33192px;
+}
+&_1f3d1#{$postfix} { 
+	#{$property}: 50% -33228px;
+}
+&_1f3d2#{$postfix} { 
+	#{$property}: 50% -33264px;
+}
+&_1f94d#{$postfix} { 
+	#{$property}: 50% -33300px;
+}
+&_1f3d3#{$postfix} { 
+	#{$property}: 50% -33336px;
+}
+&_1f3f8#{$postfix} { 
+	#{$property}: 50% -33372px;
+}
+&_1f94a#{$postfix} { 
+	#{$property}: 50% -33408px;
+}
+&_1f94b#{$postfix} { 
+	#{$property}: 50% -33444px;
+}
+&_1f945#{$postfix} { 
+	#{$property}: 50% -33480px;
+}
+&_26f3#{$postfix} { 
+	#{$property}: 50% -33516px;
+}
+&_26f8#{$postfix} { 
+	#{$property}: 50% -33552px;
+}
+&_1f3a3#{$postfix} { 
+	#{$property}: 50% -33588px;
+}
+&_1f93f#{$postfix} { 
+	#{$property}: 50% -33624px;
+}
+&_1f3bd#{$postfix} { 
+	#{$property}: 50% -33660px;
+}
+&_1f3bf#{$postfix} { 
+	#{$property}: 50% -33696px;
+}
+&_1f6f7#{$postfix} { 
+	#{$property}: 50% -33732px;
+}
+&_1f94c#{$postfix} { 
+	#{$property}: 50% -33768px;
+}
+&_1f3af#{$postfix} { 
+	#{$property}: 50% -33804px;
+}
+&_1fa80#{$postfix} { 
+	#{$property}: 50% -33840px;
+}
+&_1fa81#{$postfix} { 
+	#{$property}: 50% -33876px;
+}
+&_1f3b1#{$postfix} { 
+	#{$property}: 50% -33912px;
+}
+&_1f52e#{$postfix} { 
+	#{$property}: 50% -33948px;
+}
+&_1f9ff#{$postfix} { 
+	#{$property}: 50% -33984px;
+}
+&_1f3ae#{$postfix} { 
+	#{$property}: 50% -34020px;
+}
+&_1f579#{$postfix} { 
+	#{$property}: 50% -34056px;
+}
+&_1f3b0#{$postfix} { 
+	#{$property}: 50% -34092px;
+}
+&_1f3b2#{$postfix} { 
+	#{$property}: 50% -34128px;
+}
+&_1f9e9#{$postfix} { 
+	#{$property}: 50% -34164px;
+}
+&_1f9f8#{$postfix} { 
+	#{$property}: 50% -34200px;
+}
+&_2660#{$postfix} { 
+	#{$property}: 50% -34236px;
+}
+&_2665#{$postfix} { 
+	#{$property}: 50% -34272px;
+}
+&_2666#{$postfix} { 
+	#{$property}: 50% -34308px;
+}
+&_2663#{$postfix} { 
+	#{$property}: 50% -34344px;
+}
+&_265f#{$postfix} { 
+	#{$property}: 50% -34380px;
+}
+&_1f0cf#{$postfix} { 
+	#{$property}: 50% -34416px;
+}
+&_1f004#{$postfix} { 
+	#{$property}: 50% -34452px;
+}
+&_1f3b4#{$postfix} { 
+	#{$property}: 50% -34488px;
+}
+&_1f507#{$postfix} { 
+	#{$property}: 50% -34524px;
+}
+&_1f508#{$postfix} { 
+	#{$property}: 50% -34560px;
+}
+&_1f509#{$postfix} { 
+	#{$property}: 50% -34596px;
+}
+&_1f50a#{$postfix} { 
+	#{$property}: 50% -34632px;
+}
+&_1f4e2#{$postfix} { 
+	#{$property}: 50% -34668px;
+}
+&_1f4e3#{$postfix} { 
+	#{$property}: 50% -34704px;
+}
+&_1f4ef#{$postfix} { 
+	#{$property}: 50% -34740px;
+}
+&_1f514#{$postfix} { 
+	#{$property}: 50% -34776px;
+}
+&_1f515#{$postfix} { 
+	#{$property}: 50% -34812px;
+}
+&_1f3bc#{$postfix} { 
+	#{$property}: 50% -34848px;
+}
+&_1f3b5#{$postfix} { 
+	#{$property}: 50% -34884px;
+}
+&_1f3b6#{$postfix} { 
+	#{$property}: 50% -34920px;
+}
+&_1f399#{$postfix} { 
+	#{$property}: 50% -34956px;
+}
+&_1f39a#{$postfix} { 
+	#{$property}: 50% -34992px;
+}
+&_1f39b#{$postfix} { 
+	#{$property}: 50% -35028px;
+}
+&_1f3a4#{$postfix} { 
+	#{$property}: 50% -35064px;
+}
+&_1f3a7#{$postfix} { 
+	#{$property}: 50% -35100px;
+}
+&_1f4fb#{$postfix} { 
+	#{$property}: 50% -35136px;
+}
+&_1f3b7#{$postfix} { 
+	#{$property}: 50% -35172px;
+}
+&_1f3b8#{$postfix} { 
+	#{$property}: 50% -35208px;
+}
+&_1f3b9#{$postfix} { 
+	#{$property}: 50% -35244px;
+}
+&_1f3ba#{$postfix} { 
+	#{$property}: 50% -35280px;
+}
+&_1f3bb#{$postfix} { 
+	#{$property}: 50% -35316px;
+}
+&_1fa95#{$postfix} { 
+	#{$property}: 50% -35352px;
+}
+&_1f941#{$postfix} { 
+	#{$property}: 50% -35388px;
+}
+&_1f4f1#{$postfix} { 
+	#{$property}: 50% -35424px;
+}
+&_1f4f2#{$postfix} { 
+	#{$property}: 50% -35460px;
+}
+&_260e#{$postfix} { 
+	#{$property}: 50% -35496px;
+}
+&_1f4de#{$postfix} { 
+	#{$property}: 50% -35532px;
+}
+&_1f4df#{$postfix} { 
+	#{$property}: 50% -35568px;
+}
+&_1f4e0#{$postfix} { 
+	#{$property}: 50% -35604px;
+}
+&_1f50b#{$postfix} { 
+	#{$property}: 50% -35640px;
+}
+&_1f50c#{$postfix} { 
+	#{$property}: 50% -35676px;
+}
+&_1f4bb#{$postfix} { 
+	#{$property}: 50% -35712px;
+}
+&_1f5a5#{$postfix} { 
+	#{$property}: 50% -35748px;
+}
+&_1f5a8#{$postfix} { 
+	#{$property}: 50% -35784px;
+}
+&_2328#{$postfix} { 
+	#{$property}: 50% -35820px;
+}
+&_1f5b1#{$postfix} { 
+	#{$property}: 50% -35856px;
+}
+&_1f5b2#{$postfix} { 
+	#{$property}: 50% -35892px;
+}
+&_1f4bd#{$postfix} { 
+	#{$property}: 50% -35928px;
+}
+&_1f4be#{$postfix} { 
+	#{$property}: 50% -35964px;
+}
+&_1f4bf#{$postfix} { 
+	#{$property}: 50% -36000px;
+}
+&_1f4c0#{$postfix} { 
+	#{$property}: 50% -36036px;
+}
+&_1f9ee#{$postfix} { 
+	#{$property}: 50% -36072px;
+}
+&_1f3a5#{$postfix} { 
+	#{$property}: 50% -36108px;
+}
+&_1f39e#{$postfix} { 
+	#{$property}: 50% -36144px;
+}
+&_1f4fd#{$postfix} { 
+	#{$property}: 50% -36180px;
+}
+&_1f3ac#{$postfix} { 
+	#{$property}: 50% -36216px;
+}
+&_1f4fa#{$postfix} { 
+	#{$property}: 50% -36252px;
+}
+&_1f4f7#{$postfix} { 
+	#{$property}: 50% -36288px;
+}
+&_1f4f8#{$postfix} { 
+	#{$property}: 50% -36324px;
+}
+&_1f4f9#{$postfix} { 
+	#{$property}: 50% -36360px;
+}
+&_1f4fc#{$postfix} { 
+	#{$property}: 50% -36396px;
+}
+&_1f50d#{$postfix} { 
+	#{$property}: 50% -36432px;
+}
+&_1f50e#{$postfix} { 
+	#{$property}: 50% -36468px;
+}
+&_1f56f#{$postfix} { 
+	#{$property}: 50% -36504px;
+}
+&_1f4a1#{$postfix} { 
+	#{$property}: 50% -36540px;
+}
+&_1f526#{$postfix} { 
+	#{$property}: 50% -36576px;
+}
+&_1f3ee#{$postfix} { 
+	#{$property}: 50% -36612px;
+}
+&_1fa94#{$postfix} { 
+	#{$property}: 50% -36648px;
+}
+&_1f4d4#{$postfix} { 
+	#{$property}: 50% -36684px;
+}
+&_1f4d5#{$postfix} { 
+	#{$property}: 50% -36720px;
+}
+&_1f4d6#{$postfix} { 
+	#{$property}: 50% -36756px;
+}
+&_1f4d7#{$postfix} { 
+	#{$property}: 50% -36792px;
+}
+&_1f4d8#{$postfix} { 
+	#{$property}: 50% -36828px;
+}
+&_1f4d9#{$postfix} { 
+	#{$property}: 50% -36864px;
+}
+&_1f4da#{$postfix} { 
+	#{$property}: 50% -36900px;
+}
+&_1f4d3#{$postfix} { 
+	#{$property}: 50% -36936px;
+}
+&_1f4d2#{$postfix} { 
+	#{$property}: 50% -36972px;
+}
+&_1f4c3#{$postfix} { 
+	#{$property}: 50% -37008px;
+}
+&_1f4dc#{$postfix} { 
+	#{$property}: 50% -37044px;
+}
+&_1f4c4#{$postfix} { 
+	#{$property}: 50% -37080px;
+}
+&_1f4f0#{$postfix} { 
+	#{$property}: 50% -37116px;
+}
+&_1f5de#{$postfix} { 
+	#{$property}: 50% -37152px;
+}
+&_1f4d1#{$postfix} { 
+	#{$property}: 50% -37188px;
+}
+&_1f516#{$postfix} { 
+	#{$property}: 50% -37224px;
+}
+&_1f3f7#{$postfix} { 
+	#{$property}: 50% -37260px;
+}
+&_1f4b0#{$postfix} { 
+	#{$property}: 50% -37296px;
+}
+&_1f4b4#{$postfix} { 
+	#{$property}: 50% -37332px;
+}
+&_1f4b5#{$postfix} { 
+	#{$property}: 50% -37368px;
+}
+&_1f4b6#{$postfix} { 
+	#{$property}: 50% -37404px;
+}
+&_1f4b7#{$postfix} { 
+	#{$property}: 50% -37440px;
+}
+&_1f4b8#{$postfix} { 
+	#{$property}: 50% -37476px;
+}
+&_1f4b3#{$postfix} { 
+	#{$property}: 50% -37512px;
+}
+&_1f9fe#{$postfix} { 
+	#{$property}: 50% -37548px;
+}
+&_1f4b9#{$postfix} { 
+	#{$property}: 50% -37584px;
+}
+&_1f4b1#{$postfix} { 
+	#{$property}: 50% -37620px;
+}
+&_1f4b2#{$postfix} { 
+	#{$property}: 50% -37656px;
+}
+&_2709#{$postfix} { 
+	#{$property}: 50% -37692px;
+}
+&_1f4e7#{$postfix} { 
+	#{$property}: 50% -37728px;
+}
+&_1f4e8#{$postfix} { 
+	#{$property}: 50% -37764px;
+}
+&_1f4e9#{$postfix} { 
+	#{$property}: 50% -37800px;
+}
+&_1f4e4#{$postfix} { 
+	#{$property}: 50% -37836px;
+}
+&_1f4e5#{$postfix} { 
+	#{$property}: 50% -37872px;
+}
+&_1f4e6#{$postfix} { 
+	#{$property}: 50% -37908px;
+}
+&_1f4eb#{$postfix} { 
+	#{$property}: 50% -37944px;
+}
+&_1f4ea#{$postfix} { 
+	#{$property}: 50% -37980px;
+}
+&_1f4ec#{$postfix} { 
+	#{$property}: 50% -38016px;
+}
+&_1f4ed#{$postfix} { 
+	#{$property}: 50% -38052px;
+}
+&_1f4ee#{$postfix} { 
+	#{$property}: 50% -38088px;
+}
+&_1f5f3#{$postfix} { 
+	#{$property}: 50% -38124px;
+}
+&_270f#{$postfix} { 
+	#{$property}: 50% -38160px;
+}
+&_2712#{$postfix} { 
+	#{$property}: 50% -38196px;
+}
+&_1f58b#{$postfix} { 
+	#{$property}: 50% -38232px;
+}
+&_1f58a#{$postfix} { 
+	#{$property}: 50% -38268px;
+}
+&_1f58c#{$postfix} { 
+	#{$property}: 50% -38304px;
+}
+&_1f58d#{$postfix} { 
+	#{$property}: 50% -38340px;
+}
+&_1f4dd#{$postfix} { 
+	#{$property}: 50% -38376px;
+}
+&_1f4bc#{$postfix} { 
+	#{$property}: 50% -38412px;
+}
+&_1f4c1#{$postfix} { 
+	#{$property}: 50% -38448px;
+}
+&_1f4c2#{$postfix} { 
+	#{$property}: 50% -38484px;
+}
+&_1f5c2#{$postfix} { 
+	#{$property}: 50% -38520px;
+}
+&_1f4c5#{$postfix} { 
+	#{$property}: 50% -38556px;
+}
+&_1f4c6#{$postfix} { 
+	#{$property}: 50% -38592px;
+}
+&_1f5d2#{$postfix} { 
+	#{$property}: 50% -38628px;
+}
+&_1f5d3#{$postfix} { 
+	#{$property}: 50% -38664px;
+}
+&_1f4c7#{$postfix} { 
+	#{$property}: 50% -38700px;
+}
+&_1f4c8#{$postfix} { 
+	#{$property}: 50% -38736px;
+}
+&_1f4c9#{$postfix} { 
+	#{$property}: 50% -38772px;
+}
+&_1f4ca#{$postfix} { 
+	#{$property}: 50% -38808px;
+}
+&_1f4cb#{$postfix} { 
+	#{$property}: 50% -38844px;
+}
+&_1f4cc#{$postfix} { 
+	#{$property}: 50% -38880px;
+}
+&_1f4cd#{$postfix} { 
+	#{$property}: 50% -38916px;
+}
+&_1f4ce#{$postfix} { 
+	#{$property}: 50% -38952px;
+}
+&_1f587#{$postfix} { 
+	#{$property}: 50% -38988px;
+}
+&_1f4cf#{$postfix} { 
+	#{$property}: 50% -39024px;
+}
+&_1f4d0#{$postfix} { 
+	#{$property}: 50% -39060px;
+}
+&_2702#{$postfix} { 
+	#{$property}: 50% -39096px;
+}
+&_1f5c3#{$postfix} { 
+	#{$property}: 50% -39132px;
+}
+&_1f5c4#{$postfix} { 
+	#{$property}: 50% -39168px;
+}
+&_1f5d1#{$postfix} { 
+	#{$property}: 50% -39204px;
+}
+&_1f512#{$postfix} { 
+	#{$property}: 50% -39240px;
+}
+&_1f513#{$postfix} { 
+	#{$property}: 50% -39276px;
+}
+&_1f50f#{$postfix} { 
+	#{$property}: 50% -39312px;
+}
+&_1f510#{$postfix} { 
+	#{$property}: 50% -39348px;
+}
+&_1f511#{$postfix} { 
+	#{$property}: 50% -39384px;
+}
+&_1f5dd#{$postfix} { 
+	#{$property}: 50% -39420px;
+}
+&_1f528#{$postfix} { 
+	#{$property}: 50% -39456px;
+}
+&_1fa93#{$postfix} { 
+	#{$property}: 50% -39492px;
+}
+&_26cf#{$postfix} { 
+	#{$property}: 50% -39528px;
+}
+&_2692#{$postfix} { 
+	#{$property}: 50% -39564px;
+}
+&_1f6e0#{$postfix} { 
+	#{$property}: 50% -39600px;
+}
+&_1f5e1#{$postfix} { 
+	#{$property}: 50% -39636px;
+}
+&_2694#{$postfix} { 
+	#{$property}: 50% -39672px;
+}
+&_1f52b#{$postfix} { 
+	#{$property}: 50% -39708px;
+}
+&_1f3f9#{$postfix} { 
+	#{$property}: 50% -39744px;
+}
+&_1f6e1#{$postfix} { 
+	#{$property}: 50% -39780px;
+}
+&_1f527#{$postfix} { 
+	#{$property}: 50% -39816px;
+}
+&_1f529#{$postfix} { 
+	#{$property}: 50% -39852px;
+}
+&_2699#{$postfix} { 
+	#{$property}: 50% -39888px;
+}
+&_1f5dc#{$postfix} { 
+	#{$property}: 50% -39924px;
+}
+&_2696#{$postfix} { 
+	#{$property}: 50% -39960px;
+}
+&_1f9af#{$postfix} { 
+	#{$property}: 50% -39996px;
+}
+&_1f517#{$postfix} { 
+	#{$property}: 50% -40032px;
+}
+&_26d3#{$postfix} { 
+	#{$property}: 50% -40068px;
+}
+&_1f9f0#{$postfix} { 
+	#{$property}: 50% -40104px;
+}
+&_1f9f2#{$postfix} { 
+	#{$property}: 50% -40140px;
+}
+&_2697#{$postfix} { 
+	#{$property}: 50% -40176px;
+}
+&_1f9ea#{$postfix} { 
+	#{$property}: 50% -40212px;
+}
+&_1f9eb#{$postfix} { 
+	#{$property}: 50% -40248px;
+}
+&_1f9ec#{$postfix} { 
+	#{$property}: 50% -40284px;
+}
+&_1f52c#{$postfix} { 
+	#{$property}: 50% -40320px;
+}
+&_1f52d#{$postfix} { 
+	#{$property}: 50% -40356px;
+}
+&_1f4e1#{$postfix} { 
+	#{$property}: 50% -40392px;
+}
+&_1f489#{$postfix} { 
+	#{$property}: 50% -40428px;
+}
+&_1fa78#{$postfix} { 
+	#{$property}: 50% -40464px;
+}
+&_1f48a#{$postfix} { 
+	#{$property}: 50% -40500px;
+}
+&_1fa79#{$postfix} { 
+	#{$property}: 50% -40536px;
+}
+&_1fa7a#{$postfix} { 
+	#{$property}: 50% -40572px;
+}
+&_1f6aa#{$postfix} { 
+	#{$property}: 50% -40608px;
+}
+&_1f6cf#{$postfix} { 
+	#{$property}: 50% -40644px;
+}
+&_1f6cb#{$postfix} { 
+	#{$property}: 50% -40680px;
+}
+&_1fa91#{$postfix} { 
+	#{$property}: 50% -40716px;
+}
+&_1f6bd#{$postfix} { 
+	#{$property}: 50% -40752px;
+}
+&_1f6bf#{$postfix} { 
+	#{$property}: 50% -40788px;
+}
+&_1f6c1#{$postfix} { 
+	#{$property}: 50% -40824px;
+}
+&_1fa92#{$postfix} { 
+	#{$property}: 50% -40860px;
+}
+&_1f9f4#{$postfix} { 
+	#{$property}: 50% -40896px;
+}
+&_1f9f7#{$postfix} { 
+	#{$property}: 50% -40932px;
+}
+&_1f9f9#{$postfix} { 
+	#{$property}: 50% -40968px;
+}
+&_1f9fa#{$postfix} { 
+	#{$property}: 50% -41004px;
+}
+&_1f9fb#{$postfix} { 
+	#{$property}: 50% -41040px;
+}
+&_1f9fc#{$postfix} { 
+	#{$property}: 50% -41076px;
+}
+&_1f9fd#{$postfix} { 
+	#{$property}: 50% -41112px;
+}
+&_1f9ef#{$postfix} { 
+	#{$property}: 50% -41148px;
+}
+&_1f6d2#{$postfix} { 
+	#{$property}: 50% -41184px;
+}
+&_1f3e7#{$postfix} { 
+	#{$property}: 50% -41220px;
+}
+&_1f6ae#{$postfix} { 
+	#{$property}: 50% -41256px;
+}
+&_1f6b0#{$postfix} { 
+	#{$property}: 50% -41292px;
+}
+&_267f#{$postfix} { 
+	#{$property}: 50% -41328px;
+}
+&_1f6b9#{$postfix} { 
+	#{$property}: 50% -41364px;
+}
+&_1f6ba#{$postfix} { 
+	#{$property}: 50% -41400px;
+}
+&_1f6bb#{$postfix} { 
+	#{$property}: 50% -41436px;
+}
+&_1f6bc#{$postfix} { 
+	#{$property}: 50% -41472px;
+}
+&_1f6be#{$postfix} { 
+	#{$property}: 50% -41508px;
+}
+&_1f6c2#{$postfix} { 
+	#{$property}: 50% -41544px;
+}
+&_1f6c3#{$postfix} { 
+	#{$property}: 50% -41580px;
+}
+&_1f6c4#{$postfix} { 
+	#{$property}: 50% -41616px;
+}
+&_1f6c5#{$postfix} { 
+	#{$property}: 50% -41652px;
+}
+&_26a0#{$postfix} { 
+	#{$property}: 50% -41688px;
+}
+&_1f6b8#{$postfix} { 
+	#{$property}: 50% -41724px;
+}
+&_26d4#{$postfix} { 
+	#{$property}: 50% -41760px;
+}
+&_1f6ab#{$postfix} { 
+	#{$property}: 50% -41796px;
+}
+&_1f6b3#{$postfix} { 
+	#{$property}: 50% -41832px;
+}
+&_1f6ad#{$postfix} { 
+	#{$property}: 50% -41868px;
+}
+&_1f6af#{$postfix} { 
+	#{$property}: 50% -41904px;
+}
+&_1f6b1#{$postfix} { 
+	#{$property}: 50% -41940px;
+}
+&_1f6b7#{$postfix} { 
+	#{$property}: 50% -41976px;
+}
+&_1f4f5#{$postfix} { 
+	#{$property}: 50% -42012px;
+}
+&_1f51e#{$postfix} { 
+	#{$property}: 50% -42048px;
+}
+&_2622#{$postfix} { 
+	#{$property}: 50% -42084px;
+}
+&_2623#{$postfix} { 
+	#{$property}: 50% -42120px;
+}
+&_2b06#{$postfix} { 
+	#{$property}: 50% -42156px;
+}
+&_2197#{$postfix} { 
+	#{$property}: 50% -42192px;
+}
+&_27a1#{$postfix} { 
+	#{$property}: 50% -42228px;
+}
+&_2198#{$postfix} { 
+	#{$property}: 50% -42264px;
+}
+&_2b07#{$postfix} { 
+	#{$property}: 50% -42300px;
+}
+&_2199#{$postfix} { 
+	#{$property}: 50% -42336px;
+}
+&_2b05#{$postfix} { 
+	#{$property}: 50% -42372px;
+}
+&_2196#{$postfix} { 
+	#{$property}: 50% -42408px;
+}
+&_2195#{$postfix} { 
+	#{$property}: 50% -42444px;
+}
+&_2194#{$postfix} { 
+	#{$property}: 50% -42480px;
+}
+&_21a9#{$postfix} { 
+	#{$property}: 50% -42516px;
+}
+&_21aa#{$postfix} { 
+	#{$property}: 50% -42552px;
+}
+&_2934#{$postfix} { 
+	#{$property}: 50% -42588px;
+}
+&_2935#{$postfix} { 
+	#{$property}: 50% -42624px;
+}
+&_1f503#{$postfix} { 
+	#{$property}: 50% -42660px;
+}
+&_1f504#{$postfix} { 
+	#{$property}: 50% -42696px;
+}
+&_1f519#{$postfix} { 
+	#{$property}: 50% -42732px;
+}
+&_1f51a#{$postfix} { 
+	#{$property}: 50% -42768px;
+}
+&_1f51b#{$postfix} { 
+	#{$property}: 50% -42804px;
+}
+&_1f51c#{$postfix} { 
+	#{$property}: 50% -42840px;
+}
+&_1f51d#{$postfix} { 
+	#{$property}: 50% -42876px;
+}
+&_1f6d0#{$postfix} { 
+	#{$property}: 50% -42912px;
+}
+&_269b#{$postfix} { 
+	#{$property}: 50% -42948px;
+}
+&_1f549#{$postfix} { 
+	#{$property}: 50% -42984px;
+}
+&_2721#{$postfix} { 
+	#{$property}: 50% -43020px;
+}
+&_2638#{$postfix} { 
+	#{$property}: 50% -43056px;
+}
+&_262f#{$postfix} { 
+	#{$property}: 50% -43092px;
+}
+&_271d#{$postfix} { 
+	#{$property}: 50% -43128px;
+}
+&_2626#{$postfix} { 
+	#{$property}: 50% -43164px;
+}
+&_262a#{$postfix} { 
+	#{$property}: 50% -43200px;
+}
+&_262e#{$postfix} { 
+	#{$property}: 50% -43236px;
+}
+&_1f54e#{$postfix} { 
+	#{$property}: 50% -43272px;
+}
+&_1f52f#{$postfix} { 
+	#{$property}: 50% -43308px;
+}
+&_2648#{$postfix} { 
+	#{$property}: 50% -43344px;
+}
+&_2649#{$postfix} { 
+	#{$property}: 50% -43380px;
+}
+&_264a#{$postfix} { 
+	#{$property}: 50% -43416px;
+}
+&_264b#{$postfix} { 
+	#{$property}: 50% -43452px;
+}
+&_264c#{$postfix} { 
+	#{$property}: 50% -43488px;
+}
+&_264d#{$postfix} { 
+	#{$property}: 50% -43524px;
+}
+&_264e#{$postfix} { 
+	#{$property}: 50% -43560px;
+}
+&_264f#{$postfix} { 
+	#{$property}: 50% -43596px;
+}
+&_2650#{$postfix} { 
+	#{$property}: 50% -43632px;
+}
+&_2651#{$postfix} { 
+	#{$property}: 50% -43668px;
+}
+&_2652#{$postfix} { 
+	#{$property}: 50% -43704px;
+}
+&_2653#{$postfix} { 
+	#{$property}: 50% -43740px;
+}
+&_26ce#{$postfix} { 
+	#{$property}: 50% -43776px;
+}
+&_1f500#{$postfix} { 
+	#{$property}: 50% -43812px;
+}
+&_1f501#{$postfix} { 
+	#{$property}: 50% -43848px;
+}
+&_1f502#{$postfix} { 
+	#{$property}: 50% -43884px;
+}
+&_25b6#{$postfix} { 
+	#{$property}: 50% -43920px;
+}
+&_23e9#{$postfix} { 
+	#{$property}: 50% -43956px;
+}
+&_23ed#{$postfix} { 
+	#{$property}: 50% -43992px;
+}
+&_23ef#{$postfix} { 
+	#{$property}: 50% -44028px;
+}
+&_25c0#{$postfix} { 
+	#{$property}: 50% -44064px;
+}
+&_23ea#{$postfix} { 
+	#{$property}: 50% -44100px;
+}
+&_23ee#{$postfix} { 
+	#{$property}: 50% -44136px;
+}
+&_1f53c#{$postfix} { 
+	#{$property}: 50% -44172px;
+}
+&_23eb#{$postfix} { 
+	#{$property}: 50% -44208px;
+}
+&_1f53d#{$postfix} { 
+	#{$property}: 50% -44244px;
+}
+&_23ec#{$postfix} { 
+	#{$property}: 50% -44280px;
+}
+&_23f8#{$postfix} { 
+	#{$property}: 50% -44316px;
+}
+&_23f9#{$postfix} { 
+	#{$property}: 50% -44352px;
+}
+&_23fa#{$postfix} { 
+	#{$property}: 50% -44388px;
+}
+&_23cf#{$postfix} { 
+	#{$property}: 50% -44424px;
+}
+&_1f3a6#{$postfix} { 
+	#{$property}: 50% -44460px;
+}
+&_1f505#{$postfix} { 
+	#{$property}: 50% -44496px;
+}
+&_1f506#{$postfix} { 
+	#{$property}: 50% -44532px;
+}
+&_1f4f6#{$postfix} { 
+	#{$property}: 50% -44568px;
+}
+&_1f4f3#{$postfix} { 
+	#{$property}: 50% -44604px;
+}
+&_1f4f4#{$postfix} { 
+	#{$property}: 50% -44640px;
+}
+&_2640#{$postfix} { 
+	#{$property}: 50% -44676px;
+}
+&_2642#{$postfix} { 
+	#{$property}: 50% -44712px;
+}
+&_2695#{$postfix} { 
+	#{$property}: 50% -44748px;
+}
+&_267e#{$postfix} { 
+	#{$property}: 50% -44784px;
+}
+&_267b#{$postfix} { 
+	#{$property}: 50% -44820px;
+}
+&_269c#{$postfix} { 
+	#{$property}: 50% -44856px;
+}
+&_1f531#{$postfix} { 
+	#{$property}: 50% -44892px;
+}
+&_1f4db#{$postfix} { 
+	#{$property}: 50% -44928px;
+}
+&_1f530#{$postfix} { 
+	#{$property}: 50% -44964px;
+}
+&_2b55#{$postfix} { 
+	#{$property}: 50% -45000px;
+}
+&_2705#{$postfix} { 
+	#{$property}: 50% -45036px;
+}
+&_2611#{$postfix} { 
+	#{$property}: 50% -45072px;
+}
+&_2714#{$postfix} { 
+	#{$property}: 50% -45108px;
+}
+&_2716#{$postfix} { 
+	#{$property}: 50% -45144px;
+}
+&_274c#{$postfix} { 
+	#{$property}: 50% -45180px;
+}
+&_274e#{$postfix} { 
+	#{$property}: 50% -45216px;
+}
+&_2795#{$postfix} { 
+	#{$property}: 50% -45252px;
+}
+&_2796#{$postfix} { 
+	#{$property}: 50% -45288px;
+}
+&_2797#{$postfix} { 
+	#{$property}: 50% -45324px;
+}
+&_27b0#{$postfix} { 
+	#{$property}: 50% -45360px;
+}
+&_27bf#{$postfix} { 
+	#{$property}: 50% -45396px;
+}
+&_303d#{$postfix} { 
+	#{$property}: 50% -45432px;
+}
+&_2733#{$postfix} { 
+	#{$property}: 50% -45468px;
+}
+&_2734#{$postfix} { 
+	#{$property}: 50% -45504px;
+}
+&_2747#{$postfix} { 
+	#{$property}: 50% -45540px;
+}
+&_203c#{$postfix} { 
+	#{$property}: 50% -45576px;
+}
+&_2049#{$postfix} { 
+	#{$property}: 50% -45612px;
+}
+&_2753#{$postfix} { 
+	#{$property}: 50% -45648px;
+}
+&_2754#{$postfix} { 
+	#{$property}: 50% -45684px;
+}
+&_2755#{$postfix} { 
+	#{$property}: 50% -45720px;
+}
+&_2757#{$postfix} { 
+	#{$property}: 50% -45756px;
+}
+&_3030#{$postfix} { 
+	#{$property}: 50% -45792px;
+}
+&_2122#{$postfix} { 
+	#{$property}: 50% -45828px;
+}
+&_1f51f#{$postfix} { 
+	#{$property}: 50% -45864px;
+}
+&_1f520#{$postfix} { 
+	#{$property}: 50% -45900px;
+}
+&_1f521#{$postfix} { 
+	#{$property}: 50% -45936px;
+}
+&_1f522#{$postfix} { 
+	#{$property}: 50% -45972px;
+}
+&_1f523#{$postfix} { 
+	#{$property}: 50% -46008px;
+}
+&_1f524#{$postfix} { 
+	#{$property}: 50% -46044px;
+}
+&_1f170#{$postfix} { 
+	#{$property}: 50% -46080px;
+}
+&_1f18e#{$postfix} { 
+	#{$property}: 50% -46116px;
+}
+&_1f171#{$postfix} { 
+	#{$property}: 50% -46152px;
+}
+&_1f191#{$postfix} { 
+	#{$property}: 50% -46188px;
+}
+&_1f192#{$postfix} { 
+	#{$property}: 50% -46224px;
+}
+&_1f193#{$postfix} { 
+	#{$property}: 50% -46260px;
+}
+&_2139#{$postfix} { 
+	#{$property}: 50% -46296px;
+}
+&_1f194#{$postfix} { 
+	#{$property}: 50% -46332px;
+}
+&_24c2#{$postfix} { 
+	#{$property}: 50% -46368px;
+}
+&_1f195#{$postfix} { 
+	#{$property}: 50% -46404px;
+}
+&_1f196#{$postfix} { 
+	#{$property}: 50% -46440px;
+}
+&_1f17e#{$postfix} { 
+	#{$property}: 50% -46476px;
+}
+&_1f197#{$postfix} { 
+	#{$property}: 50% -46512px;
+}
+&_1f17f#{$postfix} { 
+	#{$property}: 50% -46548px;
+}
+&_1f198#{$postfix} { 
+	#{$property}: 50% -46584px;
+}
+&_1f199#{$postfix} { 
+	#{$property}: 50% -46620px;
+}
+&_1f19a#{$postfix} { 
+	#{$property}: 50% -46656px;
+}
+&_1f201#{$postfix} { 
+	#{$property}: 50% -46692px;
+}
+&_1f202#{$postfix} { 
+	#{$property}: 50% -46728px;
+}
+&_1f237#{$postfix} { 
+	#{$property}: 50% -46764px;
+}
+&_1f236#{$postfix} { 
+	#{$property}: 50% -46800px;
+}
+&_1f22f#{$postfix} { 
+	#{$property}: 50% -46836px;
+}
+&_1f250#{$postfix} { 
+	#{$property}: 50% -46872px;
+}
+&_1f239#{$postfix} { 
+	#{$property}: 50% -46908px;
+}
+&_1f21a#{$postfix} { 
+	#{$property}: 50% -46944px;
+}
+&_1f232#{$postfix} { 
+	#{$property}: 50% -46980px;
+}
+&_1f251#{$postfix} { 
+	#{$property}: 50% -47016px;
+}
+&_1f238#{$postfix} { 
+	#{$property}: 50% -47052px;
+}
+&_1f234#{$postfix} { 
+	#{$property}: 50% -47088px;
+}
+&_1f233#{$postfix} { 
+	#{$property}: 50% -47124px;
+}
+&_3297#{$postfix} { 
+	#{$property}: 50% -47160px;
+}
+&_3299#{$postfix} { 
+	#{$property}: 50% -47196px;
+}
+&_1f23a#{$postfix} { 
+	#{$property}: 50% -47232px;
+}
+&_1f235#{$postfix} { 
+	#{$property}: 50% -47268px;
+}
+&_1f534#{$postfix} { 
+	#{$property}: 50% -47304px;
+}
+&_1f7e0#{$postfix} { 
+	#{$property}: 50% -47340px;
+}
+&_1f7e1#{$postfix} { 
+	#{$property}: 50% -47376px;
+}
+&_1f7e2#{$postfix} { 
+	#{$property}: 50% -47412px;
+}
+&_1f535#{$postfix} { 
+	#{$property}: 50% -47448px;
+}
+&_1f7e3#{$postfix} { 
+	#{$property}: 50% -47484px;
+}
+&_1f7e4#{$postfix} { 
+	#{$property}: 50% -47520px;
+}
+&_26ab#{$postfix} { 
+	#{$property}: 50% -47556px;
+}
+&_26aa#{$postfix} { 
+	#{$property}: 50% -47592px;
+}
+&_1f3c1#{$postfix} { 
+	#{$property}: 50% -47628px;
+}
+&_1f6a9#{$postfix} { 
+	#{$property}: 50% -47664px;
+}
+&_1f38c#{$postfix} { 
+	#{$property}: 50% -47700px;
+}
+&_1f3f4#{$postfix} { 
+	#{$property}: 50% -47736px;
+}
+&_1f3f3#{$postfix} { 
+	#{$property}: 50% -47772px;
+}
+&_1f3f3-fe0f-200d-1f308#{$postfix} { 
+	#{$property}: 50% -47808px;
+}
+&_1f3f4-200d-2620-fe0f#{$postfix} { 
+	#{$property}: 50% -47844px;
+}
+&_1f1e6-1f1e8#{$postfix} { 
+	#{$property}: 50% -47880px;
+}
+&_1f1e6-1f1e9#{$postfix} { 
+	#{$property}: 50% -47916px;
+}
+&_1f1e6-1f1ea#{$postfix} { 
+	#{$property}: 50% -47952px;
+}
+&_1f1e6-1f1eb#{$postfix} { 
+	#{$property}: 50% -47988px;
+}
+&_1f1e6-1f1ec#{$postfix} { 
+	#{$property}: 50% -48024px;
+}
+&_1f1e6-1f1ee#{$postfix} { 
+	#{$property}: 50% -48060px;
+}
+&_1f1e6-1f1f1#{$postfix} { 
+	#{$property}: 50% -48096px;
+}
+&_1f1e6-1f1f2#{$postfix} { 
+	#{$property}: 50% -48132px;
+}
+&_1f1e6-1f1f4#{$postfix} { 
+	#{$property}: 50% -48168px;
+}
+&_1f1e6-1f1f6#{$postfix} { 
+	#{$property}: 50% -48204px;
+}
+&_1f1e6-1f1f7#{$postfix} { 
+	#{$property}: 50% -48240px;
+}
+&_1f1e6-1f1f8#{$postfix} { 
+	#{$property}: 50% -48276px;
+}
+&_1f1e6-1f1f9#{$postfix} { 
+	#{$property}: 50% -48312px;
+}
+&_1f1e6-1f1fa#{$postfix} { 
+	#{$property}: 50% -48348px;
+}
+&_1f1e6-1f1fc#{$postfix} { 
+	#{$property}: 50% -48384px;
+}
+&_1f1e6-1f1fd#{$postfix} { 
+	#{$property}: 50% -48420px;
+}
+&_1f1e6-1f1ff#{$postfix} { 
+	#{$property}: 50% -48456px;
+}
+&_1f1e7-1f1e6#{$postfix} { 
+	#{$property}: 50% -48492px;
+}
+&_1f1e7-1f1e7#{$postfix} { 
+	#{$property}: 50% -48528px;
+}
+&_1f1e7-1f1e9#{$postfix} { 
+	#{$property}: 50% -48564px;
+}
+&_1f1e7-1f1ea#{$postfix} { 
+	#{$property}: 50% -48600px;
+}
+&_1f1e7-1f1eb#{$postfix} { 
+	#{$property}: 50% -48636px;
+}
+&_1f1e7-1f1ec#{$postfix} { 
+	#{$property}: 50% -48672px;
+}
+&_1f1e7-1f1ed#{$postfix} { 
+	#{$property}: 50% -48708px;
+}
+&_1f1e7-1f1ee#{$postfix} { 
+	#{$property}: 50% -48744px;
+}
+&_1f1e7-1f1ef#{$postfix} { 
+	#{$property}: 50% -48780px;
+}
+&_1f1e7-1f1f1#{$postfix} { 
+	#{$property}: 50% -48816px;
+}
+&_1f1e7-1f1f2#{$postfix} { 
+	#{$property}: 50% -48852px;
+}
+&_1f1e7-1f1f3#{$postfix} { 
+	#{$property}: 50% -48888px;
+}
+&_1f1e7-1f1f4#{$postfix} { 
+	#{$property}: 50% -48924px;
+}
+&_1f1e7-1f1f6#{$postfix} { 
+	#{$property}: 50% -48960px;
+}
+&_1f1e7-1f1f7#{$postfix} { 
+	#{$property}: 50% -48996px;
+}
+&_1f1e7-1f1f8#{$postfix} { 
+	#{$property}: 50% -49032px;
+}
+&_1f1e7-1f1f9#{$postfix} { 
+	#{$property}: 50% -49068px;
+}
+&_1f1e7-1f1fb#{$postfix} { 
+	#{$property}: 50% -49104px;
+}
+&_1f1e7-1f1fc#{$postfix} { 
+	#{$property}: 50% -49140px;
+}
+&_1f1e7-1f1fe#{$postfix} { 
+	#{$property}: 50% -49176px;
+}
+&_1f1e7-1f1ff#{$postfix} { 
+	#{$property}: 50% -49212px;
+}
+&_1f1e8-1f1e6#{$postfix} { 
+	#{$property}: 50% -49248px;
+}
+&_1f1e8-1f1e8#{$postfix} { 
+	#{$property}: 50% -49284px;
+}
+&_1f1e8-1f1e9#{$postfix} { 
+	#{$property}: 50% -49320px;
+}
+&_1f1e8-1f1eb#{$postfix} { 
+	#{$property}: 50% -49356px;
+}
+&_1f1e8-1f1ec#{$postfix} { 
+	#{$property}: 50% -49392px;
+}
+&_1f1e8-1f1ed#{$postfix} { 
+	#{$property}: 50% -49428px;
+}
+&_1f1e8-1f1ee#{$postfix} { 
+	#{$property}: 50% -49464px;
+}
+&_1f1e8-1f1f0#{$postfix} { 
+	#{$property}: 50% -49500px;
+}
+&_1f1e8-1f1f1#{$postfix} { 
+	#{$property}: 50% -49536px;
+}
+&_1f1e8-1f1f2#{$postfix} { 
+	#{$property}: 50% -49572px;
+}
+&_1f1e8-1f1f3#{$postfix} { 
+	#{$property}: 50% -49608px;
+}
+&_1f1e8-1f1f4#{$postfix} { 
+	#{$property}: 50% -49644px;
+}
+&_1f1e8-1f1f5#{$postfix} { 
+	#{$property}: 50% -49680px;
+}
+&_1f1e8-1f1f7#{$postfix} { 
+	#{$property}: 50% -49716px;
+}
+&_1f1e8-1f1fa#{$postfix} { 
+	#{$property}: 50% -49752px;
+}
+&_1f1e8-1f1fb#{$postfix} { 
+	#{$property}: 50% -49788px;
+}
+&_1f1e8-1f1fc#{$postfix} { 
+	#{$property}: 50% -49824px;
+}
+&_1f1e8-1f1fd#{$postfix} { 
+	#{$property}: 50% -49860px;
+}
+&_1f1e8-1f1fe#{$postfix} { 
+	#{$property}: 50% -49896px;
+}
+&_1f1e8-1f1ff#{$postfix} { 
+	#{$property}: 50% -49932px;
+}
+&_1f1e9-1f1ea#{$postfix} { 
+	#{$property}: 50% -49968px;
+}
+&_1f1e9-1f1ec#{$postfix} { 
+	#{$property}: 50% -50004px;
+}
+&_1f1e9-1f1ef#{$postfix} { 
+	#{$property}: 50% -50040px;
+}
+&_1f1e9-1f1f0#{$postfix} { 
+	#{$property}: 50% -50076px;
+}
+&_1f1e9-1f1f2#{$postfix} { 
+	#{$property}: 50% -50112px;
+}
+&_1f1e9-1f1f4#{$postfix} { 
+	#{$property}: 50% -50148px;
+}
+&_1f1e9-1f1ff#{$postfix} { 
+	#{$property}: 50% -50184px;
+}
+&_1f1ea-1f1e6#{$postfix} { 
+	#{$property}: 50% -50220px;
+}
+&_1f1ea-1f1e8#{$postfix} { 
+	#{$property}: 50% -50256px;
+}
+&_1f1ea-1f1ea#{$postfix} { 
+	#{$property}: 50% -50292px;
+}
+&_1f1ea-1f1ec#{$postfix} { 
+	#{$property}: 50% -50328px;
+}
+&_1f1ea-1f1ed#{$postfix} { 
+	#{$property}: 50% -50364px;
+}
+&_1f1ea-1f1f7#{$postfix} { 
+	#{$property}: 50% -50400px;
+}
+&_1f1ea-1f1f8#{$postfix} { 
+	#{$property}: 50% -50436px;
+}
+&_1f1ea-1f1f9#{$postfix} { 
+	#{$property}: 50% -50472px;
+}
+&_1f1ea-1f1fa#{$postfix} { 
+	#{$property}: 50% -50508px;
+}
+&_1f1eb-1f1ee#{$postfix} { 
+	#{$property}: 50% -50544px;
+}
+&_1f1eb-1f1ef#{$postfix} { 
+	#{$property}: 50% -50580px;
+}
+&_1f1eb-1f1f0#{$postfix} { 
+	#{$property}: 50% -50616px;
+}
+&_1f1eb-1f1f2#{$postfix} { 
+	#{$property}: 50% -50652px;
+}
+&_1f1eb-1f1f4#{$postfix} { 
+	#{$property}: 50% -50688px;
+}
+&_1f1eb-1f1f7#{$postfix} { 
+	#{$property}: 50% -50724px;
+}
+&_1f1ec-1f1e6#{$postfix} { 
+	#{$property}: 50% -50760px;
+}
+&_1f1ec-1f1e7#{$postfix} { 
+	#{$property}: 50% -50796px;
+}
+&_1f1ec-1f1e9#{$postfix} { 
+	#{$property}: 50% -50832px;
+}
+&_1f1ec-1f1ea#{$postfix} { 
+	#{$property}: 50% -50868px;
+}
+&_1f1ec-1f1eb#{$postfix} { 
+	#{$property}: 50% -50904px;
+}
+&_1f1ec-1f1ec#{$postfix} { 
+	#{$property}: 50% -50940px;
+}
+&_1f1ec-1f1ed#{$postfix} { 
+	#{$property}: 50% -50976px;
+}
+&_1f1ec-1f1ee#{$postfix} { 
+	#{$property}: 50% -51012px;
+}
+&_1f1ec-1f1f1#{$postfix} { 
+	#{$property}: 50% -51048px;
+}
+&_1f1ec-1f1f2#{$postfix} { 
+	#{$property}: 50% -51084px;
+}
+&_1f1ec-1f1f3#{$postfix} { 
+	#{$property}: 50% -51120px;
+}
+&_1f1ec-1f1f5#{$postfix} { 
+	#{$property}: 50% -51156px;
+}
+&_1f1ec-1f1f6#{$postfix} { 
+	#{$property}: 50% -51192px;
+}
+&_1f1ec-1f1f7#{$postfix} { 
+	#{$property}: 50% -51228px;
+}
+&_1f1ec-1f1f8#{$postfix} { 
+	#{$property}: 50% -51264px;
+}
+&_1f1ec-1f1f9#{$postfix} { 
+	#{$property}: 50% -51300px;
+}
+&_1f1ec-1f1fa#{$postfix} { 
+	#{$property}: 50% -51336px;
+}
+&_1f1ec-1f1fc#{$postfix} { 
+	#{$property}: 50% -51372px;
+}
+&_1f1ec-1f1fe#{$postfix} { 
+	#{$property}: 50% -51408px;
+}
+&_1f1ed-1f1f0#{$postfix} { 
+	#{$property}: 50% -51444px;
+}
+&_1f1ed-1f1f2#{$postfix} { 
+	#{$property}: 50% -51480px;
+}
+&_1f1ed-1f1f3#{$postfix} { 
+	#{$property}: 50% -51516px;
+}
+&_1f1ed-1f1f7#{$postfix} { 
+	#{$property}: 50% -51552px;
+}
+&_1f1ed-1f1f9#{$postfix} { 
+	#{$property}: 50% -51588px;
+}
+&_1f1ed-1f1fa#{$postfix} { 
+	#{$property}: 50% -51624px;
+}
+&_1f1ee-1f1e8#{$postfix} { 
+	#{$property}: 50% -51660px;
+}
+&_1f1ee-1f1e9#{$postfix} { 
+	#{$property}: 50% -51696px;
+}
+&_1f1ee-1f1ea#{$postfix} { 
+	#{$property}: 50% -51732px;
+}
+&_1f1ee-1f1f1#{$postfix} { 
+	#{$property}: 50% -51768px;
+}
+&_1f1ee-1f1f2#{$postfix} { 
+	#{$property}: 50% -51804px;
+}
+&_1f1ee-1f1f3#{$postfix} { 
+	#{$property}: 50% -51840px;
+}
+&_1f1ee-1f1f4#{$postfix} { 
+	#{$property}: 50% -51876px;
+}
+&_1f1ee-1f1f6#{$postfix} { 
+	#{$property}: 50% -51912px;
+}
+&_1f1ee-1f1f7#{$postfix} { 
+	#{$property}: 50% -51948px;
+}
+&_1f1ee-1f1f8#{$postfix} { 
+	#{$property}: 50% -51984px;
+}
+&_1f1ee-1f1f9#{$postfix} { 
+	#{$property}: 50% -52020px;
+}
+&_1f1ef-1f1ea#{$postfix} { 
+	#{$property}: 50% -52056px;
+}
+&_1f1ef-1f1f2#{$postfix} { 
+	#{$property}: 50% -52092px;
+}
+&_1f1ef-1f1f4#{$postfix} { 
+	#{$property}: 50% -52128px;
+}
+&_1f1ef-1f1f5#{$postfix} { 
+	#{$property}: 50% -52164px;
+}
+&_1f1f0-1f1ea#{$postfix} { 
+	#{$property}: 50% -52200px;
+}
+&_1f1f0-1f1ec#{$postfix} { 
+	#{$property}: 50% -52236px;
+}
+&_1f1f0-1f1ed#{$postfix} { 
+	#{$property}: 50% -52272px;
+}
+&_1f1f0-1f1ee#{$postfix} { 
+	#{$property}: 50% -52308px;
+}
+&_1f1f0-1f1f2#{$postfix} { 
+	#{$property}: 50% -52344px;
+}
+&_1f1f0-1f1f3#{$postfix} { 
+	#{$property}: 50% -52380px;
+}
+&_1f1f0-1f1f5#{$postfix} { 
+	#{$property}: 50% -52416px;
+}
+&_1f1f0-1f1f7#{$postfix} { 
+	#{$property}: 50% -52452px;
+}
+&_1f1f0-1f1fc#{$postfix} { 
+	#{$property}: 50% -52488px;
+}
+&_1f1f0-1f1fe#{$postfix} { 
+	#{$property}: 50% -52524px;
+}
+&_1f1f0-1f1ff#{$postfix} { 
+	#{$property}: 50% -52560px;
+}
+&_1f1f1-1f1e6#{$postfix} { 
+	#{$property}: 50% -52596px;
+}
+&_1f1f1-1f1e7#{$postfix} { 
+	#{$property}: 50% -52632px;
+}
+&_1f1f1-1f1e8#{$postfix} { 
+	#{$property}: 50% -52668px;
+}
+&_1f1f1-1f1ee#{$postfix} { 
+	#{$property}: 50% -52704px;
+}
+&_1f1f1-1f1f0#{$postfix} { 
+	#{$property}: 50% -52740px;
+}
+&_1f1f1-1f1f7#{$postfix} { 
+	#{$property}: 50% -52776px;
+}
+&_1f1f1-1f1f8#{$postfix} { 
+	#{$property}: 50% -52812px;
+}
+&_1f1f1-1f1f9#{$postfix} { 
+	#{$property}: 50% -52848px;
+}
+&_1f1f1-1f1fa#{$postfix} { 
+	#{$property}: 50% -52884px;
+}
+&_1f1f1-1f1fb#{$postfix} { 
+	#{$property}: 50% -52920px;
+}
+&_1f1f1-1f1fe#{$postfix} { 
+	#{$property}: 50% -52956px;
+}
+&_1f1f2-1f1e6#{$postfix} { 
+	#{$property}: 50% -52992px;
+}
+&_1f1f2-1f1e8#{$postfix} { 
+	#{$property}: 50% -53028px;
+}
+&_1f1f2-1f1e9#{$postfix} { 
+	#{$property}: 50% -53064px;
+}
+&_1f1f2-1f1ea#{$postfix} { 
+	#{$property}: 50% -53100px;
+}
+&_1f1f2-1f1eb#{$postfix} { 
+	#{$property}: 50% -53136px;
+}
+&_1f1f2-1f1ec#{$postfix} { 
+	#{$property}: 50% -53172px;
+}
+&_1f1f2-1f1ed#{$postfix} { 
+	#{$property}: 50% -53208px;
+}
+&_1f1f2-1f1f0#{$postfix} { 
+	#{$property}: 50% -53244px;
+}
+&_1f1f2-1f1f1#{$postfix} { 
+	#{$property}: 50% -53280px;
+}
+&_1f1f2-1f1f2#{$postfix} { 
+	#{$property}: 50% -53316px;
+}
+&_1f1f2-1f1f3#{$postfix} { 
+	#{$property}: 50% -53352px;
+}
+&_1f1f2-1f1f4#{$postfix} { 
+	#{$property}: 50% -53388px;
+}
+&_1f1f2-1f1f5#{$postfix} { 
+	#{$property}: 50% -53424px;
+}
+&_1f1f2-1f1f6#{$postfix} { 
+	#{$property}: 50% -53460px;
+}
+&_1f1f2-1f1f7#{$postfix} { 
+	#{$property}: 50% -53496px;
+}
+&_1f1f2-1f1f8#{$postfix} { 
+	#{$property}: 50% -53532px;
+}
+&_1f1f2-1f1f9#{$postfix} { 
+	#{$property}: 50% -53568px;
+}
+&_1f1f2-1f1fa#{$postfix} { 
+	#{$property}: 50% -53604px;
+}
+&_1f1f2-1f1fb#{$postfix} { 
+	#{$property}: 50% -53640px;
+}
+&_1f1f2-1f1fc#{$postfix} { 
+	#{$property}: 50% -53676px;
+}
+&_1f1f2-1f1fd#{$postfix} { 
+	#{$property}: 50% -53712px;
+}
+&_1f1f2-1f1fe#{$postfix} { 
+	#{$property}: 50% -53748px;
+}
+&_1f1f2-1f1ff#{$postfix} { 
+	#{$property}: 50% -53784px;
+}
+&_1f1f3-1f1e6#{$postfix} { 
+	#{$property}: 50% -53820px;
+}
+&_1f1f3-1f1e8#{$postfix} { 
+	#{$property}: 50% -53856px;
+}
+&_1f1f3-1f1ea#{$postfix} { 
+	#{$property}: 50% -53892px;
+}
+&_1f1f3-1f1eb#{$postfix} { 
+	#{$property}: 50% -53928px;
+}
+&_1f1f3-1f1ec#{$postfix} { 
+	#{$property}: 50% -53964px;
+}
+&_1f1f3-1f1ee#{$postfix} { 
+	#{$property}: 50% -54000px;
+}
+&_1f1f3-1f1f1#{$postfix} { 
+	#{$property}: 50% -54036px;
+}
+&_1f1f3-1f1f4#{$postfix} { 
+	#{$property}: 50% -54072px;
+}
+&_1f1f3-1f1f5#{$postfix} { 
+	#{$property}: 50% -54108px;
+}
+&_1f1f3-1f1f7#{$postfix} { 
+	#{$property}: 50% -54144px;
+}
+&_1f1f3-1f1fa#{$postfix} { 
+	#{$property}: 50% -54180px;
+}
+&_1f1f3-1f1ff#{$postfix} { 
+	#{$property}: 50% -54216px;
+}
+&_1f1f4-1f1f2#{$postfix} { 
+	#{$property}: 50% -54252px;
+}
+&_1f1f5-1f1e6#{$postfix} { 
+	#{$property}: 50% -54288px;
+}
+&_1f1f5-1f1ea#{$postfix} { 
+	#{$property}: 50% -54324px;
+}
+&_1f1f5-1f1eb#{$postfix} { 
+	#{$property}: 50% -54360px;
+}
+&_1f1f5-1f1ec#{$postfix} { 
+	#{$property}: 50% -54396px;
+}
+&_1f1f5-1f1ed#{$postfix} { 
+	#{$property}: 50% -54432px;
+}
+&_1f1f5-1f1f0#{$postfix} { 
+	#{$property}: 50% -54468px;
+}
+&_1f1f5-1f1f1#{$postfix} { 
+	#{$property}: 50% -54504px;
+}
+&_1f1f5-1f1f2#{$postfix} { 
+	#{$property}: 50% -54540px;
+}
+&_1f1f5-1f1f3#{$postfix} { 
+	#{$property}: 50% -54576px;
+}
+&_1f1f5-1f1f7#{$postfix} { 
+	#{$property}: 50% -54612px;
+}
+&_1f1f5-1f1f8#{$postfix} { 
+	#{$property}: 50% -54648px;
+}
+&_1f1f5-1f1f9#{$postfix} { 
+	#{$property}: 50% -54684px;
+}
+&_1f1f5-1f1fc#{$postfix} { 
+	#{$property}: 50% -54720px;
+}
+&_1f1f5-1f1fe#{$postfix} { 
+	#{$property}: 50% -54756px;
+}
+&_1f1f6-1f1e6#{$postfix} { 
+	#{$property}: 50% -54792px;
+}
+&_1f1f7-1f1ea#{$postfix} { 
+	#{$property}: 50% -54828px;
+}
+&_1f1f7-1f1f4#{$postfix} { 
+	#{$property}: 50% -54864px;
+}
+&_1f1f7-1f1f8#{$postfix} { 
+	#{$property}: 50% -54900px;
+}
+&_1f1f7-1f1fa#{$postfix} { 
+	#{$property}: 50% -54936px;
+}
+&_1f1f7-1f1fc#{$postfix} { 
+	#{$property}: 50% -54972px;
+}
+&_1f1f8-1f1e6#{$postfix} { 
+	#{$property}: 50% -55008px;
+}
+&_1f1f8-1f1e7#{$postfix} { 
+	#{$property}: 50% -55044px;
+}
+&_1f1f8-1f1e8#{$postfix} { 
+	#{$property}: 50% -55080px;
+}
+&_1f1f8-1f1e9#{$postfix} { 
+	#{$property}: 50% -55116px;
+}
+&_1f1f8-1f1ea#{$postfix} { 
+	#{$property}: 50% -55152px;
+}
+&_1f1f8-1f1ec#{$postfix} { 
+	#{$property}: 50% -55188px;
+}
+&_1f1f8-1f1ed#{$postfix} { 
+	#{$property}: 50% -55224px;
+}
+&_1f1f8-1f1ee#{$postfix} { 
+	#{$property}: 50% -55260px;
+}
+&_1f1f8-1f1ef#{$postfix} { 
+	#{$property}: 50% -55296px;
+}
+&_1f1f8-1f1f0#{$postfix} { 
+	#{$property}: 50% -55332px;
+}
+&_1f1f8-1f1f1#{$postfix} { 
+	#{$property}: 50% -55368px;
+}
+&_1f1f8-1f1f2#{$postfix} { 
+	#{$property}: 50% -55404px;
+}
+&_1f1f8-1f1f3#{$postfix} { 
+	#{$property}: 50% -55440px;
+}
+&_1f1f8-1f1f4#{$postfix} { 
+	#{$property}: 50% -55476px;
+}
+&_1f1f8-1f1f7#{$postfix} { 
+	#{$property}: 50% -55512px;
+}
+&_1f1f8-1f1f8#{$postfix} { 
+	#{$property}: 50% -55548px;
+}
+&_1f1f8-1f1f9#{$postfix} { 
+	#{$property}: 50% -55584px;
+}
+&_1f1f8-1f1fb#{$postfix} { 
+	#{$property}: 50% -55620px;
+}
+&_1f1f8-1f1fd#{$postfix} { 
+	#{$property}: 50% -55656px;
+}
+&_1f1f8-1f1fe#{$postfix} { 
+	#{$property}: 50% -55692px;
+}
+&_1f1f8-1f1ff#{$postfix} { 
+	#{$property}: 50% -55728px;
+}
+&_1f1f9-1f1e6#{$postfix} { 
+	#{$property}: 50% -55764px;
+}
+&_1f1f9-1f1e8#{$postfix} { 
+	#{$property}: 50% -55800px;
+}
+&_1f1f9-1f1e9#{$postfix} { 
+	#{$property}: 50% -55836px;
+}
+&_1f1f9-1f1eb#{$postfix} { 
+	#{$property}: 50% -55872px;
+}
+&_1f1f9-1f1ec#{$postfix} { 
+	#{$property}: 50% -55908px;
+}
+&_1f1f9-1f1ed#{$postfix} { 
+	#{$property}: 50% -55944px;
+}
+&_1f1f9-1f1ef#{$postfix} { 
+	#{$property}: 50% -55980px;
+}
+&_1f1f9-1f1f0#{$postfix} { 
+	#{$property}: 50% -56016px;
+}
+&_1f1f9-1f1f1#{$postfix} { 
+	#{$property}: 50% -56052px;
+}
+&_1f1f9-1f1f2#{$postfix} { 
+	#{$property}: 50% -56088px;
+}
+&_1f1f9-1f1f3#{$postfix} { 
+	#{$property}: 50% -56124px;
+}
+&_1f1f9-1f1f4#{$postfix} { 
+	#{$property}: 50% -56160px;
+}
+&_1f1f9-1f1f7#{$postfix} { 
+	#{$property}: 50% -56196px;
+}
+&_1f1f9-1f1f9#{$postfix} { 
+	#{$property}: 50% -56232px;
+}
+&_1f1f9-1f1fb#{$postfix} { 
+	#{$property}: 50% -56268px;
+}
+&_1f1f9-1f1fc#{$postfix} { 
+	#{$property}: 50% -56304px;
+}
+&_1f1f9-1f1ff#{$postfix} { 
+	#{$property}: 50% -56340px;
+}
+&_1f1fa-1f1e6#{$postfix} { 
+	#{$property}: 50% -56376px;
+}
+&_1f1fa-1f1ec#{$postfix} { 
+	#{$property}: 50% -56412px;
+}
+&_1f1fa-1f1f2#{$postfix} { 
+	#{$property}: 50% -56448px;
+}
+&_1f1fa-1f1f3#{$postfix} { 
+	#{$property}: 50% -56484px;
+}
+&_1f1fa-1f1f8#{$postfix} { 
+	#{$property}: 50% -56520px;
+}
+&_1f1fa-1f1fe#{$postfix} { 
+	#{$property}: 50% -56556px;
+}
+&_1f1fa-1f1ff#{$postfix} { 
+	#{$property}: 50% -56592px;
+}
+&_1f1fb-1f1e6#{$postfix} { 
+	#{$property}: 50% -56628px;
+}
+&_1f1fb-1f1e8#{$postfix} { 
+	#{$property}: 50% -56664px;
+}
+&_1f1fb-1f1ea#{$postfix} { 
+	#{$property}: 50% -56700px;
+}
+&_1f1fb-1f1ec#{$postfix} { 
+	#{$property}: 50% -56736px;
+}
+&_1f1fb-1f1ee#{$postfix} { 
+	#{$property}: 50% -56772px;
+}
+&_1f1fb-1f1f3#{$postfix} { 
+	#{$property}: 50% -56808px;
+}
+&_1f1fb-1f1fa#{$postfix} { 
+	#{$property}: 50% -56844px;
+}
+&_1f1fc-1f1eb#{$postfix} { 
+	#{$property}: 50% -56880px;
+}
+&_1f1fc-1f1f8#{$postfix} { 
+	#{$property}: 50% -56916px;
+}
+&_1f1fd-1f1f0#{$postfix} { 
+	#{$property}: 50% -56952px;
+}
+&_1f1fe-1f1ea#{$postfix} { 
+	#{$property}: 50% -56988px;
+}
+&_1f1fe-1f1f9#{$postfix} { 
+	#{$property}: 50% -57024px;
+}
+&_1f1ff-1f1e6#{$postfix} { 
+	#{$property}: 50% -57060px;
+}
+&_1f1ff-1f1f2#{$postfix} { 
+	#{$property}: 50% -57096px;
+}
+&_1f1ff-1f1fc#{$postfix} { 
+	#{$property}: 50% -57132px;
+}
+&_1f3f4-e0067-e0062-e0065-e006e-e0067-e007f#{$postfix} { 
+	#{$property}: 50% -57168px;
+}
+&_1f3f4-e0067-e0062-e0073-e0063-e0074-e007f#{$postfix} { 
+	#{$property}: 50% -57204px;
+}
+&_1f3f4-e0067-e0062-e0077-e006c-e0073-e007f#{$postfix} { 
+	#{$property}: 50% -57240px;
+}
+}

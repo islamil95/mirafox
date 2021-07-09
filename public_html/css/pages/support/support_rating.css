@@ -1,0 +1,27 @@
+.star{
+    background: url(/images/fox_user_rate_blank.png) no-repeat;
+    margin-left: 2px;
+    margin-right: 2px;
+    top: 12px;
+    position: relative;
+    width:20px;
+    height:20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fullStar{
+    background: url(/images/fox_user_rate_full.png) no-repeat;
+}
+
+.stars{
+    overflow: hidden;
+}
+
+.tmp_es{
+    background: url(/images/fox_user_rate_blank.png) no-repeat;
+}
+
+.tmp_fs{
+   background: url(/images/fox_user_rate_full.png) no-repeat;
+}

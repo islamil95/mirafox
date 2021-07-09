@@ -1,0 +1,60 @@
+{
+  "name": "kwork/kwork",
+  "description": "Kwork - удобный магазин фриланс-услуг",
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "rin-nas/php-censure",
+        "version": "1.0",
+        "source": {
+          "url": "https://github.com/rin-nas/php-censure",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  ],
+  "require": {
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "ext-intl": "*",
+    "ext-zip": "*",
+    "ext-bcmath": "*",
+	"matthiasmullie/minify": "1.3.61",
+    "symfony/event-dispatcher": "^3.4",
+    "symfony/http-foundation": "^4.2",
+    "symfony/http-kernel": "^3.4",
+    "symfony/routing": "^3.4",
+    "symfony/templating": "^3.4",
+	"symfony/contracts": "^1.1.5",
+    "illuminate/database": "^5.8",
+    "illuminate/events": "^5.8",
+    "illuminate/container": "^5.8",
+    "illuminate/pagination": "^5.8",
+    "illuminate/validation": "^5.8",
+	"monolog/monolog": "2.0.0-beta1",
+	"rin-nas/php-censure": "1.0",
+    "symfony/yaml": "^4.3"
+  },
+  "optimize-autoloader": true,
+  "autoload": {
+    "psr-4": {
+      "Controllers\\": "Controllers",
+      "Core\\": "Core"
+    },
+    "classmap": [
+      "Helpers/",
+      "public_html/smarty/libs"
+    ],
+    "files": [
+      "vendor/rin-nas/php-censure/ReflectionTypeHint.php",
+      "vendor/rin-nas/php-censure/UTF8.php",
+      "vendor/rin-nas/php-censure/Text/Censure.php",
+      "public_html/smarty/libs/bootstrap.php"
+    ]
+  },
+  "require-dev": {
+    "symfony/config": "^4.3"
+  }
+}

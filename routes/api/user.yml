@@ -1,0 +1,161 @@
+# User.checkEmail
+api_user_checkemail:
+    path: /checkemail
+    methods: GET
+    defaults: { _controller: 'Controllers\Api\User\CheckEmailController' }
+
+# User.checkLogin
+api_user_checklogin:
+    path: /checklogin
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\CheckLoginController' }
+
+# User.login
+api_user_login:
+    path: /login
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\LoginController' }
+
+# User.signup
+api_user_signup:
+    path: /signup
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\SignUpController' }
+
+# User.apiSimpleSignup
+api_user_simplesignup:
+    path: /simplesignup
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\SimpleSignUpController' }
+
+# User.getOnlineUsers
+api_user_getonlineusers:
+    path: /getonlineusers
+    methods: GET
+    defaults: { _controller: 'Controllers\Api\User\GetOnlineUsersController' }
+
+# User.changeemail
+api_user_changeemail:
+    path: /changeemail
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\ChangeEmailController' }
+
+# User.api_isPaymentPayed
+api_user_ispaymenypayed:
+    path: /ispaymentpayed
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\IsPaymentPayedController' }
+
+# User.api_closePollNotify
+api_user_closepollnotify:
+    path: /closepollnotify
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\ClosePollNotifyController' }
+
+# User.api_cancelPollRefuse
+api_user_cancelpollrefuse:
+    path: /cancelpollrefuse
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\CancelPollRefuseController' }
+
+# User.api_addReview
+api_user_addreview:
+    path: /addreview
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\AddReviewController' }
+
+# User.api_setLookedLesson
+api_user_setlookedlesson:
+    path: /setlookedlesson
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\SetLookedLessonController' }
+
+# User.api_sendPhoneVerifyCode
+api_user_sendphoneverifycode:
+    path: /sendphoneverifycode
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\SendPhoneVerifyCodeController' }
+
+# User.api_checkVerifyCode
+api_user_checkverifycode:
+    path: /checkverifycode
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\CheckVerifyCodeController' }
+
+# User.api_hideTechnicalWorksNotification
+api_user_hidetechnicalworksnotification:
+    path: /hidetechnicalworksnotification
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\HideTechnicalWorksNotificationController' }
+
+# User.api_checkSettingsPasswords
+api_user_checksettingspasswords:
+    path: /checksettingspasswords
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\CheckSettingsPasswordsController' }
+
+# User.api_checkSettingsEmail
+api_user_checksettingsemail:
+    path: /checksettingsemail
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\CheckSettingsEmailController' }
+
+# User.api_checkSettingsUsername
+api_user_checksettingsusername:
+    path: /checksettingsusername
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\CheckSettingsUsernameController' }
+
+# User.api_checkSettingsPayments
+api_user_checksettingspayments:
+    path: /checksettingspayments
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\CheckSettingsPaymentsController' }
+
+# User.api_switchWorkerStatus
+api_user_switchworkerstatus:
+    path: /switchworkerstatus
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\SwitchWorkerStatusController' }
+
+# User.api_getWorkerStatusHelp
+api_user_getworkerstatushelp:
+    path: /getworkerstatushelp
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\GetWorkerStatusHelpController' }
+
+# User.api_showRecommendationsInTrackPage
+api_user_showrecommendationsintrackpage:
+    path: /showrecommendationsintrackpage
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\ShowRecommendationsInTrackPageController' }
+
+# User.api_getUserCurrencyByLogin
+api_user_getusercurrencybylogin:
+    path: /getusercurrencybylogin
+    methods: GET
+    defaults: { _controller: 'Controllers\Api\User\GetUserCurrencyByLoginController' }
+
+# User.api_checkWorkerOffers
+api_user_checkworkeroffers:
+    path: /checkworkeroffers
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\CheckWorkerOffersController' }
+
+# User.checkNotify
+api_user_checknotify:
+    path: /checknotify
+    methods: GET
+    defaults: { _controller: 'Controllers\Api\User\CheckNotifyController' }
+
+# User.api_setWorkerStatusSwitchAll
+api_user_setworkerstatusswitchall:
+    path: /setworkerstatusswitchall
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\User\SetWorkerStatusSwitchAllController' }
+
+# User.api_setMessageSubmitModeController
+api_user_setmessagesubmitmode:
+  path: /setmessagesubmitmode
+  methods: POST
+  defaults: { _controller: 'Controllers\Api\User\SetMessageSubmitModeController' }

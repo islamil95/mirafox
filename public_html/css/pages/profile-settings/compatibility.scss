@@ -1,0 +1,53 @@
+#app {
+	// Кнопка загрузки файла
+	.file-wrapper > div {
+		box-sizing: content-box;
+	}
+
+	// Полоса сверху страницы
+	.userbanner {
+		ul {
+			margin-bottom: 0px;
+			padding-left: 0px;
+		}
+
+		p {
+			margin-bottom: 0px;
+		}
+
+		// Аватар пользователя
+		.rounded {
+			border-radius: 50% !important;
+		}
+	}
+
+	// Форма настроек
+	.kwork-settings {
+		// Большие зелёные кнопки
+		.foxbluebutton {
+			@include media-breakpoint-down(xs) {
+				width: 100% !important; max-width: 100% !important;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		// Настройки
+		.kwork-settings.contentArea {
+			padding-bottom: 10px;
+		}
+	
+		// Боковая панель
+		.kwork-settings-sidebar {
+			width: 100%; max-width: 700px;
+		}
+	}
+	
+}
+
+// Модальное окно
+.popup_content {
+	.row {
+		margin-left: 0; margin-right: 0;
+	}
+}

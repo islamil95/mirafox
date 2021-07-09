@@ -1,0 +1,86 @@
+// Строка поиска с подсказками
+.custom-search {
+	position: relative;
+
+	// Поле ввода строки поиска
+	$input-height: 34px;
+	input.form-control {
+		width: 100%;
+		line-height: $input-height - $input-border-width * 2;
+		padding: 0 55px 0 15px !important;
+	}
+
+	// Кнопка поиска
+	.search-button {
+	    position: absolute;
+	    top: 3px;
+	    right: 3px;
+	    cursor: pointer;
+	}
+
+	// Кнопка сброса
+	.clear-button {
+	    position: absolute;
+	    cursor: pointer;
+	    color: $gray-500;
+	    font-size: 23px;
+	    font-weight: bold;
+	    top: 5px;
+	    right: 35px;
+	}
+
+	// Выпадающий список
+	// Отступ сверху между строкой поиска и выпадающим списком
+	$dropdown-top-spacer: 2px;
+	.dropdown {
+	    position: absolute;
+	    left: 0;
+	    top: $input-height + $dropdown-top-spacer;
+	    background-color: $white;
+	    z-index: $zindex-tooltip;
+	    border: $input-border-width solid $input-border-color;
+	    width: 100%;
+	    border-radius: 3px;
+	    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.12);
+	}
+
+	// Подсказки
+	.suggestions {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	// Заголовок - Недавний поиск или Поиск услуг (статей, пользователей и т.д.)
+	.history, .suggestions-header {
+		background-color: $gray-100;
+		color: $gray-700;
+		padding: 0 10px 0 10px;
+		line-height: 24px;
+		font-size: 11px;
+		text-transform: uppercase;
+
+		// Кнопка - Очистить недавний поиск
+		.clear-history-button {
+			cursor: pointer;
+		}
+	}
+
+	// Подсказка
+	.suggestion {
+	    cursor: pointer;
+	    padding: 3px 10px 3px 10px;
+
+	    // По умолчанию совпавшая часть подсказки выделяется тэгом <b>,
+	    // но у нас прямо противоположная логика, поэтому меняем стили
+	    font-weight: $font-weight-bold;	    
+	    b {
+	    	color: $gray-700;
+	    	font-weight: $font-weight-normal!important;
+	    }
+	}
+
+	// Выбранная подсказка
+	.selected {
+	    background-color: $gray-300;
+	}
+}

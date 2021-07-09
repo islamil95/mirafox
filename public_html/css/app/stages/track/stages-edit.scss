@@ -1,0 +1,28 @@
+.track-stage-edit {
+	.offer-individual__label {
+		font-weight: 700;
+	}
+
+	.modal-header {
+		padding: 25px 25px 15px;
+
+		.close {
+			right: 25px;
+		}
+	}
+
+	.modal-body {
+		padding: 15px 25px;
+	}
+
+	.modal-footer {
+		padding: 0 25px 25px;
+	}
+
+	.popup__button {
+		@media (min-width: 768px) {
+			width: auto !important;
+			min-width: 165px;
+		}
+	}
+}

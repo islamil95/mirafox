@@ -1,0 +1,12 @@
+// Решение конфликтов со старой темой
+.field-tooltip, .file-item__name, .kwork-save-step__field-value_images .js-add-photo, .js-photo__block .add-photo__file-wrapper, .file-wrapper-block-container, .file-wrapper-block-rectangle, .js-file-input {
+    box-sizing: initial!important;
+}
+
+.add-photo__file-wrapper > div {
+    box-sizing: initial!important;
+}
+
+.js-file-add-button.button {
+    padding: 0;
+}

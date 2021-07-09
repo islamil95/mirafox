@@ -1,0 +1,111 @@
+.workbay-front-page {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	background: #fff;
+
+	.content-wrapper {
+		padding: 0 $web-padding;
+
+		@media (min-width: 988px) {
+			width: inherit;
+		}
+
+		@media (min-width: 1200px) {
+			width: $web-content-width;
+		}
+
+		@media (max-width: 992px) {
+			padding: 0 $tablet-padding;
+		}
+	}
+
+	.all_page {
+		@media (max-width: $tablet-max-width) {
+			padding-top: 60px !important;;
+		}
+	}
+
+	&__sub-title {
+		font-size: 12px;
+		line-height: 17px;
+		color: #666;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+	}
+
+	&__h2 {
+		font-size: 35px;
+		line-height: 48px;
+		font-weight: 700;
+		margin-bottom: 30px;
+		color: #333;
+		text-align: center;
+
+		@media (max-width: $tablet-max-width) {
+			font-size: 25px !important;
+			line-height: 30px;
+		}
+	}
+
+	// slick
+	.slick-slider {
+		padding-bottom: 25px;
+
+		.slick-prev,
+		.slick-next {
+			background: none !important;
+			color: #E0E0E0;
+			font-size: 30px;
+			text-indent: inherit;
+			opacity: 1;
+			transition: all 0.3s ease-in-out;
+			top: 0;
+			height: 70px;
+			margin-top: auto;
+
+			&:hover {
+				color: #202E78;
+			}
+
+			// при touch выделения не делать
+			@media (hover: none) {
+				&:hover {
+					color: #E0E0E0;
+				}
+			}
+		}
+
+		.slick-dots {
+			bottom: 0;
+
+			li {
+				width: auto;
+				height: auto;
+
+				button {
+					background: #E0E0E0;
+					width: 8px;
+					height: 8px;
+					border-radius: 100%;
+					margin-top: 1px;
+					transition: all 0.3s ease-in-out;
+				}
+
+				&.slick-active {
+					button {
+						margin-top: 0;
+						background: #202E78;
+						width: 10px !important;
+						height: 10px !important;
+					}
+				}
+			}
+		}
+	}
+
+	// fix для попапа авторизации и регистрации
+	.popup .flex-column {
+		height: auto;
+	}
+}

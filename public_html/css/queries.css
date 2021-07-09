@@ -1,0 +1,171 @@
+.queries-not-found {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.queries-not-found--sended{
+    margin-top:50px;
+}
+.queries-not-found--active{
+    margin-top:20px;
+}
+
+.queries-not-found__container {
+    text-align: center;
+    max-width: 600px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.queries-not-found__text {
+
+    color: #535353;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.btn--add-kwork {
+    padding: 0 35px !important;
+    margin-top: 20px;
+}
+
+
+.query-item__text-block:hover,
+.order-info__name {
+    color: #457edb;
+}
+
+.query-item__text-block--short {
+    cursor: pointer;
+}
+
+.query-item__text--short{
+    display: inline-block;
+    text-overflow: ellipsis;
+}
+
+.query-item__text--short-active {
+    width: 365px;
+}
+.query-seen_block{
+    margin-top: 2px;
+}
+.query-seen_block span{
+    font-size: 11px;
+    padding-left: 4px;
+    color: #8a8a8a;
+}
+
+.query-item__text--short-sended {
+    width: 285px;
+}
+
+.query-item__more {
+    position: relative;
+    display: inline-block;
+    top: -5px;
+    left: -2px;
+}
+
+.query-item__info {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #8a8a8a;
+    float: left;
+}
+
+.query-item__avatar {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.query-item__name-block {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.query-item__name-block {
+    margin-left: 20px;
+}
+
+.table-fixed {
+    table-layout: fixed;
+}
+
+.order-info__extra-price {
+    font-weight: bold;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.order-info__table {
+    width: 100%;
+}
+
+.order-info__table td {
+    border: none;
+    padding: 0;
+}
+
+.order-info__footer td {
+    border-top: 1px solid #eaeaea;
+    padding-top: 12px;
+}
+
+.order-info__extra-name {
+    font-size: 13px;
+}
+
+.order-info__total-days {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.link_color_main {
+    color: #000;
+}
+
+.link_color_main:hover {
+    color: #457edb;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 600;
+    color: #009900;
+}
+
+.project-name {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.project-price {
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.preloader__ico_projects {
+    border-width: 4px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+	z-index: 3;
+}

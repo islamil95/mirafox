@@ -1,0 +1,6 @@
+# каптча при регистрации
+# Ban.api_disallowFreeRegister
+api_ban_disallowfreeregister:
+    path: /disallowfreeregister
+    methods: GET
+    defaults: { _controller: 'Controllers\Api\Ban\DisallowFreeRegisterController' }

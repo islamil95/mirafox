@@ -1,0 +1,185 @@
+.stages-table-info {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 20px 0;
+
+	@media only screen and (max-width: 565px) {
+		table-layout: auto;
+	}
+
+	td {
+		padding: 8px 10px;
+		border-bottom: 1px solid #ececec;
+
+		@media only screen and (max-width: 767px) {
+			padding: 8px 5px;
+		}
+	}
+
+	thead {
+		background: #fafafa;
+		border: 1px solid #e4e4e4;
+
+		td {
+			padding: 12px 10px;
+			font-weight: 700;
+			border-bottom: 1px solid #ececec;
+
+			@media only screen and (max-width: 767px) {
+				padding: 10px 5px;
+			}
+		}
+	}
+
+	&__head--price {
+		text-align: center;
+	}
+
+	&__price {
+		text-align: center;
+		color: #009900;
+		white-space: nowrap;
+		font-weight: 600;
+	}
+
+	&-total {
+		td {
+			border-bottom: 0;
+			padding-left: 20px;
+			padding-right: 20px;
+
+			@media only screen and (max-width: 767px) {
+				font-size: 15px;
+			}
+		}
+	}
+
+	&-duration {
+		padding-left: 40px;
+	}
+}
+
+.stages-table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 4px 0 22px;
+
+	td {
+		padding: 8px 20px;
+		vertical-align: middle;
+		border-bottom: 1px solid #ececec;
+		box-sizing: border-box;
+	}
+
+	&__checkbox {
+		width: 20px;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		.custom-control-label {
+			padding-left: 20px !important;
+			background-position: 0 2px !important;
+		}
+	}
+
+	&__num {
+		width: 20px;
+		padding-right: 0 !important;
+		text-align: right;
+		font-weight: 300;
+		font-size: 16px;
+	}
+}
+
+// Страница переписки
+@media only screen and (max-width: 767px) {
+	.page-conversation {
+		.stages-table-info {
+			display: block;
+
+			thead {
+				td {
+					width: auto !important;
+				}
+				td:last-child {
+					display: none;
+				}
+			}
+			thead, tbody {
+				display: block;
+			}
+			tr {
+				display: flex;
+			}
+			td:not(.stages-table-info__price) {
+				border-bottom: 0;
+				display: inline-block;
+			}
+			&__price {
+				display: flex !important;
+				justify-content: space-between;
+				align-items: baseline;
+				padding-top: 0;
+
+				&-title {
+					display: block !important;
+					font-weight: 600;
+					color: #000;
+				}
+			}
+
+			&-content {
+				tr {
+					flex-flow: wrap;
+
+					td:nth-child(1) {
+						min-width: 26px;
+						text-align: left;
+					}
+
+					td:nth-child(2) {
+						flex: 1 1;
+					}
+
+					&::after {
+						content: '';
+						width: 100%;
+						order: 3;
+					}
+
+					.stages-table-info__price {
+						width: 100%;
+						order: 4;
+					}
+				}
+			}
+
+			&-duration {
+				padding: 0 0 0 10px;
+			}
+
+			&-total {
+				display: block;
+
+				tr {
+					display: flex;
+					justify-content: space-between;
+					align-items: baseline;
+
+					td {
+						display: block !important;
+						padding-right: 5px;
+						padding-bottom: 0;
+						padding-left: 5px;
+					}
+
+					.stages-table-info__price {
+						text-align: right;
+						padding-top: 8px;
+					}
+				}
+			}
+		}
+	}
+}

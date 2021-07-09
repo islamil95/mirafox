@@ -1,0 +1,89 @@
+// Стили для статьи	
+.kb .article-wrapper {
+	@include responsive("max-width", 100%, 100%, 100%, 720px, 720px);
+	padding-left: 15px;
+	padding-right: 15px;
+
+	// Заголовок перед статьей
+	.article-title {
+		font-size: 20px;
+		font-weight: $font-weight-bold;
+		line-height: 100%;
+	}
+
+	// Статья
+	.article {
+		box-shadow: 0 0 10px 0 rgba(0,0,0,0.07);
+		border-radius: 3px;
+		border: 1px solid $gray-200;
+
+		// Вопрос
+		.question {
+		    font-size: 18px;
+		    font-weight: $font-weight-bold;		
+			background-color: $light;
+			padding: 15px 30px;
+			border-bottom: 1px solid $gray-200;
+
+			@media only screen and (max-width: 767px) {
+				padding: 15px 10px;
+			}
+
+			// Иконка с восклицательным знаком в статье
+			.attention {
+			    width: 40px;
+			    height: 40px;
+			    min-width: 40px;
+			    min-height: 40px;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    background-image: linear-gradient(rgb(255, 182, 60) 0%, rgb(255, 164, 10) 98%, rgb(255, 164, 10) 100%);
+			    border-radius: 100%;			
+			}
+
+		}
+
+		// Ответ
+		.answer {
+			padding: 30px 30px 15px 30px;
+			font-size: 16px;
+			line-height: 170%;
+
+			@media only screen and (max-width: 767px) {
+				font-size: 14px;
+				padding: 10px;
+			}
+		}
+
+		// Лайки
+		.likes {
+			padding-bottom: 30px;
+
+			// Текст
+			.like-text {
+				font-size: 13px;
+				font-weight: $font-weight-bold;
+			}
+
+			// Кнопка для лайка и дислайка
+			.like-button {
+				display: inline-block;
+				padding: 7px 18px;
+				border-radius: 20px;
+				border: 1px solid $gray-200;
+				cursor: pointer;
+
+				// Пользователь уже лайкнул статью
+				&.liked {
+					cursor: inherit;
+					color: $gray-600;
+				}
+
+			}
+
+		}
+
+	}
+
+}

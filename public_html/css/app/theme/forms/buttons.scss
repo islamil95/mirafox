@@ -1,0 +1,105 @@
+// Базовые настройки для всех кнопок
+.button, button.button {
+	font-family: $font-family-base;
+	font-size: $button-font-size;
+	font-weight: $font-weight-normal;
+	padding: $button-padding;
+	color: $button-color;
+	border-radius: $button-radius;
+	cursor: pointer;
+	border: none;
+
+	// При клике на кнопку не должна появляться рамка фокуса
+	&:focus {
+		outline: none;
+	}
+
+	// Зеленая кнопка
+	&.button-success {
+		color: $white;
+		background-image: linear-gradient(#87B948 0%, #5CA042 100%);
+		&:hover {
+			background-image: linear-gradient(#5CA042 0%, #87B948 100%);
+		}
+	}
+
+	// Оранжевая кнопка
+	&.button-warning {
+		color: $white;
+		background-image: linear-gradient(#EEB657 0%, #FFA500 100%);
+		&:hover {
+			background-image: linear-gradient(#FFA500 0%, #EEB657 100%);			
+		}
+	}
+
+	// Красная кнопка
+	&.button-danger {
+		color: $white;
+		background-image: linear-gradient(#ff7676 0%, #f24c4c 100%);
+		&:hover {
+			background-image: linear-gradient(#f24c4c 0%, #ff7676 100%);
+		}
+	}
+
+	// Серая кнопка
+	&.button-gray {
+		color: $black;
+		background-image: linear-gradient(#FFF 0%, #F6F6F6 100%);
+		border: 1px solid #ebebeb;
+		&:hover {
+			background-image: linear-gradient(#F6F6F6 0%, #FFF 100%);			
+		}
+	}
+
+	// Серая кнопка, которая становится зеленой при наведении
+	&.button-gray-success {
+		color: $black;
+		background-image: linear-gradient(#FFF 0%, #F6F6F6 100%);
+		border: 1px solid #ebebeb;
+		&:hover {
+			color: $white;
+			background-image: linear-gradient(#5CA042 0%, #87B948 100%);
+		}
+	}
+
+	// Серая кнопка, которая становится красной при наведении
+	&.button-gray-danger {
+		color: $black;
+		background-image: linear-gradient(#FFF 0%, #F6F6F6 100%);
+		border: 1px solid #ebebeb;
+		&:hover {
+			color: $white;
+			background-image: linear-gradient(#f24c4c 0%, #ff7676 100%);
+		}
+	}
+
+	// Серая плоская кнопка
+	&.button-gray-flat {
+		color: #777;
+		background-color: $white;
+		background-image: none;
+		border: 1px solid #ccc;
+	}
+
+	// Размеры кнопок
+	&.button-sm {
+		font-size: $button-font-size-sm;
+		padding: $button-padding-sm;
+	}
+	&.button-lg {
+		font-size: $button-font-size-lg;
+		padding: $button-padding-lg;
+	}
+
+	// Кнопка, растянутая на всю ширину родителя
+	&.button-block {
+		width: 100%;
+	}
+
+	// Неактивные кнопки
+	&:disabled {
+		opacity: 0.5;
+		cursor: default;
+	}
+
+}

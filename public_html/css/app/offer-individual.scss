@@ -1,0 +1,400 @@
+.offer-individual {
+
+	&, input, select {
+		font-size: 15px;
+		line-height: 23px;
+	}
+
+	&__item {
+		margin-top: 20px;
+
+		&--flex {
+			width: 100%;
+
+			@media (min-width: 768px) {
+				display: inline-flex;
+				flex-wrap: wrap;
+				justify-content: flex-end;
+				width: 50%;
+				float: right;
+			}
+
+			&-start {
+				@media (min-width: 768px) {
+					justify-content: flex-start;
+					width: 50%;
+					float: unset;
+				}
+			}
+		}
+
+		&-line {
+			display: flex;
+		}
+
+		&-error {
+			font-size: 12px;
+			line-height: 14px;
+			color: #ef683f;
+			margin-top: 5px;
+		}
+
+		&-hint {
+			float: right;
+			font-size: 12px;
+			line-height: 14px;
+			font-style: italic;
+			color: #8a8a8a;
+			margin-left: 10px;
+			margin-top: 5px;
+		}
+	}
+	
+	&__label {
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		
+		span {
+			margin-left: 5px;
+		}
+	}
+	
+	&__category {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		
+		& > div {
+			flex: 1 100%;
+			margin-bottom: 10px;
+			@media (min-width: 768px) {
+				flex: 0 49%;
+			}
+		}
+
+		.chosen-container-single .chosen-single,
+		.chosen-drop {
+			font-size: 15px;
+		}
+	}
+
+	&__error {
+		margin-top: 20px;
+		color: #ef683f;
+		font-size: 14px;
+	}
+}
+
+.offer-payment-type {
+	margin-top: 20px;
+
+	&__tooltip {
+		ol {
+			padding: 0 14px;
+			margin: 0 0 10px;
+		}
+
+		li {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__label {
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+
+		span {
+			margin-left: 5px;
+		}
+	}
+
+	&__radio {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		&-icon {
+			position: relative;
+			flex-shrink: 0;
+			padding-right: 15px;
+			text-align: center;
+			box-sizing: border-box;
+
+			&-all {
+				width: 65px;
+				height: 50px;
+			}
+
+			&-stages {
+				width: 75px;
+				height: 40px;
+			}
+		}
+
+		&-item {
+			display: inline-flex;
+			flex-wrap: wrap;
+			position: relative;
+			flex: 0 0 45%;
+			border: 1px solid #e8e8e8;
+			padding: 15px;
+			cursor: pointer;
+			margin-top: 15px;
+			border-radius: 5px;
+			align-items: center;
+
+			&--active {
+				background: linear-gradient(to bottom,#87b948 0%,#5ca042 100%,#5ca042 100%);
+				padding: 16px;
+				border: 0;
+
+				&:after {
+					content: '\f00c';
+					position: absolute;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					top: -9px;
+					right: -9px;
+					width: 26px;
+					height: 26px;
+					font: normal normal normal 13px/1 "FontAwesome";
+					color: #fff;
+					background: linear-gradient(to bottom,#87b948 0%,#5ca042 100%,#5ca042 100%);
+					border-radius: 50%;
+				}
+			}
+
+			&:before {
+				content: '';
+				background: #fff;
+				position: absolute;
+				top: 2px;
+				left: 2px;
+				right: 2px;
+				bottom: 2px;
+				border-radius: 3px;
+			}
+
+			@media only screen and (max-width: 767px) {
+				flex: 1 1 100%;
+			}
+		}
+
+		&-title {
+			position: relative;
+			font-size: 15px;
+			margin-bottom: 5px;
+			font-weight: 600;
+		}
+
+		&-body {
+			position: relative;
+			display: inline-flex;
+			align-items: center;
+			font-size: 12px;
+			line-height: 16px;
+		}
+	}
+}
+
+.order-extras {
+
+	&__container {
+		padding: 15px 0 10px 0;
+		background: #fafafa none repeat scroll 0 0;
+
+		@media (max-width: 767px) {
+			margin-bottom: 15px;
+		}
+	}
+	
+	&__item {
+		list-style: none;
+		padding: 15px 10px;
+		min-height: 32px;
+		border-top: 1px solid #EAEAEA;
+
+		&:first-child {
+			border-top: none;
+			padding-top: 0;
+		}
+
+		label {
+			margin-top: 6px;
+		}
+
+		&_old {
+			padding-top: 15px;
+			padding-bottom: 15px;
+
+			&:first-child {
+				padding-top: 4px;
+			}
+		}
+
+		.vf-form & {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.offer-sprite-option {
+				width: 31px;
+				margin-left: -2px;
+			}
+			.styled-input {
+				@media (min-width: 768px) {
+					flex: 1;
+					width: auto !important;
+					height: 32px;
+				}
+			}
+			.new-order-extras__delete {
+				width: auto;
+				margin-left: 10px;
+			}
+			.new-order-extras__select-block {
+				@media (min-width: 768px) {
+					width: 215px;
+					white-space: nowrap;
+				}
+				@media (max-width: 767px) {
+					.custom-option-price {
+						width: calc(50% - 7.5px);
+						> select.input {
+							width: 100% !important;
+						}
+					}
+				}
+				.chosen-container {
+					margin-left: 10px;
+				}
+			}
+			&.custom-price-error {
+				@media (max-width: 767px) {
+					.new-order-extras__select-block {
+						.custom-option-price {
+							select.input {
+								border-color: #e43232;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.send-request {
+	&__total {
+		font-weight: bold;
+	}
+	
+	&__kwork-name {
+		width: 100%;
+		max-width: 540px;
+
+		@media (max-width: 767px) {
+			max-width: 100%;
+		}
+
+		.chosen-drop,
+		.chosen-container-single .chosen-single {
+			font-size: 14px;
+		}
+	}
+}
+
+.new-order-extras__select-block {
+	float: left;
+	position: relative;
+
+	.chosen-container {
+		margin-left: 8px;
+	}
+}
+
+.new-order-extras__delete {
+	position: relative;
+	top: 0;
+}
+
+#extratime + .chosen-container{
+	width: 95px !important;
+}
+
+.kwork-price-explanation {
+	border-bottom: 1px dashed;
+
+	&:hover {
+		border-color: transparent;
+	}
+}
+
+.kwork-price-explanation-popup {
+	position: fixed !important;
+	top: 0 !important;
+
+	.popup_content {
+		max-width: 600px !important;
+		width: 100% !important;
+		max-height: inherit !important;
+		overflow: visible !important;
+	}
+
+	table,
+	th,
+	td {
+		border: 1px solid #E0E0E0;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	th,
+	td {
+		padding: 5px;
+		text-align: left;
+	}
+
+	tr.disabled td {
+		background: #f6f6f6;
+		color: #A4A4A4;
+	}
+
+	tfoot td {
+		border-left-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		font-weight: bold;
+	}
+}
+
+.new-offer__tip {
+	margin-bottom: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	&-icon {
+		width: 32px;
+	}
+
+	&-text {
+		font-size: 13px;
+
+		ol {
+			margin-top: 0;
+			padding-left: 15px;
+
+			@media only screen and (min-width: 768px) {
+				padding-left: 20px;
+			}
+		}
+	}
+}
+

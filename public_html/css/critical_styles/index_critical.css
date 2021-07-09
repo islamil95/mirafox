@@ -1,0 +1,132 @@
+@media (max-width: 767px) {
+	/* баннер */
+	.is_index .centerwrap, .is_index .lg-centerwrap {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.banner {
+		padding-bottom: 20px;
+		background-color: #000;
+		box-sizing: border-box;
+	}
+
+	.headertext {
+		padding-top: 10px;
+	}
+
+	.headertext h1 {
+		margin: 15px 0 10px;
+		text-align: center;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 38px;
+		color: #fff;
+	}
+
+	.headertext_subtitle {
+		display: block;
+		margin: 0 auto 30px;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+	}
+
+	.index-advantages {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.index-advantage-block {
+		height: 99px !important;
+		overflow: hidden;
+		opacity: 0;
+		transition: opacity .2s;
+	}
+
+	.index-advantage-block.slick-initialized {
+		height: auto;
+		opacity: 1;
+	}
+
+	.example-search-link {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	.find-service {
+		height: 77px;
+	}
+
+	/* категории первого уровня */
+	.top-categories {
+		margin-left: -14px;
+	}
+
+	.top-category {
+		position: relative;
+		display: block;
+		cursor: pointer;
+		margin: 0 0 14px 14px;
+		line-height: 0;
+	}
+
+	.top-categories-col {
+		float: left;
+		width: 50%;
+	}
+
+	.top-category-content {
+		display: none;
+	}
+
+	.top-category-link {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.top-category img {
+		width: 100%;
+		height: auto;
+		max-height: 250px;
+		max-width: 395px;
+	}
+
+	.index-market__image.lazy-load {
+		display: none !important;
+	}
+
+	.real-case_item img.lazy-load:not(.lazy-load_initialized) {
+		background-color: #fff;
+	}
+
+	.index-market {
+		padding: 30px 0;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.index-market__title.f26 {
+		line-height: 28px !important;
+	}
+	.index-market__content {
+		text-align: center;
+	}
+	.index-market__title {
+		margin-bottom: 21px;
+	}
+	.index-market__content br {
+		content: '';
+	}
+	.index-market__button {
+		margin-top: 29px;
+	}
+
+	.headertop-mobile {
+		display: flex;
+	}
+}

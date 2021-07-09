@@ -1,0 +1,15 @@
+// Стили для блока обращения в ТП/Арбитраж
+.kb .support-wrapper {
+	@include responsive("max-width", 100%, 100%, 600px, 600px, 600px);
+	padding: 15px 30px;
+
+	@media only screen and (max-width: 767px) {
+		padding: 0;
+	}
+
+	// Сообщение о том, что арбитраж по данной статье запрещен
+	.arbitrage-not-allowed {
+		font-size: 18px;
+	}
+
+}

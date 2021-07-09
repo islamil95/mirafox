@@ -1,0 +1,154 @@
+.footer-topfreelancer {
+	padding: 60px 0 0;
+	background: #252525;
+	
+	
+	&__centerwrap {
+		padding: 0 10px;
+	}
+	
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		margin: 0 -10px;
+	}
+	
+	&__col {
+		flex: 0 0 25%;
+		max-width: 25%;
+		padding: 0 10px;
+		box-sizing: border-box;
+			
+		@media (max-width: 690px) {
+			flex: 0 0 50%;
+			max-width: 50%;
+			margin-bottom: 20px;
+		}	
+		
+		&_left-part {
+			flex: 0 0 17%;
+			max-width: 17%;
+			
+			@media (max-width: 940px) {
+				flex: 0 0 100%;
+				max-width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 40px;
+			}
+		}
+		
+		&_type-1 {
+			flex: 0 0 17%;
+			max-width: 17%;	
+			
+			@media (max-width: 940px) {
+				flex: 0 0 25%;
+				max-width: 25%;
+			}	
+			
+			@media (max-width: 690px) {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}		
+		}
+		
+		&_type-2 {
+			flex: 0 0 16%;
+			max-width: 16%;	
+			padding: 0;	
+			
+			@media (max-width: 940px) {
+				flex: 0 0 25%;
+				max-width: 25%;
+			}	
+			
+			@media (max-width: 690px) {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}	
+		}
+		
+		
+	}	
+	
+	
+	&__logo {
+		display: block;
+		position: relative;
+		width: 107px;
+		margin: 2px 0 25px;
+		@media (max-width: 940px) {
+			margin: 0 18px 0 0;
+		}
+	}
+	&__logo-icon {
+		display: block;
+		position:relative;
+		width: 107px;
+		height: 20px;
+		background-image: url(/images/top-freelancer/logo-white.png);
+		background-size: 107px 20px;
+		background-repeat: no-repeat;
+	}
+	&__sub-logo {
+		display: block;
+		text-transform: uppercase;
+		white-space: nowrap;
+		letter-spacing: -0.2px;
+		text-align: right;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 12px;
+		margin: 3px 0 -1px;
+		color: #0066ff;
+	}
+	
+	&__social {
+		list-style: none;
+		
+		li {
+			display: inline-block;
+			
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 36px;
+				height: 36px;
+				border: 1px solid #4e4e4e;	
+				border-radius: 6px;
+				margin-right: 7px;
+				color: #657e9e;
+			}
+		}
+	}
+	
+	&__title {
+		font-family: "Gotham Pro";
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+	
+	nav {
+		a {
+			display: block;
+			color: #d0d0d0;
+			margin-bottom: 11px;
+		}
+	}
+	
+	&__copyright {
+		border-top: 2px solid #424242;
+		font-size: 13px;
+		color: #d0d0d0;
+		padding: 21px 0;
+		text-align: center;
+		margin-top: 28px;
+	}
+}

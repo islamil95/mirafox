@@ -1,0 +1,11 @@
+# Отправить комментарий к отзыву
+send_review_comment:
+  path: /send_review_comment
+  methods: POST
+  defaults: { _controller: 'Controllers\Review\CreateCommentController' }
+
+# Отредактировать комментарий к отзыву
+edit_review_comment:
+  path: /edit_review_comment
+  methods: POST
+  defaults: { _controller: 'Controllers\Review\EditCommentController' }

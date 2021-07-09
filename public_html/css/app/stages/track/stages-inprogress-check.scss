@@ -1,0 +1,56 @@
+.stage-inprogress-check {
+	.modal-dialog {
+		@media (min-width: 768px) {
+			max-width: 610px;
+		}
+	}
+
+	.modal-content {
+		overflow: hidden;
+	}
+
+	.modal-footer {
+		padding-top: 0;
+	}
+
+	.track-stage {
+
+		@media (max-width: 767px) {
+			display: flex;
+		}
+
+		&__title {
+			@media (max-width: 767px) {
+				width: calc(100% - 25px - 100px - 25px - 45px);
+			}
+		}
+
+		&__status-price {
+			@media (max-width: 767px) {
+				float: left;
+			}
+		}
+
+		&__status-order {
+			width: 40px;
+
+			@media (max-width: 767px) {
+				align-self: center;
+			}
+		}
+	}
+}
+
+.stage-inprogress-send {
+	.modal-dialog {
+		max-width: 500px;
+	}
+
+	.modal-footer {
+		padding-top: 0;
+	}
+
+	p {
+		margin-bottom: 10px;
+	}
+}

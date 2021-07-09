@@ -1,0 +1,69 @@
+@import "~appCss/emoji/emoji-panel";
+
+.emoji-btn {
+	
+	position: relative;
+	// Для подгрузки изображение с эможи до открытия панели выбора эможи
+	&:before {
+		content: '';
+		position: absolute;
+		background-image: url(/images/emoji/emojis36x36.png);
+		opacity: 0;
+	}
+	
+	
+	&__emoji-img {
+		display: block;
+	}
+	
+	&__emoji-img-hover {
+		display: none;
+	}
+	
+	&__switch-panel {
+		display: block;
+		position: relative;
+		width: 34px;
+		height: 34px;
+		cursor: pointer;
+		border-radius: 3px;	
+		
+		&:hover {
+			@media only screen and (min-width: 767px) {	
+			
+				.emoji-btn__emoji-img {
+					display: none;
+				}
+				
+				.emoji-btn__emoji-img-hover {
+					display: block;
+				}
+			}
+		}
+		
+		&_active {
+			background-image: url(/images/emoji/emoji-smile-hover.svg);
+		}
+	}
+	
+	&__emoji-panel {
+		position: absolute;
+		left: 0px;
+		bottom: 40px;
+		z-index: 3; 
+		
+		&_left {
+			left: auto;
+			right: 0;
+		}
+	}
+	
+	&__close-area {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+}

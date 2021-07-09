@@ -1,0 +1,77 @@
+// Чекбоксы и радиобаттоны
+// Скрыть чекбокс/радиобаттон, который отображается по умолчанию браузером
+input[type=radio], input[type=checkbox] {
+	&.custom-control-input {
+		display: none;
+	}
+}
+
+// Иконка для кастомного радиобаттона
+input[type=radio].custom-control-input + label.custom-control-label:before {
+	content: "";
+	display: inline-block;
+	height: 17px;
+	width: 17px;
+	position: relative;
+	top: 4px;
+	margin-right: 5px;
+	background: url("/images/radio-style.png") -3px -81px no-repeat;
+}
+
+// Выбранный радиобаттон
+input[type=radio].custom-control-input:checked + label.custom-control-label:before {
+	background-position: -3px 0;
+}
+
+// Иконка для кастомного чекбокса
+input[type=checkbox].custom-control-input + label.custom-control-label {
+    padding-left: 28px;
+    background: url(/images/checkbox-style-unchecked.png?v2) 0px 1px no-repeat;
+}
+
+// Выбранный чекбокс
+input[type=checkbox].custom-control-input:checked + label.custom-control-label {
+    background: url(/images/checkbox-style-checked.png?v2) 0px 1px no-repeat;
+}
+
+// Выбранный радиобаттон
+input[type=radio].custom-control-input:checked + label.custom-control-label:before {
+	background-position: -3px 0;
+}
+
+// Лейблы для радиобаттонов и чекбоксов
+label.custom-control-label {
+	cursor: pointer;
+}
+
+.t-radio {
+	position: relative;
+	
+	.visual {
+		position: absolute;
+		top: 5px;
+		display: flex; align-items: center; justify-content: center;
+		width: 16px; height: 16px;
+		border: 1px solid #a4a495; border-radius: 50%;
+	
+		&:before {
+			display: none;
+			content: '';
+			width: 8px; height: 8px;
+			background: #ffa308;
+			border-radius: 50%;
+		}
+	}
+
+	input {
+		display: none;
+		
+		&:checked + .visual:before {
+			display: block;
+		}
+	}
+
+	.label {
+		padding: 0 0 0 22px;
+	}
+}

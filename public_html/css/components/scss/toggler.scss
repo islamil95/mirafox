@@ -1,0 +1,16 @@
+.toggler{
+	&--link{
+		cursor:pointer;
+	}
+	&--content{
+		display: none;
+	}
+	&.open > &--content{
+		display: block;
+	}
+	&.hoverable:hover > &--content{
+		@media (min-width: 768px) {
+			display: block;
+		}
+	}
+}

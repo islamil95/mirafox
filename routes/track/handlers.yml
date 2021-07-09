@@ -1,0 +1,183 @@
+# Удаление трека
+remove_track:
+    path: /action/remove
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\RemoveHandlerController' }
+
+# payer_inprogress_cancel_confirm
+track_payer_inprogress_cancel_confirm:
+    path: /action/payer_inprogress_cancel_confirm
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Payer\Inprogress\CancelConfirmHandlerController' }
+
+# payer_inprogress_done
+track_payer_inprogress_done:
+    path: /action/payer_inprogress_done
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Payer\Inprogress\DoneHandlerController' }
+
+# worker_report_new
+track_worker_report_new:
+    path: /action/worker_report_new
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Worker\NewReportHandlerController' }
+
+# worker_inwork
+track_worker_inwork:
+    path: /action/worker_inwork
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Worker\InworkHandlerController' }
+
+# worker_inprogress_cancel_delete
+track_worker_inprogress_cancel_delete:
+    path: /action/worker_inprogress_cancel_delete
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Worker\Inprogress\CancelDeleteHandlerController' }
+
+# payer_inprogress_cancel_reject
+track_payer_inprogress_cancel_reject:
+    path: /action/payer_inprogress_cancel_reject
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Payer\Inprogress\CancelRejectHandlerController' }
+
+# payer_check_inprogress
+track_payer_check_inprogress:
+    path: /action/payer_check_inprogress
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Payer\Check\InprogressHandlerController' }
+
+# payer_check_done
+track_payer_check_done:
+    path: /action/payer_check_done
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Payer\Check\DoneHandlerController' }
+
+# payer_inprogress_cancel_delete
+track_payer_inprogress_cancel_delete:
+    path: /action/payer_inprogress_cancel_delete
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Payer\Inprogress\CancelDeleteHandlerController' }
+
+# worker_inprogress_cancel_reject
+track_worker_inprogress_cancel_reject:
+    path: /action/worker_inprogress_cancel_reject
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Worker\Inprogress\CancelRejectHandlerController' }
+
+# worker_inprogress_cancel_confirm
+track_worker_inprogress_cancel_confirm:
+    path: /action/worker_inprogress_cancel_confirm
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Worker\Inprogress\CancelConfirmHandlerController' }
+
+# worker_check_arbitrage
+track_worker_check_arbitrage:
+    path: /action/worker_check_arbitrage
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Worker\Check\ArbitrageHandlerController' }
+
+# worker_inprogress_arbitrage
+track_worker_inprogress_arbitrage:
+    path: /action/worker_inprogress_arbitrage
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Worker\Inprogress\ArbitrageHandlerController' }
+
+# payer_check_arbitrage
+track_payer_check_arbitrage:
+    path: /action/payer_check_arbitrage
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Payer\Check\ArbitrageHandlerController' }
+
+# payer_inprogress_arbitrage
+track_payer_inprogress_arbitrage:
+    path: /action/payer_inprogress_arbitrage
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Payer\Inprogress\ArbitrageHandlerController' }
+
+# Отмена заказа
+track_cancel_order:
+    path: /action/cancel_order
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\CancelOrderHandlerController' }
+
+# worker_inprogress_check
+track_worker_inprogress_check:
+    path: /action/worker_inprogress_check
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Worker\Inprogress\CheckHandlerController' }
+
+# Покупатель принимает предложенные опции
+# approveextrassubmited
+track_extra_approveextrassubmited:
+    path: /action/approveextrassubmited
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Extra\Payer\ApproveExtrasHandlerController' }
+
+# Покупатель отклоняет предложенные опции
+# declineextrassubmited
+track_extra_declineextrassubmited:
+    path: /action/declineextrassubmited
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Extra\Payer\DeclineExtrasHandlerController' }
+
+# Продавец отменяет предложенные опции
+# declineextrassuggestion
+track_extra_declineextrassuggestion:
+    path: /action/declineextrassuggestion
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Extra\Worker\DeclineExtrasHandlerController' }
+
+# Покупатель докупает опции
+# addextrassubmited
+track_extra_addextrassubmited:
+    path: /action/addextrassubmited
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Extra\Payer\AddExtrasHandlerController' }
+
+# Покупатель докупает пакеты
+# addpackagessubmited
+track_extra_addpackagessubmited:
+    path: /action/addpackagessubmited
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Extra\Payer\AddExtrasHandlerController' }
+
+# Покупатель повышает уровень кворка
+# upgradepackagesubmited
+track_extra_upgradepackagesubmited:
+    path: /action/upgradepackagesubmited
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Extra\Payer\UpgradePackageHandlerController' }
+
+#
+# remove_extra
+track_remove_extra:
+    path: /action/remove_extra
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\Extra\Worker\RemoveExtraHandlerController' }
+
+#
+# text
+track_text:
+    path: /action/text
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\MessageHandlerController' }
+
+#
+# edit
+track_edit:
+    path: /action/edit
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\EditHandlerController' }
+
+#
+# instruction
+track_instruction:
+    path: /action/instruction
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\InstructionHandlerController' }
+
+# readpagemsg
+track_readpagemsg:
+    path: /action/readpagemsg
+    methods: POST
+    defaults: { _controller: 'Controllers\Track\Handler\ReadPageMsgHandlerController' }

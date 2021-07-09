@@ -1,0 +1,31 @@
+.conversation-files-block {
+	.header-s {
+		margin: 20px 0 0 0; padding: 15px 20px;
+		background: white;
+		border: 1px solid #e8e8e8;
+	}
+
+	.body-s {
+		padding: 0 20px;
+		font-size: 14px;
+		line-height: 20px;
+		background: #fafafa;
+
+		> div {
+			padding: 15px 0;
+			border-bottom: 1px solid #e8e8e8;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+
+			a {
+				display: inline-flex; align-items: center;
+
+				span {
+					margin: 0 0 0 10px;
+				}
+			}
+		}
+	}
+}

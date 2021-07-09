@@ -1,0 +1,650 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/inboxes": {
+            "post": {
+                "tags": [
+                    "Требуется token"
+                ],
+                "summary": "Список сообщений в диалоге",
+                "operationId": "Mobile\\Inbox::get",
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "description": "Логин юзера",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "страница выдачи",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Спиоск сообщений с пользователем",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "description": "Флаг успешности",
+                                            "type": "boolean"
+                                        },
+                                        "response": {
+                                            "description": "Данные",
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "message_id": {
+                                                        "description": "ID сообщений",
+                                                        "type": "integer"
+                                                    },
+                                                    "to_id": {
+                                                        "description": "ID получаетеля",
+                                                        "type": "integer"
+                                                    },
+                                                    "to_username": {
+                                                        "description": "Username получателя",
+                                                        "type": "string"
+                                                    },
+                                                    "to_live_date": {
+                                                        "description": "Дата последней активности получателя на сайте",
+                                                        "type": "string"
+                                                    },
+                                                    "from_id": {
+                                                        "description": "Идентификатор пользователя отправителя",
+                                                        "type": "integer"
+                                                    },
+                                                    "from_username": {
+                                                        "description": "Имя пользователя отправителя",
+                                                        "type": "string"
+                                                    },
+                                                    "from_live_date": {
+                                                        "description": "Дата последней активности отправителя на сайте",
+                                                        "type": "string"
+                                                    },
+                                                    "from_profilepicture": {
+                                                        "description": "Ссылка на аватар отправителя",
+                                                        "type": "string"
+                                                    },
+                                                    "message": {
+                                                        "description": "Текст сообщения. Возможен HTML",
+                                                        "type": "string"
+                                                    },
+                                                    "time": {
+                                                        "description": "Дата сообщения UNIXTIME",
+                                                        "type": "integer"
+                                                    },
+                                                    "unread": {
+                                                        "description": "Сообщение непрочитано",
+                                                        "type": "boolean"
+                                                    },
+                                                    "type": {
+                                                        "description": "Тип сообщения: NULL - обычное сообщение, custom_request - Запрос на индивидуальный кворк, offer_kwork_new - Предложение кворка, offer_kwork_payer_cancel - Предложение индивидуального кворка отклонено покупателем, offer_kwork_worker_cancel - Предложение индивидуального кворка отклонено продавцом, offer_kwork_done - Заказ создан, auto - Автоуведомление, support - Сообщение от техподдержки, report - Жалоба на пользователя",
+                                                        "type": "string"
+                                                    },
+                                                    "status": {
+                                                        "description": "Состояние сообщения: active - Сообщение активно, deleted - Сообщение удалено",
+                                                        "type": "string"
+                                                    },
+                                                    "created_order_id": {
+                                                        "description": "Id созданного заказа индивидуального предложения",
+                                                        "type": "integer"
+                                                    },
+                                                    "files": {
+                                                        "description": "файлы сообщения",
+                                                        "type": "array",
+                                                        "items": {
+                                                            "properties": {
+                                                                "id": {
+                                                                    "description": "id",
+                                                                    "type": "integer"
+                                                                },
+                                                                "name": {
+                                                                    "description": "название файла",
+                                                                    "type": "string"
+                                                                },
+                                                                "path": {
+                                                                    "description": "путь",
+                                                                    "type": "string"
+                                                                },
+                                                                "size": {
+                                                                    "description": "Размер файла в байтах",
+                                                                    "type": "integer"
+                                                                },
+                                                                "imageData": {
+                                                                    "description": "Дополнительные данные для отображения картинки",
+                                                                    "properties": {
+                                                                        "width": {
+                                                                            "description": "Ширина",
+                                                                            "type": "integer"
+                                                                        },
+                                                                        "height": {
+                                                                            "description": "Высота",
+                                                                            "type": "integer"
+                                                                        },
+                                                                        "lqip": {
+                                                                            "description": "base64 data плейсхолдера",
+                                                                            "type": "string"
+                                                                        }
+                                                                    },
+                                                                    "type": "object"
+                                                                }
+                                                            },
+                                                            "type": "object"
+                                                        }
+                                                    },
+                                                    "custom_request": {
+                                                        "description": "Запрос на индивидуальный кворк",
+                                                        "properties": {
+                                                            "budget": {
+                                                                "description": "Бюджет",
+                                                                "type": "string"
+                                                            },
+                                                            "duration": {
+                                                                "description": "срок выполнения (секунд); null - срок не ограничен",
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    },
+                                                    "inbox_order": {
+                                                        "description": "Предложение на индивидуальный кворк",
+                                                        "properties": {
+                                                            "order_id": {
+                                                                "description": "ID заказа",
+                                                                "type": "integer"
+                                                            },
+                                                            "status": {
+                                                                "description": "Состояние предложения: new - Предложение в силе, cancel - Отказ, done - Заказ создан",
+                                                                "type": "string"
+                                                            },
+                                                            "budget": {
+                                                                "description": "Бюджет",
+                                                                "type": "float"
+                                                            },
+                                                            "duration": {
+                                                                "description": "срок выполнения (секунд); null - срок не ограничен",
+                                                                "type": "integer"
+                                                            },
+                                                            "kwork": {
+                                                                "description": "Объект кворка",
+                                                                "properties": {
+                                                                    "id": {
+                                                                        "description": "ID кворка",
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "is_package": {
+                                                                        "description": "Пакетный ли кворк",
+                                                                        "type": "boolean"
+                                                                    },
+                                                                    "files": {
+                                                                        "description": "Массив объектов файлов кворка",
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                            "properties": {
+                                                                                "id": {
+                                                                                    "description": "ID файла",
+                                                                                    "type": "integer"
+                                                                                },
+                                                                                "name": {
+                                                                                    "description": "Имя файла",
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "path": {
+                                                                                    "description": "Путь файла",
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "size": {
+                                                                                    "description": "Размер файла",
+                                                                                    "type": "integer"
+                                                                                },
+                                                                                "type": {
+                                                                                    "description": "Тип файла: kwork_description - Файл для описания кворка, kwork_instruction - Файл для инструкции",
+                                                                                    "type": "string"
+                                                                                }
+                                                                            },
+                                                                            "type": "object"
+                                                                        }
+                                                                    },
+                                                                    "_package": {
+                                                                        "description": "Объект пакета кворка",
+                                                                        "properties": {
+                                                                            "description": {
+                                                                                "description": "Описание пакета",
+                                                                                "type": "string"
+                                                                            },
+                                                                            "price": {
+                                                                                "description": "Цена пакета",
+                                                                                "type": "float"
+                                                                            },
+                                                                            "duration": {
+                                                                                "description": "Продолжительность в днях",
+                                                                                "type": "integer"
+                                                                            },
+                                                                            "type": {
+                                                                                "description": "Тип пакета: standard|medium|premium",
+                                                                                "type": "string"
+                                                                            },
+                                                                            "items": {
+                                                                                "description": "Массив опций пакета",
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                    "properties": {
+                                                                                        "id": {
+                                                                                            "description": "Идентификатор опции пакета",
+                                                                                            "type": "integer"
+                                                                                        },
+                                                                                        "name": {
+                                                                                            "description": "Название опции",
+                                                                                            "type": "string"
+                                                                                        },
+                                                                                        "value": {
+                                                                                            "description": "Значение опции",
+                                                                                            "type": "string"
+                                                                                        },
+                                                                                        "type": {
+                                                                                            "description": "Тип значения опции label|digit",
+                                                                                            "type": "string"
+                                                                                        },
+                                                                                        "name_1": {
+                                                                                            "description": "Название опции в единственном числе",
+                                                                                            "type": "string"
+                                                                                        },
+                                                                                        "name_2": {
+                                                                                            "description": "Название опции для 2",
+                                                                                            "type": "string"
+                                                                                        },
+                                                                                        "name_5": {
+                                                                                            "description": "Название опции для 5",
+                                                                                            "type": "string"
+                                                                                        }
+                                                                                    },
+                                                                                    "type": "object"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            },
+                                                            "order": {
+                                                                "description": "Объект заказа",
+                                                                "properties": {
+                                                                    "kwork_title": {
+                                                                        "description": "Название кворка на момент заказа",
+                                                                        "type": "string"
+                                                                    },
+                                                                    "kwork_desc": {
+                                                                        "description": "Описание кворка на момент заказа. Возможен html",
+                                                                        "type": "string"
+                                                                    },
+                                                                    "kwork_work": {
+                                                                        "description": "Краткое описание на момент заказа",
+                                                                        "type": "string"
+                                                                    },
+                                                                    "count": {
+                                                                        "description": "Количество заказанных кворков",
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "totaldays": {
+                                                                        "description": "Общее количество дней на задачу",
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "totalprice": {
+                                                                        "description": "Цена заказа со всеми опциями для покупателя",
+                                                                        "type": "float"
+                                                                    },
+                                                                    "crt": {
+                                                                        "description": "Цена заказа со всеми опциями для продавца",
+                                                                        "type": "float"
+                                                                    },
+                                                                    "kworkspayerprice": {
+                                                                        "description": "Цена кворков без опций для покупателя",
+                                                                        "type": "float"
+                                                                    },
+                                                                    "kworksworkerprice": {
+                                                                        "description": "Цена кворков без опций для продавца",
+                                                                        "type": "float"
+                                                                    },
+                                                                    "ordered_extras": {
+                                                                        "description": "Массив заказанных опций",
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                            "properties": {
+                                                                                "id": {
+                                                                                    "description": "ID опции",
+                                                                                    "type": "integer"
+                                                                                },
+                                                                                "title": {
+                                                                                    "description": "название опции",
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "count": {
+                                                                                    "description": "Количество заказанных опций",
+                                                                                    "type": "integer"
+                                                                                },
+                                                                                "payer_price": {
+                                                                                    "description": "Цена заказанных опции для покупателя",
+                                                                                    "type": "float"
+                                                                                },
+                                                                                "worker_price": {
+                                                                                    "description": "Цена заказанных опции для продавца",
+                                                                                    "type": "float"
+                                                                                },
+                                                                                "totaldays": {
+                                                                                    "description": "Общая длительность в днях",
+                                                                                    "type": "integer"
+                                                                                }
+                                                                            },
+                                                                            "type": "object"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    },
+                                                    "quote": {
+                                                        "description": "Цитируемое сообщение",
+                                                        "properties": {
+                                                            "reply_message_id": {
+                                                                "description": "ID цитируемого сообщения",
+                                                                "type": "integer"
+                                                            },
+                                                            "reply_message_displayed_text": {
+                                                                "description": "Текст цитируемого сообщения, если текст отсутствует, название первого прикрепленного файла",
+                                                                "type": "string"
+                                                            },
+                                                            "reply_message_thumbnail": {
+                                                                "description": "Картинка цитируемого сообщения",
+                                                                "type": "string"
+                                                            },
+                                                            "reply_message_files": {
+                                                                "description": "Массив файлов цитируемого сообщения",
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "properties": {
+                                                                        "id": {
+                                                                            "description": "ID файла",
+                                                                            "type": "integer"
+                                                                        },
+                                                                        "name": {
+                                                                            "description": "Имя файла",
+                                                                            "type": "string"
+                                                                        },
+                                                                        "path": {
+                                                                            "description": "Путь файла",
+                                                                            "type": "string"
+                                                                        },
+                                                                        "size": {
+                                                                            "description": "Размер файла",
+                                                                            "type": "integer"
+                                                                        }
+                                                                    },
+                                                                    "type": "object"
+                                                                }
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "paging": {
+                                            "description": "Объект данных пагинации",
+                                            "properties": {
+                                                "page": {
+                                                    "description": "Текущая страница",
+                                                    "type": "integer"
+                                                },
+                                                "pages": {
+                                                    "description": "Всего страниц страница",
+                                                    "type": "integer"
+                                                },
+                                                "total": {
+                                                    "description": "Общее количество элементов",
+                                                    "type": "integer"
+                                                },
+                                                "limit": {
+                                                    "description": "Количество элементов на странице",
+                                                    "type": "integer"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/inboxDelete": {
+            "post": {
+                "tags": [
+                    "Требуется token"
+                ],
+                "summary": "Удаление сообщения",
+                "operationId": "Mobile\\Inbox::delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "Идентификатор сообщения",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "$ref": "#/components/responses/success"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/error"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/inboxEdit": {
+            "post": {
+                "tags": [
+                    "Требуется token"
+                ],
+                "summary": "Редактирование сообщения",
+                "operationId": "Mobile\\Inbox::edit",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "Идентификатор сообщения",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "text",
+                        "in": "query",
+                        "description": "Новый текст сообщения",
+                        "required": true,
+                        "allowEmptyValue": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "uploaded_files",
+                        "in": "query",
+                        "description": "Массив идентификаторов загруженных файлов",
+                        "style": "deepObject",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    {
+                        "name": "reply_message_id",
+                        "in": "query",
+                        "description": "ID цитаты",
+                        "allowEmptyValue": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "$ref": "#/components/responses/success"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/error"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/inboxCreate": {
+            "post": {
+                "tags": [
+                    "Требуется token"
+                ],
+                "summary": "Создание нового сообщения",
+                "operationId": "Mobile\\Inbox::create",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "query",
+                        "description": "Идентификатор собеседника",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "text",
+                        "in": "query",
+                        "description": "Текст сообщения",
+                        "required": true,
+                        "allowEmptyValue": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "order_id",
+                        "in": "query",
+                        "description": "Идентификатор заказа",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "uploaded_files",
+                        "in": "query",
+                        "description": "Массив идентификаторов загруженных файлов",
+                        "style": "deepObject",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    {
+                        "name": "reply_message_id",
+                        "in": "query",
+                        "description": "ID цитаты",
+                        "allowEmptyValue": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Данные созданного сообщения",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "description": "Флаг успешности",
+                                            "type": "boolean"
+                                        },
+                                        "response": {
+                                            "description": "Данные",
+                                            "properties": {
+                                                "type": {
+                                                    "description": "Тип созданного сообщения",
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "track",
+                                                        "message"
+                                                    ]
+                                                },
+                                                "id": {
+                                                    "description": "Идентификатор сообщения или трека",
+                                                    "type": "integer"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/error"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "responses": {
+            "default": {
+                "$ref": "#/components/responses/error"
+            }
+        }
+    }
+}

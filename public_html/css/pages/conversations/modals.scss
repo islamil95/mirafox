@@ -1,0 +1,145 @@
+.cm-complain-modal, .edit-modal, .delete-modal {
+  .modal-dialog {
+
+    @media (min-width: 576px) {
+      max-width: 500px;
+    }
+  }
+
+  .modal-header {
+    padding: 15px 20px 18px;
+
+    .close {
+      top: 22px;
+      right: 20px;
+    }
+  }
+
+  .modal-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .modal-body {
+    padding: 8px 20px;
+  }
+
+  .modal-footer {
+    padding: 2px 20px 20px;
+
+    @media(max-width: 767px) {
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+    
+    > div {
+      display: flex; justify-content: space-between;
+      width: 100%;
+
+      @media(max-width: 767px) {
+        flex-wrap: wrap;
+      }
+
+      button {
+        width: 165px;
+        height: 40px;
+        padding: 0;
+        font-size: 16px;
+        line-height: normal;
+
+        @media(max-width: 767px) {
+          width: 100%;
+
+          & + button {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  .modal-error-list {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: red;
+    margin-left: 20px;
+    font-size: 14px;	
+    li {
+      display: block;
+      padding: 0;
+      margin: 0;				
+    }
+  }
+}
+
+.cm-complain-modal {
+  .modal-content {
+    width: 600px; max-width: 100%;
+  }
+
+  .modal-footer {
+    padding-top: 10px;
+  }
+
+  .cm-tip {
+    margin: 15px 0 0 40px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .cm-title {
+    margin: 10px 0 5px;
+    font-weight: 600;
+  }
+
+  input, textarea {
+    width: 100%;
+    resize: none;
+  }
+
+  textarea {
+    height: 80px;
+  }
+
+  .cm-save-button {
+    width: 100% !important;
+  }
+}
+
+.edit-modal {
+  textarea {
+    margin: 10px 0;
+    width: 100%; height: 80px;
+  }
+
+  .modal-message {
+    padding: 0 0 10px 0;
+
+    @media(max-width: 767px) {
+      .uploader-controls {
+        flex-wrap: wrap;
+
+        .upload-button {
+          line-height: 30px;
+        }
+
+        .hint {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.delete-modal {
+  .modal-content {
+    width: 410px; max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .modal-message {
+    padding: 0px 0 20px;
+  }
+}

@@ -1,0 +1,74 @@
+index:
+  path: /
+  methods: GET
+  defaults: { _controller: 'Controllers\Index\IndexController' }
+
+notfound:
+    path: notfound
+    defaults: { _controller: 'Controllers\Error\PageNotFoundController' }
+
+# API
+api_methods:
+  resource: 'routes/api.yml'
+  prefix: /api
+
+# Заказы - указание индвивидуального имени заказа
+orders:
+  resource: 'routes/orders.yml'
+
+# Трек
+view_track:
+  resource: 'routes/track.yml'
+
+# Управлени треком
+track_handler:
+  resource: 'routes/track/handlers.yml'
+  prefix: /track
+
+# Проекты и предложения
+wants:
+  resource: 'routes/wants.yml'
+
+# Выход с кворка
+logout:
+  path: /logout
+  methods: GET
+  defaults: { _controller: 'Controllers\Security\LogoutController' }
+
+# Смена типа пользователя
+change_usertype:
+  path: /change_usertype
+  defaults: { _controller: 'Controllers\User\ChangeUserTypeController' }
+
+# Кворки
+kworks:
+  resource: 'routes/kworks.yml'
+
+# Баланс пользователя
+balance:
+  resource: 'routes/balance.yml'
+
+# Профили пользователя
+user_profile:
+  resource: 'routes/profile.yml'
+
+# Отзывы к заказу
+review:
+  resource: 'routes/track/review.yml'
+
+# Отзывы
+reviews:
+  resource: 'routes/review.yml'
+
+# Страницы каталога кворков
+catalog_kworks:
+  path: 'categories/{alias}'
+  defaults: { _controller: 'Controllers\Catalog\KworksViewController'}
+
+# Просмотр страницы кворка
+kwork_view:
+    path: '/{seo}/{kworkId}/{kworkSeoTitle}'
+    defaults: { _controller: 'Controllers\Kwork\ViewKworkController'}
+    requirements:
+        kworkId: \d+
+        seo: "^((?!track).)*$"

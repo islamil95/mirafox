@@ -1,0 +1,77 @@
+// Результаты поиска
+.kb .kb-search-results {
+	margin: 0 auto;
+
+	@include responsive("max-width", 100%, 100%, 100%, 100%, 1100px);
+
+	// Сообщение о том, что ничего не найдено
+	.search-message {
+		font-size: 18px;
+		line-height: 28px;
+		@include responsive("padding-left", 15px, 15px, 15px, 0px, 0px);
+		@include responsive("padding-right", 15px, 15px, 15px, 0px, 0px);
+	}
+
+	// Сообщение о кол-ве найденных статей
+	.total {
+	    font-size: 20px;
+	    font-weight: $font-weight-bold;		
+	    text-align: left;
+		@include responsive("padding-left", 15px, 15px, 15px, 15px, 0px);
+		@include responsive("padding-right", 15px, 15px, 15px, 15px, 0px);	    
+	}
+
+	// Статьи
+	.search-results {
+		@include responsive("padding-left", 15px, 15px, 15px, 15px, 0px);
+		@include responsive("padding-right", 15px, 15px, 15px, 15px, 0px);	    
+
+		// Статья
+		.search-result {
+			border-bottom: 2px solid $light;
+
+			// У последней статьи нет подчеркивания снизу
+			&.last {
+				border-bottom: none;
+				margin-bottom: 0!important;
+			}
+
+			// Вопрос
+			.question {
+				color: $primary;
+				cursor: pointer;
+				font-size: 16px;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+
+			// Ответ и корневая статья
+			.answer-wrapper {
+
+				// Ответ
+				.answer {
+					max-height: 22px;
+					font-size: 16px;
+				}
+
+				// Ответ для мобилок
+				.answer-mobile {
+					font-size: 16px;
+				}
+
+				// Корневая статья
+				.root-article {
+					color: $gray-600;
+					text-transform: uppercase;
+				}
+
+			}
+
+		}
+
+	}
+
+}

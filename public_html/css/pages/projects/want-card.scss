@@ -1,0 +1,19 @@
+.want-card {
+	margin-bottom: 15px;
+	transition: box-shadow 0.25s ease-in-out;
+
+
+	@media (min-width: 767px) {
+		&:hover {
+			box-shadow: 0 6px 26px -5px rgba(97, 61, 2, 0.30);
+
+			.projects-offer-btn {
+				display: inline-block;
+			}
+		}
+
+		.projects-offer-btn {
+			display: none;
+		}
+	}
+}

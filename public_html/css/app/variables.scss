@@ -1,0 +1,47 @@
+// Общее
+$radius: 3px;
+
+// Валидация форм
+// Ошибки
+// Шрифты
+$error-font-size: 12px;
+$error-color: $danger;
+
+// Buttons
+// Шрифты
+$button-color: $white;
+$button-font-size: 20px;
+$button-font-size-sm: 14px;
+$button-font-size-lg: 24px;
+// Отступы
+$button-padding: 10px 35px 10px 35px;
+$button-padding-sm: 5px 15px 5px 15px;
+$button-padding-lg: 15px 50px 15px 50px;
+// Границы
+$button-radius: $radius;
+// Заливка
+$button-colors: (success, warning);
+$button-background-gradient-color-from: (
+	success: #87B948,
+	warning: #EEB657
+);
+$button-background-gradient-color-to: (
+	success: #5CA042,
+	warning: #FFA500
+);
+
+// Inputs
+// Шрифты
+$input-color: $black;
+$input-font-size: 14px;
+$input-font-size-sm: 12px;
+$input-font-size-lg: 28px;
+// Отступы
+$input-padding: 5px 15px 5px 15px;
+$input-padding-sm: 3px 10px 3px 10px;
+$input-padding-lg: 10px 10px 10px 10px;
+// Границы
+$input-radius: $radius;
+$input-border-color: $gray-650;
+$input-focused-border-color: $teal;
+$input-border-width: 1px;

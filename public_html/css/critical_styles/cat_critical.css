@@ -1,0 +1,127 @@
+@media (max-width: 767px) {
+	/* баннер */
+	.centerwrap, .lg-centerwrap {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.banner {
+		padding-bottom: 20px;
+		background-color: #000;
+		box-sizing: border-box;
+	}
+
+	.headertext {
+		padding-top: 10px;
+	}
+
+	.headertext h1 {
+		margin: 15px 0 10px;
+		text-align: center;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 38px;
+		color: #fff;
+	}
+
+	.headertext_subtitle {
+		display: block;
+		margin: 0 auto 30px;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+	}
+
+	.index-advantages {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.index-advantage-block {
+		height: 99px !important;
+		overflow: hidden;
+		opacity: 0;
+		transition: opacity .2s;
+	}
+
+	.index-advantage-block.slick-initialized {
+		height: auto;
+		opacity: 1;
+	}
+
+	/* категория */
+	.categoriesHeader {
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	.categoriesHeader h1 {
+		font-size: 35px;
+		margin-bottom: 10px;
+	}
+
+	.categoriesDescriptionc {
+		font-size: 17px;
+	}
+	.collageSubcategories-col {
+		float: left;
+	}
+	.collageSubcategories-item {
+		position: relative;
+		display: block;
+		line-height: 0;
+	}
+	.collageSubcategories-item img {
+		width: 100%;
+		height: auto;
+		max-width: 395px;
+		-webkit-filter: brightness(100%);
+	}
+	.collageSubcategories-item:after {
+		background: #000;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		content: '';
+		transition: opacity 0.2s ease-in-out;
+		opacity: 0;
+	}
+	.cusongsblock__content {
+		transition: none;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+	.collageSubcategories {
+		margin: 0 -7px;
+	}
+	.collageSubcategories-col {
+		width: 50% !important;
+	}
+	.collageSubcategories-item {
+		margin: 0 7px 14px;
+		text-align: center;
+	}
+	.collageSubcategories-item img {
+		max-height: 250px !important;
+	}
+}
+@media only screen and (max-width: 480px) and (min-height: 320px) {
+	.firstSubcategories-1 .collageSubcategories-col:nth-child(1), .firstSubcategories-3 .collageSubcategories-col:nth-child(1), .firstSubcategories-5 .collageSubcategories-col:nth-child(1), .lastSubcategories-5 .collageSubcategories-col:nth-child(1) {
+		width: 100% !important;
+	}
+	.collageSubcategories-col {
+		width: 50% !important;
+	}
+	.collageSubcategories-item {
+		margin: 0 7px 14px;
+	}
+	.firstSubcategories-1 .collageSubcategories-col:nth-child(1) img, .firstSubcategories-3 .collageSubcategories-col:nth-child(1) img, .firstSubcategories-5 .collageSubcategories-col:nth-child(1) img, .lastSubcategories-5 .collageSubcategories-col:nth-child(1) img {
+		max-width: none !important;
+		max-height: none !important;
+	}
+	.collageSubcategories {
+		margin: 0 -7px;
+	}
+}

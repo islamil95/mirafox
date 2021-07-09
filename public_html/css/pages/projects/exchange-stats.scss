@@ -1,0 +1,65 @@
+.exchange-stats {
+	background-color: white;
+	border: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 20px;
+
+	@media (max-width: 899px) {
+
+		&__header {
+			min-height: 30px;
+			display: flex;
+			align-items: center;
+
+			br {
+				content: '';
+				&:after {
+					content: ' ';
+				}
+			}
+		}
+	}
+
+	@media (min-width: 900px) {
+		width: 230px;
+	}
+
+	&__header {
+		background: url('/images/stat-icon5.png') 0 2px no-repeat;
+		padding-left: 45px;
+		margin-bottom: 10px;
+	}
+
+	&__param {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.wants-filter-sidebar {
+	@media (max-width: 899px) {
+		.exchange-stats {
+			display: none;
+		}
+	}
+}
+
+.wants-content {
+	.exchange-stats {
+		font-size: 14px;
+		line-height: 22px;
+		@media (min-width: 900px) {
+			display: none;
+		}
+	}
+}
+
+.wants-left-side {
+	.exchange-stats {
+		@media (max-width: 899px) {
+			display: none;
+		}
+	}
+}

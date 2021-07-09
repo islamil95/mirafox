@@ -1,0 +1,61 @@
+// Кастомизация компонента breadcrumbs для базы знаний
+.kb {
+
+	.breadcrumbs-wrapper {
+		@include responsive("max-width", 100%, 100%, 100%, 100%, 1100px);
+	}
+
+	// Хлебные крошки
+	.breadcrumbs {
+		padding: 0; 
+		line-height: 30px;
+
+	    // Кнопка Домой
+	    .home-button {
+	        color: $gray-600;
+	        font-size: 14px;
+
+	        &:hover {
+	        	color: $orange;
+	        }
+
+	    }
+
+	    // Хлебная крошка
+	    .breadcrumb {
+	    	font-size: 14px;
+
+		    // Активная (кликабельная) хлебная крошка
+		    .active {
+		    	color: $gray-600;
+
+		        &:hover {
+		            color: $orange
+		        }
+
+		    }
+
+		    // Разделитель
+			.delimiter {
+			    margin-left: 0px;
+			    margin-right: 0px;
+				background-image: url(/images/arrow_right_2.png);
+			    background-size: auto 20px;
+			    background-repeat: no-repeat;
+			    background-position: center center;
+			    width: 20px;
+			    height: 20px;
+			    top: 4px;
+
+			    // Первый разделитель
+			    &.first {
+			    	margin-left: 0px;
+			    }
+
+			}	
+
+		}
+
+	}
+
+}

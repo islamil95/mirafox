@@ -1,0 +1,20 @@
+# Создать заказ
+# Order.api_create
+api_order_create:
+    path: /create
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Order\CreateController' }
+
+# Получить предоставленные данные по заказу
+# Order.api_getOrderProvidedData
+api_order_getorderprovideddata:
+    path: /getorderprovideddata
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Order\GetOrderProvidedDataController' }
+
+# Получить количество заказов
+# Order.api_getOrdersCount
+api_order_getorderscount:
+    path: /getorderscount
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Order\GetOrdersCountController' }

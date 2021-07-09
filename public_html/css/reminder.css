@@ -1,0 +1,38 @@
+.reminder-link-block {
+	/* margin-top: -57px;
+	line-height: 20px; */
+}
+.reminder-link-btn:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.reminder-list {
+	/* width: 306px; */
+}
+@media(max-width: 766px) {
+	.reminder-link-block {
+		padding-bottom: 30px;
+	}
+}
+.reminder-item {
+	display: flex;
+	align-items: flex-end;
+}
+.reminder-item + .reminder-item {
+	border-top: none;
+}
+.reminder-content {
+	flex: 1 1 auto;
+}
+.reminder-icon {
+	position: relative;
+	top: 3px;
+}
+.reminder-btn {
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+.reminder-btn span {
+	line-height: 30px;
+	white-space: nowrap;
+}

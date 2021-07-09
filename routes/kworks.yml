@@ -1,0 +1,44 @@
+kwork_add:
+    path: '/new'
+    methods: GET
+    defaults: { _controller: 'Controllers\Kwork\AddEditKworkController'}
+
+kwork_edit:
+    path: '/edit'
+    methods: GET
+    defaults: { _controller: 'Controllers\Kwork\AddEditKworkController'}
+
+kwork_save_new:
+    path: '/new'
+    methods: POST
+    defaults: { _controller: 'Controllers\Kwork\SaveKworkController'}
+
+kwork_save_edit:
+    path: '/edit'
+    methods: POST
+    defaults: { _controller: 'Controllers\Kwork\SaveKworkController'}
+
+manage_kworks:
+    path: '/manage_kworks'
+    methods: GET
+    defaults: { _controller: 'Controllers\Kwork\ManageKworksController'}
+
+delete_kworks:
+    path: '/manage_kworks'
+    methods: POST
+    defaults: { _controller: 'Controllers\Kwork\DeleteKworksController'}
+
+set_kwork_name:
+    path: '/set_kwork_name'
+    methods: POST
+    defaults: { _controller: 'Controllers\Kwork\SetKworkNameController'}
+
+kwork_ratings_update:
+    path: '/kwork_ratings_update'
+    methods: GET
+    defaults: { _controller: 'Controllers\Kwork\RatingsController'}
+
+kwork_ratings_update_post:
+    path: '/kwork_ratings_update'
+    methods: POST
+    defaults: { _controller: 'Controllers\Kwork\UpdateRatingsController'}

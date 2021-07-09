@@ -1,0 +1,12 @@
+// Форма связи
+.kb .support-form {
+	@include responsive("max-width", 100%, 100%, 100%, 720px, 720px);
+
+	// Подсказки
+	.hint {
+		color: $gray-600;
+		font-style: italic;
+		font-size: 12px;
+	}
+
+}

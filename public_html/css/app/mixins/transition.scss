@@ -1,0 +1,6 @@
+// Кроссбразурный transition
+@mixin _transition($property, $duration, $easing: linear) {
+	-webkit-transition: $property $duration $easing;
+	   -moz-transition: $property $duration $easing;
+			transition: $property $duration $easing;
+}

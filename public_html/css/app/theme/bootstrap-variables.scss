@@ -1,0 +1,90 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+//
+// Color system
+//
+
+// stylelint-disable
+$white:    #fff;
+$gray-50:  #fafafa;
+$gray-100: #f6f6f6;
+$gray-200: #e4e4e4;
+$gray-300: #eaeaea;
+$gray-400: #ddd;
+$gray-500: #bbb;
+$gray-600: #8a8a8a;
+$gray-650: #A5A5A5;
+$gray-700: #777;
+$gray-800: #585858;
+$gray-850: #606060;
+$black:    #000;
+
+$blue:    #457edb;
+$red:     #f15b5b;
+$orange:  #ffa800;
+$green:   #090;
+$teal:    #82b647;
+$pink:	  #FFF3F3;
+
+$warning: $orange;
+$secondary: $gray-300;
+
+// stylelint-enable
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  lg: 988px
+);
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-radius:               3px;
+$border-radius-lg:            3px;
+$border-radius-sm:            3px;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      'Open Sans', Helvetica, sans-serif;
+// stylelint-enable value-keyword-case
+
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            600;
+
+
+// Modals
+
+// Padding applied to the modal body
+$modal-content-border-color:     $white;
+$modal-content-border-width:     0;
+$modal-content-box-shadow-xs:    none;
+$modal-content-box-shadow-sm-up: none;
+
+$modal-backdrop-opacity:      .3;
+$modal-header-border-color:   $white;
+$modal-footer-border-color:   $white;
+$modal-header-border-width:   0;
+$modal-footer-border-width:   0;
+
+
+// Close
+
+$close-font-size:                   24px;
+$close-font-weight:                 $font-weight-normal;
+$close-color:                       $gray-500;
+$close-text-shadow:                 none;

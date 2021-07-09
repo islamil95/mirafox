@@ -1,0 +1,15 @@
+.close {
+  opacity: 1;
+
+  @include hover-focus {
+      opacity: 1;
+  }
+}
+
+button.close {
+  font-size: 32px;
+  font-weight: $font-weight-normal;
+  line-height: 0.7;
+  background: none;
+  font-family: $font-family-base;
+}

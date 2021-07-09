@@ -1,0 +1,157 @@
+.offer-modal {
+
+	.offer-individual__label {
+		font-weight: 600;
+	}
+
+	&__item {
+		margin-bottom: 20px;
+
+		&-tooltip {
+			ol {
+				padding: 0 14px;
+				margin: 0 0 10px;
+			}
+
+			li {
+				margin-bottom: 5px;
+			}
+		}
+
+		&-label {
+			font-weight: 600;
+
+			span {
+				margin-left: 5px;
+			}
+		}
+
+		&-price {
+			font-size: 18px;
+			line-height: 20px;
+			color: #090;
+			font-weight: 600;
+		}
+	}
+
+	&__radio {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		&-item {
+			display: inline-flex;
+			position: relative;
+			flex: 0 0 45%;
+			border: 1px solid #e8e8e8;
+			padding: 15px;
+			cursor: pointer;
+			margin-top: 15px;
+			border-radius: 5px;
+			align-items: center;
+
+			p {
+				position: relative;
+				font-size: 12px;
+				line-height: 16px;
+			}
+
+			i {
+				position: relative;
+				font-size: 60px;
+				color: #fea342;
+				margin-right: 10px;
+				align-self: center;
+			}
+
+			&--active {
+				padding: 16px;
+				border: 0;
+				background: linear-gradient(to bottom, #87b948 0%, #5ca042 100%, #5ca042 100%);
+
+				&:after {
+					content: '\f00c';
+					position: absolute;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					top: -9px;
+					right: -9px;
+					width: 26px;
+					height: 26px;
+					font: normal normal normal 13px/1 "FontAwesome";
+					color: #fff;
+					background: linear-gradient(to bottom,#87b948 0%,#5ca042 100%,#5ca042 100%);
+					border-radius: 50%;
+				}
+			}
+
+			&:before {
+				content: '';
+				background: #fff;
+				position: absolute;
+				top: 2px;
+				left: 2px;
+				right: 2px;
+				bottom: 2px;
+				border-radius: 3px;
+			}
+
+			@media only screen and (max-width: 767px) {
+				flex: 1 1 100%;
+			}
+		}
+
+		&-title {
+			position: relative;
+			font-size: 15px;
+			margin-bottom: 5px;
+			font-weight: 600;
+		}
+
+		&-img {
+			flex-shrink: 0;
+			position: relative;
+			padding-right: 15px;
+			text-align: center;
+			box-sizing: border-box;
+			&_all {
+				width: 65px;
+				height: 50px;
+			}
+			&_stages {
+				width: 75px;
+				height: 40px;
+			}
+		}
+	}
+
+	button {
+		line-height: 26px;
+		padding: 10px 35px;
+		&:focus {
+			outline:none !important;
+		}
+		&::-moz-focus-inner {
+			border: 0 !important;
+		}
+
+		@media (max-width: 430px) {
+			span {
+				display: block;
+			}
+		}
+	}
+
+	.stages-duration-current {
+		margin-bottom: 7px;
+
+		strong {
+			font-weight: 600;
+		}
+	}
+
+	.modal-footer {
+		padding-bottom: 25px;
+	}
+}

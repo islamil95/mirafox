@@ -1,0 +1,88 @@
+.balance-info-block{
+	background: #fafafa;
+	border: 1px solid #ececec;
+	padding: 25px 20px;
+}
+
+.balance-info-block__summ
+{
+	margin: 5px 10px 0 0;
+	display: inline-block;
+	line-height: 50px;
+	font-size: 46px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.balance-info-block__action{
+	margin-top: 15px;
+	width: 100%;
+	max-width: 740px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.balance-info-block__action__button__group{
+	margin-top: 15px;
+	width: 100%;
+	max-width: 740px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.withdraw-block{
+	width: 100%;
+    max-width: 100%;
+}
+.withdraw-block__form {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+	.withdraw-block__form {
+		display: flex;
+		align-items: flex-end;
+		flex-wrap: wrap;
+	}
+}
+
+.withdraw-block__error{
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000;
+}
+
+.withdraw-block__comission__desc{
+	max-width: 700px;
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #8a8a8a;
+	font-style: italic;
+}
+
+.js-table-head__filter:hover{
+	color: #457edb;
+	cursor: pointer;
+}
+
+.page-balance .m-order-table .btn-title {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width:767px) {
+	.withdraw-block__error{
+		margin: 0;
+	}
+	.withdraw-block__comission__desc{
+		margin: 0;
+	}
+	.withdraw-block__form{
+		margin: 0;
+	}
+}

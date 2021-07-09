@@ -1,0 +1,108 @@
+
+.file-uploader__add {
+    line-height: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.file-uploader__add-text {
+    margin-left: 5px;
+    color: #457edb;
+}
+.file-uploader__file-input {
+    display: none;
+}
+.file-uploader__item {
+    margin-top: 5px;
+    overflow: hidden;
+}
+.file-uploader__add-ico {
+    top: 3px;
+    position: relative;
+}
+.file-uploader__add-hint {
+    color: #8a8a8a;
+    font-size: 12px;
+    font-style: italic;
+}
+.file-item {
+    position: relative;
+}
+
+.file-item__ext {
+    margin: 5px;
+    vertical-align: middle;
+}
+span.file-item__name {
+	padding: 5px 0;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: calc(100% - 70px);
+    line-height: 26px;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 22px;
+}
+.file-item__action {
+    overflow: hidden;
+    float: right;
+    display: block;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .file-item__action {
+        display: none;
+    }
+
+    .file-item:hover .file-item__action {
+        display: block;
+    }
+}
+.file-item__action-ico {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAq0lEQVQoU62SMQ7CMAxFv30OJAYuYUUMHIOdKzDTihWuwF0YUONLMFTiHDEyKgiqpNAKj06e8/3zycxIVXdEdBKRGwZKVWcppXUI4UhN02wBHABcmXlVgjvoDGABoPLXfMqzkYVzd8iVDcGlswdYgr1fUvMCM3DbzZzn9v8A3+ALAAe8WmZe9k37D9gz4jepOfe+mjPpOyYHIMZYmVk9JnJEVNPYkJvZRkT2d83OwZn6v2EKAAAAAElFTkSuQmCC) no-repeat center;
+    background-size: 14px;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+
+.file-item_type_deleted .file-item__action {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.file-item__error {
+	font-size: 12px;
+	line-height: 14px;
+	color: #ef683f;
+	margin: 5px 10px 5px 34px;
+	text-align: left;
+}
+.file-item__loader {
+    height: 2px;
+    background: #ffa800;
+}
+.file-item_type .file-item__ext,
+.file-item_type .file-item__ext,
+.file-item_type .file-item__name,
+.file-item_type .file-item__name {
+    opacity: 0.3;
+}
+.file-item_type_deleted {
+    background-color: #FCFCFC;
+}
+.file-item_type_error {
+    background-color: #FFF3F3;
+}
+
+.file-item_type_error:hover {
+    background-color: #FFF3F3;
+}
+
+.load-file__list {
+    clear: both;
+}

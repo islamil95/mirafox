@@ -1,0 +1,44 @@
+// Кнопка загрузки файла
+.file-wrapper > div {
+	box-sizing: content-box;
+}
+
+// Кворки пользователя
+.user-kwork-list {
+	ul {
+		padding-left: 0px;
+		margin-bottom: 0px;
+	}
+
+	p {
+		margin-bottom: 0px;
+	}
+
+	.multiline-faded {
+		box-sizing: content-box;
+	}
+}
+.user-kwork-list-container {
+	.multiline-faded {
+		box-sizing: content-box;
+	}
+	.cusongsblock, .cusongsblock-user {
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+// Отзывы
+.gig-reviews-list {
+	padding-left: 0px !important;
+	margin-bottom: 0px !important;
+
+	.rounded {
+		border-radius: 100% !important;
+	}
+}
+
+// Модальное окно отправки сообщения пользователю
+.popup-individual-message #budget, .popup-individual-message .file-item__name {
+	box-sizing: content-box;
+}

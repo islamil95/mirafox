@@ -1,0 +1,32 @@
+.default-loader-wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: rgba(0, 0, 0, 0.75);
+	
+	.default-loader {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		margin: 0;
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 5px;
+		transform: translate(-50%, -50%);
+	
+		&-white {
+			background: #fff;
+		}
+		
+		.ispinner {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}

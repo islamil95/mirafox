@@ -1,0 +1,27 @@
+# Получить новые треки из заказа
+# Track.api_getNewTracks
+api_track_getnewtracks:
+    path: /getnewtracks
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Track\GetNewTracksController' }
+
+# Пометить как прочтенные треки
+# Track.api_readTracks
+api_track_readtracks:
+    path: /readtracks
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Track\ReadTracksController' }
+
+# Получить изменные треки
+# Track.api_getChangedTrack
+api_track_getchangedtrack:
+    path: /getchangedtrack
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Track\GetChangedTrackController' }
+
+# Отправить чаевые
+# Track.api_sendTips
+api_track_sendtips:
+    path: /sendtips
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Track\SendTipsController' }

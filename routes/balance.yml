@@ -1,0 +1,9 @@
+balance_add:
+  path: '/balance'
+  methods: POST
+  defaults: { _controller: 'Controllers\Balance\AddController'}
+
+balance:
+  path: '/balance'
+  methods: GET
+  defaults: { _controller: 'Controllers\Balance\IndexController'}

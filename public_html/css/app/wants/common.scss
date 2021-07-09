@@ -1,0 +1,106 @@
+.wants-card {
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+
+		@media only screen and (max-width: 767px) {
+			flex-wrap: wrap;
+		}
+
+		&-title, &-title a {
+			color: #009900;
+		}
+
+		&-title {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 28px;
+
+			.kwork-icon {
+				margin-left: 10px;
+				font-size: 16px;
+				color: #e8e8e8;
+				cursor: pointer;
+
+				&:hover {
+					color: #dadada;
+				}
+			}
+
+			@media only screen and (max-width: 767px) {
+				order: 2;
+			}
+		}
+		
+		&-right-block {
+
+			@media only screen and (max-width: 767px) {
+				order: 1;
+				display: inline-flex;
+				justify-content: flex-end;
+				width: 100%;
+			}
+		}
+
+		&-controls {
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+			order: 2;
+
+			@media only screen and (min-width: 767px) {
+				align-items: baseline;
+				margin-left: 15px;
+			}
+			@media only screen and (max-width: 767px) {
+				align-items: initial;
+				justify-content: initial;
+				order: initial;
+			}
+
+			a {
+				margin-left: 10px;
+				height: 18px;
+
+				.kwork-icon {
+					color: #bdbcb9;
+					transition: color .25s ease-in-out;
+					font-size: 15px;
+				}
+
+				&:hover {
+					.kwork-icon {
+						color: #ffa800;
+					}
+				}
+			}
+		}
+		
+		&-price {
+		}
+		
+		&-status {
+			text-align: right;
+			margin-left: 10px;
+
+			@media only screen and (min-width: 767px) {
+				margin-top: 5px;
+			}
+
+			.status-block {
+				font-size: 12px;
+				text-align: center;
+			}
+		}
+	}
+	
+	&__price {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 20px;
+		color: #009900;
+		white-space: nowrap;
+	}
+}

@@ -1,0 +1,369 @@
+.btn, .dropdown-menu {
+    text-align: left;
+    background-color: #fff
+}
+
+.btn, .btn-default, .dropdown-menu {
+    background-color: #fff
+}
+
+.caret, .caret:after {
+    top: 0;
+    right: 0;
+    bottom: 0
+}
+
+.caret:after, .multiselect-container > li.active > a > label:after {
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+select[multiple], select[size] {
+    height: auto
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    padding: 5px;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    font-size: 13px;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #A5A5A5;
+    border-radius: 3px;
+    line-height: 18px;
+    min-height: 14px;
+    margin: 0;
+    width: 100%
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-offset: -2px
+}
+
+a.btn.disabled, fieldset[disabled] a.btn {
+    pointer-events: none
+}
+
+.btn-default {
+    color: #000;
+    border-color: #bbb;
+    position: relative
+}
+
+.caret, .caret:after, .dropdown-menu {
+    position: absolute;
+    z-index: 2
+}
+
+.btn-default:hover {
+    color: #000;
+    border-color: #adadad
+}
+
+.caret {
+    width: 30px
+}
+
+.caret:after {
+    content: '';
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wMdBhAJ/fwnjwAAAGFJREFUKM9jYBh+gBFKuzEwMKQwMDB8xaOWlYGB4T4DA0MrsuapDAwM//HgNwwMDDbYTJuGQ8MHBgYGJ1xOYGNgYJiBpuEpAwODHSF/siDZ+ISBgcGClEDqZ2Bg8B6CkQsAPRga0cpRtDEAAAAASUVORK5CYII=);
+    width: 16px;
+    height: 16px;
+    display: block;
+    left: 0;
+    margin: auto;
+    opacity: .8
+}
+
+.dropdown, .dropup {
+    position: relative
+}
+
+.dropdown-menu {
+    top: 100%;
+    left: 0;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    border: 1px solid #A5A5A5;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: 0
+}
+
+.open > .dropdown-menu {
+    display: block;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.open > a {
+    outline: 0
+}
+
+.dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-size: 12px;
+    color: #777;
+    white-space: nowrap
+}
+
+span.multiselect-native-select {
+    position: relative;
+    color: #75757b;
+    font-style: normal;
+    cursor: pointer
+}
+
+span.multiselect-native-select select {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px -1px -1px -3px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    left: 50%;
+    top: 30px
+}
+
+.dropdown-menu-right, .dropdown-menu.pull-right {
+    left: auto;
+    right: 0
+}
+
+.multiselect-container {
+    position: absolute;
+    list-style-type: none;
+    padding: 0
+}
+
+.multiselect-container .multiselect-reset .input-group {
+    width: 93%
+}
+
+.multiselect.btn-default {
+    border-color: #A5A5A5;
+}
+
+.multiselect.btn-default.active, .multiselect.btn-default:active, .open > .multiselect.dropdown-toggle.btn-default {
+    border-color: #606060;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #000;
+    text-decoration: none
+}
+
+.btn.active, .btn:active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    cursor: not-allowed;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
+    color: #000;
+    border-color: #82b647
+}
+
+.btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
+    background-color: #fff;
+    border-color: #bbb
+}
+
+.btn-default .badge {
+    color: #fff;
+    background-color: #000
+}
+
+.dropdown-toggle:focus {
+    outline: 0
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5
+}
+
+.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:focus, .dropdown-menu > .disabled > a:hover {
+    color: #777
+}
+
+.dropdown-menu > .disabled > a:focus, .dropdown-menu > .disabled > a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    cursor: not-allowed
+}
+
+.dropdown-menu-left {
+    left: 0;
+    right: auto
+}
+
+.pull-right > .dropdown-menu {
+    right: 0;
+    left: auto
+}
+
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret {
+    border-top: 0;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid \9;
+    content: ""
+}
+
+.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 2px
+}
+
+@media (min-width: 768px) {
+    .navbar-right .dropdown-menu {
+        left: auto;
+        right: 0
+    }
+
+    .navbar-right .dropdown-menu-left {
+        left: 0;
+        right: auto
+    }
+}
+
+.multiselect-selected-text {
+    color: #757575;
+    position: relative;
+    top: 1px
+}
+
+.multiselect-container .input-group {
+    margin: 5px
+}
+
+.multiselect-container > li {
+    padding: 0;
+    cursor: pointer
+}
+
+.multiselect-container > li > a label {
+    display: block;
+    width: 100%;
+    padding: 3px 5px 4px 48px;
+    box-sizing: border-box;
+    position: relative;
+    color: #000;
+    border-bottom: 1px solid #ddd
+}
+
+.multiselect-container > li.multiselect-all > a label, .multiselect-container > li.multiselect-group > a label {
+    padding: 3px 5px 4px 32px
+}
+
+.multiselect-container > li > a.multiselect-all label {
+    font-weight: 700
+}
+
+.multiselect-container > li.multiselect-group label {
+    margin: 0;
+    height: 100%
+}
+
+.multiselect-container > li.multiselect-group-clickable label {
+    cursor: pointer
+}
+
+.multiselect-container > li > a {
+    padding: 0
+}
+
+.multiselect-container > li > a > label {
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+    font-size: 13px
+}
+
+.multiselect-container > li > a > label.checkbox, .multiselect-container > li > a > label.radio {
+    margin: 0
+}
+
+.multiselect-container > li > a > label > input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+    left: -99999px;
+}
+
+.btn-group > .btn-group:nth-child(2) > .multiselect.btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+.btn-group.open {
+    position: relative;
+    color: #000
+}
+.form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
+    padding: 3px 20px 3px 40px
+}
+
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
+    margin-left: -20px;
+    margin-right: 0
+}
+.form-inline .multiselect-container .dropdown-menu li:first-child{
+    font-weight: bold;
+    padding: 3px 5px 4px 16px
+}
+.wrap-multiselect {
+	display: block;
+	position: relative;
+}

@@ -1,0 +1,53 @@
+# Получить работы из портфолио профиля
+get_profile_portfolios:
+    path: /user/portfolio
+    methods: POST
+    defaults: { _controller: 'Controllers\User\PortfolioController' }
+
+# Просмотр страницы профиля
+profile_view:
+    path: /user/{username}
+    methods: GET
+    defaults: { _controller: 'Controllers\User\ProfileController' }
+
+# Обработчик обновления шапки профиля
+change_profile_cover:
+    path: /user/{username}/update_cover
+    methods: POST
+    defaults: { _controller: 'Controllers\User\UpdateCoverController' }
+
+# Страницы с аналитикой продаж
+profile_analytics:
+    path: /analytics
+    methods: GET
+    defaults: { _controller: 'Controllers\User\AnalyticsController' }
+
+# Установить период уведомлений пользователя
+set_user_notification_period:
+    path: /user_notification_period/set
+    methods: POST
+    defaults: { _controller: 'Controllers\UserNotificationPeriod\SetNotificationPeriodController' }
+
+# Получить период уведомлений пользователя
+get_user_notification_period:
+    path: /user_notification_period/get
+    methods: POST
+    defaults: { _controller: 'Controllers\UserNotificationPeriod\GetNotificationPeriodController' }
+
+# Проверка подтвержден ли номер телефона продавца
+check_payer_phone_verified:
+    path: /check_payer_phone_verification
+    methods: GET
+    defaults: { _controller: 'Controllers\User\CheckPayerPhoneVerification' }
+
+# Обработчик обновления аватарки
+update_user_avatar:
+    path: /user/update_avatar
+    methods: POST
+    defaults: { _controller: 'Controllers\User\UpdateAvatarController' }
+
+# Скрывать ли инфо-блок "Скачайте уроки Как эффективно зарабатывать на Kwork" #8485
+change_kwork_book_info_block_state:
+    path: /user/kwork_book_info_block
+    methods: POST
+    defaults: { _controller: 'Controllers\User\KworkBookInfoBlockController' }

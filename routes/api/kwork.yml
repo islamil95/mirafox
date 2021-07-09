@@ -1,0 +1,78 @@
+# Kwork.api_getRotation
+api_kwork_getrotation:
+    path: /getrotation
+    methods: GET
+    defaults: { _controller: 'Controllers\Api\Kwork\GetRotationController' }
+
+# возвращает детали кворка
+# Kwork.api_getDetails
+api_kwork_getdetails:
+    path: /getdetails
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Kwork\GetDetailsController' }
+
+# Удалить файл
+# Kwork.api_deleteAttachment
+api_kwork_deleteattachment:
+    path: /deleteattachment
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Kwork\DeleteAttachmentController' }
+
+# Kwork.api_getRestAuhorizedPopular
+api_kwork_getrestauhorizedpopular:
+    path: /getrestauhorizedpopular
+    methods: GET
+    defaults: { _controller: 'Controllers\Api\Kwork\GetRestAuhorizedPopularController' }
+
+# Проверка фразы на запрещенные слова
+# Kwork.api_checkText
+api_kwork_checktext:
+    path: /checktext
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Kwork\CheckTextController' }
+
+# Kwork\KworkLinkSiteRelation.api_getKworkSites
+api_kwork_getkworksites:
+    path: /getkworksites
+    methods: GET
+    defaults: { _controller: 'Controllers\Api\Kwork\GetKworkSitesController' }
+
+# Kwork\KworkGroup\KworkRatingGroupSort.clearActorFilter
+api_kwork_clearactorfilter:
+    path: /clearactorfilter
+    methods: GET
+    defaults: { _controller: 'Controllers\Api\Kwork\ClearActorFilterController' }
+
+# Kwork.api_getOnceKworkPopular
+# подгрузка одного популярного кворка взамен скрытого
+api_kwork_getoncekworkpopular:
+    path: /getoncekworkpopular
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Kwork\GetOnceKworkPopularController' }
+
+# Kwork.api_getOnceKworkBookmark
+# подгрузка одного избранного кворка взамен скрытого
+api_kwork_getoncekworkbookmark:
+    path: /getoncekworkbookmark
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Kwork\GetOnceKworkBookmarkController' }
+
+# Kwork.api_getOnceOtherKworkSeller
+# подгрузка одного другого кворка продавца взамен скрытого
+api_kwork_getonceotherkworkseller:
+    path: /getonceotherkworkseller
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Kwork\GetOnceOtherKworkSellerController' }
+
+# Kwork.api_getOnceSimilarKwork
+# подгрузка одного похожего кворка взамен скрытого
+api_kwork_getoncesimilarkwork:
+    path: /getoncesimilarkwork
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Kwork\GetOnceSimilarKworkController' }
+
+# Kwork.api_saveFirstPhoto
+api_kwork_savefirstphoto:
+    path: /savefirstphoto
+    methods: POST
+    defaults: { _controller: 'Controllers\Api\Kwork\SaveFirstPhotoController' }

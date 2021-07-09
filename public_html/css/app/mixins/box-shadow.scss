@@ -1,0 +1,6 @@
+// Кроссбразурный box-shadow
+@mixin _box-shadow($left, $top, $radius, $scale, $color, $inset) {
+	-webkit-box-shadow: $left $top $radius $scale $color $inset;
+	   -moz-box-shadow: $left $top $radius $scale $color $inset;
+			box-shadow: $left $top $radius $scale $color $inset;
+}

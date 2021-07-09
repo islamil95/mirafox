@@ -1,0 +1,13 @@
+@import "~appCss/bootstrap";
+
+// Решение конфликтов со старой темой
+@import "~moduleCss/kwork-edit/compatibility";
+
+// language-tool
+@import "~appCss/language-tool";
+
+// Popup в старом формате
+@import "~moduleCss/kwork-edit/kwork-edit";
+
+// Форма загрузки портфолио
+@import "~appCss/portfolio-upload";

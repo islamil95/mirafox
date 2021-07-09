@@ -1,0 +1,29 @@
+// Стили для статьи
+.kb.support .article-wrapper {
+
+	// Статья
+	.article {
+
+		// Ответ
+		.answer {
+			line-height: 170%;
+
+			ul {
+				padding-left: 40px!important;
+				margin-bottom: 15px!important;
+			}
+
+			p {
+				margin-bottom: 15px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+			}
+
+		}
+
+	}
+
+}

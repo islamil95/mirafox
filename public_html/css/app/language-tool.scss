@@ -1,0 +1,86 @@
+// LanguageTool
+.language-tool {
+
+	// Скрыть панель в редакторе Trumbowyg
+	.trumbowyg-button-pane {
+		display: none;
+	}
+
+	// Убрать отступ сверху у редактора Trumbowyg
+	.trumbowyg-box, .trumbowyg-editor {
+		margin-top: 0;
+	}
+
+	// Ошибки
+	$error-opacity: 0.4;  // Прозрачность выделения для ошибки
+	$selected-error-opacity: 1;  // Прозрачность выделения для выбранной ошибки
+	word-error {
+		cursor: pointer;
+		border-bottom: none;
+
+		// Серьезная ошибка
+		&.severe {
+			background-color: rgba(241,91,91, $error-opacity);
+			// Выделенная ошибка
+			&.selected {
+				background-color: rgba(241,91,91, $selected-error-opacity);
+			}
+		}
+
+		// Обычная ошибка
+		&.normal {
+			background-color: rgba(255,168,0, $error-opacity);
+			// Выделенная ошибка
+			&.selected {
+				background-color: rgba(255,168,0, $selected-error-opacity);
+			}			
+		}
+
+		// Предложение
+		&.optional {
+			background-color: rgba(69,126,219, $error-opacity);
+			// Выделенная ошибка
+			&.selected {
+				background-color: rgba(69,126,219, $selected-error-opacity);
+			}			
+		}
+	}
+
+	// Описание ошибки
+	.message {
+		font-weight: $font-weight-bold;
+		margin-bottom: map-get($spacers, 2);
+	}
+
+	// Замена
+	.replacement {
+		cursor: pointer;
+		padding: map-get($spacers, 2);
+
+		&:hover {
+			background-color: $gray-100;
+		}
+	}
+
+	// Кнопка Пропустить ошибку
+	.ignore {
+		cursor: pointer;
+		padding: map-get($spacers, 2);
+		color: $primary;
+
+		&:hover {
+			text-decoration: underline;
+		}		
+	}
+
+}
+
+// Кнопки в footer модального окна
+.language-tool-footer {
+	width: 100%;
+	text-align: right;
+
+	button {
+		margin-left: 15px;
+	}
+}

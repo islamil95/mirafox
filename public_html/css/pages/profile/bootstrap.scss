@@ -1,0 +1,13 @@
+@import "~appCss/bootstrap";
+
+// Табы
+@import "~appCss/live-tabs";
+
+// Правила для совместимости со старыми стилями
+@import "~moduleCss/profile/compatibility";
+
+// Стили настроек
+@import "~moduleCss/profile/interview";
+
+// шапка профиля
+@import "~moduleCss/profile/head";

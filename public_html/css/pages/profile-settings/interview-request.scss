@@ -1,0 +1,147 @@
+#app .interview-sidebar-block,
+.modal-dialog {
+
+	// Заголовок
+	h3 {
+		padding-left: 55px;
+		background: url('/images/interview.png') 0px 4px no-repeat;
+		background-size: 35px 43px;
+		min-height: 50px;
+	}
+	
+	// Пункт списка в описании
+	li {
+		list-style: none;
+		font-size: 12.5px;
+		line-height: 18px;
+	}
+
+	// Декоратор пунктов списка
+	li:before {
+		content: '- ';
+	}
+
+	// Кнопка открытия модального окна
+	.button-success {
+		width: 100%;
+	}
+
+	@include media-breakpoint-down(md) {
+		// Строка с кнопкой открытия модального окна
+		.more {
+			padding: 0px 20px !important;
+		}
+
+		// Кнопка открытия модального окна
+		.button-success {
+			width: 246px;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		// Строка с кнопкой открытия модального окна
+		.more {
+			padding:0px 10px !important;
+		}
+	}
+
+	@include media-breakpoint-down(xs) {
+		// Кнопка открытия модального окна
+		.button-success {
+			width: 100%;
+		}
+	}
+
+	// Модальное окно
+	.interview-modal {
+		
+		// Разделитель
+		hr {
+			border: 0; border-top: 1px solid $gray-300;
+			background-color: $gray-300;
+		}
+
+		// Блок с микрофоном
+		.mic {
+			display: block;
+			padding: 0px 0px 0px 120px;
+			background: url('/images/interview.png') 30px 6px no-repeat;
+			background-size: 60px 73px;
+			min-height: 80px;
+		}
+		
+		// Блок с примерами профилей с интервью
+		.examples {
+			padding: 10px 15px 14px 15px;
+			background: $gray-50;
+		}
+
+		// Профили пользователей
+		.profiles {
+			display: flex; justify-content: space-around; flex-wrap: wrap;
+			
+			// Блок профиля
+			a {
+				display: flex;
+			}
+			
+			// Подсветка блока профиля при наведении
+			a:hover .name {
+				color: $blue;
+			}
+			
+			// Аватар пользователя
+			a > div:first-child {
+				width: 50px; height: 50px;
+
+				img {
+					width: 100%; height: 100%;
+					border-radius: 50%;
+				}
+			}
+			
+			// Правая колонка
+			a > div:nth-child(2) {
+				display: flex; align-items: center;
+				padding: 0px 0px 0px 10px;
+			}
+			
+			// Реальное имя пользователя
+			.name {
+				font-size: 13px; color: $black;
+			}
+		
+		}
+		
+		// Кнопка - ссылка на форму интервью
+		.button-success {
+			line-height: 28px;
+			text-align: center;
+			width: 100%;
+		}
+
+		// Примечание
+		.notice {
+			color: $gray-600;
+			line-height: 130%;
+			font-size: 13px; font-style: italic;
+			text-align: center;
+		}
+
+		@include media-breakpoint-down(sm) {
+
+			// Блок с микрофоном
+			.mic {
+				padding-left: 70px;
+				background-position-x: 0px; 
+			}
+		
+			// Левая колонка профиля пользователя
+			.profiles a:nth-child(1) {
+				padding-bottom: 10px;
+			}
+
+		}
+
+	}
+}

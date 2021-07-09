@@ -1,0 +1,100 @@
+;app
+app.mode                                    = local
+app.base_name                               = Kwork
+app.mail_sender_name                        = kwork.ru
+app.must_user                               = www-data
+app.local_cron_enable						= false     ; запускать ли кроны. учитывается только если app.mode = local
+
+;tarif
+tarif_normal.persent                        = 20
+tarif_promo.persent                         = 20
+
+;db
+db.master.host = localhost
+db.master.user = test_stand1
+db.master.password = eeKei7shequa
+db.master.name = test_stand1
+
+;db slave
+db.slave.host                               = localhost
+db.slave.user                               = root
+db.slave.password                           = 
+db.slave.name                               = test
+
+;db work
+db.work.host                                = localhost
+db.work.user                                = root
+db.work.password                            = 123
+db.work.name                                = test
+
+
+;db slave developers
+db.slave.developers_user                    = ********
+db.slave.developers_password                = ********
+
+;crypto
+crypto.user_pass_salt_before                = ****************************************
+crypto.user_pass_salt_after                 = ****************************************
+crypto.xor_string_salt                      = ****************************************
+crypto.sign_token                           = ****************************************
+crypto.remember_me_salt                     = ****************************************
+
+;files
+files.max_count                             = 10                                ; макс кол-во файлов на загрузку к кворку
+files.max_size                              = 31457280                          ; 30мб
+files.demo_file_max_size                    = 10485760                          ; 10мб
+
+;sphinx
+sphinx.enable                               = false
+sphinx.host									= localhost
+sphinx.port									= 9312
+
+
+;redis
+redis.enable = false
+
+basket.enable = false;
+
+;sqllog
+sqllog.enable                               = true
+
+;offer
+offer.edit_time								= 10 			  ; Количество минут в течении которых продавец может редактировать предложение на бирже
+
+;technical
+technical_works.event                       = false	; уведомление что скоро техработы
+technical_works.redirect                    = false	; редирект на заглушку
+
+; sms
+sms.max_attempt                             = 5
+
+;timezone
+server.timezone                             = 3 ; московское время
+server.timezone_id                          = 1 ; ID записи в таблице timezone, которое соответствует московскому времени
+
+log.userlog.on								= false ; логирование действий пользователей
+
+price = 500;
+currency_rate = 69;
+
+track.testers[]                            = 1      ;
+
+session.lifetime							= 72	; Время жизни сессии пользователя, в часах.
+
+module.quick.enable                         = true				; 2915 срочность в заказах
+commission_percent                          = 20;
+
+;monolog
+monolog.engine 								= stream ; обработчик логов
+monolog.compulsory_closing                  = true; принудительное закрытие хендлера после записи
+
+kwork.max_count                             = 10                    ; максимальный объем кворка
+kwork.per_page                              = 24                    ; количество кворков на странице в списке
+kwork.per_page_payer                        = 20                    ; количество кворков на главной для покупателя
+kwork.count_on_search_page                  = 36                    ; количество кворков на странице в списке поиска
+kwork.count_on_user_search_page             = 36                    ; количество кворков на странице в списке поиска пользователей
+kwork.category_auth_per_page                = 24                    ; количество кворков на странице в категории/подкатегории для залогиненного
+kwork.category_unauth_per_page              = 36                    ; количество кворков на странице в категории/подкатегории для не залогиненного
+
+maximum_results = 1000000;
+per_page_items = 12;

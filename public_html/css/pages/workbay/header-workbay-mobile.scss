@@ -1,0 +1,103 @@
+.header-workbay-mobile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+
+	@media (min-width: $web-min-width) {
+		display: none;
+	}
+
+	&__burger {
+		position: relative;
+		z-index: 3;
+		border-top: 2px solid #333333;
+		height: 25px;
+		width: 30px;
+		cursor: pointer;
+		transition: all 0.3s ease-in;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 10px;
+			height: 2px;
+			width: 30px;
+			background: #333333;
+			transition: all 0.3s ease-in;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			height: 2px;
+			width: 30px;
+			background: #333333;
+			transition: all 0.3s ease-in;
+		}
+
+		&--active {
+			border-color: transparent;
+
+			&:before {
+				transform: rotate(45deg);
+				width: 33px;
+				left: -2px;
+			}
+
+			&:after {
+				transform: rotate(135deg);
+				bottom: 11px;
+				width: 33px;
+				left: -2px;
+			}
+		}
+	}
+
+	&__login {
+		position: relative;
+		z-index: 1;
+
+		a {
+			font-size: 20px;
+			line-height: 24px;
+			font-weight: 700;
+			color: #2B9DFE;
+		}
+	}
+
+	&__logo {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		background: #fff;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease-in;
+		padding-top: 40px;
+
+		&--active {
+			z-index: 2;
+			max-height: 800px;
+		}
+
+		a {
+			display: block;
+			text-align: center;
+			color: #333333;
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 20px;
+		}
+	}
+}

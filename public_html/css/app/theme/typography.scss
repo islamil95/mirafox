@@ -1,0 +1,19 @@
+// Пока изменения локальные в теге #app, чтобы избежать конфликтов со старыми стилями
+#app, .modal-dialog {
+	p {
+		margin-bottom: 15px;
+	}
+
+	ul:not(.chosen-results):not(.loadbar) {
+		padding-left: 40px;
+		margin-bottom: 15px;
+	}
+}
+
+.text-underline {
+	text-decoration: underline;
+}
+
+.list-unstyled{
+	list-style: none;
+}

@@ -1,0 +1,54 @@
+.wants-filter-content {
+	@media (min-width: 900px) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.wants-filter {
+	background-color: white;
+	border: 1px solid #e8e8e8;
+	padding: 0 15px;
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+
+	@media (min-width: 900px) {
+		width: 230px;
+	}
+
+	&__link {
+		display: block;
+		color: #000;
+		font-size: 15px;
+		padding: 15px 0;
+		position: relative;
+
+		&.active, &:hover, &:focus {
+			background: #f0f0f0;
+			margin: 0 -15px 0;
+			padding: 15px;
+
+			&:before {
+				content: '';
+				background: rgba(253, 176, 42, 0.5);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 5px;
+			}
+		}
+
+		+ & {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.wants-content {
+	@media (min-width: 900px) {
+		flex: 1;
+	}
+}

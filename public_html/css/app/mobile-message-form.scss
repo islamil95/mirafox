@@ -1,0 +1,14 @@
+#block_message_new {
+	&.no-send {
+		display: none !important;
+	}
+
+	.file-uploader__add {
+		bottom: auto;
+		margin-top: 2px;
+	}
+
+	.mobile_message_body {
+		border-radius: 8px;
+	}
+}

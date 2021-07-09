@@ -1,0 +1,364 @@
+.promo-page {
+
+	hr {
+		border: 1px solid #dddddd;
+		border-bottom: none;
+	}
+
+	h1 {
+		color: white;
+		margin-bottom: 5px;
+		font-size: 34px;
+		line-height: 38px;
+	}
+
+	h2 {
+		font-size: 32px;
+		line-height: 36px;
+		font-weight: bold;
+	}
+
+	ol {
+		margin-left: 0;
+		padding-left: 15px;
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		ul {
+			margin-top: 10px;
+			margin-left: 20px;
+
+			li {
+				list-style-type: disc;
+			}
+		}
+	}
+
+	&__header {
+		padding: 45px 0;
+		background: #ffa800;
+		color: white;
+	}
+
+	&__form {
+		background: #ffa800;
+		color: #ffffff;
+		padding: 40px 0 35px;
+		font-size: 20px;
+		line-height: 25px;
+
+		&-title {
+			font-size: 30px;
+			line-height: 40px;
+			margin-bottom: 20px;
+
+			span {
+				color: #ffa800;
+				font-weight: 700;
+			}
+		}
+
+		&-text {
+			font-size: 26px;
+			line-height: 32px;
+			color: #000;
+			margin-bottom: 20px;
+		}
+
+		&-field {
+			position: relative;
+			max-width: 530px;
+			width: 100%;
+			margin: 0 auto 30px;
+
+			p {
+				font-weight: 300;
+				font-size: 22px;
+				line-height: 30px;
+				margin-bottom: 20px;
+			}
+
+			span {
+				position: absolute;
+				left: 0px;
+				top: 5px;
+				font-weight: bold;
+				font-size: 22px;
+				line-height: 33px;
+				border: 3px solid white;
+				border-radius: 100%;
+				width: 33px;
+				display: inherit;
+				text-align: center;
+			}
+
+			select {
+				width: 100%;
+				outline: none;
+				line-height: 30px;
+				border: 1px solid #ECECEC;
+				padding: 0 10px;
+				border-radius: 3px;
+				height: 30px;
+			}
+		}
+	}
+
+
+	/* Promo want */
+	.want-header-promo {
+		background: #fff url('/images/contest/contest2019want/kwork3.jpg?v=4') top center no-repeat;
+		position: relative;
+		height: 600px;
+		width: 100%;
+		background-size: cover;
+	}
+
+	.promo-want2019 h1 {
+		color: black;
+		font-size: 42px;
+		text-transform: none;
+		margin-left: -100px;
+		padding-top: 100px;
+		line-height: 120%;
+		position: unset;
+
+		span {
+			color: #ffa800;
+		}
+	}
+
+	.promo-want2019-small {
+		margin-top: 40px;
+		color: #2bbe2b;
+		font-size: 24px;
+		margin-left: -100px;
+	}
+
+	.promo-want-orders, .promo-want-orders a {
+		color: white !important;
+		font-size: 16px;
+	}
+
+	.promo-want-orders a {
+		text-decoration: underline;
+	}
+
+	@media only screen and (min-width: 1400px) {
+		.want-header-promo {
+			height: 700px;
+			background-size: auto;
+		}
+	}
+
+	@media only screen and (max-width: 1360px) {
+		.want-header-promo {
+			height: 500px;
+		}
+		.promo-want2019 h1 {
+			margin-left: 10px;
+			padding-top: 70px;
+			font-size: 25px;
+			width: 50%;
+		}
+		.promo-want2019-small {
+			margin-left: 10px;
+			font-size: 20px;
+		}
+	}
+
+	@media only screen and (max-width: 960px) {
+		.want-header-promo {
+			height: 400px;
+		}
+		.promo-want2019 h1 {
+			margin-left: 10px;
+			padding-top: 60px;
+			font-size: 25px;
+			width: 50%;
+		}
+		.promo-want2019-small {
+			font-size: 18px;
+			margin-top: 20px;
+		}
+	}
+
+	@media only screen and (max-width: 760px) {
+		.want-header-promo {
+			height: 300px;
+		}
+		.promo-want2019 h1 {
+			margin-left: 10px;
+			padding-top: 40px;
+			font-size: 20px;
+			width: 50%;
+		}
+		.promo-want2019-small {
+			margin-left: 10px;
+			font-size: 16px;
+			margin-top: 10px;
+			width: 200px;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.want-header-promo {
+			height: 200px;
+		}
+		.promo-want2019 h1 {
+			margin-left: 10px;
+			padding-top: 20px;
+			font-size: 16px;
+			width: 50%;
+			line-height: 24px;
+		}
+		.promo-want2019-small {
+			margin: 10px 0px 0px 10px;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+
+		.promo-want2019 h1 {
+			margin-left: 10px;
+			padding-top: 20px;
+			font-size: 14px;
+			width: 50%;
+		}
+		.promo-want2019-small {
+			margin: 8px 0px 0px 10px;
+			font-size: 14px;
+			width: 50%;
+		}
+	}
+	/* 2019 Birthday Promo page */
+	&.promo-birthday2019 {
+		.promo-emoji-heart {
+			height: auto;
+		}
+
+		.promo-birthday2019-header {
+			position: relative;
+			picture,img{
+				position: relative;
+				max-width: 100%;
+				width: 100%;
+				height: auto;
+			}
+			&_title {
+				color: black;
+				text-transform: none;
+				position: absolute;
+				top:0;
+				max-width: 100%;
+				padding: 25px 20px 20px 40px;
+				height: 100%;
+				text-align: left;
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+				@media (max-width: 1400px) {
+					padding-top: 20px;
+				}
+				@media (max-width: 960px) {
+					padding-top: 10px;
+				}
+				@media (max-width: 768px) {
+					padding: 10px;
+					padding-top: 5px;
+				}
+
+				h1 {
+					position: relative;
+					bottom: 0;
+					color: #fff;
+					font-size: 42px;
+					line-height: 120%;
+					z-index: 1;
+					@media only screen and (max-width: 1360px) {
+						font-size: 25px;
+					}
+					@media only screen and (max-width: 960px) {
+						font-size: 25px;
+					}
+					@media only screen and (max-width: 760px) {
+						font-size: 20px;
+					}
+					@media only screen and (max-width: 600px) {
+						font-size: 16px;
+						line-height: normal;
+
+					}
+					@media only screen and (max-width: 400px) {
+						font-size: 13px;
+					}
+				}
+
+				span {
+					color: #ffa800;
+				}
+			}
+		}
+
+		.promo-case-form {
+			@media(min-width: 768px) {
+				align-items: flex-start;
+				display: flex;
+				justify-content: center;
+				height: auto;
+			}
+			@media (max-width: 767px) {
+				height: auto;
+				display: flex;
+				flex-wrap: wrap;
+				position: relative;
+				overflow-x: hidden;
+				.line-promo-input__desc{
+					display: block;
+					max-width: 100%;
+				}
+				.line-promo-input__input {
+					padding: 0;
+					width: 100%;
+					max-width: 100%;
+					display: block;
+					input {
+						min-width: 100%;
+						max-width: 100%
+					}
+				}
+				.line-promo-input__button {
+					width: 100%;
+					display: block;
+					button {
+						width: 100%;
+
+						&.processing {
+							font-size: 0;
+						}
+					}
+				}
+			}
+			@media (max-width: 767px) and (min-aspect-ratio: 13/9){
+				display: grid;
+				grid-template-areas: "label input" "label button";
+				.line-promo-input__desc {
+					text-align: right;
+					width: 100%;
+					padding-right: 20px;
+				}
+				.line-promo-input__input {
+					grid-area: input;
+					width: 400px;
+				}
+				.line-promo-input__button {
+					width: 400px;
+					min-width: auto;
+					grid-area: button;
+				}
+			}
+		}
+	}
+}

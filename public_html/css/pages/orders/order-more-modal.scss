@@ -1,0 +1,26 @@
+.order-more-modal {
+
+	@media (min-width: 768px) {
+		.modal-dialog {
+			max-width: 500px;
+		}
+	}
+
+	.modal-header {
+		.close {
+			top: 15px;
+		}
+	}
+
+	.tooltipster {
+		margin-left: 5px;
+	}
+
+	&__radio {
+		height: 25px;
+
+		label {
+			line-height: 26px;
+		}
+	}
+}

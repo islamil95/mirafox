@@ -1,0 +1,198 @@
+.tooltip-block{
+	z-index: 10;
+	box-shadow: 0 0 10px rgba(4, 4, 4, 0.1);
+	position: absolute;
+	display: none;
+	border-radius: 4px;
+	padding: 10px 15px 10px 15px;
+	text-align: left;
+	font-weight: 400;
+	margin-bottom: 10px;
+	line-height: 17px !important;
+	max-width: 420px;
+	font-size: 12px;
+}
+.tooltip-block-w668 {
+	max-width: 668px !important;
+}
+.tooltip-block-w750 {
+	max-width: 750px !important;
+}
+.tooltip-block_thin{
+	padding: 10px;
+}
+
+.tooltip-block.manage-orders_tooltip{
+
+	max-height: 115px;
+	max-width: 190px;
+}
+
+.tooltip-block.tooltip-block_theme_light{
+	color: #000;
+	background: white;
+	border: 1px solid #d9d9d9;
+}
+.tooltip-block.tooltip-block_theme_dark{
+	color: #fff;
+	background-color: #2c2c2c;
+	border: 1px solid #2c2c2c;
+}
+.tooltip-text{
+	display:none;
+}
+
+.tooltip-block__corner{
+	position: absolute;
+}
+.tooltip-block--top .tooltip-block__corner{
+	bottom: 20px;
+}
+
+.tooltip-block--right .tooltip-block__corner{
+	bottom: 20px;
+	left: 20px;
+}
+
+.tooltip-block--left .tooltip-block__corner{
+	bottom: 20px;
+	right: 20px;
+}
+
+.tooltip-block--bottom .tooltip-block__corner{
+	top: -20px;
+}
+.tooltip-block-corner__inner{
+	position:relative;
+	bottom:-20px;
+	left: 0;
+}
+
+.tooltip-block--right .tooltip-block-corner__inner {
+	bottom: 0;
+	left: -20px;
+}
+
+.tooltip-block--left .tooltip-block-corner__inner {
+	bottom: 0;
+	right: -20px;
+}
+
+.tooltip-block-corner__inner:before, .tooltip-block-corner__inner:after{
+	content: '';
+	display: block;
+	position: absolute;
+	border: 10px solid transparent;
+}
+
+.tooltip-block_theme_light.tooltip-block--top .tooltip-block-corner__inner:before,
+.tooltip-block_theme_light.tooltip-block--top  .tooltip-block-corner__inner:after{
+	border-bottom: 0;
+	bottom: -9px;
+	border-top-color: white;
+}
+
+.tooltip-block_theme_light.tooltip-block--right .tooltip-block-corner__inner:before,
+.tooltip-block_theme_light.tooltip-block--right .tooltip-block-corner__inner:after {
+	border-left: 0;
+	left: -9px;
+	border-right-color: white;
+}
+
+.tooltip-block_theme_light.tooltip-block--left .tooltip-block-corner__inner:before,
+.tooltip-block_theme_light.tooltip-block--left .tooltip-block-corner__inner:after {
+	border-right: 0;
+	right: -29px;
+	border-left-color: white;
+}
+
+.tooltip-block_theme_light.tooltip-block--bottom .tooltip-block-corner__inner:before,
+.tooltip-block_theme_light.tooltip-block--bottom  .tooltip-block-corner__inner:after{
+	border-top: 0;
+	top: -9px;
+	border-bottom-color: white;
+}
+
+.tooltip-block_theme_light.tooltip-block--top .tooltip-block-corner__inner:before{
+	border-top-color: #D9D9D9;
+	bottom: -10px;
+}
+
+.tooltip-block_theme_light.tooltip-block--right .tooltip-block-corner__inner:before{
+	border-right-color: #D9D9D9;
+	left: -10px;
+}
+.tooltip-block_theme_light.tooltip-block--left .tooltip-block-corner__inner:before{
+	border-left-color: #D9D9D9;
+	right: -30px;
+}
+.tooltip-block_theme_light.tooltip-block--bottom .tooltip-block-corner__inner:before{
+	border-bottom-color: #D9D9D9;
+	top: -10px;
+}
+
+.tooltip-block_theme_dark.tooltip-block--top .tooltip-block-corner__inner:before,
+.tooltip-block_theme_dark.tooltip-block--top  .tooltip-block-corner__inner:after{
+	border-bottom: 0;
+	bottom: -9px;
+	border-top-color: #2c2c2c;
+}
+
+.tooltip-block_theme_dark.tooltip-block--right .tooltip-block-corner__inner:before,
+.tooltip-block_theme_dark.tooltip-block--right .tooltip-block-corner__inner:after {
+	border-left: 0;
+	left: -9px;
+	border-right-color: #2c2c2c;
+}
+
+.tooltip-block_theme_dark.tooltip-block--bottom .tooltip-block-corner__inner:before,
+.tooltip-block_theme_dark.tooltip-block--bottom  .tooltip-block-corner__inner:after{
+	border-top: 0;
+	top: -9px;
+	border-bottom-color: #2c2c2c;
+}
+
+.tooltip-block_theme_dark.tooltip-block--top .tooltip-block-corner__inner:before{
+	border-top-color: #2c2c2c;
+	bottom: -10px;
+}
+
+.tooltip-block_theme_dark.tooltip-block--right .tooltip-block-corner__inner:before{
+	border-right-color: #2c2c2c;
+	left: -10px;
+}
+.tooltip-block_theme_dark.tooltip-block--bottom .tooltip-block-corner__inner:before{
+	border-bottom-color: #2c2c2c;
+	top: -10px;
+}
+
+.kworks-filter .js-tooltip-block__text p:last-child {
+	margin-bottom: 0;
+}
+.kworks-filter .js-tooltip-block__text p {
+	margin-bottom: 5px;
+}
+
+.anchor-init .tooltip-block.tooltip-block_theme_light{
+	max-width: 85px;
+}
+
+/* Блок со статистикой пользователя no-wrap, поэтому для всплывающей
+подсказки в этом блоке нужно сбросить это свойство принудительно */
+.orders-statistics .js-tooltip-block { 
+	white-space: normal!important; 
+}
+
+@media (max-width : 500px) {
+	.tooltip-block{
+		max-width: 60%;
+	}
+	.message_sound_block .tooltip-block{
+		max-width: none;
+	}
+}
+@media (max-width : 320px) {
+	.tooltip-block{
+		max-width: 200px;
+	}
+}

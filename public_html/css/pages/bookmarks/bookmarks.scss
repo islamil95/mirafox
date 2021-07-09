@@ -1,0 +1,109 @@
+.page-bookmarks {
+	h1 {
+		margin: 20px 0;
+		font-size: 32px;
+
+		@media (max-width: 767px) {
+			text-align: center;
+			font-size: 22px;
+		}
+	}
+	
+	.search-category__link,
+	.search-category__text {
+		font-size: 13px;
+		line-height: 18px;
+		display: block;
+	}
+
+	&.status-stop {
+		.cusongsblock {
+			padding-bottom: 0;
+			
+			> .padding-content {
+				> p {
+					@media only screen and (max-width: 768px) {
+						margin-left: 116px;
+					}
+				}
+
+				> .cusongsblock__panel {
+					@media only screen and (max-width: 768px) {
+						float: right;
+						width: calc(100% - 116px);
+					}
+				}
+
+				.userdata {
+					margin-top: -1px; padding-top: 0;
+
+					> .cusongsblock__labels {
+						@media only screen and (max-width: 768px) {
+							display: none;
+						}
+					}
+
+					> .ta-center {
+						@media only screen and (max-width: 768px) {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.group-controls {
+		position: static !important;
+		margin-bottom: 15px;
+		display: flex !important; justify-content: center;
+
+		> a {
+			display: block;
+			flex-grow: 1;
+			padding-left: 0; padding-right: 0;
+		}
+	}
+}
+
+.bookmarks-filter {
+	
+	&__header {
+
+		@media only screen and (max-width: 767px) {
+			display: flex;
+			align-items: center;
+		}
+		
+		&-title {
+			font-size: 20px;
+			margin-right: 10px;
+		}
+		
+		&-select {
+			flex: 1;
+			
+			@media only screen and (min-width: 768px) {
+				display: none;
+			}
+		}
+	}
+}
+
+.bookmarks-kworks {
+	overflow: hidden;
+
+	h2 {
+		text-align: center;
+	}
+
+	&__more {
+		text-align: center;
+
+		button {
+			margin-bottom: 0;
+		}
+	}
+}

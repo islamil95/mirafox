@@ -1,0 +1,28 @@
+.preloader_rest_popular {
+    display: none;
+}
+
+.prealoder__ico_rest_popular {
+    width: 25px;
+    height: 25px;
+    border-width: 4px;
+    margin-left: -30px;
+    margin-top: -3px;
+}
+
+.authorized-kwork-block {
+    margin-top: 25px;
+}
+
+.authorized-popular-rest-hidden .cusongsblock:nth-child(n+6){
+    display: none;
+}
+
+@media only screen and (max-width:1230px) {
+    .authorized-popular-rest-hidden .cusongsblock:nth-child(5){
+        display: none;
+    }
+    .kwork-carousel__container .slick-prev {
+        display: none !important;
+    }
+}

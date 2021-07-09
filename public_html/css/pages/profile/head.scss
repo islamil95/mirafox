@@ -1,0 +1,174 @@
+.user-col-container {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	position: relative;
+	top: -11px;
+	display: flex;
+	justify-content: space-between;
+
+	.user-col {
+		float: left;
+
+		&.user-col-left {
+			width: calc(100% - 291px);
+			padding: 0 0 20px 20px;
+			box-sizing: border-box;
+
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+				padding: 0 20px;
+			}
+		}
+
+		&.user-col-right {
+			margin: 0 0 0 20px;
+			padding: 20px;
+			border-left: 1px solid #ddd;
+			box-sizing: border-box;
+			position: relative;
+			display: inline-block;
+		}
+	}
+
+	.user-col-profile {
+		width: 220px;
+		float: left;
+		margin: -15px 0 0;
+
+		@media only screen and (max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	.user-col-about {
+		width: calc(100% - 269px);
+		float: left;
+		padding: 10px 20px 20px 30px;
+		box-sizing: border-box;
+
+		@media only screen and (max-width: 767px) {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.user-avatar-container {
+		box-sizing: content-box;
+		background: #fff;
+		border: 1px solid #ddd;
+		border-radius: 6px;
+		padding: 10px;
+		font-size: 0;
+		max-width: 220px;
+		display: inline-block;
+	}
+
+	.user-avatar-image {
+		display: block;
+		box-sizing: content-box;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		width: 200px;
+	}
+
+	.user-username {
+		margin-top: 15px;
+
+		@media only screen and (max-width: 767px) {
+			font-size: 24px;
+			line-height: 24px;
+		}
+	}
+
+	.user-fullname {
+		font-size: 32px;
+		line-height: 32px;
+		font-weight: 600;
+		color: #090;
+
+		@media only screen and (max-width: 767px) {
+			font-size: 28px;
+			line-height: 28px;
+		}
+	}
+
+	.user-info {
+		margin-top: 22px;
+		font-size: 14px;
+		color: #000;
+		line-height: 14px;
+		text-align: left;
+
+		& > div {
+			margin-top: 16px;
+			position: relative;
+			padding-left: 23px;
+		}
+
+		& > div:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.location:before {
+			left: 3px;
+		}
+
+		.status:before {
+			top: 2px;
+			left: 4px;
+			width: 15px;
+			height: 15px;
+		}
+
+		.status .last-online {
+			font-size: 12px;
+		}
+	}
+
+	.user-bages {
+		margin-top: 22px;
+		text-align: left;
+
+		.bages-container {
+			overflow: hidden;
+			margin-left: -8px;
+
+			&.h48px {
+				height: 48px;
+			}
+
+			& > img {
+				width: 40px;
+				height: 40px;
+				margin: 8px 0 0 8px;
+			}
+		}
+
+		.bages-show-all {
+			display: block;
+			margin-top: 10px;
+		}
+	}
+
+	.user-kwork-categories {
+		margin-top: 30px;
+	}
+
+	.user-about-me .user-slogan {
+		margin: 10px 0;
+	}
+
+	.user-statistics .orders-statistics .js-tooltip {
+		@media only screen and (min-width: 768px) {
+			position: absolute;
+			top: 5px;
+			right: -6px;
+		}
+	}
+
+}

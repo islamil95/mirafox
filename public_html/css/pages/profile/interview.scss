@@ -1,0 +1,102 @@
+#app {
+	.interview-part {
+		background: $gray-50;
+
+		// Блок интервью
+		.interview-block {
+			margin: auto;
+			width: 988px;
+			max-width: calc(100% - 20px);
+
+			// Заголовок
+			h2 {
+				padding: 18px 0px 20px 36px;
+				font-size: 26px;
+				line-height: 30px;
+				background: url('/images/interview.png') 0px 15px no-repeat;
+				background-size: 24px 29px;
+			}
+
+			// Подзаголовок в углу блока
+			.corner {
+				display: inline-block;
+				width: 109px; height: 26px;
+				text-align: center;
+				line-height: 26px;
+				font-size: 13px; color: $white;
+				background: $orange;
+				border: 1px solid $secondary; border-top: 0; border-left: 0; border-radius: 3px;
+			}
+
+			// Содержимое статьи
+			.content {
+				padding: 14px 14px 18px 14px;
+				display: flex; justify-content: space-between;
+
+				// Левая колонка
+				> div:nth-child(1) {
+					width: 212px; height: 148px;
+				}
+
+				// Правая колонка
+				> div:nth-child(2) {
+					width: calc(100% - 212px - 27px);  // Ширина строки - ширина левой колонки - отступ
+				}
+
+				// Изображение
+				img {
+					width: 100%; height: auto;
+				}
+
+				// Заголовок анонса интервью
+				.title {
+					display: block;
+					margin: -6px 0px 10px 0px;
+					line-height: 28px;
+					font-size: 22px; font-weight: 600; color: $black;
+				}
+
+				// Текст анонса интервью
+				.text {
+					display: block;
+					line-height: 18px;
+					text-align: justify;
+				}
+
+				// Ссылка на полную статью
+				.link {
+					display: inline-block;
+					padding: 5px 0px 0px 0px;
+				}
+
+			}
+
+			@include media-breakpoint-down(sm) {
+				// Содержимое статьи
+				.content {
+					flex-wrap: wrap;
+
+					// Обе колонки
+					> div {
+						width: 100% !important;
+						height: auto !important;
+					}
+
+					// Правая колонка
+					> div:nth-child(2) {
+						padding: 14px 0px 0px 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1231px) {
+	.lg-interview {
+		.interview-block {
+			max-width: 1240px !important;
+			min-width: 1240px !important;
+		}
+	}
+}

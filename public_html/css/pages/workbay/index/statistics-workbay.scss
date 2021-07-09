@@ -1,0 +1,72 @@
+.statistics-workbay {
+
+	&__inner {
+		padding: 30px 0;
+		background: #f9f9f9;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-between;
+
+		@media (max-width: 1000px) {
+			justify-content: space-around;
+		}
+	}
+
+	&__col {
+
+		@media (max-width: 767px) {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 1240px) {
+			justify-content: start;
+		}
+
+		@media (max-width: 1000px) {
+			justify-content: center;
+			flex-flow: column;
+		}
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 75px;
+		height: 75px;
+		border-radius: 100%;
+		border: 1px solid #dbdbdb;
+
+		@media (max-width: 1000px) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__text {
+		color: #666666;
+		margin-left: 10px;
+
+		@media (max-width: 1000px) {
+			text-align: center;
+			margin: 0;
+		}
+	}
+
+	&__num {
+		font-size: 20px;
+		line-height: 22px;
+		font-weight: 700;
+		color: #333;
+		margin-bottom: 5px;
+	}
+}

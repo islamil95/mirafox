@@ -1,0 +1,58 @@
+.file-list {
+	padding: 20px 0 4px 0;
+	
+	> div {
+		margin: 0 0 6px 0;
+		line-height: 1px;
+
+		@media(max-width: 767px) {
+			line-height: 30px;
+
+			i {
+				min-width: 19px; max-width: 19px;
+			}
+		}
+		
+		a {
+			display: inline-flex; align-items: center;
+			
+			i {
+				margin: 0 10px 0 0;
+			}
+
+			span {
+
+				@media(max-width: 767px) {
+					position: relative;
+					display: block;
+					max-width: 190px;
+					overflow: hidden;
+					white-space: nowrap;
+
+					&:after {
+						content: '';
+						display: block;
+						position: absolute;
+						top: 0px; right: 0px;
+						width: 30px; height: 30px;
+						background: linear-gradient(to right, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 1) 100%);
+					}
+				}
+			}
+
+			@media(max-width: 767px) {
+				display: flex;
+
+				span {
+					max-width: 100%;
+					width: 100%;
+
+					&:after {
+						background: -webkit-gradient(linear, left top, right top, from(hsla(0, 0%, 94%, 0)), to(#f6f6f6));
+						background: linear-gradient(90deg, hsla(0, 0%, 94%, 0) 0, #f6f6f6);
+					}
+				}
+			}
+		}
+	}
+}

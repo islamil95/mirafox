@@ -1,0 +1,22 @@
+.reviews.gig-reviews-list li:last-child {
+    margin-bottom: 0;
+}
+
+.files-list {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+.preloader__ico--project {
+    border-width: 2px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    
+}
+.preloader--project-container {
+    width: 100%;
+    margin-bottom: 26px;
+    height: 10px;
+}

@@ -1,0 +1,102 @@
+.current-orders-workbay {
+	margin-bottom: 40px;
+
+	&__row {
+		@media (min-width: $web-min-width) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 0 -10px;
+		}
+	}
+
+	&__col {
+		@media (min-width: $web-min-width) {
+			flex: 0 0 50%;
+			max-width: 50%;
+			padding: 0 10px;
+		}
+
+		&:nth-child(3), &:nth-child(4) {
+			@media (max-width: $web-min-width) {
+				display: none;
+			}
+		}
+	}
+
+	&__item {
+		background: #fff;
+		box-shadow: 0 0 18px rgba(0, 0, 0, 0.07);
+		border-radius: 4px;
+		padding: 25px 20px;
+		display: block;
+		margin-bottom: 20px;
+		transition: box-shadow 0.3s ease-in-out;
+
+		@media (min-width: $tablet-min-width) {
+			height: 145px;
+			display: inline-flex;
+			flex-wrap: wrap;
+			align-content: flex-start;
+		}
+
+		&:hover {
+			box-shadow: 0 0 19px rgba(0, 0, 0, 0.16);;
+		}
+
+		&-title {
+			font-size: 20px;
+			color: #333;
+			font-weight: 600;
+			margin-bottom: 15px;
+			line-height: 22px;
+			max-height: 44px;
+			overflow: hidden;
+
+			@media (min-width: $tablet-min-width) {
+				order: 1;
+				flex: 1;
+			}
+		}
+
+		&-description {
+			color: #666;
+			margin-bottom: 15px;
+			line-height: 19px;
+			height: 38px;
+			overflow: hidden;
+
+			@media (min-width: $tablet-min-width) {
+				order: 3;
+				flex: 1 100%;
+				margin-bottom: 0;
+			}
+		}
+
+		&-price {
+			color: #2B9DFE;
+			font-size: 20px;
+			line-height: 22px;
+			font-weight: 700;
+
+			@media (min-width: $tablet-min-width) {
+				order: 2;
+				text-align: right;
+				margin-left: 10px;
+			}
+		}
+	}
+
+	&__more {
+		margin-top: 10px;
+
+		a {
+			display: block;
+			margin: 0 auto;
+
+			@media (min-width: $tablet-min-width) {
+				width: 425px;
+			}
+		}
+	}
+}

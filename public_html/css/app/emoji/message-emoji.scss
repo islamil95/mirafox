@@ -1,0 +1,58 @@
+// Эможи для сообщений(ипользуется общий спрайт
+.message-emoji {
+	height: 36px;
+	width: 36px;
+	display: inline-block;
+	position: relative;
+	padding: 0;
+	overflow: hidden;
+	cursor: text;	
+	object-fit: cover;
+	transform: scale(0.5);
+	transform-origin: left top;
+	margin: 0px -18px -18px 0px;
+	@include emojiSprites("object-position", "");
+	.trumbowyg-editor & {
+		cursor: text;			
+	}
+}
+.message-emoji-icon {
+	display: inline-block;
+	position: relative;
+	height: 36px;
+    width: 36px;
+	overflow: hidden;
+	
+	padding: 0 0 0 0;
+	margin: -17px -13px -3px 5px;
+	
+	cursor: text;	
+	
+	transform: scale(0.5);
+	transform-origin: left bottom;
+	
+	
+	font-size: 33px;
+    line-height: 36px;
+	text-align: center;
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+	
+	background-image: url(/images/emoji/emojis36x36.png);
+    background-repeat: no-repeat;
+	img {
+		width: 36px;
+		height: 36px;
+	}
+	@include emojiSprites("background-position", "");	
+}
+// Эможи для редактроа(используются svg изображения
+.trumbowyg-editor img.message-emoji {
+	height: 18px;
+	width: 24px;
+	display: inline;
+	margin: -2px 1px -3px;
+	padding: 0 3px;
+	transform: none;
+	object-fit: contain;
+}

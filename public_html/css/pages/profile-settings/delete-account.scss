@@ -1,0 +1,184 @@
+.delete-account {
+
+	@media (max-width: 500px) {
+		margin-top: 10px;
+	}
+
+	&-link {
+		color: #ef683f;
+		border-bottom: 1px dashed;
+	}
+}
+
+.delete-account-modal {
+
+	.modal-dialog {
+		max-width: 650px;
+	}
+
+	&--show-image {
+		.modal-dialog {
+			max-width: 800px;
+		}
+
+		.modal-content {
+			@media (min-width: 768px) {
+				padding-left: 255px;
+				min-height: 550px;
+			}
+		}
+	}
+
+	.modal-content {
+
+		img {
+			position: absolute;
+			left: 35px;
+			top: 50px;
+
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+	}
+
+	.modal-header {
+		padding: 45px 50px 25px 25px;
+
+		.close {
+			top: 60px;
+			right: 60px;
+			width: 20px !important;
+			height: 20px !important;
+			padding: 0 !important;
+
+			path {
+				fill: none;
+				stroke-width: 2px;
+				stroke-miterlimit: 10;
+				stroke: #000;
+			}
+
+			&:hover {
+				opacity: 1;
+
+				path {
+					stroke: #eeb925;
+				}
+			}
+		}
+	}
+
+	.modal-body {
+		padding: 0 50px 25px 25px;
+		color: #666;
+		position: static;
+
+		p {
+			margin-bottom: 10px !important;
+		}
+	}
+
+	&__orders-list {
+		margin-bottom: 10px;
+
+		a {
+			display: block;
+		}
+	}
+
+	&__phone {
+		text-align: center;
+		font-weight: 700;
+		color: #000;
+		font-size: 15px;
+		letter-spacing: 0.5px;
+	}
+
+	.send-code {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		//justify-content: space-between;
+
+
+		//@media (min-width: 600px) {
+			position: relative;
+			justify-content: center;
+		//}
+
+		@media (min-width: 768px) {
+			margin-top: 60px;
+		}
+
+		label {
+			position: relative;
+			display: inline-block;
+			height: 40px;
+			margin-bottom: 30px;
+			width: 140px;
+			text-align: center;
+
+			input.styled-input.delete-account-confirmation, input.styled-input.delete-account-confirmation:focus {
+				border-width: 0 0 1px 0 !important;
+				border-radius: 0;
+				outline: 0;
+				font-size: 15px;
+				height: 40px;
+				width: 100px;
+				text-align: center;
+			}
+
+			span {
+				position: absolute;
+				left: 0;
+				bottom: -30px;
+				right: 0;
+				text-align: center;
+			}
+		}
+
+		&__repeat {
+			//margin-left: 20px;
+			@media (max-width: 599px) {
+				flex: 1 1 100%;
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			@media (min-width: 600px) {
+				position: absolute;
+				right: 0;
+				top: 10px;
+			}
+
+			&-link {
+				color: #457edb;
+				font-size: 14px;
+				line-height: 18px;
+				cursor: pointer;
+			}
+		}
+
+		&__error {
+			flex: 1 1 100%;
+			color: #ef683f;
+			margin-top: 10px;
+			font-size: 12px;
+			line-height: 16px;
+
+			span {
+				display: block;
+			}
+		}
+	}
+
+	.modal-footer {
+		justify-content: space-between;
+		padding: 0 50px 50px 25px;
+
+		&:after, &:before {
+			content: none;
+		}
+	}
+}

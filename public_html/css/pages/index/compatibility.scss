@@ -1,0 +1,8 @@
+// Совместимость со старой темой
+*, *::before, *::after {
+	box-sizing: initial;
+}
+
+#app *, *::before, *::after {
+	box-sizing: border-box;
+}

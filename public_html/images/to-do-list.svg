@@ -1,0 +1,15 @@
+<svg width="32" height="40" viewBox="0 0 32 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4V36C1 37.6569 2.34315 39 4 39H28C29.6569 39 31 37.6569 31 36V4C31 2.34315 29.6569 1 28 1H4C2.34315 1 1 2.34315 1 4Z" stroke="black" stroke-width="2"/>
+<rect x="10" y="9" width="17" height="1" rx="0.5" fill="black"/>
+<rect x="10" y="14" width="17" height="1" rx="0.5" fill="black"/>
+<path d="M5 18.5L6.5 20L8.5 17" stroke="#65C03A" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 18.5L6.5 20L8.5 17" stroke="#65C03A" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 18.5L6.5 20L8.5 17" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 8.5L6.5 10L8.5 7" stroke="#65C03A" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 8.5L6.5 10L8.5 7" stroke="#65C03A" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 8.5L6.5 10L8.5 7" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 13.5L6.5 15L8.5 12" stroke="#65C03A" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 13.5L6.5 15L8.5 12" stroke="#65C03A" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 13.5L6.5 15L8.5 12" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="10" y="19" width="17" height="1" rx="0.5" fill="black"/>
+</svg>

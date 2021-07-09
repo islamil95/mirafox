@@ -1,0 +1,34 @@
+.badge {
+	padding: 2px 5px;
+	border-radius: 4px;
+	display:inline-block;
+
+	&--blue-light{
+		color: #fff;
+		background-color: #9bcfff;
+	}
+	&--blue{
+		color: #fff;
+		background-color: #66b3fb;
+	}
+	&--green{
+		color: #fff;
+		background-color: #84b747;
+	}
+	&--orange{
+		background-color: #f9bf34;
+	}
+	&--cyan{
+		background-color: #70c4dc;
+	}
+	&--pink{
+		background-color: #f09c99;
+	}
+	&--gray{
+		background-color: gray;
+	}
+	&--red{
+		color: #fff;
+		background-color: var(--red);
+	}
+}

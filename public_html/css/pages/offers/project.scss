@@ -1,0 +1,66 @@
+.project {
+	max-width: 830px;
+	margin: auto;
+	min-width: 830px;
+	padding-top: 20px;
+
+	@media only screen and (max-width:1000px) {
+		min-width: 100%;
+		width: 100%;
+		padding: 20px 10px 0;
+		box-sizing:border-box;
+	}
+
+	h1 {
+		font-size: 32px;
+
+		@media only screen and (max-width: 767px) {
+			font-size: 26px;
+			line-height: 32px;
+		}
+	}
+}
+
+.income-filter-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+	margin-bottom: 25px;
+	@media (max-width: 599px) {
+		display: block;
+	}
+}
+.income-filter {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: nowrap;
+	@media (max-width: 599px) {
+		justify-content: flex-start;
+		margin-top: 15px;
+	}
+	&__title {
+		padding: 0 10px 0 20px;
+		font-weight: 600;
+		font-size: 12px;
+		white-space: nowrap;
+		@media (max-width: 599px) {
+			padding-left: 0;
+		}
+	}
+	&__select {
+		width: 120px;
+		height: 32px;
+	}
+}
+@media (max-width: 599px) {
+	.offer-item__income-wrapper {
+		flex-wrap: wrap;
+	}
+	.offer-item__income {
+		order: 3;
+		width: 100%;
+		margin-top: 10px;
+	}
+}

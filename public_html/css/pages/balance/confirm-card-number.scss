@@ -1,0 +1,82 @@
+.confirm-card-number {
+	background: #e8e8e866;
+	margin: 15px auto;
+	border: 1px solid #e8e8e8;
+	border-top: 0;
+	border-left: 0;
+	border-radius: 5px;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.confirm-card-number-field {
+	background: #fff;
+	display: inline-block;
+
+	position: relative;
+	border: 1px solid #e8e8e8;
+	border-radius: 3px;
+	padding: 10px 15px;
+
+	.field-title {
+		position: absolute;
+		top: -2px;
+		left: 0;
+		font-size: 12px;
+		color: #888;
+		transform: translateY(-100%);
+	}
+
+	.field-error,
+	.field-message {
+		position: absolute;
+		bottom: -4px;
+		left: 0;
+		font-size: 11px;
+		transform: translateY(100%);
+		line-height: 14px;
+		text-align: left;
+	}
+
+	label {
+		font-size: 30px;
+		color: #888;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media (max-width: 767px) {
+			font-size: 20px;
+		}
+
+		.field-span {
+			color: #888;
+			width: 80px;
+
+			&:disabled {
+				-webkit-text-fill-color: #888;
+				opacity: 1;
+			}
+		}
+
+		input {
+			background: transparent;
+			border: 0;
+			font-size: 30px;
+			width: 125px;
+			color: #333;
+			letter-spacing: 1px;
+
+			@media (max-width: 767px) {
+				font-size: 20px;
+				width: 85px;
+			}
+
+			&::placeholder {
+				color: #333;
+				opacity: 0.3;
+				transition: opacity 0.3s ease;
+			}
+		}
+	}
+}

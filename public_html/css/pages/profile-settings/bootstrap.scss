@@ -1,0 +1,13 @@
+@import "~appCss/bootstrap";
+
+// Правила для совместимости со старыми стилями
+@import "~moduleCss/profile-settings/compatibility";
+
+// Основные стили страницы настройки
+@import "~moduleCss/profile-settings/settings";
+
+// Стили уведомления об интервью
+@import "~moduleCss/profile-settings/interview-request";
+
+// удаление аккаунта
+@import "~moduleCss/profile-settings/delete-account";

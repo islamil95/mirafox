@@ -1,0 +1,96 @@
+.how-get-result-block {
+	margin: 20px 0;
+	background: #fff;
+
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: 600;
+		border: 1px solid #e4e4e4;
+		cursor: pointer;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			background: url(/images/arrow-down-green.png) no-repeat;
+			height: 8px;
+			width: 13px;
+			margin-left: 5px;
+			flex: 0 0 13px;
+		}
+
+		&--active {
+			&:after {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	&__content {
+		border: 1px solid #e4e4e4;
+		border-top: 0;
+		border-bottom: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease-in-out;
+
+		&--active {
+			max-height: 1000px;
+			border-bottom: 1px solid #e4e4e4;
+		}
+	}
+
+	&__item {
+		padding: 20px;
+		border-bottom: 1px solid #e4e4e4;
+		display: flex;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&:before {
+			content: '';
+			float: left;
+			min-height: 90px;
+			width: 50px;
+			margin-right: 15px;
+			flex: 0 0 50px;
+		}
+
+		&:nth-child(1):before {
+			background: url(/images/how-get-result-block/new_project.png) no-repeat;
+			background-size: 45px auto;
+		}
+
+		&:nth-child(2):before {
+			background: url(/images/how-get-result-block/chat.png) no-repeat;
+			background-size: 45px auto;
+		}
+
+		&:nth-child(3):before {
+			background: url(/images/how-get-result-block/time.png) no-repeat;
+			background-size: 45px auto;
+		}
+
+		&:nth-child(4):before {
+			background: url(/images/how-get-result-block/payment_ru.png) no-repeat;
+			background-size: 50px auto;
+		}
+
+		&--en:nth-child(4):before {
+			background: url(/images/how-get-result-block/payment_en.png) no-repeat;
+			background-size: 50px auto;
+		}
+
+		p:first-child {
+			font-weight: 700;
+			margin-bottom: 5px;
+			font-size: 15px;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.advantages-workbay {
+	margin-bottom: 40px;
+	padding: 40px 0;
+	background: #f9f9f9;
+
+	@media (max-width: 767px) {
+		padding: 35px 0;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-evenly;
+	}
+	
+	&__col {
+		flex: 0 0 33%;
+		max-width: 33%;
+		text-align: center;
+
+		@media (max-width: 767px) {
+			flex: 0 0 100%;
+			max-width: 100%;
+			margin-bottom: 0;
+		}
+	}
+	
+	&__wrap-img {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		margin-bottom: 10px;
+		height: 140px;
+	}
+	
+	&__title {
+		font-size: 20px;
+		line-height: 22px;
+		font-weight: 600;
+		color: #333;
+		margin-bottom: 9px;
+	}
+	
+	&__text {
+		color: #666;
+	}
+
+	.slick-slider {
+
+		.slick-prev,
+		.slick-next {
+			height: 140px;
+		}
+	}
+}

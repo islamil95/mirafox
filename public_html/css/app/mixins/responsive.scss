@@ -1,0 +1,8 @@
+// Быстрое задание свойста $property_name для всех размеров экрана
+@mixin responsive($property_name, $xs-value, $sm-value, $md-value, $lg-value, $xl-value) {
+	@include media-breakpoint-only(xs) { #{$property_name}: $xs-value; }
+	@include media-breakpoint-only(sm) { #{$property_name}: $sm-value; }
+	@include media-breakpoint-only(md) { #{$property_name}: $md-value; }
+	@include media-breakpoint-only(lg) { #{$property_name}: $lg-value; }
+	@include media-breakpoint-only(xl) { #{$property_name}: $xl-value; }
+}
