@@ -198,3 +198,104 @@
 .rowRenderHeight{
 	height: 652px;
 }
+.rowRenderButtonDiv{
+	background: url('/images/Ellipse 3.png')no-repeat;
+	border-radius: 50%;
+	background-position: center;
+	left: 0%;
+	right: 0%;
+	top: 100%;
+	bottom: -100%;
+	opacity: 1;
+	box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
+	margin-bottom: 24px;
+	margin-right: 32px;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.rowRenderButton{
+	background: url('/images/Vector.png')no-repeat;
+	background-position: center;
+	Width: 15px;
+	Height: 8px;
+	Top: 20px;
+	Left: 9px;
+}
+.rowRenderButtonTop{
+	transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.status-success{
+	position: absolute;
+	width: 53px;
+	left: 25px;
+	top: 20.83%;
+	bottom: 20.83%;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 14px;
+	text-align: right;
+	color: #009900;
+}
+.status-block-col{
+	height: 24px;  left: 0px;    right: 0px;    top: 0px; background: #e6fae6;border-radius: 10px 0% 0% 10px;
+}
+.workName{
+	width: 185px;
+	height: 27px;
+	left: 96px;
+	top: 3px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 27px;
+	color: #000000;
+
+}
+.user-status-block{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 15px;
+}
+.push-message-name{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 14px;
+	height: 24px;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+.push-message-block{
+	width: 148px;
+	right: 0px;
+	top: 0%;
+	bottom: 0%;
+	background: #689FD9;
+	border-radius: 24px;margin-top: 8px;
+}
+.avatar-img{
+	width: 72px;height: 72px;border-radius: 50%;
+}
+.avatar-img-block{
+	width: 72px; height: 72px;  border-radius: 50%;max-width: 72px!important;
+}
+.indicator-user-status{
+	margin-left: 4px;
+	width: 6px;
+	height: 6px;
+	background: #00C900;
+	border-radius: 50%;
+}
