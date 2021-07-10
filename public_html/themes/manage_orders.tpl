@@ -7,7 +7,6 @@
 
 	{Helper::registerFooterJsFile("/js/dist/manage_orders.js"|cdnBaseUrl)}
 	{Helper::printCssFile("/css/dist/manage_orders.css"|cdnBaseUrl)}
-
 	{strip}
 		<div class="centerwrap clearfix pt20 block-response" style="width: 681px;    left: 260px;">
 			<h1 class="f32 orders-title mb5 bold">{'Заказы'|t}</h1>
@@ -22,7 +21,7 @@
 					{/if}
 				</div>
 
-				<div  >
+				<div class="mobile-padding">
 					{if $searchQuery neq null}
 						{if $orders|@count > 0}
 							<div class="orders-search-result mb20">{"<b>Результаты поиска</b> по запросу:"|t} "{$searchQuery}"</div>
@@ -37,7 +36,7 @@
 						{/foreach}
 					{/if}
 				</div>
-				<div class="t-align-c mb10">
+				<div class="t-align-c mb10" style="margin-top: 126px;">
 					{insert name=paging_block assign=pages value=a data=$pagingdata}
 					{$pages}
 				</div>

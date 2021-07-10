@@ -59,7 +59,7 @@
 {*		{/if}*}
 
 {*		<td class="pr10 nowrap">*}
-{*			{include file="manage_orders/block_status_and_action.tpl"}*}
+{*			{include file="manage_orders/block_status_and_action.tpl"} //////////////////////////////////////////////////*}
 {*		</td>*}
 
 {*		<td class="pr10 nowrap">*}
@@ -90,72 +90,77 @@
 {*		</td>*}
 {*	</div>*}
 
-	<div class="m-hidden m-clearfix rowRender">
+	<div class="m-hidden m-clearfix rowRender w-100">
 		<div class="row m-0" style="margin-left: 24px!important;  margin-top: 16px!important;">
 			<div class="col m-0 p-0 avatar-img-block"   >
 				<img src="/files/avatar/2.png" class="avatar-img">
 			</div>
 			<div class="col m-0 p-0 "style="margin-left: 24px!important;" >
-				<div class="workName row m-0 p-0 ">
-					Баннер для сайта
+				<div class="workName row m-0 p-0 " style="display: unset;">
+					{include file="manage_orders/block_order_name.tpl"}
 				</div>
 				<div class="row m-0 p-0 user-status-block align-items-center" >Покупатель онлайн <small class="indicator-user-status"></small></div>
 				<div class="push-message-block"><div class="push-message-name">Отправить сообщение</div></div>
 			</div>
-			<div class="col-2 status-block-col" >
-				<div class="status-success">
-					В работе
+				{include file="manage_orders/block_status_and_action.tpl"}
+		</div>
+		<div class="row render-row-block-content" {if $order.status eq "1"} {if $order.in_work eq "1"} style="display: flex;padding: 0px 29px;" {else} style="display: none;padding: 0px 29px;" {/if}{elseif $order.status eq "4"} style="display: flex;padding: 0px 29px;" {/if} style="display: none; padding: 0px 29px;">
+			<div class="row p-0 m-0">
+				<div class="order-status-name" style="width: 72px;display: flex;align-items: center;flex-wrap: wrap;">
+					<div class="w-100">Заказ</div>
+					<div class="w-100">создан</div>
 				</div>
+				<div style="margin-left: 10px;margin-right:8px;"  class="align-items-center d-flex">—</div>
+				<div class="col justify-content-start align-items-center p-0 d-flex order-status-text-bold">Получена информация от покупателя</div>
+				<div class="order-status-text-small w-100" style="margin-top: 5px;">Покупатель следовал вашим инструкциям. Если отправленной информации недостаточно, уточните ее, отправив сообщение покупателю.</div>
+				<div class="order-status-text-small w-100" style="margin-top: 10px;">Если информации достаточно, приступайте</div>
+			</div>
+			<div class="row p-0 m-0" style="margin-top: 19px!important;">
+				<div class="order-status-name" style="width: 72px;display: flex;align-items: center;flex-wrap: wrap;">
+					<div class="w-100">Взят</div>
+					<div class="w-100">в работу</div>
+				</div>
+				<div style="margin-left: 10px;margin-right:8px;" class="align-items-center d-flex">—</div>
+				<div class="col justify-content-start align-items-center p-0 d-flex order-status-text-bold">Вы приступили к работе над заказом</div>
+				<div class="order-status-text-small w-100" style="margin-top: 5px;">Приложите результат, когда будете готовы</div>
+			</div>
+			<div class="row p-0 m-0" style="margin-top: 61px!important;">
+				<div class="order-status-name" style="width: 72px;display: flex;align-items: center;flex-wrap: wrap;">
+					<div class="w-100">Сдан </div>
+					<div class="w-100">на проверку</div>
+				</div>
+				<div style="margin-left: 10px;margin-right:8px;" class="align-items-center d-flex">—</div>
+				<div class="col justify-content-start align-items-center p-0 d-flex order-status-text-bold">Заказ отправлен на проверку</div>
 			</div>
 		</div>
-{*		<div class="row m-0">Контент</div>*}
 		<div class="row m-0     justify-content-end" >
 			<div class="rowRenderButtonDiv">
-				<div class="rowRenderButton rowRenderButtonTop" ></div>
+				<div  {if $order.status eq "1"} {if $order.in_work eq "1"} class="rowRenderButton"  {/if}{elseif $order.status eq "4"} class="rowRenderButton" {/if} class="rowRenderButton rowRenderButtonTop"></div>
 			</div>
 			</div>
 	</div>
 
 	{* mobile version *}
-	<div class="m-visible">
-		<div>
-			<div class="data">
-				{include file="manage_orders/block_data.tpl"}
+	<div class="m-visible rowRenderM w-100">
+		<div class="w-100">
+			<div class="row m-0" style="margin-left: 8px!important;  margin-top: 16px!important;">
+				<div class="col m-0 p-0 avatar-img-block"   >
+					<img src="/files/avatar/2.png" class="avatar-img">
+				</div>
+				<div class="col m-0 p-0 "style="margin-left: 24px!important;" >
+					<div class="workName row m-0 p-0 " style="display: unset;">
+						{include file="manage_orders/block_order_name.tpl"}
+					</div>
+					<div class="row m-0 p-0 user-status-block align-items-center" >Покупатель онлайн <small class="indicator-user-status"></small></div>
+					<div class="push-message-block"><div class="push-message-name">Отправить сообщение</div></div>
+				</div>
+				{include file="manage_orders/block_status_and_action.tpl"}
 			</div>
-			<div class="order-name" data-id="{$order.OID}">
-				{include file="manage_orders/block_order_name.tpl"}
-				{include file="components/orders_row_stages_done_text.tpl" order=$order}
-			</div>
-			<div>
-				{include file="manage_orders/block_user.tpl"}
-			</div>
-		</div>
-		<div>
-			<div>
-				{include file="manage_orders/block_status_and_action.tpl" blockType="mobile"}
-			</div>
-			<div class="time">
-				{if !$order.isCancelRequest && $order.status === "1"}
-					{if $order.timeLeftStr}
-						{$order.timeLeftStr}
-					{else}
-						<span>{"Время вышло"|t}</span>
-					{/if}
-				{/if}
-			</div>
-			<div class="price">
-				{include file="utils/currency.tpl" currencyId=$order.currencyId total=$order.displayCrt}
-				{if $order.secondStagesPrice && $order.status !== "3" && $order.status !== "5"}
-					{if $order.status eq "6"}
-						{$tooltip_text={'Указана стоимость задачи, под который требуется зарезервировать средства. Ниже написана суммарная стоимость заказа.'|t}}
-					{else}
-						{$count=$order.stagesCount}
-						{$tooltip_text={'Указана стоимость задачи, под который зарезервированы средства. Ниже написана суммарная стоимость заказа.'|tn:$count}}
-					{/if}
-					<div class="dibi ml5 tooltipster tooltip_circle tooltip_circle--light tooltip_circle--hover"
-						 data-tooltip-text="{$tooltip_text}">?</div>
-					<br><span class="nowrap color-gray f13">{'из'|t} {include file="utils/currency.tpl" currencyId=$order.currencyId total=$order.secondStagesPrice}</span>
-				{/if}
+			<div class="row render-row-block-content" {if $order.status eq "1"} {if $order.in_work eq "1"} style="display: flex" {else} style="display: none" {/if}{elseif $order.status eq "4"} style="display: flex" {/if} style="display: none">Контент</div>
+			<div class="row m-0     justify-content-end" >
+				<div class="rowRenderButtonDiv">
+					<div  {if $order.status eq "1"} {if $order.in_work eq "1"} class="rowRenderButton"  {/if}{elseif $order.status eq "4"} class="rowRenderButton" {/if} class="rowRenderButton rowRenderButtonTop"></div>
+				</div>
 			</div>
 		</div>
 	</div>
